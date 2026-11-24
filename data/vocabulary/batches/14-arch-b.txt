@@ -1,0 +1,53 @@
+# category: System Architecture / Design
+# code: arch
+# batch 14 — capacity, design decisions, patterns, modernization
+技術検証|ぎじゅつけんしょう|Kiểm chứng kỹ thuật|帳票ライブラリの日本語対応を技術検証してから採用を決めます。|Chúng tôi sẽ kiểm chứng kỹ thuật khả năng hỗ trợ tiếng Nhật của thư viện biểu mẫu rồi mới quyết định dùng.|Decision Making|a|T|vs|t|poc,technology|
+概念実証|がいねんじっしょう|Chứng minh khái niệm (PoC)|本格導入の前に、二か月間の概念実証で効果を確かめます。|Trước khi triển khai chính thức, sẽ xác nhận hiệu quả bằng hai tháng chứng minh khái niệm.|Decision Making|e|T|n|t|poc|Thường gọi: PoC (ピーオーシー).
+比較検討|ひかくけんとう|So sánh cân nhắc|三つのクラウドサービスを費用と機能の面で比較検討しました。|Chúng tôi đã so sánh cân nhắc ba dịch vụ cloud về chi phí và chức năng.|Decision Making|i|B|vs|b|decision,comparison|
+キャパシティプランニング|きゃぱしてぃぷらんにんぐ|Lập kế hoạch dung lượng (capacity planning)|五年後のデータ量を予測して、キャパシティプランニングを行いました。|Dự đoán lượng dữ liệu sau năm năm để lập kế hoạch dung lượng.|Capacity|e|T|n|t|capacity,planning|
+性能見積もり|せいのうみつもり|Ước tính hiệu năng|性能見積もりの根拠として、現行システムの実測値を使いました。|Chúng tôi dùng số liệu đo thực tế của hệ thống hiện tại làm căn cứ ước tính hiệu năng.|Capacity|a|T|n|t|performance,estimate|
+ピーク負荷|ぴーくふか|Tải đỉnh|年度末のピーク負荷に耐えられるか、事前に負荷テストで確認します。|Chúng tôi sẽ kiểm tra trước bằng kiểm thử tải xem hệ thống có chịu được tải đỉnh cuối năm tài chính không.|Capacity|a|T|n|t|performance,capacity|
+同時接続数|どうじせつぞくすう|Số kết nối đồng thời|同時接続数が千を超えると、応答時間が急に悪化します。|Khi số kết nối đồng thời vượt một nghìn, thời gian phản hồi xấu đi đột ngột.|Capacity|i|T|n|t|performance,capacity|
+ボトルネック|ぼとるねっく|Nút thắt cổ chai|調査の結果、データベースへの接続待ちがボトルネックになっていました。|Kết quả điều tra cho thấy việc chờ kết nối cơ sở dữ liệu đang là nút thắt cổ chai.|Performance|i|T|n|t|performance,analysis|
+性能劣化|せいのうれっか|Suy giảm hiệu năng|データ件数の増加に伴う性能劣化を、定期的に監視しています。|Chúng tôi định kỳ giám sát sự suy giảm hiệu năng đi kèm với việc tăng số bản ghi.|Performance|a|T|n|t|performance,monitoring|
+ハイブリッド構成|はいぶりっどこうせい|Cấu hình lai (on-premise + cloud)|機密データはオンプレミスに残すハイブリッド構成を採用しました。|Chúng tôi chọn cấu hình lai, giữ dữ liệu mật ở on-premise.|Infrastructure Design|a|T|n|t|hybrid,cloud|
+マルチテナント|まるちてなんと|Đa thuê bao (nhiều khách hàng dùng chung một hệ thống)|マルチテナントのため、テナントごとにデータを確実に分離する必要があります。|Vì là hệ thống đa thuê bao nên cần tách biệt dữ liệu chắc chắn theo từng tenant.|SaaS Design|e|T|n|t|saas,multitenancy|
+ステートレス|すてーとれす|Phi trạng thái (stateless)|アプリケーションサーバーをステートレスにして、台数を自由に増減できるようにします。|Biến máy chủ ứng dụng thành phi trạng thái để có thể tăng giảm số máy tự do.|Scalability|a|T|adj-na|t|scalability,design|
+ステートフル|すてーとふる|Có trạng thái (stateful)|ステートフルな処理は、セッション情報を外部のストアに保存して対応します。|Xử lý có trạng thái được đáp ứng bằng cách lưu thông tin phiên vào kho bên ngoài.|Scalability|a|T|adj-na|t|design,state|
+セッション管理|せっしょんかんり|Quản lý phiên (session)|複数のサーバーでセッション管理を共有するため、インメモリストアを使います。|Để chia sẻ quản lý phiên giữa nhiều máy chủ, chúng tôi dùng kho lưu in-memory.|Web Architecture|a|T|n|t|session,web|
+拡張ポイント|かくちょうぽいんと|Điểm mở rộng (chỗ cho phép thêm chức năng mà không sửa lõi)|顧客ごとの独自処理は、あらかじめ用意した拡張ポイントに追加してもらいます。|Xử lý riêng của từng khách hàng sẽ được thêm vào các điểm mở rộng đã chuẩn bị sẵn.|Extensibility|e|T|n|t|extensibility,design|
+プラグイン機構|ぷらぐいんきこう|Cơ chế plugin|プラグイン機構を設けることで、本体を変更せずに機能を追加できます。|Nhờ có cơ chế plugin, có thể thêm chức năng mà không phải sửa phần lõi.|Extensibility|a|T|n|t|extensibility,plugin|
+設計方針|せっけいほうしん|Phương châm thiết kế|設計方針として、「迷ったらシンプルな方を選ぶ」ことをチームで共有しています。|Đội đã chia sẻ phương châm thiết kế: "khi phân vân thì chọn phương án đơn giản hơn".|Design Decisions|i|T|n|t|design,principle|
+設計思想|せっけいしそう|Tư tưởng thiết kế, triết lý thiết kế|このフレームワークの設計思想を理解しないまま使うと、かえって複雑になります。|Nếu dùng framework này mà không hiểu triết lý thiết kế thì lại càng phức tạp.|Design Decisions|a|T|n|t|design,philosophy|
+トレードオフ|とれーどおふ|Sự đánh đổi (trade-off)|性能と保守性のトレードオフを説明したうえで、お客様に選んでいただきました。|Sau khi giải thích sự đánh đổi giữa hiệu năng và tính bảo trì, chúng tôi để khách hàng lựa chọn.|Design Decisions|a|T|n|t|decision,design|
+将来拡張|しょうらいかくちょう|Mở rộng trong tương lai|将来拡張を見越して、テーブルに予備の項目を設けるのは避けましょう。|Hãy tránh việc dự trù cho mở rộng tương lai bằng cách thêm cột dự phòng vào bảng.|Extensibility|a|T|n|t|extensibility,yagni|
+段階的移行|だんかいてきいこう|Chuyển đổi từng bước|一括切り替えはリスクが高いため、機能単位での段階的移行を提案します。|Chuyển đổi một lần có rủi ro cao nên chúng tôi đề xuất chuyển đổi từng bước theo đơn vị chức năng.|Migration Strategy|a|T|n|t|migration,risk|
+ストラングラーパターン|すとらんぐらーぱたーん|Mẫu Strangler (thay thế dần hệ thống cũ)|ストラングラーパターンで、古いシステムの機能を少しずつ新システムへ置き換えます。|Bằng mẫu Strangler, chúng tôi thay thế dần từng chút chức năng của hệ thống cũ sang hệ thống mới.|Migration Strategy|e|T|n|t|migration,pattern|
+参照系|さんしょうけい|Nhóm xử lý tham chiếu (chỉ đọc)|参照系の画面は読み取り専用のレプリカに接続しています。|Các màn hình tham chiếu được kết nối tới bản sao chỉ đọc.|Design Decisions|a|T|n|t|read,design|Đối lập: 更新系.
+更新系|こうしんけい|Nhóm xử lý cập nhật (ghi dữ liệu)|更新系の処理は、必ずトランザクションの中で実行してください。|Các xử lý cập nhật nhất định phải chạy trong transaction.|Design Decisions|a|T|n|t|write,design|
+コマンドクエリ責務分離|こまんどくえりせきむぶんり|Tách biệt trách nhiệm lệnh và truy vấn (CQRS)|検索の要件が複雑なため、コマンドクエリ責務分離を採用しました。|Vì yêu cầu tìm kiếm phức tạp nên chúng tôi áp dụng CQRS.|Architecture Patterns|e|T|n|t|cqrs,pattern|
+イベントソーシング|いべんとそーしんぐ|Event sourcing (lưu trạng thái bằng chuỗi sự kiện)|イベントソーシングにより、過去の任意の時点の状態を再現できます。|Nhờ event sourcing, có thể tái hiện trạng thái tại bất kỳ thời điểm nào trong quá khứ.|Architecture Patterns|e|T|n|t|event,pattern|
+バッチ基盤|ばっちきばん|Nền tảng batch|夜間処理はバッチ基盤で一元管理し、失敗時は自動で通知します。|Xử lý ban đêm được quản lý tập trung trên nền tảng batch và tự động thông báo khi thất bại.|Platform|a|T|n|t|batch,platform|
+ジョブネット|じょぶねっと|Mạng job (chuỗi job có quan hệ thứ tự)|ジョブネットの途中で異常終了した場合は、失敗したジョブから再実行します。|Nếu kết thúc bất thường giữa chuỗi job, sẽ chạy lại từ job bị lỗi.|Batch|e|T|n|t|batch,job|Thuật ngữ thường thấy trong các công cụ quản lý job của Nhật.
+データ連携基盤|でーたれんけいきばん|Nền tảng liên kết dữ liệu|各システムが個別につながるのをやめ、データ連携基盤に集約しました。|Bỏ việc các hệ thống kết nối riêng lẻ, chúng tôi đã tập trung vào nền tảng liên kết dữ liệu.|Integration|e|T|n|t|integration,platform|
+認証基盤|にんしょうきばん|Nền tảng xác thực (dùng chung)|新しいシステムも全社の認証基盤を利用して、ログインを一本化します。|Hệ thống mới cũng dùng nền tảng xác thực toàn công ty để thống nhất đăng nhập.|Platform|a|T|n|t|authentication,platform|
+ヘキサゴナルアーキテクチャ|へきさごなるあーきてくちゃ|Kiến trúc lục giác (ports & adapters)|ヘキサゴナルアーキテクチャにより、外部サービスの差し替えが容易になりました。|Nhờ kiến trúc lục giác, việc thay thế dịch vụ bên ngoài trở nên dễ dàng.|Architecture Styles|e|T|n|t|architecture,ports-adapters|
+依存性逆転の原則|いぞんせいぎゃくてんのげんそく|Nguyên tắc đảo ngược phụ thuộc (DIP)|依存性逆転の原則に従い、業務ロジックはインターフェースにだけ依存させます。|Theo nguyên tắc đảo ngược phụ thuộc, logic nghiệp vụ chỉ phụ thuộc vào interface.|Design Principles|e|T|n|t|solid,design|
+パブリッシュサブスクライブ|ぱぶりっしゅさぶすくらいぶ|Mô hình publish/subscribe|パブリッシュサブスクライブ方式なので、受信側を追加しても送信側は変更不要です。|Vì là mô hình publish/subscribe nên thêm bên nhận cũng không cần sửa bên gửi.|Messaging|e|T|n|t|messaging,pattern|
+シーケンス図|しーけんすず|Sơ đồ tuần tự (sequence diagram)|外部APIとのやり取りをシーケンス図で示すと、タイムアウトの位置が明確になります。|Biểu diễn trao đổi với API bên ngoài bằng sơ đồ tuần tự sẽ thấy rõ vị trí timeout.|Architecture Docs|i|T|n|t|uml,diagram|
+コンポーネント図|こんぽーねんとず|Sơ đồ thành phần (component diagram)|コンポーネント図で、各モジュールの依存の向きを確認しました。|Chúng tôi kiểm tra chiều phụ thuộc của từng module bằng sơ đồ thành phần.|Architecture Docs|a|T|n|t|uml,diagram|
+配置図|はいちず|Sơ đồ triển khai (deployment diagram)|配置図には、どのサーバーにどのアプリを置くかを記載します。|Sơ đồ triển khai ghi rõ ứng dụng nào đặt trên máy chủ nào.|Architecture Docs|a|T|n|t|uml,deployment|
+非機能設計|ひきのうせっけい|Thiết kế phi chức năng|非機能設計では、性能、可用性、セキュリティの具体的な実現方法を定めます。|Trong thiết kế phi chức năng, xác định cách hiện thực cụ thể về hiệu năng, khả dụng và bảo mật.|Design Phase|a|T|n|t|non-functional,design|
+性能設計|せいのうせっけい|Thiết kế hiệu năng|性能設計の段階で、インデックスとキャッシュの方針を決めておきます。|Ở giai đoạn thiết kế hiệu năng, cần quyết định trước phương châm index và cache.|Design Phase|a|T|n|t|performance,design|
+外部依存|がいぶいぞん|Phụ thuộc bên ngoài|外部依存が多いほど、自分たちで制御できない障害が増えます。|Càng nhiều phụ thuộc bên ngoài thì càng nhiều sự cố mình không kiểm soát được.|Risk|a|T|n|t|dependency,risk|
+技術スタック|ぎじゅつすたっく|Bộ công nghệ sử dụng (tech stack)|社内で実績のある技術スタックを選び、運用の負担を減らしました。|Chúng tôi chọn tech stack đã có kinh nghiệm trong công ty để giảm gánh nặng vận hành.|Decision Making|i|T|n|t|technology|
+レガシーシステム|れがしーしすてむ|Hệ thống cũ (legacy)|レガシーシステムの仕様を知っている社員が、ほとんど残っていません。|Hầu như không còn nhân viên nào biết đặc tả của hệ thống legacy.|Modernization|i|T|n|t|legacy,modernization|
+モダナイゼーション|もだないぜーしょん|Hiện đại hóa hệ thống|メインフレームのモダナイゼーションは、段階的に十年がかりで進めます。|Hiện đại hóa mainframe sẽ được tiến hành từng bước trong mười năm.|Modernization|a|T|n|t|modernization,legacy|
+リプレース|りぷれーす|Thay thế hệ thống (replace)|保守期限が切れるため、来年度にサーバーのリプレースを予定しています。|Vì hết hạn bảo trì nên dự kiến thay thế máy chủ vào năm tài chính tới.|Modernization|i|T|vs|t|replacement|Từ wasei rất hay dùng trong dự án Nhật.
+ベンダーロックイン|べんだーろっくいん|Bị khóa vào nhà cung cấp (vendor lock-in)|特定のクラウド独自機能に頼りすぎると、ベンダーロックインの恐れがあります。|Nếu quá phụ thuộc vào chức năng riêng của một cloud cụ thể sẽ có nguy cơ bị khóa vào nhà cung cấp.|Risk|a|T|n|t|vendor,risk|
+標準規格|ひょうじゅんきかく|Tiêu chuẩn kỹ thuật (standard)|データ形式は業界の標準規格に合わせ、他社との連携を容易にします。|Định dạng dữ liệu theo tiêu chuẩn ngành để dễ liên kết với công ty khác.|Standards|a|N1|n|t|standards|
+アーキテクチャ決定記録|あーきてくちゃけっていきろく|Hồ sơ quyết định kiến trúc (ADR)|なぜこのデータベースを選んだのかを、アーキテクチャ決定記録に残しています。|Lý do chọn cơ sở dữ liệu này được lưu lại trong hồ sơ quyết định kiến trúc.|Architecture Docs|e|T|n|t|adr,documentation|
+設計レビュー|せっけいれびゅー|Review thiết kế|設計レビューには、運用チームの担当者にも参加してもらいます。|Chúng tôi mời cả người phụ trách đội vận hành tham gia review thiết kế.|Review|i|T|n|t|review,design|
+後付け|あとづけ|Thêm vào sau (không tính từ đầu)|セキュリティ対策を後付けで入れると、設計の大幅な見直しが必要になります。|Nếu thêm biện pháp bảo mật vào sau thì cần xem lại thiết kế rất nhiều.|Design Decisions|a|N1|n|n|design,risk|
+スパイクアクセス|すぱいくあくせす|Truy cập tăng đột biến|テレビで紹介された直後のスパイクアクセスに備えて、自動拡張を設定しました。|Để chuẩn bị cho truy cập tăng đột biến ngay sau khi lên TV, chúng tôi đã cài tự động mở rộng.|Capacity|a|T|n|t|capacity,traffic|
+コンテンツ配信ネットワーク|こんてんつはいしんねっとわーく|Mạng phân phối nội dung (CDN)|画像や動画はコンテンツ配信ネットワーク経由で配信しています。|Hình ảnh và video được phân phối thông qua mạng phân phối nội dung.|Infrastructure Design|a|T|n|t|cdn,performance|

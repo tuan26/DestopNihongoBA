@@ -1,0 +1,53 @@
+# category: System Architecture / Design
+# code: arch
+# batch 13 — quality attributes, availability, distributed systems, integration
+システム構成図|しすてむこうせいず|Sơ đồ cấu hình hệ thống|システム構成図に、外部サービスとの通信経路も書き加えてください。|Hãy vẽ thêm cả đường truyền thông với dịch vụ bên ngoài vào sơ đồ cấu hình hệ thống.|Architecture Docs|i|T|n|t|diagram,architecture|
+全体構成|ぜんたいこうせい|Cấu trúc tổng thể|詳細に入る前に、まずシステムの全体構成をご説明します。|Trước khi đi vào chi tiết, tôi xin giải thích cấu trúc tổng thể của hệ thống.|Architecture Docs|i|B|n|t|architecture,overview|
+拡張性|かくちょうせい|Khả năng mở rộng (scalability/extensibility)|将来の利用者増加に備え、拡張性の高い構成を採用しました。|Để chuẩn bị cho lượng người dùng tăng trong tương lai, chúng tôi đã chọn cấu hình có khả năng mở rộng cao.|Quality Attributes|i|T|n|t|scalability,quality|
+可用性|かようせい|Tính sẵn sàng (availability)|可用性の目標は年間稼働率99.9パーセントです。|Mục tiêu tính sẵn sàng là tỷ lệ vận hành năm 99,9 phần trăm.|Quality Attributes|i|T|n|t|availability,quality|
+信頼性|しんらいせい|Độ tin cậy|信頼性を高めるため、重要なデータは書き込み後に検証しています。|Để tăng độ tin cậy, dữ liệu quan trọng được kiểm chứng sau khi ghi.|Quality Attributes|i|N2|n|t|reliability,quality|
+保守運用性|ほしゅうんようせい|Tính dễ bảo trì và vận hành|監視とログの設計は、保守運用性に直結する重要な要素です。|Thiết kế giám sát và log là yếu tố quan trọng gắn trực tiếp với tính dễ bảo trì vận hành.|Quality Attributes|a|T|n|t|operability,quality|
+スループット|するーぷっと|Thông lượng (số xử lý trên đơn vị thời gian)|バッチのスループットを上げるため、一括更新に切り替えました。|Để tăng thông lượng của batch, chúng tôi đã chuyển sang cập nhật hàng loạt.|Performance|a|T|n|t|performance,metric|
+レイテンシ|れいてんし|Độ trễ (latency)|海外拠点からのアクセスはレイテンシが大きいため、拠点の近くにサーバーを置きます。|Truy cập từ chi nhánh nước ngoài có độ trễ lớn nên sẽ đặt máy chủ gần chi nhánh.|Performance|a|T|n|t|performance,network|
+応答時間|おうとうじかん|Thời gian phản hồi|画面の応答時間は、九十五パーセントのリクエストで二秒以内を目標とします。|Thời gian phản hồi màn hình đặt mục tiêu dưới hai giây cho chín mươi lăm phần trăm request.|Performance|i|T|n|t|performance,sla|
+スケールアウト|すけーるあうと|Mở rộng theo chiều ngang (thêm máy)|アクセスが増えた場合は、サーバー台数を増やしてスケールアウトで対応します。|Khi lượng truy cập tăng, sẽ đáp ứng bằng mở rộng ngang tăng số máy chủ.|Scalability|a|T|vs|t|scalability|
+スケールアップ|すけーるあっぷ|Mở rộng theo chiều dọc (nâng cấu hình máy)|データベースはスケールアップで対応し、CPUとメモリを増強しました。|Cơ sở dữ liệu được đáp ứng bằng mở rộng dọc, tăng CPU và bộ nhớ.|Scalability|a|T|vs|t|scalability|
+冗長化|じょうちょうか|Dự phòng hóa (redundancy)|ネットワーク機器も含めて冗長化し、一台の故障でサービスが止まらないようにします。|Dự phòng hóa cả thiết bị mạng để một thiết bị hỏng không làm dừng dịch vụ.|Availability|a|T|vs|t|availability,redundancy|
+単一障害点|たんいつしょうがいてん|Điểm lỗi đơn lẻ (SPOF)|認証サーバーが一台しかなく、単一障害点になっています。|Máy chủ xác thực chỉ có một nên đang là điểm lỗi đơn lẻ.|Availability|e|T|n|t|availability,risk|
+フェイルオーバー|ふぇいるおーばー|Chuyển đổi dự phòng (failover)|主系のサーバーが停止すると、三十秒以内に待機系へフェイルオーバーします。|Khi máy chủ chính dừng, hệ thống sẽ chuyển sang máy dự phòng trong vòng ba mươi giây.|Availability|a|T|n|t|availability,ha|
+フェイルバック|ふぇいるばっく|Quay về máy chính sau failover (failback)|障害が復旧した後、業務時間外にフェイルバックを実施します。|Sau khi sự cố được khắc phục, sẽ thực hiện failback ngoài giờ làm việc.|Availability|e|T|n|t|availability,ha|
+負荷分散|ふかぶんさん|Phân tải (load balancing)|負荷分散によって、特定のサーバーに処理が集中しないようにしています。|Nhờ phân tải mà xử lý không bị dồn vào một máy chủ cụ thể.|Scalability|a|T|n|t|load-balancing|
+ロードバランサー|ろーどばらんさー|Bộ cân bằng tải|ロードバランサーのヘルスチェックで、異常なサーバーを自動的に切り離します。|Health check của load balancer tự động tách các máy chủ bất thường ra.|Infrastructure|a|T|n|t|load-balancing,network|
+二重化|にじゅうか|Nhân đôi (dự phòng hai bộ)|電源と回線を二重化して、データセンターの障害に備えています。|Nguồn điện và đường truyền được nhân đôi để đề phòng sự cố trung tâm dữ liệu.|Availability|a|T|vs|t|redundancy|
+耐障害性|たいしょうがいせい|Khả năng chịu lỗi (fault tolerance)|耐障害性を検証するため、意図的にサーバーを停止する試験を行いました。|Để kiểm chứng khả năng chịu lỗi, chúng tôi đã thử nghiệm cố ý dừng máy chủ.|Availability|e|T|n|t|resilience|
+縮退運転|しゅくたいうんてん|Vận hành suy giảm (giảm chức năng để duy trì dịch vụ)|外部サービスの障害時は、検索機能を止めて縮退運転に切り替えます。|Khi dịch vụ bên ngoài gặp sự cố, sẽ dừng chức năng tìm kiếm và chuyển sang vận hành suy giảm.|Availability|e|T|n|t|resilience,degradation|
+災害対策|さいがいたいさく|Phòng chống thảm họa (DR)|災害対策として、遠隔地のリージョンにバックアップを保管しています。|Để phòng chống thảm họa, bản sao lưu được lưu ở region ở xa.|Disaster Recovery|a|T|n|t|dr,availability|
+事業継続計画|じぎょうけいぞくけいかく|Kế hoạch duy trì kinh doanh (BCP)|事業継続計画に基づき、システムの復旧優先順位を定めました。|Dựa trên kế hoạch duy trì kinh doanh, chúng tôi đã định thứ tự ưu tiên khôi phục hệ thống.|Disaster Recovery|e|B|n|f|bcp,dr|
+目標復旧時間|もくひょうふっきゅうじかん|Thời gian khôi phục mục tiêu (RTO)|基幹システムの目標復旧時間は四時間と定められています。|Thời gian khôi phục mục tiêu của hệ thống lõi được quy định là bốn giờ.|Disaster Recovery|e|T|n|t|rto,dr|
+目標復旧時点|もくひょうふっきゅうじてん|Điểm khôi phục mục tiêu (RPO)|目標復旧時点を一時間とするため、ログを一時間ごとに転送しています。|Để đạt điểm khôi phục mục tiêu là một giờ, log được chuyển đi mỗi giờ.|Disaster Recovery|e|T|n|t|rpo,dr|
+マイクロサービス|まいくろさーびす|Kiến trúc microservices|マイクロサービスにすると、運用の複雑さも増える点に注意が必要です。|Cần chú ý rằng chuyển sang microservices thì độ phức tạp vận hành cũng tăng.|Architecture Styles|a|T|n|t|microservices,architecture|
+モノリシック|ものりしっく|Nguyên khối (monolithic)|現在のシステムはモノリシックな構成で、一部の変更でも全体のデプロイが必要です。|Hệ thống hiện tại có cấu trúc nguyên khối, thay đổi một phần cũng phải deploy toàn bộ.|Architecture Styles|a|T|adj-na|t|monolith,architecture|
+サービス分割|さーびすぶんかつ|Chia tách dịch vụ|サービス分割の単位は、組織の構成と業務の境界を参考に決めました。|Đơn vị chia tách dịch vụ được quyết định dựa trên cơ cấu tổ chức và ranh giới nghiệp vụ.|Architecture Styles|a|T|n|t|microservices,design|
+境界づけられたコンテキスト|きょうかいづけられたこんてきすと|Ngữ cảnh có ranh giới (bounded context, DDD)|「顧客」の意味が部署ごとに異なるため、境界づけられたコンテキストを分けて設計しました。|Vì nghĩa của "khách hàng" khác nhau tùy bộ phận nên chúng tôi tách bounded context khi thiết kế.|Domain-Driven Design|e|T|n|t|ddd,design|
+ドメイン駆動設計|どめいんくどうせっけい|Thiết kế hướng miền (DDD)|業務が複雑な領域には、ドメイン駆動設計の手法を取り入れています。|Với các vùng nghiệp vụ phức tạp, chúng tôi áp dụng phương pháp thiết kế hướng miền.|Domain-Driven Design|e|T|n|t|ddd,design|
+レイヤードアーキテクチャ|れいやーどあーきてくちゃ|Kiến trúc phân lớp|レイヤードアーキテクチャでは、上位の層だけが下位の層に依存します。|Trong kiến trúc phân lớp, chỉ lớp trên phụ thuộc vào lớp dưới.|Architecture Styles|a|T|n|t|architecture,layers|
+クリーンアーキテクチャ|くりーんあーきてくちゃ|Clean Architecture|クリーンアーキテクチャを採用し、業務ロジックをフレームワークから独立させました。|Áp dụng Clean Architecture để logic nghiệp vụ độc lập với framework.|Architecture Styles|e|T|n|t|architecture,design|
+三層構造|さんそうこうぞう|Cấu trúc ba tầng (trình bày – ứng dụng – dữ liệu)|業務システムの多くは、画面・アプリケーション・データベースの三層構造です。|Nhiều hệ thống nghiệp vụ có cấu trúc ba tầng: màn hình, ứng dụng, cơ sở dữ liệu.|Architecture Styles|i|T|n|t|architecture,layers|
+メッセージキュー|めっせーじきゅー|Hàng đợi thông điệp (message queue)|注文データはメッセージキューに入れて、後続のシステムが順番に処理します。|Dữ liệu đơn hàng được đưa vào hàng đợi thông điệp để các hệ thống phía sau xử lý lần lượt.|Integration|a|T|n|t|messaging,async|
+非同期連携|ひどうきれんけい|Liên kết bất đồng bộ (giữa các hệ thống)|相手システムの停止に影響されないよう、非同期連携を採用しました。|Để không bị ảnh hưởng khi hệ thống đối tác dừng, chúng tôi đã chọn liên kết bất đồng bộ.|Integration|a|T|n|t|integration,async|
+システム連携|しすてむれんけい|Liên kết hệ thống|会計システムとのシステム連携は、毎晩のファイル転送で行っています。|Liên kết với hệ thống kế toán được thực hiện bằng chuyển file mỗi đêm.|Integration|i|T|n|t|integration|
+連携方式|れんけいほうしき|Phương thức liên kết|連携方式をファイルにするかAPIにするかで、リアルタイム性が大きく変わります。|Tính thời gian thực thay đổi lớn tùy chọn phương thức liên kết là file hay API.|Integration|a|T|n|t|integration,design|
+ファイル連携|ふぁいるれんけい|Liên kết bằng file|ファイル連携では、ファイルの到着を確認してから取り込み処理を開始します。|Trong liên kết bằng file, việc nhập chỉ bắt đầu sau khi xác nhận file đã đến.|Integration|i|T|n|t|integration,batch|
+API連携|えーぴーあいれんけい|Liên kết qua API|決済サービスとはAPI連携で、支払い結果を即時に受け取ります。|Với dịch vụ thanh toán, chúng tôi liên kết qua API để nhận kết quả thanh toán ngay lập tức.|Integration|i|T|n|t|integration,api|
+APIゲートウェイ|えーぴーあいげーとうぇい|API Gateway (cổng API)|認証とレート制限はAPIゲートウェイでまとめて処理します。|Xác thực và giới hạn tần suất được xử lý tập trung tại API gateway.|Integration|a|T|n|t|api,gateway|
+リバースプロキシ|りばーすぷろきし|Reverse proxy|リバースプロキシで静的ファイルを配信し、アプリサーバーの負荷を下げます。|Phân phối file tĩnh qua reverse proxy để giảm tải cho máy chủ ứng dụng.|Infrastructure|a|T|n|t|network,proxy|
+キャッシュ戦略|きゃっしゅせんりゃく|Chiến lược cache|更新頻度の低いマスタデータは、キャッシュ戦略を工夫して読み込みを減らします。|Với dữ liệu master ít cập nhật, chúng tôi tối ưu chiến lược cache để giảm lượt đọc.|Performance|a|T|n|t|cache,performance|
+分散処理|ぶんさんしょり|Xử lý phân tán|一億件のログ集計は、分散処理の基盤で並列に実行します。|Việc tổng hợp một trăm triệu dòng log được chạy song song trên nền tảng xử lý phân tán.|Distributed Systems|a|T|n|t|distributed,performance|
+分散トランザクション|ぶんさんとらんざくしょん|Giao dịch phân tán|サービス間で分散トランザクションを使う代わりに、補償処理で整合性を保ちます。|Thay vì dùng giao dịch phân tán giữa các dịch vụ, chúng tôi giữ nhất quán bằng xử lý bù trừ.|Distributed Systems|e|T|n|t|distributed,transaction|
+結果整合性|けっかせいごうせい|Nhất quán cuối cùng (eventual consistency)|検索画面への反映は数秒遅れる結果整合性で問題ないと合意しました。|Đã thống nhất rằng việc phản ánh lên màn hình tìm kiếm trễ vài giây theo nhất quán cuối cùng là chấp nhận được.|Distributed Systems|e|T|n|t|consistency,distributed|
+強整合性|きょうせいごうせい|Nhất quán mạnh (strong consistency)|残高のように誤りが許されないデータには、強整合性が求められます。|Với dữ liệu không được phép sai như số dư, cần có nhất quán mạnh.|Distributed Systems|e|T|n|t|consistency|
+サーキットブレーカー|さーきっとぶれーかー|Circuit breaker (ngắt mạch khi dịch vụ lỗi liên tục)|サーキットブレーカーを入れることで、障害が他のサービスに連鎖するのを防ぎます。|Đưa circuit breaker vào để ngăn sự cố lan dây chuyền sang dịch vụ khác.|Resilience Patterns|e|T|n|t|resilience,pattern|
+サービスメッシュ|さーびすめっしゅ|Service mesh|サービス間の通信の暗号化と監視は、サービスメッシュに任せています。|Việc mã hóa và giám sát giao tiếp giữa các dịch vụ được giao cho service mesh.|Distributed Systems|e|T|n|t|microservices,network|
+共通基盤|きょうつうきばん|Nền tảng dùng chung|ログイン機能や帳票出力は、全社の共通基盤として提供しています。|Chức năng đăng nhập và xuất biểu mẫu được cung cấp như nền tảng dùng chung toàn công ty.|Platform|a|B|n|t|platform,reuse|
+方式設計|ほうしきせっけい|Thiết kế phương thức (thiết kế các phương án kỹ thuật nền tảng)|方式設計では、認証、ログ、エラー処理などの共通的な仕組みを決めます。|Trong thiết kế phương thức, chúng tôi quyết định các cơ chế chung như xác thực, log, xử lý lỗi.|Design Phase|e|T|n|t|design,architecture|Thuật ngữ đặc trưng trong dự án SI Nhật.
+技術選定|ぎじゅつせんてい|Lựa chọn công nghệ|技術選定の際は、チームの習熟度とサポート期間も評価しました。|Khi lựa chọn công nghệ, chúng tôi cũng đánh giá mức thành thạo của đội và thời gian hỗ trợ.|Decision Making|a|T|n|t|technology,decision|
