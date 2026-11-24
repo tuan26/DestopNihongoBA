@@ -1,0 +1,44 @@
+# category: BA / Requirement Engineering
+# code: ba
+# batch 04 — modeling, elicitation techniques, compliance, scope phasing
+アクティビティ図|あくてぃびてぃず|Sơ đồ hoạt động (activity diagram)|承認の分岐が分かりやすいように、アクティビティ図で処理の流れを表しました。|Để nhánh phê duyệt dễ hiểu, tôi đã biểu diễn luồng xử lý bằng sơ đồ hoạt động.|Modeling|i|T|n|t|uml,diagram|
+状態遷移図|じょうたいせんいず|Sơ đồ chuyển trạng thái|注文ステータスの状態遷移図を作成し、取消可能なタイミングを明確にしました。|Tôi đã lập sơ đồ chuyển trạng thái của đơn hàng để làm rõ thời điểm có thể hủy.|Modeling|a|T|n|t|uml,state|
+データフロー図|でーたふろーず|Sơ đồ luồng dữ liệu (DFD)|データフロー図を見ると、顧客情報が三つのシステムに重複して保存されています。|Nhìn sơ đồ luồng dữ liệu thì thấy thông tin khách hàng đang được lưu trùng ở ba hệ thống.|Modeling|a|T|n|t|dfd,data|
+概念モデル|がいねんもでる|Mô hình khái niệm (các khái niệm nghiệp vụ và quan hệ)|概念モデルで「契約」と「申込」の関係を整理したところ、認識の違いが解消しました。|Khi sắp xếp quan hệ giữa "hợp đồng" và "đơn đăng ký" bằng mô hình khái niệm, sự khác biệt nhận thức đã được giải quyết.|Modeling|e|T|n|t|modeling,domain|
+業務用語集|ぎょうむようごしゅう|Bảng thuật ngữ nghiệp vụ (glossary)|新しく参加したメンバーには、まず業務用語集を読んでもらっています。|Thành viên mới tham gia được yêu cầu đọc bảng thuật ngữ nghiệp vụ trước tiên.|Documentation|a|B|n|b|glossary,documentation|
+用語の統一|ようごのとういつ|Thống nhất thuật ngữ|「顧客」と「取引先」が混在しているため、用語の統一をお願いします。|Vì "khách hàng" và "đối tác" đang dùng lẫn lộn, xin hãy thống nhất thuật ngữ.|Documentation|i|B|phr|b|glossary,quality|
+真の要求|しんのようきゅう|Nhu cầu thực sự (đằng sau lời yêu cầu bề mặt)|「ボタンを増やしたい」という声の裏にある真の要求は、作業時間の短縮でした。|Nhu cầu thực sự đằng sau ý kiến "muốn thêm nút" là rút ngắn thời gian làm việc.|Elicitation|a|B|n|b|elicitation,analysis|
+本質的な課題|ほんしつてきなかだい|Vấn đề bản chất|画面の改善だけでは本質的な課題の解決にはなりません。|Chỉ cải thiện màn hình thì không giải quyết được vấn đề bản chất.|Analysis|a|N1|phr|b|analysis,root-cause|
+手段の目的化|しゅだんのもくてきか|Biến phương tiện thành mục đích (quên mục tiêu gốc)|ツールの導入自体がゴールになっており、手段の目的化が起きています。|Bản thân việc đưa công cụ vào đã thành mục tiêu, tức là phương tiện đang bị biến thành mục đích.|Analysis|e|N1|phr|f|analysis,pitfall|
+現場観察|げんばかんさつ|Quan sát thực tế tại hiện trường|ヒアリングだけでは分からない手順を、現場観察で把握しました。|Những thao tác không hiểu được chỉ bằng phỏng vấn, chúng tôi đã nắm bắt qua quan sát hiện trường.|Elicitation|a|B|vs|b|elicitation,observation|
+質問票|しつもんひょう|Bảng câu hỏi|事前に質問票を送付し、打ち合わせでは回答の補足を伺います。|Chúng tôi gửi bảng câu hỏi trước, còn trong buổi họp sẽ hỏi bổ sung về câu trả lời.|Elicitation|i|N2|n|b|elicitation,questionnaire|
+QA表|きゅーえーひょう|Bảng hỏi đáp (Q&A) quản lý câu hỏi với khách hàng|仕様の質問はQA表に記入し、回答期限も併せて記載してください。|Câu hỏi về đặc tả hãy ghi vào bảng Q&A, kèm cả hạn trả lời.|Communication|i|B|n|b|qa,offshore,communication|Công cụ trao đổi rất phổ biến giữa offshore và khách hàng Nhật.
+業務シナリオ|ぎょうむしなりお|Kịch bản nghiệp vụ|受け入れテストは、実際の業務シナリオに沿って実施します。|Kiểm thử chấp nhận được thực hiện theo kịch bản nghiệp vụ thực tế.|Business Process|i|B|n|b|scenario,testing|
+利用シーン|りようしーん|Tình huống sử dụng|外出先からの承認という利用シーンを想定し、スマートフォン対応を検討します。|Giả định tình huống phê duyệt khi đang ở ngoài, chúng tôi xem xét hỗ trợ điện thoại thông minh.|Elicitation|i|B|n|b|scenario,ux|
+運用イメージ|うんよういめーじ|Hình dung về cách vận hành|リリース後の運用イメージをすり合わせておかないと、問い合わせ窓口が決まりません。|Nếu không thống nhất hình dung vận hành sau phát hành thì không quyết định được đầu mối hỗ trợ.|Operation|i|B|n|b|operation,alignment|
+ペルソナ|ぺるそな|Persona — chân dung người dùng tiêu biểu|主なペルソナを三名設定し、それぞれの操作頻度を整理しました。|Chúng tôi thiết lập ba persona chính và sắp xếp tần suất thao tác của từng người.|UX|i|T|n|t|ux,persona|
+外部インターフェース|がいぶいんたーふぇーす|Giao diện với hệ thống bên ngoài|外部インターフェースの項目一覧は、相手システムの担当者と共同で作成します。|Danh sách trường của giao diện bên ngoài được lập chung với người phụ trách hệ thống đối tác.|Integration|a|T|n|t|interface,integration|
+連携先システム|れんけいさきしすてむ|Hệ thống được liên kết (hệ thống đối tác kết nối)|連携先システムの停止時間帯には、データ送信を保留する仕組みが必要です。|Cần có cơ chế tạm giữ việc gửi dữ liệu trong khung giờ hệ thống liên kết ngừng hoạt động.|Integration|a|B|n|t|integration|
+帳票出力|ちょうひょうしゅつりょく|Xuất biểu mẫu / báo cáo|帳票出力はPDF形式とし、印刷は利用者側で行う運用とします。|Xuất biểu mẫu sẽ ở dạng PDF, việc in do phía người dùng tự thực hiện.|Output|i|B|vs|b|report,output|
+画面レイアウト|がめんれいあうと|Bố cục màn hình|画面レイアウトは既存システムに合わせ、利用者の戸惑いを減らします。|Bố cục màn hình sẽ theo hệ thống cũ để giảm bỡ ngỡ cho người dùng.|UI Requirement|i|B|n|b|ui,layout|
+操作性|そうさせい|Tính dễ thao tác|入力件数が多い画面なので、マウスを使わずに済む操作性が求められています。|Vì là màn hình nhập nhiều nên cần tính dễ thao tác không phải dùng chuột.|Non-functional|i|B|n|b|usability,ux|
+使い勝手|つかいがって|Sự tiện dụng khi dùng|機能は揃っていても、使い勝手が悪いと現場に定着しません。|Dù đủ chức năng nhưng nếu khó dùng thì sẽ không được hiện trường chấp nhận.|UX|i|N2|n|n|usability,ux|
+運用負荷|うんようふか|Gánh nặng vận hành|手動での再実行が多いと、情報システム部門の運用負荷が高まります。|Nếu phải chạy lại thủ công nhiều thì gánh nặng vận hành của bộ phận IT sẽ tăng.|Operation|a|B|n|b|operation,cost|
+改善要望|かいぜんようぼう|Đề nghị cải tiến|稼働後に寄せられた改善要望は、四半期ごとにまとめて対応を検討します。|Các đề nghị cải tiến nhận được sau khi vận hành sẽ được tổng hợp mỗi quý để xem xét xử lý.|Change Management|i|B|n|b|improvement,feedback|
+導入目的|どうにゅうもくてき|Mục đích triển khai|迷ったときは、システムの導入目的に立ち返って判断しましょう。|Khi phân vân, hãy quay về mục đích triển khai hệ thống để quyết định.|Business Case|i|B|n|b|goal,business-case|
+成功基準|せいこうきじゅん|Tiêu chí thành công|プロジェクトの成功基準を、処理時間の三割削減と定めました。|Chúng tôi xác định tiêu chí thành công của dự án là giảm ba mươi phần trăm thời gian xử lý.|Business Case|a|B|n|b|goal,metric|
+評価指標|ひょうかしひょう|Chỉ số đánh giá|導入効果を測る評価指標として、問い合わせ件数を採用します。|Chúng tôi dùng số lượng câu hỏi hỗ trợ làm chỉ số đánh giá hiệu quả triển khai.|Business Case|a|B|n|b|metric,kpi|
+次期フェーズ|じきふぇーず|Giai đoạn tiếp theo|分析機能は次期フェーズで対応することで合意しました。|Đã thống nhất rằng chức năng phân tích sẽ được đáp ứng ở giai đoạn tiếp theo.|Scope|i|B|n|b|scope,phase|
+段階的導入|だんかいてきどうにゅう|Triển khai theo từng giai đoạn|全拠点一斉ではなく、本社から段階的導入を行う計画です。|Kế hoạch là triển khai theo giai đoạn bắt đầu từ trụ sở chính, không phải đồng loạt tất cả chi nhánh.|Rollout|a|B|n|b|rollout,phase|
+暫定運用|ざんていうんよう|Vận hành tạm thời|正式な機能が完成するまでは、表計算ソフトでの暫定運用とします。|Cho đến khi chức năng chính thức hoàn thành, sẽ vận hành tạm thời bằng phần mềm bảng tính.|Operation|a|B|n|b|operation,workaround|
+運用回避|うんようかいひ|Né tránh bằng vận hành (giải quyết bằng quy trình thay vì sửa hệ thống)|この不具合は発生頻度が低いため、修正せずに運用回避で対応する方針です。|Lỗi này tần suất thấp nên phương châm là không sửa mà xử lý bằng cách né tránh qua vận hành.|Operation|e|B|n|b|operation,workaround|Cụm đặc trưng trong dự án Nhật; cần thống nhất rõ với khách hàng.
+システム化範囲|しすてむかはんい|Phạm vi hệ thống hóa|システム化範囲を広げすぎると、予算内での完成が難しくなります。|Nếu mở rộng phạm vi hệ thống hóa quá mức thì khó hoàn thành trong ngân sách.|Scope|i|B|n|b|scope|
+業務改革|ぎょうむかいかく|Cải cách nghiệp vụ (BPR)|単なるシステム更改ではなく、業務改革まで踏み込むかどうかが論点です。|Điểm cần bàn là có tiến tới cải cách nghiệp vụ hay chỉ thay mới hệ thống.|Business Improvement|a|B|n|b|bpr,improvement|
+法令対応|ほうれいたいおう|Đáp ứng quy định pháp luật|法令対応の案件は期限が決まっているため、最優先で進めます。|Các hạng mục đáp ứng luật có thời hạn cố định nên sẽ được tiến hành ưu tiên nhất.|Compliance|a|B|n|f|compliance,law|
+内部統制|ないぶとうせい|Kiểm soát nội bộ|内部統制の観点から、登録者と承認者は別の人にする必要があります。|Từ góc độ kiểm soát nội bộ, người đăng ký và người phê duyệt phải là hai người khác nhau.|Compliance|e|B|n|f|compliance,audit|
+職務分掌|しょくむぶんしょう|Phân định chức trách (phân chia nhiệm vụ, quyền hạn)|職務分掌に基づいて、画面ごとの操作権限を設定します。|Thiết lập quyền thao tác cho từng màn hình dựa trên phân định chức trách.|Compliance|e|B|n|f|compliance,authorization|
+電子帳簿保存法|でんしちょうぼほぞんほう|Luật lưu trữ sổ sách điện tử (Nhật Bản)|電子帳簿保存法に対応するため、請求書データの検索機能を追加します。|Để tuân thủ luật lưu trữ sổ sách điện tử, chúng tôi bổ sung chức năng tìm kiếm dữ liệu hóa đơn.|Compliance|e|B|n|f|compliance,law,japan|Hay xuất hiện trong dự án kế toán Nhật từ 2022.
+インボイス制度|いんぼいすせいど|Chế độ hóa đơn hợp lệ (invoice system của Nhật, từ 10/2023)|インボイス制度の開始に伴い、請求書に登録番号を印字する改修が必要です。|Cùng với việc bắt đầu chế độ hóa đơn hợp lệ, cần sửa để in mã số đăng ký lên hóa đơn.|Compliance|e|B|n|f|compliance,tax,japan|
+要件がぶれる|ようけんがぶれる|Yêu cầu bị dao động, thay đổi liên tục|要件がぶれないように、判断の基準となる目的を最初に共有しました。|Để yêu cầu không bị dao động, chúng tôi đã chia sẻ trước mục đích làm tiêu chí phán đoán.|Change Management|a|B|exp|n|change,risk|ぶれる = rung lắc, không ổn định.
+現場の声|げんばのこえ|Tiếng nói từ hiện trường (ý kiến người dùng thực tế)|画面の改善案は、現場の声をもとに優先順位を決めました。|Phương án cải tiến màn hình được xếp ưu tiên dựa trên tiếng nói từ hiện trường.|Elicitation|i|B|phr|n|feedback,elicitation|
+発散と収束|はっさんとしゅうそく|Mở rộng ý tưởng rồi thu hẹp lại (diverge & converge)|ワークショップでは、発散と収束の時間を分けて進行します。|Trong workshop, chúng tôi tách riêng thời gian mở rộng ý tưởng và thời gian thu hẹp.|Meeting|e|B|phr|b|facilitation,meeting|

@@ -1,0 +1,199 @@
+{
+ "generated_at": "2026-11-24",
+ "source": "JMdict (Electronic Dictionary Research and Development Group, CC BY-SA 4.0) via jamdict-data, JMdict v1.08",
+ "scope": "headword + reading existence only; Vietnamese meaning and examples not verified",
+ "counts": {
+  "not-found": 28,
+  "headword+reading": 19
+ },
+ "results": {
+  "要件定義": {
+   "match": "not-found",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "要求定義": {
+   "match": "not-found",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "業務要件": {
+   "match": "not-found",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "機能要件": {
+   "match": "not-found",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "非機能要件": {
+   "match": "not-found",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "認識合わせ": {
+   "match": "not-found",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "認識齟齬": {
+   "match": "not-found",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "認識ずれ": {
+   "match": "not-found",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "すり合わせ": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ヒアリング": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "洗い出し": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "落とし込む": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "現状分析": {
+   "match": "not-found",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "現行業務": {
+   "match": "not-found",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "あるべき姿": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "業務フロー": {
+   "match": "not-found",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "前提条件": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "制約条件": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "対象範囲": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "スコープ外": {
+   "match": "not-found",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "優先順位付け": {
+   "match": "not-found",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "必須要件": {
+   "match": "not-found",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "実現可能性": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "妥当性": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "網羅性": {
+   "match": "not-found",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "整合性": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "トレーサビリティ": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "要件定義書": {
+   "match": "not-found",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "基本設計書": {
+   "match": "not-found",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "詳細設計書": {
+   "match": "not-found",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "外部設計": {
+   "match": "not-found",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "内部設計": {
+   "match": "not-found",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "画面遷移図": {
+   "match": "not-found",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "画面項目定義書": {
+   "match": "not-found",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "帳票": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "業務ルール": {
+   "match": "not-found",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "例外フロー": {
+   "match": "not-found",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ユースケース": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "利害関係者": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "関係部署": {
+   "match": "not-found",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "主管部門": {
+   "match": "not-found",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "キーマン": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "決裁者": {
+   "match": "not-found",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "承認フロー": {
+   "match": "not-found",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "合意形成": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "言語化": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "可視化": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  }
+ }
+}

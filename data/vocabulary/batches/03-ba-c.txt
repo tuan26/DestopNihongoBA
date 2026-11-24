@@ -1,0 +1,49 @@
+# category: BA / Requirement Engineering
+# code: ba
+# batch 03 — elicitation nuance, screen/data items, business operations
+ワイヤーフレーム|わいやーふれーむ|Wireframe — bản phác bố cục màn hình|デザインに入る前に、ワイヤーフレームで画面の要素配置を合意しましょう。|Trước khi vào thiết kế giao diện, hãy thống nhất cách bố trí thành phần màn hình bằng wireframe.|UI Requirement|i|T|n|t|ui,prototype|
+画面モック|がめんもっく|Mock màn hình (bản dựng thử giao diện)|画面モックを触ってもらったところ、入力順序に関する要望が出ました。|Khi cho khách hàng thao tác thử mock màn hình, đã phát sinh yêu cầu về thứ tự nhập.|UI Requirement|i|T|n|t|ui,prototype|
+要件一覧|ようけんいちらん|Danh sách yêu cầu|要件一覧に優先度と対応フェーズの列を追加しました。|Tôi đã thêm cột độ ưu tiên và giai đoạn đáp ứng vào danh sách yêu cầu.|Requirement Management|i|B|n|b|requirement,documentation|
+取捨選択|しゅしゃせんたく|Chọn lọc (giữ cái cần, bỏ cái không cần)|限られた予算の中で、要望の取捨選択をお願いすることになります。|Trong phạm vi ngân sách có hạn, chúng tôi sẽ phải nhờ quý khách chọn lọc các mong muốn.|Prioritization|a|N1|vs|f|priority,decision|Thành ngữ 4 chữ.
+課題感|かだいかん|Cảm nhận về vấn đề (điều người dùng thấy là khó khăn)|現場の課題感を把握するため、まずは自由に話していただきました。|Để nắm được cảm nhận về vấn đề ở hiện trường, trước tiên chúng tôi để họ nói tự do.|Elicitation|a|B|n|b|elicitation,pain-point|Từ business hiện đại, gần nghĩa "pain point".
+潜在ニーズ|せんざいにーず|Nhu cầu tiềm ẩn|ユーザーの操作ログを分析すると、潜在ニーズが見えてくることがあります。|Khi phân tích log thao tác của người dùng, đôi khi sẽ thấy được nhu cầu tiềm ẩn.|Elicitation|a|B|n|b|elicitation,analysis|Đối lập: 顕在ニーズ.
+顕在化|けんざいか|Lộ rõ ra / hiện thực hóa (vấn đề vốn tiềm ẩn)|データ量が増えたことで、以前からの性能問題が顕在化しました。|Do lượng dữ liệu tăng nên vấn đề hiệu năng vốn có từ trước đã lộ rõ.|Analysis|e|N1|vs|f|risk,analysis|Thường dùng: リスクが顕在化する.
+暗黙知|あんもくち|Tri thức ngầm (kinh nghiệm chưa được văn bản hóa)|ベテラン社員の暗黙知をルールとして明文化する必要があります。|Cần văn bản hóa tri thức ngầm của nhân viên kỳ cựu thành quy tắc.|Knowledge|e|N1|n|f|knowledge,elicitation|Đối lập: 形式知.
+形式知|けいしきち|Tri thức hiện (đã được văn bản hóa, chia sẻ được)|業務マニュアルを整備し、ノウハウを形式知に変えていきます。|Chúng tôi sẽ hoàn thiện sổ tay nghiệp vụ và chuyển know-how thành tri thức hiện.|Knowledge|e|N1|n|f|knowledge|
+曖昧さを排除する|あいまいさをはいじょする|Loại bỏ sự mơ hồ|仕様書では「など」や「適宜」を避け、曖昧さを排除するよう心がけます。|Trong tài liệu đặc tả, chúng tôi cố gắng tránh "v.v." hay "tùy lúc" để loại bỏ sự mơ hồ.|Documentation|a|B|phr|b|documentation,quality|
+解釈の相違|かいしゃくのそうい|Sự khác biệt trong cách diễn giải|契約書の文言に解釈の相違があったため、法務部に確認しました。|Vì có sự khác biệt trong cách diễn giải câu chữ hợp đồng nên chúng tôi đã hỏi bộ phận pháp chế.|Communication|a|N1|phr|f|communication,risk|
+言った言わない|いったいわない|Tranh cãi "đã nói hay chưa nói" (do không có ghi chép)|言った言わないの議論にならないよう、決定事項は必ずメールで残します。|Để không rơi vào tranh cãi đã nói hay chưa, nội dung quyết định nhất định phải lưu lại bằng email.|Communication|a|B|exp|n|communication,risk|Lý do điển hình để viết 議事録.
+後出し|あとだし|Đưa ra sau (yêu cầu/điều kiện nêu ra muộn)|テスト中に後出しで条件を追加されると、スケジュールが守れません。|Nếu điều kiện bị bổ sung muộn trong lúc kiểm thử thì không thể giữ được tiến độ.|Change Management|a|B|n|n|change,risk|Sắc thái tiêu cực, dùng cẩn thận với khách hàng.
+仕様確定|しようかくてい|Chốt đặc tả|仕様確定が遅れているため、開発着手日を一週間ずらします。|Vì việc chốt đặc tả bị chậm nên ngày bắt đầu phát triển sẽ lùi một tuần.|Requirement Management|i|B|vs|b|specification,schedule|
+未確定事項|みかくていじこう|Các mục chưa được chốt|未確定事項が残ったまま設計に入る場合は、前提を明記してください。|Nếu bước vào thiết kế khi vẫn còn mục chưa chốt, hãy ghi rõ giả định.|Requirement Management|a|B|n|b|specification,risk|
+別途協議|べっとぎょうぎ|Thảo luận riêng sau (để xác định sau)|保守費用については別途協議とさせていただければと存じます。|Về chi phí bảo trì, chúng tôi xin phép được thảo luận riêng sau.|Negotiation|a|B|n|f|negotiation,contract|Cụm hay xuất hiện trong báo giá/hợp đồng.
+想定外|そうていがい|Ngoài dự kiến|想定外の入力値が来た場合でも、システムが停止しないようにしてください。|Ngay cả khi nhận giá trị nhập ngoài dự kiến, hãy đảm bảo hệ thống không bị dừng.|Analysis|i|N2|adj-na|n|risk,exception|
+業務分析|ぎょうむぶんせき|Phân tích nghiệp vụ|業務分析の結果を踏まえて、システム化の範囲を提案します。|Dựa trên kết quả phân tích nghiệp vụ, chúng tôi sẽ đề xuất phạm vi hệ thống hóa.|Business Analysis|i|B|vs|b|analysis,ba|
+要件分析|ようけんぶんせき|Phân tích yêu cầu|要件分析では、要望同士の矛盾がないかも確認します。|Trong phân tích yêu cầu, chúng tôi cũng kiểm tra xem các mong muốn có mâu thuẫn nhau không.|Requirement Definition|i|B|vs|b|analysis,requirement|
+業務設計|ぎょうむせっけい|Thiết kế nghiệp vụ (quy trình sau khi có hệ thống mới)|システム設計と並行して、新しい運用に合わせた業務設計も進めます。|Song song với thiết kế hệ thống, chúng tôi cũng tiến hành thiết kế nghiệp vụ phù hợp với vận hành mới.|Business Process|a|B|vs|b|process,design|
+業務マニュアル|ぎょうむまにゅある|Sổ tay nghiệp vụ|リリースに合わせて、利用者向けの業務マニュアルを改訂します。|Chúng tôi sẽ sửa đổi sổ tay nghiệp vụ dành cho người dùng cùng thời điểm phát hành.|Documentation|i|B|n|b|documentation,manual|
+業務量|ぎょうむりょう|Khối lượng công việc nghiệp vụ|繁忙期の業務量を把握するため、月別の処理件数を提供いただけますか。|Để nắm khối lượng công việc mùa cao điểm, anh/chị có thể cung cấp số lượng xử lý theo tháng không?|Business Analysis|i|B|n|b|volume,analysis|
+処理件数|しょりけんすう|Số lượng (bản ghi, giao dịch) được xử lý|一日あたりの処理件数は、ピーク時で約十万件を想定しています。|Số lượng xử lý mỗi ngày dự kiến khoảng một trăm nghìn vào lúc cao điểm.|Non-functional|i|B|n|t|volume,performance|
+月次処理|げつじしょり|Xử lý định kỳ hàng tháng|月次処理が終わるまでは、前月分のデータを修正できません。|Cho đến khi xử lý hàng tháng kết thúc, không thể sửa dữ liệu của tháng trước.|Business Process|i|B|n|b|batch,schedule|Tương tự: 日次処理, 年次処理.
+締め処理|しめしょり|Xử lý chốt sổ (khóa số liệu cuối kỳ)|締め処理の後に発生した訂正は、翌月に調整として計上します。|Các chỉnh sửa phát sinh sau khi chốt sổ sẽ được ghi nhận như điều chỉnh vào tháng sau.|Business Process|a|B|n|b|accounting,batch|
+承認権限|しょうにんけんげん|Quyền phê duyệt|百万円を超える発注は、部長以上の承認権限が必要です。|Đơn đặt hàng trên một triệu yên cần quyền phê duyệt từ cấp trưởng phòng trở lên.|Business Rules|i|B|n|b|approval,authorization|
+入力項目|にゅうりょくこうもく|Trường nhập liệu|入力項目が多すぎるという意見があったため、任意の項目を折りたたみ表示にしました。|Vì có ý kiến cho rằng có quá nhiều trường nhập, chúng tôi đã cho các trường tùy chọn hiển thị thu gọn.|UI Requirement|i|B|n|b|ui,form|
+必須項目|ひっすこうもく|Trường bắt buộc|必須項目が未入力のまま登録ボタンを押すと、エラーを表示します。|Nếu nhấn nút đăng ký khi trường bắt buộc chưa nhập thì sẽ hiển thị lỗi.|UI Requirement|i|B|n|b|ui,validation|
+任意項目|にんいこうもく|Trường không bắt buộc (tùy chọn)|備考欄は任意項目なので、空欄でも登録できます。|Ô ghi chú là trường tùy chọn nên để trống vẫn đăng ký được.|UI Requirement|i|B|n|b|ui,form|
+初期表示|しょきひょうじ|Hiển thị ban đầu (trạng thái khi mở màn hình)|初期表示では、ログインユーザーの所属部署で絞り込んだ一覧を表示します。|Khi hiển thị ban đầu, danh sách được lọc theo phòng ban của người dùng đăng nhập.|UI Requirement|i|B|n|b|ui,behavior|
+非活性|ひかっせい|Trạng thái vô hiệu (disabled, không thao tác được)|承認済みのデータでは、更新ボタンを非活性にしてください。|Với dữ liệu đã phê duyệt, hãy để nút cập nhật ở trạng thái vô hiệu.|UI Requirement|a|T|n|t|ui,state|Đối lập: 活性. Từ đặc trưng trong thiết kế màn hình Nhật.
+プルダウン|ぷるだうん|Danh sách thả xuống (dropdown)|都道府県はプルダウンから選択する形式に変更します。|Tỉnh/thành sẽ được đổi sang dạng chọn từ danh sách thả xuống.|UI Requirement|i|T|n|t|ui,control|Người Nhật hay gọi dropdown là プルダウン.
+メッセージ定義|めっせーじていぎ|Định nghĩa thông báo (danh sách message của hệ thống)|エラー文言はメッセージ定義にまとめ、画面ごとに直書きしないでください。|Hãy gom câu thông báo lỗi vào định nghĩa message, đừng viết trực tiếp ở từng màn hình.|UI Requirement|a|T|n|t|ui,message|
+項目定義|こうもくていぎ|Định nghĩa trường (tên, kiểu, độ dài, quy tắc)|項目定義に桁数の記載がないため、データベース設計と照合しました。|Vì định nghĩa trường không ghi số chữ số nên chúng tôi đã đối chiếu với thiết kế cơ sở dữ liệu.|Documentation|a|T|n|t|data,documentation|
+コード値|こーどち|Giá trị mã (code value đại diện cho phân loại)|ステータスはコード値で保持し、画面には名称を表示します。|Trạng thái được lưu bằng giá trị mã, còn trên màn hình hiển thị tên.|Data Definition|a|T|n|t|data,code|
+区分値|くぶんち|Giá trị phân loại (ví dụ 1: cá nhân, 2: doanh nghiệp)|顧客区分の区分値に「3:官公庁」を追加する必要があります。|Cần bổ sung "3: cơ quan nhà nước" vào giá trị phân loại khách hàng.|Data Definition|a|T|n|t|data,code|
+業務日付|ぎょうむひづけ|Ngày nghiệp vụ (ngày hệ thống dùng cho xử lý, có thể khác ngày thực)|夜間バッチは日付が変わっても前日の業務日付で処理します。|Batch đêm vẫn xử lý theo ngày nghiệp vụ của hôm trước dù đã sang ngày mới.|Business Rules|e|T|n|t|batch,date|Khái niệm đặc trưng trong hệ thống tài chính, ngân hàng.
+要件漏れ|ようけんもれ|Bỏ sót yêu cầu|受け入れテストで要件漏れが見つかり、追加開発が必要になりました。|Phát hiện bỏ sót yêu cầu trong kiểm thử chấp nhận nên cần phát triển bổ sung.|Requirement Management|i|B|n|b|risk,quality|
+考慮漏れ|こうりょもれ|Thiếu sót trong cân nhắc (quên xét một trường hợp)|月末が休日の場合の考慮漏れがあり、締め日の計算が誤っていました。|Có thiếu sót khi không xét trường hợp cuối tháng là ngày nghỉ nên tính ngày chốt bị sai.|Analysis|a|B|n|b|risk,quality|
+抜け漏れ|ぬけもれ|Thiếu sót, bỏ sót|チェックリストを使って、設計書の記載に抜け漏れがないか確認します。|Dùng checklist để kiểm tra nội dung tài liệu thiết kế có thiếu sót không.|Quality|i|B|n|b|quality,review|Collocation: 抜け漏れなく.
+漏れなくダブりなく|もれなくだぶりなく|Không bỏ sót, không trùng lặp (MECE)|課題を漏れなくダブりなく分類するために、まず切り口を決めましょう。|Để phân loại vấn đề không bỏ sót không trùng lặp, trước hết hãy quyết định góc phân tích.|Analysis|a|B|exp|b|mece,analysis|Cách nói tiếng Nhật của MECE.
+仮説検証|かせつけんしょう|Kiểm chứng giả thuyết|小さく試して仮説検証を繰り返しながら、要件を固めていきます。|Chúng tôi chốt dần yêu cầu bằng cách thử nhỏ và lặp lại kiểm chứng giả thuyết.|Analysis|a|B|vs|b|hypothesis,agile|
+ユーザー部門|ゆーざーぶもん|Bộ phận người dùng (bộ phận nghiệp vụ sử dụng hệ thống)|ユーザー部門の代表者に受け入れテストへの参加をお願いしました。|Chúng tôi đã nhờ đại diện bộ phận người dùng tham gia kiểm thử chấp nhận.|Stakeholder|i|B|n|b|stakeholder,organization|
+情報システム部門|じょうほうしすてむぶもん|Bộ phận hệ thống thông tin (IT nội bộ của khách hàng)|情報システム部門の方針で、クラウドサービスの利用には事前審査が必要です。|Theo chính sách của bộ phận hệ thống thông tin, việc dùng dịch vụ cloud cần thẩm định trước.|Stakeholder|i|B|n|b|stakeholder,organization|Thường gọi tắt: 情シス.
+要求仕様|ようきゅうしよう|Đặc tả yêu cầu|要求仕様が曖昧なまま見積もると、後で大きな差異が出ます。|Nếu báo giá khi đặc tả yêu cầu còn mơ hồ thì sau này sẽ phát sinh chênh lệch lớn.|Requirement Definition|a|T|n|t|specification,requirement|
+合意済み|ごういずみ|Đã được thống nhất|この画面レイアウトは前回の定例で合意済みです。|Bố cục màn hình này đã được thống nhất ở buổi họp định kỳ lần trước.|Meeting|i|B|n|b|agreement,status|
