@@ -1,0 +1,43 @@
+# category: Database / Data Engineering
+# code: db
+# batch 16 — migration, data quality, replication, analytics
+データ移行|でーたいこう|Chuyển đổi dữ liệu (data migration)|データ移行のリハーサルを三回行い、所要時間と件数を確認しました。|Chúng tôi đã diễn tập chuyển đổi dữ liệu ba lần để xác nhận thời gian cần và số bản ghi.|Data Migration|i|T|n|t|migration|
+洗い替え|あらいがえ|Thay toàn bộ (xóa hết rồi nạp lại dữ liệu)|商品マスタは差分ではなく、毎晩全件洗い替えで更新しています。|Master sản phẩm được cập nhật bằng cách thay toàn bộ mỗi đêm thay vì chỉ phần chênh lệch.|Data Migration|e|T|n|t|batch,load|Thuật ngữ đặc trưng của Nhật.
+差分更新|さぶんこうしん|Cập nhật phần chênh lệch (incremental)|件数が増えたため、全件更新から差分更新に切り替えました。|Vì số bản ghi tăng nên đã chuyển từ cập nhật toàn bộ sang cập nhật phần chênh lệch.|Data Migration|a|T|n|t|batch,incremental|
+一括登録|いっかつとうろく|Đăng ký hàng loạt|社員情報はCSVファイルから一括登録できます。|Thông tin nhân viên có thể đăng ký hàng loạt từ file CSV.|Data Loading|i|T|vs|t|bulk,import|
+バルクインサート|ばるくいんさーと|Chèn hàng loạt (bulk insert)|一件ずつの登録をバルクインサートに変えて、移行時間を大幅に短縮しました。|Đổi việc đăng ký từng dòng sang bulk insert, thời gian chuyển đổi đã giảm đáng kể.|Data Loading|a|T|n|t|bulk,performance|
+データクレンジング|でーたくれんじんぐ|Làm sạch dữ liệu|移行前のデータクレンジングで、無効な住所を五千件修正しました。|Trong quá trình làm sạch dữ liệu trước chuyển đổi, đã sửa năm nghìn địa chỉ không hợp lệ.|Data Quality|a|T|n|t|data-quality,migration|
+名寄せ|なよせ|Gộp bản ghi trùng của cùng một đối tượng (entity resolution)|表記ゆれのある顧客データを名寄せして、一人の顧客として管理します。|Gộp các dữ liệu khách hàng ghi khác nhau để quản lý như một khách hàng.|Data Quality|e|T|vs|t|data-quality,deduplication|表記ゆれ = cách viết không thống nhất.
+重複排除|ちょうふくはいじょ|Loại bỏ trùng lặp|取り込み時に重複排除を行い、同じ明細が二重に計上されないようにします。|Khi nhập sẽ loại bỏ trùng lặp để cùng một chi tiết không bị ghi nhận hai lần.|Data Quality|a|T|n|t|deduplication|
+データ品質|でーたひんしつ|Chất lượng dữ liệu|分析の結果が信頼できるかどうかは、データ品質に左右されます。|Kết quả phân tích có đáng tin hay không phụ thuộc vào chất lượng dữ liệu.|Data Quality|i|T|n|t|data-quality|
+マスタデータ|ますたでーた|Dữ liệu master (dữ liệu danh mục ít thay đổi)|マスタデータの変更は承認制にして、誤登録を防いでいます。|Thay đổi dữ liệu master phải qua phê duyệt để tránh đăng ký sai.|Data Categories|i|T|n|t|master-data|
+トランザクションデータ|とらんざくしょんでーた|Dữ liệu giao dịch (phát sinh hằng ngày)|トランザクションデータは毎日十万件ずつ増えていきます。|Dữ liệu giao dịch tăng thêm một trăm nghìn bản ghi mỗi ngày.|Data Categories|a|T|n|t|data,volume|
+履歴管理|りれきかんり|Quản lý lịch sử (các phiên bản dữ liệu theo thời gian)|価格の履歴管理を行い、過去の注文には当時の価格を表示します。|Quản lý lịch sử giá để hiển thị giá tại thời điểm đó cho các đơn hàng cũ.|Data Modeling|a|T|n|t|history,modeling|
+変更履歴|へんこうりれき|Lịch sử thay đổi|誰がいつ何を変えたのかを、変更履歴テーブルで追跡できます。|Có thể truy vết ai đã thay đổi gì và khi nào bằng bảng lịch sử thay đổi.|Data Modeling|i|T|n|t|history,audit|
+リストア|りすとあ|Khôi phục (restore) dữ liệu từ bản sao lưu|月に一度、バックアップからのリストア手順を実際に試しています。|Mỗi tháng một lần, chúng tôi thực tế thử thủ tục khôi phục từ bản sao lưu.|Backup & Recovery|i|T|vs|t|backup,recovery|
+ポイントインタイムリカバリ|ぽいんといんたいむりかばり|Khôi phục về thời điểm cụ thể (PITR)|誤って削除したデータは、ポイントインタイムリカバリで削除直前の状態に戻せます。|Dữ liệu bị xóa nhầm có thể đưa về trạng thái ngay trước khi xóa bằng PITR.|Backup & Recovery|e|T|n|t|backup,recovery|
+レプリケーション|れぷりけーしょん|Sao chép dữ liệu (replication)|レプリケーションの遅延が大きくなると、参照画面に古いデータが表示されます。|Khi độ trễ sao chép lớn, màn hình tham chiếu sẽ hiển thị dữ liệu cũ.|Replication|a|T|n|t|replication,availability|
+読み取りレプリカ|よみとりれぷりか|Bản sao chỉ đọc (read replica)|帳票の出力は読み取りレプリカで行い、本番の負荷を減らします。|Việc xuất biểu mẫu được chạy trên bản sao chỉ đọc để giảm tải cho production.|Replication|a|T|n|t|replication,performance|
+シャーディング|しゃーでぃんぐ|Phân mảnh dữ liệu ngang (sharding)|会員数が一億を超えたため、地域ごとにシャーディングしました。|Vì số hội viên vượt một trăm triệu nên đã sharding theo khu vực.|Scalability|e|T|n|t|scalability,partition|
+パーティショニング|ぱーてぃしょにんぐ|Phân vùng bảng (partitioning)|ログテーブルを月単位でパーティショニングし、古い月はまとめて削除します。|Bảng log được phân vùng theo tháng, các tháng cũ bị xóa gộp một lần.|Scalability|e|T|n|t|partition,performance|
+データウェアハウス|でーたうぇあはうす|Kho dữ liệu (data warehouse)|各システムのデータをデータウェアハウスに集約し、経営分析に使います。|Dữ liệu các hệ thống được tập trung vào kho dữ liệu để dùng cho phân tích kinh doanh.|Analytics|a|T|n|t|dwh,analytics|
+データレイク|でーたれいく|Hồ dữ liệu (data lake)|加工前のログはそのままデータレイクに保存しておきます。|Log chưa xử lý được lưu nguyên dạng vào hồ dữ liệu.|Analytics|a|T|n|t|data-lake,analytics|
+データマート|でーたまーと|Data mart (kho dữ liệu chuyên đề cho một bộ phận)|営業部向けのデータマートを作成し、売上分析を高速化しました。|Chúng tôi tạo data mart cho phòng kinh doanh để tăng tốc phân tích doanh thu.|Analytics|e|T|n|t|analytics,dwh|
+ETL処理|いーてぃーえるしょり|Xử lý ETL (trích xuất – biến đổi – nạp)|ETL処理の失敗で、朝のダッシュボードが更新されていませんでした。|Do xử lý ETL thất bại, dashboard buổi sáng đã không được cập nhật.|Data Pipeline|a|T|n|t|etl,pipeline|
+データパイプライン|でーたぱいぷらいん|Đường ống dữ liệu (data pipeline)|データパイプラインの各段階で件数を記録し、欠損を検知します。|Ghi số bản ghi ở từng giai đoạn của data pipeline để phát hiện thiếu hụt.|Data Pipeline|a|T|n|t|pipeline|
+ストリーム処理|すとりーむしょり|Xử lý luồng (stream processing)|不正利用の検知は、ストリーム処理でリアルタイムに行っています。|Việc phát hiện sử dụng gian lận được thực hiện theo thời gian thực bằng xử lý luồng.|Data Pipeline|e|T|n|t|streaming,realtime|
+スキーマ変更|すきーまへんこう|Thay đổi lược đồ (schema)|大きなテーブルのスキーマ変更は、サービスを止めずに行う手順を検討します。|Với bảng lớn, cần xem xét thủ tục thay đổi schema mà không dừng dịch vụ.|Schema Management|a|T|n|t|schema,migration|
+マイグレーションスクリプト|まいぐれーしょんすくりぷと|Script migration (thay đổi schema theo phiên bản)|マイグレーションスクリプトは、何度実行しても同じ結果になるように書いてください。|Hãy viết script migration sao cho chạy bao nhiêu lần cũng cho cùng kết quả.|Schema Management|a|T|n|t|schema,migration|
+実体化ビュー|じったいかびゅー|View vật chất hóa (materialized view)|重い集計は実体化ビューにして、一時間ごとに更新しています。|Các phép tổng hợp nặng được chuyển thành materialized view và cập nhật mỗi giờ.|Performance Tuning|e|T|n|t|view,performance|
+照合順序|しょうごうじゅんじょ|Thứ tự đối chiếu (collation)|照合順序の設定によって、ひらがなとカタカナを同一視するかどうかが変わります。|Tùy thiết lập collation mà hiragana và katakana có được coi là giống nhau hay không.|Text & Locale|e|T|n|t|collation,japanese-text|
+容量見積もり|ようりょうみつもり|Ước tính dung lượng|容量見積もりでは、索引とバックアップの領域も含めて計算します。|Khi ước tính dung lượng, cần tính cả vùng cho index và sao lưu.|Capacity|a|T|n|t|capacity,storage|
+肥大化|ひだいか|Phình to quá mức|削除されないログでテーブルが肥大化し、バックアップに時間がかかっています。|Do log không bị xóa nên bảng phình to, việc sao lưu tốn nhiều thời gian.|Maintenance|a|N1|vs|t|storage,maintenance|
+断片化|だんぺんか|Phân mảnh (fragmentation)|更新と削除が多いテーブルは断片化しやすいため、定期的に再編成します。|Bảng có nhiều cập nhật và xóa dễ bị phân mảnh nên được tổ chức lại định kỳ.|Maintenance|e|T|vs|t|storage,performance|
+統計情報|とうけいじょうほう|Thông tin thống kê (giúp optimizer chọn kế hoạch thực thi)|大量登録の後は統計情報を更新しないと、実行計画が悪くなることがあります。|Sau khi đăng ký số lượng lớn, nếu không cập nhật thông tin thống kê thì kế hoạch thực thi có thể xấu đi.|Performance Tuning|e|T|n|t|optimizer,performance|
+接続プール|せつぞくぷーる|Connection pool|アクセス集中時に接続プールが枯渇し、エラーが多発しました。|Khi truy cập dồn dập, connection pool bị cạn kiệt và lỗi xảy ra liên tục.|Performance Tuning|a|T|n|t|connection,performance|
+有効桁数|ゆうこうけたすう|Số chữ số có nghĩa (precision)|為替レートは有効桁数を小数点以下六桁まで保持します。|Tỷ giá hối đoái được lưu với độ chính xác đến sáu chữ số thập phân.|Data Types|a|T|n|t|numeric,precision|
+データディクショナリ|でーたでぃくしょなり|Từ điển dữ liệu (định nghĩa ý nghĩa các trường dữ liệu)|項目の意味が人によって違うため、データディクショナリを整備しました。|Vì ý nghĩa của trường khác nhau tùy người nên chúng tôi đã hoàn thiện từ điển dữ liệu.|Data Governance|e|T|n|t|governance,documentation|
+NoSQLデータベース|のーえすきゅーえるでーたべーす|Cơ sở dữ liệu NoSQL|構造が頻繁に変わる設定情報は、NoSQLデータベースに保存しています。|Thông tin cấu hình có cấu trúc thay đổi thường xuyên được lưu trong cơ sở dữ liệu NoSQL.|Database Types|a|T|n|t|nosql|
+キーバリューストア|きーばりゅーすとあ|Kho khóa – giá trị (key-value store)|セッション情報は高速なキーバリューストアで管理しています。|Thông tin phiên được quản lý bằng key-value store tốc độ cao.|Database Types|a|T|n|t|nosql,cache|
+全文検索|ぜんぶんけんさく|Tìm kiếm toàn văn|議事録の本文を全文検索できるよう、専用の検索エンジンを導入しました。|Để có thể tìm kiếm toàn văn nội dung biên bản, chúng tôi đã đưa vào công cụ tìm kiếm chuyên dụng.|Search|a|T|n|t|search|
+データガバナンス|でーたがばなんす|Quản trị dữ liệu (data governance)|データガバナンスの一環として、各データの責任者を決めました。|Như một phần của quản trị dữ liệu, chúng tôi đã chỉ định người chịu trách nhiệm cho từng loại dữ liệu.|Data Governance|e|T|n|t|governance|

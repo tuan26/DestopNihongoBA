@@ -1,0 +1,43 @@
+# category: Database / Data Engineering
+# code: db
+# batch 15 — relational design, SQL tuning, transactions, locking
+正規化|せいきか|Chuẩn hóa (cơ sở dữ liệu)|正規化を進めすぎると結合が増え、検索性能が落ちることがあります。|Nếu chuẩn hóa quá mức thì phép nối tăng lên và hiệu năng tìm kiếm có thể giảm.|Data Modeling|a|T|vs|t|modeling,normalization|
+非正規化|ひせいきか|Phi chuẩn hóa (cố ý lưu trùng để tăng tốc đọc)|集計画面の性能のために、一部のテーブルを非正規化しました。|Vì hiệu năng của màn hình tổng hợp, chúng tôi đã phi chuẩn hóa một số bảng.|Data Modeling|e|T|vs|t|modeling,performance|
+第三正規形|だいさんせいきけい|Dạng chuẩn thứ ba (3NF)|基本的には第三正規形まで正規化し、例外は理由を記録します。|Về cơ bản chuẩn hóa đến dạng chuẩn thứ ba, các ngoại lệ phải ghi lại lý do.|Data Modeling|e|T|n|t|modeling,normalization|
+主キー|しゅきー|Khóa chính (primary key)|主キーには業務上の意味を持たない連番を使う方針です。|Phương châm là dùng số thứ tự không mang ý nghĩa nghiệp vụ làm khóa chính.|Data Modeling|i|T|n|t|key,modeling|
+外部キー|がいぶきー|Khóa ngoại (foreign key)|外部キーを設定しておけば、存在しない顧客への注文登録を防げます。|Nếu thiết lập khóa ngoại thì có thể ngăn việc đăng ký đơn hàng cho khách hàng không tồn tại.|Data Modeling|i|T|n|t|key,integrity|
+複合キー|ふくごうきー|Khóa phức hợp (nhiều cột)|明細テーブルは、伝票番号と行番号の複合キーで一意になります。|Bảng chi tiết là duy nhất theo khóa phức hợp gồm số chứng từ và số dòng.|Data Modeling|a|T|n|t|key,modeling|
+一意制約|いちいせいやく|Ràng buộc duy nhất (unique constraint)|メールアドレスに一意制約を付けて、重複登録を防いでいます。|Chúng tôi đặt ràng buộc duy nhất cho địa chỉ email để ngăn đăng ký trùng.|Constraints|a|T|n|t|constraint,integrity|
+参照整合性|さんしょうせいごうせい|Tính toàn vẹn tham chiếu|参照整合性が崩れており、親データのない明細が残っています。|Tính toàn vẹn tham chiếu bị phá vỡ, còn sót các chi tiết không có dữ liệu cha.|Constraints|e|T|n|t|integrity|
+索引|さくいん|Chỉ mục (index)|検索条件によく使う列に索引を作成したところ、処理が十倍速くなりました。|Sau khi tạo chỉ mục cho cột hay dùng làm điều kiện tìm kiếm, xử lý nhanh hơn mười lần.|Performance Tuning|a|T|n|t|index,performance|Trong hội thoại thường nói インデックス.
+実行計画|じっこうけいかく|Kế hoạch thực thi (execution plan)|遅いSQLは、まず実行計画を確認してインデックスが使われているか調べます。|Với SQL chậm, trước tiên hãy xem kế hoạch thực thi để kiểm tra index có được dùng không.|Performance Tuning|a|T|n|t|sql,performance|
+フルスキャン|ふるすきゃん|Quét toàn bảng (full table scan)|関数を使った条件のせいで、索引が効かずフルスキャンになっています。|Do điều kiện dùng hàm nên index không có tác dụng và bị quét toàn bảng.|Performance Tuning|a|T|n|t|sql,performance|
+クエリチューニング|くえりちゅーにんぐ|Tinh chỉnh truy vấn (query tuning)|クエリチューニングで、月次集計の時間を二時間から十分に短縮しました。|Nhờ tinh chỉnh truy vấn, thời gian tổng hợp tháng giảm từ hai giờ xuống mười phút.|Performance Tuning|a|T|n|t|sql,performance|
+スロークエリ|すろーくえり|Truy vấn chậm (slow query)|一秒以上かかるスロークエリはログに記録して、毎週見直しています。|Các truy vấn chậm mất trên một giây được ghi log và xem lại hàng tuần.|Performance Tuning|a|T|n|t|sql,monitoring|
+内部結合|ないぶけつごう|Phép nối trong (inner join)|内部結合にすると、注文のない顧客は結果に含まれません。|Nếu dùng phép nối trong thì khách hàng không có đơn hàng sẽ không có trong kết quả.|SQL|i|T|n|t|sql,join|
+外部結合|がいぶけつごう|Phép nối ngoài (outer join)|未払いの顧客も表示するため、左外部結合に変更しました。|Để hiển thị cả khách hàng chưa thanh toán, chúng tôi đổi sang phép nối ngoài trái.|SQL|a|T|n|t|sql,join|
+副問い合わせ|ふくといあわせ|Truy vấn con (subquery)|副問い合わせを結合に書き換えたところ、実行時間が半分になりました。|Khi viết lại truy vấn con thành phép nối, thời gian thực thi giảm một nửa.|SQL|a|T|n|t|sql|Còn gọi: サブクエリ.
+集計関数|しゅうけいかんすう|Hàm tổng hợp (SUM, COUNT, AVG…)|集計関数を使う場合、NULLの扱いに注意してください。|Khi dùng hàm tổng hợp, hãy chú ý cách xử lý NULL.|SQL|i|T|n|t|sql,aggregation|
+抽出条件|ちゅうしゅつじょうけん|Điều kiện trích xuất|抽出条件に退会済みの会員が含まれていないか確認してください。|Hãy kiểm tra xem điều kiện trích xuất có bao gồm hội viên đã rời không.|SQL|i|T|n|t|sql,query|
+トランザクション|とらんざくしょん|Giao dịch (transaction)|注文と在庫の更新は、一つのトランザクションで行う必要があります。|Việc cập nhật đơn hàng và tồn kho cần thực hiện trong một transaction.|Transactions|i|T|n|t|transaction|
+ロールバック|ろーるばっく|Hoàn tác giao dịch (rollback)|途中でエラーが起きた場合は、すべての更新をロールバックします。|Nếu lỗi xảy ra giữa chừng, toàn bộ cập nhật sẽ được rollback.|Transactions|i|T|vs|t|transaction|
+分離レベル|ぶんりれべる|Mức cô lập giao dịch (isolation level)|分離レベルを上げると整合性は高まりますが、同時実行性は下がります。|Nâng mức cô lập thì tính nhất quán cao hơn nhưng khả năng chạy đồng thời giảm.|Transactions|e|T|n|t|transaction,isolation|
+ダーティリード|だーてぃりーど|Đọc bẩn (đọc dữ liệu chưa commit)|ダーティリードが起きると、取り消された金額が集計に含まれてしまいます。|Nếu xảy ra đọc bẩn, số tiền đã bị hủy vẫn bị tính vào tổng.|Transactions|e|T|n|t|transaction,anomaly|
+ファントムリード|ふぁんとむりーど|Đọc ma (phantom read)|同じ条件で二回検索した結果の件数が違うのは、ファントムリードが原因です。|Việc hai lần tìm với cùng điều kiện cho số bản ghi khác nhau là do phantom read.|Transactions|e|T|n|t|transaction,anomaly|
+楽観的排他制御|らっかんてきはいたせいぎょ|Khóa lạc quan (optimistic locking)|更新件数が少ない画面なので、バージョン番号による楽観的排他制御を採用します。|Vì là màn hình ít cập nhật nên sẽ dùng khóa lạc quan bằng số phiên bản.|Concurrency Control|e|T|n|t|locking,concurrency|
+悲観的排他制御|ひかんてきはいたせいぎょ|Khóa bi quan (pessimistic locking)|座席予約では競合が多いため、悲観的排他制御で行をロックします。|Đặt chỗ có nhiều tranh chấp nên dùng khóa bi quan để khóa dòng.|Concurrency Control|e|T|n|t|locking,concurrency|
+排他ロック|はいたろっく|Khóa độc quyền (exclusive lock)|夜間バッチがテーブルに排他ロックをかけるため、その間は画面から更新できません。|Batch đêm đặt khóa độc quyền lên bảng nên trong thời gian đó không cập nhật được từ màn hình.|Concurrency Control|a|T|n|t|locking|
+デッドロック|でっどろっく|Khóa chết (deadlock)|二つの処理が互いのロック解放を待ってしまい、デッドロックが発生しました。|Hai xử lý chờ nhau giải phóng khóa nên đã xảy ra deadlock.|Concurrency Control|a|T|n|t|locking,bug|
+論理削除|ろんりさくじょ|Xóa logic (đánh dấu cờ xóa, không xóa thật)|監査のため、顧客データは論理削除とし、削除フラグを立てます。|Vì kiểm toán, dữ liệu khách hàng được xóa logic bằng cách bật cờ xóa.|Data Lifecycle|a|T|n|t|deletion,audit|
+物理削除|ぶつりさくじょ|Xóa vật lý (xóa thật khỏi DB)|保存期間を過ぎたログは、月に一度物理削除しています。|Log quá thời hạn lưu trữ được xóa vật lý mỗi tháng một lần.|Data Lifecycle|a|T|n|t|deletion|
+論理設計|ろんりせっけい|Thiết kế logic (dữ liệu)|論理設計では、製品に依存しない形でエンティティと関連を定義します。|Trong thiết kế logic, định nghĩa thực thể và quan hệ ở dạng không phụ thuộc sản phẩm.|Data Modeling|a|T|n|t|modeling,design|
+物理設計|ぶつりせっけい|Thiết kế vật lý (dữ liệu)|物理設計の段階で、データ型と索引、パーティションを決めます。|Ở giai đoạn thiết kế vật lý, quyết định kiểu dữ liệu, index và partition.|Data Modeling|a|T|n|t|modeling,design|
+ER図|いーあーるず|Sơ đồ thực thể – quan hệ (ERD)|ER図を見れば、注文と請求の関係が一対多であることが分かります。|Nhìn sơ đồ ER sẽ thấy quan hệ giữa đơn hàng và hóa đơn là một – nhiều.|Data Modeling|i|T|n|t|erd,modeling|
+テーブル定義書|てーぶるていぎしょ|Tài liệu định nghĩa bảng|カラムを追加したら、テーブル定義書も同時に更新してください。|Khi thêm cột, hãy cập nhật đồng thời tài liệu định nghĩa bảng.|Documentation|i|T|n|t|documentation,schema|
+NULL許容|ぬるきょよう|Cho phép NULL|任意項目の列はNULL許容にし、必須項目にはNOT NULL制約を付けます。|Cột của trường tùy chọn cho phép NULL, còn trường bắt buộc đặt ràng buộc NOT NULL.|Constraints|a|T|n|t|schema,constraint|
+既定値|きていち|Giá trị mặc định (default)|登録日時の列には、既定値として現在時刻を設定しています。|Cột ngày giờ đăng ký được đặt giá trị mặc định là thời điểm hiện tại.|Constraints|a|T|n|t|schema,default|
+採番|さいばん|Cấp số (sinh mã/số thứ tự tự động)|伝票番号の採番は、拠点コードと年月を組み合わせて行います。|Việc cấp số chứng từ được thực hiện bằng cách kết hợp mã chi nhánh với năm tháng.|Data Modeling|a|T|vs|t|numbering,key|Thuật ngữ rất đặc trưng trong hệ thống Nhật.
+シーケンス|しーけんす|Sequence (đối tượng sinh số tuần tự trong DB)|移行後はシーケンスの現在値を、既存データの最大値より大きく設定してください。|Sau khi chuyển đổi, hãy đặt giá trị hiện tại của sequence lớn hơn giá trị lớn nhất của dữ liệu cũ.|Database Objects|a|T|n|t|sequence,numbering|
+ストアドプロシージャ|すとあどぷろしーじゃ|Thủ tục lưu trữ (stored procedure)|業務ロジックがストアドプロシージャに散らばっていて、テストが困難です。|Logic nghiệp vụ nằm rải rác trong stored procedure nên rất khó kiểm thử.|Database Objects|a|T|n|t|sql,procedure|
+トリガー|とりがー|Trigger (xử lý tự động khi dữ liệu thay đổi)|更新履歴はトリガーで自動的に別テーブルへ記録しています。|Lịch sử cập nhật được trigger tự động ghi sang bảng khác.|Database Objects|a|T|n|t|sql,trigger|
+ビュー|びゅー|View (bảng ảo dựa trên truy vấn)|複雑な結合はビューにまとめ、画面側はビューを参照するだけにしました。|Các phép nối phức tạp được gom vào view, phía màn hình chỉ cần tham chiếu view.|Database Objects|i|T|n|t|sql,view|
