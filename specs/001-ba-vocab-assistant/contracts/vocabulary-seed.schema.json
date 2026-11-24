@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Japanese BA Vocabulary Seed",
+  "type": "object",
+  "required": ["dataset_version", "created_at", "entries"],
+  "properties": {
+    "dataset_version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+    "created_at": { "type": "string" },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "japanese", "reading", "vietnamese", "example_ja", "example_vi", "category", "difficulty", "jlpt_level", "register", "tags", "source_type", "created_at", "dataset_version"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^(ba|biz|pm|swe|arch|db|cloud|qa|sec|gen)-[a-z]+-\\d{4}$" },
+          "japanese": { "type": "string", "minLength": 1 },
+          "reading": { "type": "string", "pattern": "^[\\u3040-\\u309F\\u30A0-\\u30FF・ー　 ]+$" },
+          "vietnamese": { "type": "string", "minLength": 2 },
+          "example_ja": { "type": "string", "minLength": 4 },
+          "example_vi": { "type": "string", "minLength": 4 },
+          "category": { "enum": ["BA / Requirement Engineering", "Japanese Business / Business Communication", "Project Management", "Software Engineering", "System Architecture / Design", "Database / Data Engineering", "Cloud / DevOps / Infrastructure", "Testing / QA", "Security", "Advanced General Business Japanese"] },
+          "subcategory": { "type": ["string", "null"] },
+          "difficulty": { "enum": ["intermediate", "advanced", "expert"] },
+          "jlpt_level": { "enum": ["N2", "N1", "business", "technical", "unknown"] },
+          "part_of_speech": { "type": ["string", "null"] },
+          "usage_note": { "type": ["string", "null"] },
+          "register": { "enum": ["formal", "business", "technical", "neutral"] },
+          "tags": { "type": "array", "items": { "type": "string" } },
+          "source_type": { "enum": ["AI-generated", "researched", "curated"] },
+          "source_reference": { "type": ["string", "null"] },
+          "created_at": { "type": "string" },
+          "dataset_version": { "type": "string" }
+        }
+      }
+    }
+  }
+}
