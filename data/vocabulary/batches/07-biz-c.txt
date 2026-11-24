@@ -1,0 +1,54 @@
+# category: Japanese Business / Business Communication
+# code: biz
+# batch 07 — meeting talk, approvals, workplace jargon
+前広に|まえびろに|Sớm trước, từ sớm (để đối phương có thời gian chuẩn bị)|仕様変更の可能性があれば、前広にご相談いただけると助かります。|Nếu có khả năng thay đổi đặc tả, xin trao đổi với chúng tôi từ sớm thì rất tốt.|Communication|e|B|adv|b|communication,planning|Từ business đặc trưng, ít gặp trong sách giáo khoa.
+段取り|だんどり|Sự sắp xếp, chuẩn bị trình tự công việc|移行当日の段取りを、時間単位で整理しておきましょう。|Hãy sắp xếp trình tự công việc ngày chuyển đổi theo từng giờ.|Workplace|i|N1|n|b|planning,preparation|段取りが悪い = chuẩn bị kém.
+手配|てはい|Sắp xếp, chuẩn bị (phòng, vé, thiết bị)|会議室とプロジェクターの手配は私が行います。|Việc sắp xếp phòng họp và máy chiếu tôi sẽ đảm nhận.|Workplace|i|N1|vs|b|arrangement|
+社内調整|しゃないちょうせい|Điều phối, thống nhất trong nội bộ công ty|ご提案の内容は社内調整が必要なため、回答は来週になります。|Nội dung đề xuất cần điều phối nội bộ nên câu trả lời sẽ vào tuần sau.|Decision|i|B|n|b|internal,decision|
+確認が取れ次第|かくにんがとれしだい|Ngay khi xác nhận được|担当者に確認が取れ次第、ご連絡いたします。|Ngay khi xác nhận được với người phụ trách, tôi sẽ liên lạc lại.|Email|i|B|exp|b|email,reply|〜次第 = ngay sau khi.
+追ってご連絡します|おってごれんらくします|Sẽ liên lạc sau (khi có thông tin)|詳しい日程は追ってご連絡します。|Lịch chi tiết tôi sẽ liên lạc sau.|Email|a|B|exp|f|email,reply|追って = sau đó, lát nữa.
+見積書|みつもりしょ|Bản báo giá|前提条件を明記した見積書を、金曜日までに提出します。|Chúng tôi sẽ nộp bản báo giá có ghi rõ điều kiện tiền đề trước thứ Sáu.|Contract|i|N2|n|b|estimate,contract|
+押印|おういん|Đóng dấu|契約書への押印が済み次第、原本を郵送いたします。|Ngay khi đóng dấu hợp đồng xong, chúng tôi sẽ gửi bản gốc qua bưu điện.|Contract|a|B|vs|f|contract,japan|Văn hóa con dấu (ハンコ) ở Nhật; đang dần chuyển sang chữ ký điện tử.
+稟議|りんぎ|Trình duyệt nội bộ (tờ trình xin phê duyệt qua nhiều cấp)|サーバー購入の稟議が通るまで、発注はできません。|Chưa thể đặt hàng cho đến khi tờ trình mua máy chủ được duyệt.|Approval|a|B|n|b|approval,culture|稟議書 = tờ trình; 稟議を回す.
+決裁|けっさい|Phê duyệt quyết định (của người có thẩm quyền)|予算の決裁は役員会で行われます。|Việc phê duyệt ngân sách được thực hiện tại hội đồng quản trị.|Approval|a|N1|vs|f|approval|Khác 決済 (thanh toán) cùng cách đọc.
+了承|りょうしょう|Chấp thuận, đồng ý|お客様から仕様変更の了承をいただきました。|Chúng tôi đã nhận được sự chấp thuận thay đổi đặc tả từ khách hàng.|Approval|i|N1|vs|b|approval|
+承諾|しょうだく|Đồng ý, chấp nhận (yêu cầu, điều kiện)|契約条件の変更について、書面での承諾が必要です。|Về việc thay đổi điều kiện hợp đồng, cần có sự đồng ý bằng văn bản.|Approval|a|N1|vs|f|approval,contract|
+快諾|かいだく|Vui vẻ đồng ý ngay|急なお願いにもかかわらず、講師の依頼を快諾していただきました。|Dù là đề nghị gấp nhưng anh ấy đã vui vẻ nhận lời làm giảng viên.|Approval|e|N1|vs|f|approval|
+一存|いちぞん|Ý kiến riêng của một người (tự mình quyết)|私の一存では決められませんので、上司と相談いたします。|Tôi không thể tự mình quyết định nên sẽ trao đổi với cấp trên.|Decision|e|N1|n|f|decision|Thường dùng trong phủ định: 一存では〜できない.
+決めかねる|きめかねる|Khó mà quyết định được|二つの案のメリットが拮抗しており、まだ決めかねている状況です。|Ưu điểm của hai phương án ngang nhau nên tình hình là vẫn chưa thể quyết định.|Decision|a|N1|v|b|decision|〜かねる = khó có thể.
+致しかねます|いたしかねます|Chúng tôi không thể (từ chối lịch sự)|恐れ入りますが、契約範囲外の作業はお引き受け致しかねます。|Rất xin lỗi, chúng tôi không thể nhận công việc ngoài phạm vi hợp đồng.|Keigo|a|B|exp|f|keigo,refusal|Cách từ chối mềm nhưng rõ ràng.
+差し控える|さしひかえる|Kiềm chế không làm, tạm không (nói/làm)|調査中のため、原因についてのコメントは差し控えさせていただきます。|Vì đang điều tra nên chúng tôi xin tạm không bình luận về nguyên nhân.|Keigo|e|N1|v|f|keigo,refusal|
+お取り計らい|おとりはからい|Sự sắp xếp, lo liệu giúp (kính ngữ)|日程の件、柔軟にお取り計らいいただきありがとうございました。|Cảm ơn anh/chị đã sắp xếp linh hoạt về lịch trình.|Keigo|e|N1|n|f|keigo,gratitude|
+ご高覧|ごこうらん|Xem (kính ngữ, văn viết)|新サービスのご案内を同封いたしましたので、ご高覧ください。|Chúng tôi có gửi kèm thông tin dịch vụ mới, kính mời quý vị xem qua.|Keigo|e|N1|n|f|keigo,letter|
+お手すきの際に|おてすきのさいに|Khi anh/chị rảnh tay|お手すきの際に、こちらの資料にお目通しいただけますか。|Khi rảnh tay, anh/chị có thể xem qua tài liệu này được không?|Email|a|B|exp|f|email,request|Dùng cho việc không gấp.
+候補日|こうほび|Ngày dự kiến (các lựa chọn ngày)|打ち合わせの候補日を三つほど挙げていただけますか。|Anh/chị có thể đưa ra khoảng ba ngày dự kiến cho buổi họp không?|Schedule|i|B|n|b|schedule|
+所要時間|しょようじかん|Thời gian cần thiết|デモの所要時間は質疑応答を含めて約一時間です。|Thời gian cần cho buổi demo khoảng một tiếng kể cả hỏi đáp.|Schedule|i|N2|n|b|schedule|
+議題|ぎだい|Chủ đề nghị sự (agenda item)|次回の定例では、テスト計画を議題に加えてください。|Ở buổi họp định kỳ tới, hãy thêm kế hoạch kiểm thử vào chủ đề nghị sự.|Meeting|i|N1|n|b|meeting,agenda|
+事前共有|じぜんきょうゆう|Chia sẻ trước (trước cuộc họp)|資料は前日までに事前共有しておくと、会議が効率的に進みます。|Nếu chia sẻ tài liệu trước một ngày thì cuộc họp sẽ diễn ra hiệu quả.|Meeting|i|B|vs|b|meeting,preparation|
+代理出席|だいりしゅっせき|Tham dự thay|課長が出張中のため、私が代理出席いたします。|Vì trưởng nhóm đang đi công tác nên tôi sẽ tham dự thay.|Meeting|a|B|vs|b|meeting|
+冒頭|ぼうとう|Phần mở đầu|会議の冒頭で、前回の決定事項を振り返ります。|Ở phần mở đầu cuộc họp, chúng ta sẽ điểm lại các quyết định lần trước.|Meeting|a|N1|n|b|meeting|
+本題|ほんだい|Vấn đề chính|前置きが長くなりましたが、本題に入らせていただきます。|Phần mở đầu hơi dài, xin phép tôi đi vào vấn đề chính.|Meeting|a|N1|n|b|meeting|
+脱線|だっせん|Lạc đề (nghĩa gốc: trật bánh)|議論が脱線してきたので、議題に戻りましょう。|Cuộc thảo luận đang lạc đề, hãy quay lại chủ đề nghị sự.|Meeting|a|N1|vs|n|meeting,facilitation|
+かいつまんで|かいつまんで|Tóm tắt lại những ý chính|経緯をかいつまんでご説明します。|Tôi xin tóm tắt ngắn gọn diễn biến sự việc.|Discussion|e|N1|exp|n|summary|
+ご認識の通りです|ごにんしきのとおりです|Đúng như anh/chị hiểu|はい、その点はご認識の通りです。追加費用は発生しません。|Vâng, điểm đó đúng như anh/chị hiểu. Không phát sinh chi phí thêm.|Meeting|i|B|exp|f|meeting,confirmation|Câu trả lời xác nhận rất hay dùng với khách hàng.
+おっしゃる通り|おっしゃるとおり|Đúng như anh/chị nói|おっしゃる通り、現行の手順では確認が二重になっています。|Đúng như anh/chị nói, với quy trình hiện tại việc kiểm tra đang bị trùng hai lần.|Meeting|i|B|exp|f|meeting,agreement|
+異論はありません|いろんはありません|Không có ý kiến phản đối|その方針で進めることに、異論はありません。|Tôi không có ý kiến phản đối việc tiến hành theo phương châm đó.|Meeting|a|N1|exp|b|meeting,agreement|
+一点確認させてください|いってんかくにんさせてください|Cho phép tôi xác nhận một điểm|一点確認させてください。この画面は管理者だけが使いますか。|Cho phép tôi xác nhận một điểm. Màn hình này chỉ quản trị viên sử dụng phải không?|Meeting|i|B|exp|b|meeting,question|
+話を戻しますと|はなしをもどしますと|Quay lại câu chuyện chính thì…|話を戻しますと、移行日は十月一日で確定ということでよろしいでしょうか。|Quay lại vấn đề chính, ngày chuyển đổi chốt là ngày một tháng mười, có đúng không ạ?|Meeting|a|B|exp|b|meeting,facilitation|
+念頭に置く|ねんとうにおく|Ghi nhớ trong đầu, luôn lưu tâm|将来の多言語対応を念頭に置いて、設計を進めてください。|Hãy tiến hành thiết kế với việc lưu tâm đến hỗ trợ đa ngôn ngữ trong tương lai.|Discussion|a|N1|exp|b|planning|
+温度感|おんどかん|Mức độ quan tâm, nhiệt tình (với một vấn đề)|お客様がこの機能にどの程度の温度感をお持ちか、探ってみます。|Tôi sẽ thử thăm dò xem khách hàng quan tâm đến chức năng này ở mức nào.|Business Jargon|e|B|n|n|jargon,negotiation|Từ lóng business hiện đại.
+肌感|はだかん|Cảm nhận thực tế (từ kinh nghiệm)|肌感としては、来月以降の問い合わせはさらに増えると思います。|Theo cảm nhận thực tế, tôi nghĩ từ tháng sau số câu hỏi hỗ trợ sẽ còn tăng.|Business Jargon|e|B|n|n|jargon|Khẩu ngữ, viết tắt của 肌感覚.
+巻き取る|まきとる|Nhận lại, gánh lấy (công việc của người khác)|新人の作業が遅れているので、残りは私が巻き取ります。|Công việc của người mới đang chậm nên phần còn lại tôi sẽ nhận làm.|Business Jargon|e|B|v|n|jargon,task|
+握る|にぎる|Thống nhất ngầm, chốt miệng với đối phương (jargon)|正式な契約の前に、価格の上限を先方と握ることが大切です。|Trước khi ký chính thức, quan trọng là chốt trước với đối tác mức giá tối đa.|Business Jargon|e|B|v|n|jargon,negotiation|Nghĩa gốc: nắm chặt.
+詰める|つめる|Làm rõ, chốt chi tiết|残りの細かい条件は、来週の打ち合わせで詰めましょう。|Các điều kiện chi tiết còn lại hãy chốt trong buổi họp tuần sau.|Business Jargon|a|B|v|b|negotiation,detail|詳細を詰める / 話を詰める.
+ボールを持っている|ぼーるをもっている|Đang giữ bóng (đến lượt ai đó phải xử lý)|今はお客様がボールを持っているので、回答待ちの状態です。|Hiện giờ đến lượt khách hàng xử lý nên chúng tôi đang chờ câu trả lời.|Business Jargon|a|B|exp|n|jargon,status|
+巻き込む|まきこむ|Lôi kéo tham gia (đưa người liên quan vào cuộc)|早い段階で運用チームを巻き込むことで、手戻りを防げます。|Bằng cách lôi kéo đội vận hành tham gia từ sớm có thể tránh việc làm lại.|Stakeholder|a|N1|v|n|stakeholder,collaboration|
+先回り|さきまわり|Đi trước một bước, chủ động đón đầu|お客様の質問を先回りして、想定問答集を準備しました。|Đón đầu câu hỏi của khách hàng, chúng tôi đã chuẩn bị bộ câu hỏi đáp dự kiến.|Communication|a|N1|vs|n|proactive|
+ご意向|ごいこう|Ý hướng, mong muốn (của đối phương)|お客様のご意向を確認したうえで、提案内容を調整します。|Sau khi xác nhận ý hướng của khách hàng, chúng tôi sẽ điều chỉnh nội dung đề xuất.|Negotiation|a|N1|n|f|keigo,negotiation|
+期待値調整|きたいちちょうせい|Điều chỉnh kỳ vọng (của khách hàng/cấp trên)|初回リリースで全機能がそろうわけではないので、早めに期待値調整をしておきます。|Bản phát hành đầu không đủ toàn bộ chức năng nên tôi sẽ điều chỉnh kỳ vọng từ sớm.|Stakeholder|e|B|n|b|stakeholder,expectation|
+断りを入れる|ことわりをいれる|Báo trước, xin phép trước|会議を途中で退席する場合は、冒頭で断りを入れておきましょう。|Nếu phải rời cuộc họp giữa chừng, hãy báo trước ở phần đầu.|Etiquette|a|N1|exp|b|etiquette|
+角が立つ|かどがたつ|Gây mất lòng, tạo va chạm|角が立たないように、指摘はまず良い点を伝えてから行います。|Để không gây mất lòng, khi góp ý hãy nói điểm tốt trước.|Etiquette|e|N1|exp|n|etiquette,communication|
+腹落ち|はらおち|Thấm, hiểu và chấp nhận từ bên trong|メンバーが腹落ちしていない方針は、現場で守られません。|Những phương châm mà thành viên chưa thực sự thấm sẽ không được tuân thủ ở hiện trường.|Business Jargon|e|B|vs|n|jargon,alignment|
+余談|よだん|Chuyện ngoài lề|余談ですが、この機能は社内のハッカソンから生まれました。|Chuyện ngoài lề một chút, chức năng này ra đời từ một cuộc hackathon nội bộ.|Discussion|a|N1|n|n|discussion|
+ご遠慮ください|ごえんりょください|Xin vui lòng không… (cấm lịch sự)|本資料の社外への転送はご遠慮ください。|Xin vui lòng không chuyển tiếp tài liệu này ra ngoài công ty.|Keigo|i|B|exp|f|keigo,notice|
+差し出がましい|さしでがましい|Đường đột, xen vào chuyện không phải của mình|差し出がましいようですが、テスト期間をもう少し確保したほうがよいかと存じます。|Có lẽ hơi đường đột, nhưng tôi nghĩ nên dành thêm chút thời gian kiểm thử.|Keigo|e|N1|adj-i|f|keigo,cushion|Câu đệm trước khi góp ý với cấp trên/khách hàng.

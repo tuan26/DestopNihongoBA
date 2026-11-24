@@ -1,0 +1,63 @@
+# category: Project Management
+# code: pm
+# batch 09 — organization, go-live, governance, cost, vendors
+内製化|ないせいか|Tự làm nội bộ (không thuê ngoài)|保守コストを抑えるため、将来的には運用の内製化を目指しています。|Để giảm chi phí bảo trì, trong tương lai chúng tôi hướng tới tự vận hành nội bộ.|Sourcing|a|B|vs|b|sourcing,strategy|
+外部委託|がいぶいたく|Thuê ngoài, ủy thác bên ngoài|データ入力作業は外部委託し、社員は確認作業に集中します。|Công việc nhập liệu được thuê ngoài, nhân viên tập trung vào việc kiểm tra.|Sourcing|i|B|vs|b|outsourcing|
+元請け|もとうけ|Nhà thầu chính|元請けの会社が要件定義を担当し、開発は協力会社が行います。|Công ty thầu chính phụ trách định nghĩa yêu cầu, còn phát triển do công ty hợp tác thực hiện.|Sourcing|a|B|n|b|contract,industry|
+下請け|したうけ|Thầu phụ|下請けの立場でも、品質に対する責任は変わりません。|Dù ở vị trí thầu phụ, trách nhiệm về chất lượng vẫn không thay đổi.|Sourcing|i|N1|n|b|contract,industry|
+多重下請け構造|たじゅうしたうけこうぞう|Cấu trúc thầu phụ nhiều tầng (đặc trưng ngành IT Nhật)|多重下請け構造では、現場の声が発注者に届きにくくなります。|Trong cấu trúc thầu phụ nhiều tầng, tiếng nói hiện trường khó đến được bên đặt hàng.|Sourcing|e|B|n|b|industry,japan|
+キックオフ|きっくおふ|Họp khởi động dự án (kick-off)|キックオフでは、プロジェクトの目的と体制を全員で共有します。|Trong buổi kick-off, toàn bộ thành viên chia sẻ mục tiêu và cơ cấu dự án.|Initiation|i|B|n|b|meeting,initiation|
+立ち上げ|たちあげ|Khởi lập, khởi động (dự án, hệ thống, tổ chức)|新拠点の立ち上げには、半年ほどの準備期間が必要です。|Việc khởi lập cơ sở mới cần khoảng nửa năm chuẩn bị.|Initiation|i|N1|n|b|initiation|
+完了報告|かんりょうほうこく|Báo cáo hoàn thành|作業が終わり次第、手順書の結果を添えて完了報告をお願いします。|Ngay khi xong việc, hãy gửi báo cáo hoàn thành kèm kết quả theo tài liệu thủ tục.|Reporting|i|B|n|b|report,closure|
+移行判定|いこうはんてい|Đánh giá quyết định chuyển đổi (go/no-go cho migration)|移行判定会議で、リハーサルの結果をもとに実施可否を決定します。|Trong cuộc họp đánh giá chuyển đổi, sẽ quyết định có thực hiện hay không dựa trên kết quả diễn tập.|Go-live|a|B|n|b|migration,decision|
+本番稼働|ほんばんかどう|Vận hành chính thức (go-live)|本番稼働後の一か月は、開発チームが常駐してサポートします。|Một tháng sau khi vận hành chính thức, đội phát triển sẽ túc trực hỗ trợ.|Go-live|i|B|vs|b|go-live,release|
+カットオーバー|かっとおーばー|Cutover — thời điểm chuyển sang hệ thống mới|カットオーバーは連休中に実施し、業務への影響を最小限にします。|Cutover sẽ được thực hiện trong kỳ nghỉ dài để giảm thiểu ảnh hưởng tới nghiệp vụ.|Go-live|a|T|n|t|go-live,migration|
+リリース判定|りりーすはんてい|Đánh giá quyết định phát hành|リリース判定では、未解決の不具合の重要度を一件ずつ確認します。|Trong đánh giá phát hành, chúng tôi kiểm tra mức độ nghiêm trọng của từng lỗi chưa giải quyết.|Go-live|a|B|n|b|release,decision|
+増員|ぞういん|Tăng thêm người|遅れを取り戻すための増員は、教育コストも考慮して判断すべきです。|Việc tăng người để lấy lại tiến độ cần cân nhắc cả chi phí đào tạo.|Resource|i|N1|vs|b|resource,team|Định luật Brooks: tăng người cho dự án trễ có thể làm trễ thêm.
+体制強化|たいせいきょうか|Tăng cường cơ cấu nhân sự|品質問題を受けて、レビュー担当を追加し体制強化を図りました。|Sau vấn đề chất lượng, chúng tôi đã thêm người review để tăng cường cơ cấu.|Organization|a|B|n|b|organization,quality|
+ナレッジ共有|なれっじきょうゆう|Chia sẻ tri thức|障害対応のノウハウは、社内Wikiでナレッジ共有しています。|Know-how xử lý sự cố được chia sẻ tri thức trên Wiki nội bộ.|Knowledge|i|B|n|b|knowledge,team|
+プロジェクト憲章|ぷろじぇくとけんしょう|Điều lệ dự án (project charter)|プロジェクト憲章に、成功の定義と意思決定のルールを明記しました。|Chúng tôi ghi rõ định nghĩa thành công và quy tắc ra quyết định trong điều lệ dự án.|Governance|e|T|n|t|pmbok,governance|
+コミュニケーション計画|こみゅにけーしょんけいかく|Kế hoạch truyền thông (ai, báo gì, khi nào, kênh nào)|コミュニケーション計画で、障害時の連絡経路と手段を定めています。|Trong kế hoạch truyền thông có quy định kênh và phương tiện liên lạc khi có sự cố.|Governance|a|T|n|b|communication,planning|
+会議体|かいぎたい|Hệ thống các cuộc họp (cơ chế họp định kỳ của dự án)|会議体が多すぎて、メンバーの作業時間が圧迫されています。|Có quá nhiều loại cuộc họp nên thời gian làm việc của thành viên bị chèn ép.|Governance|a|B|n|b|meeting,governance|Ví dụ: 定例会, ステアリングコミッティ, 週次レビュー.
+消化率|しょうかりつ|Tỷ lệ hoàn thành (test case, task đã thực hiện)|テストケースの消化率は八割ですが、不具合の収束はまだです。|Tỷ lệ thực hiện test case đã tám mươi phần trăm nhưng lỗi vẫn chưa hội tụ.|Monitoring|a|B|n|b|metric,testing|
+完了基準|かんりょうきじゅん|Tiêu chí hoàn thành (definition of done)|各工程の完了基準を事前に合意しておくと、検収がスムーズです。|Nếu thống nhất trước tiêu chí hoàn thành của từng giai đoạn thì nghiệm thu sẽ suôn sẻ.|Quality|a|B|n|b|quality,done|
+出来高|できだか|Khối lượng đã hoàn thành (giá trị công việc đạt được)|今月の出来高に応じて、請求額を算出します。|Số tiền yêu cầu thanh toán được tính theo khối lượng hoàn thành tháng này.|Cost|e|N1|n|b|cost,progress|
+アーンドバリューマネジメント|あーんどばりゅーまねじめんと|Quản lý giá trị thu được (EVM)|アーンドバリューマネジメントを使うと、コストと進捗のずれを同時に把握できます。|Dùng EVM có thể nắm đồng thời chênh lệch về chi phí và tiến độ.|Monitoring|e|T|n|t|evm,pmbok|
+遅延の兆候|ちえんのちょうこう|Dấu hiệu chậm trễ|質問の回答待ちが増えているのは、遅延の兆候だと考えています。|Tôi cho rằng việc số câu hỏi chờ trả lời tăng lên là dấu hiệu chậm trễ.|Risk|a|N1|phr|b|risk,schedule|
+マイクロマネジメント|まいくろまねじめんと|Quản lý vi mô (kiểm soát quá chi tiết)|マイクロマネジメントは、メンバーの自主性を奪ってしまいます。|Quản lý vi mô sẽ lấy đi tính tự chủ của thành viên.|Leadership|a|T|n|n|leadership|
+裁量|さいりょう|Quyền tự quyết|実装方法はチームの裁量に任せ、期限と品質だけを管理します。|Cách hiện thực để đội tự quyết, chỉ quản lý thời hạn và chất lượng.|Leadership|a|N1|n|b|leadership,delegation|
+権限委譲|けんげんいじょう|Ủy quyền, chuyển giao quyền hạn|リーダーへの権限委譲を進めて、判断のスピードを上げます。|Đẩy mạnh ủy quyền cho leader để tăng tốc độ ra quyết định.|Leadership|a|N1|n|f|leadership,delegation|
+意思決定|いしけってい|Ra quyết định|意思決定の遅れが、開発全体のボトルネックになっています。|Sự chậm trễ trong ra quyết định đang trở thành nút thắt của toàn bộ việc phát triển.|Governance|i|N1|vs|b|decision,governance|
+スコープクリープ|すこーぷくりーぷ|Phạm vi phình dần (scope creep)|小さな追加の積み重ねによるスコープクリープに注意してください。|Hãy chú ý hiện tượng phạm vi phình dần do tích tụ những bổ sung nhỏ.|Scope|a|T|n|t|scope,risk|
+フェーズ分け|ふぇーずわけ|Chia giai đoạn|全機能を一度に作らず、フェーズ分けしてリスクを下げます。|Không làm toàn bộ chức năng một lần mà chia giai đoạn để giảm rủi ro.|Planning|i|B|n|b|planning,phase|
+移行計画|いこうけいかく|Kế hoạch chuyển đổi|移行計画には、切り戻しの判断基準も含めてください。|Trong kế hoạch chuyển đổi, hãy bao gồm cả tiêu chí quyết định quay về hệ thống cũ.|Planning|i|B|n|b|migration,planning|
+教育計画|きょういくけいかく|Kế hoạch đào tạo (người dùng/thành viên)|利用者向けの教育計画を立て、稼働の一か月前から説明会を開きます。|Lập kế hoạch đào tạo cho người dùng, tổ chức buổi giới thiệu từ một tháng trước khi vận hành.|Planning|a|B|n|b|training,planning|
+投資判断|とうしはんだん|Quyết định đầu tư|経営層の投資判断に必要な情報として、費用と効果の試算を提出しました。|Chúng tôi đã nộp ước tính chi phí và hiệu quả làm thông tin cần cho quyết định đầu tư của ban lãnh đạo.|Business Case|a|B|n|f|investment,decision|
+予算確保|よさんかくほ|Đảm bảo, xin cấp ngân sách|来年度の予算確保のため、秋までに概算を出す必要があります。|Để xin ngân sách năm tới, cần đưa ra dự toán sơ bộ trước mùa thu.|Cost|a|B|n|b|budget|
+原価|げんか|Giá vốn, chi phí gốc|外注費の増加で、プロジェクトの原価が当初計画を上回りました。|Do chi phí thuê ngoài tăng, giá vốn dự án đã vượt kế hoạch ban đầu.|Cost|i|N1|n|b|cost,accounting|
+粗利|あらり|Lợi nhuận gộp|値引きに応じると、この案件の粗利は一割を切ってしまいます。|Nếu chấp nhận giảm giá, lợi nhuận gộp của dự án này sẽ dưới mười phần trăm.|Cost|a|B|n|b|profit,accounting|
+単価|たんか|Đơn giá|経験年数によって、エンジニアの単価が変わります。|Đơn giá kỹ sư thay đổi theo số năm kinh nghiệm.|Cost|i|N1|n|b|cost,price|
+生産性|せいさんせい|Năng suất|自動テストの導入で、チームの生産性が大きく向上しました。|Nhờ đưa kiểm thử tự động vào, năng suất của đội đã cải thiện rõ rệt.|Monitoring|i|N2|n|b|productivity,metric|
+ベストエフォート|べすとえふぉーと|Nỗ lực tối đa nhưng không cam kết (best effort)|夜間の問い合わせ対応はベストエフォートとし、翌営業日の回答を基本とします。|Hỗ trợ ban đêm là best effort, về cơ bản sẽ trả lời vào ngày làm việc tiếp theo.|Contract|a|T|n|b|sla,commitment|
+コミットメント|こみっとめんと|Cam kết|チーム全員が納期にコミットメントを持てるよう、計画づくりから参加してもらいました。|Để cả đội có cam kết với thời hạn, chúng tôi cho họ tham gia ngay từ lúc lập kế hoạch.|Leadership|a|T|n|b|commitment,team|
+責任分界点|せきにんぶんかいてん|Điểm phân định trách nhiệm (giữa các bên)|クラウド事業者と当社の責任分界点を、契約書で明確にしました。|Chúng tôi đã làm rõ điểm phân định trách nhiệm giữa nhà cung cấp cloud và công ty trong hợp đồng.|Contract|e|T|n|f|contract,responsibility|
+推進体制|すいしんたいせい|Cơ cấu thúc đẩy (tổ chức triển khai dự án)|全社プロジェクトのため、各部門から代表者を選んで推進体制を組みました。|Vì là dự án toàn công ty nên đã chọn đại diện các bộ phận để lập cơ cấu thúc đẩy.|Organization|a|B|n|f|organization,governance|
+課題管理|かだいかんり|Quản lý vấn đề (issue management)|課題管理では、期限を過ぎた項目を毎週の定例で確認します。|Trong quản lý vấn đề, các mục quá hạn được kiểm tra ở buổi họp định kỳ hàng tuần.|Monitoring|i|B|n|b|issue,tracking|
+棚上げ|たなあげ|Gác lại, xếp xó (vấn đề chưa giải quyết)|難しい課題を棚上げにしたまま進めると、最後に大きな問題になります。|Nếu cứ gác lại vấn đề khó mà tiến hành thì cuối cùng sẽ thành vấn đề lớn.|Monitoring|a|N1|vs|n|issue,risk|
+週次報告|しゅうじほうこく|Báo cáo hàng tuần|週次報告には、完了した作業だけでなく来週のリスクも記載します。|Trong báo cáo tuần, không chỉ ghi công việc đã xong mà cả rủi ro của tuần sau.|Reporting|i|B|n|b|report,routine|
+月次報告|げつじほうこく|Báo cáo hàng tháng|経営層向けの月次報告では、詳細よりも全体の状況を伝えます。|Trong báo cáo tháng cho ban lãnh đạo, truyền đạt tình hình tổng thể hơn là chi tiết.|Reporting|i|B|n|b|report,routine|
+品質目標|ひんしつもくひょう|Mục tiêu chất lượng|品質目標として、本番障害ゼロと応答時間二秒以内を掲げました。|Chúng tôi đặt mục tiêu chất lượng là không có sự cố production và thời gian phản hồi dưới hai giây.|Quality|a|B|n|b|quality,goal|
+是正措置|ぜせいそち|Biện pháp khắc phục (corrective action)|監査で指摘された事項について、是正措置の計画を提出します。|Về các điểm bị chỉ ra trong kiểm toán, chúng tôi sẽ nộp kế hoạch biện pháp khắc phục.|Quality|e|N1|n|f|quality,audit|
+計画変更|けいかくへんこう|Thay đổi kế hoạch|計画変更を行う際は、影響を受ける全員に理由と新しい日程を伝えます。|Khi thay đổi kế hoạch, cần truyền đạt lý do và lịch mới cho tất cả những người bị ảnh hưởng.|Planning|i|B|n|b|planning,change|
+リソース不足|りそーすぶそく|Thiếu nguồn lực|リソース不足が続く場合は、優先度の低いタスクを止める判断も必要です。|Nếu tình trạng thiếu nguồn lực kéo dài, cần cả quyết định dừng các task ưu tiên thấp.|Resource|i|B|n|b|resource,risk|
+過負荷|かふか|Quá tải|一部のメンバーに作業が集中し、過負荷の状態が続いています。|Công việc dồn vào một số thành viên khiến tình trạng quá tải kéo dài.|Resource|a|B|n|b|resource,workload|Cũng dùng cho máy chủ: サーバーが過負荷.
+長時間労働|ちょうじかんろうどう|Làm việc quá giờ kéo dài|長時間労働に頼った計画は、品質と離職のリスクを高めます。|Kế hoạch dựa vào làm việc quá giờ sẽ làm tăng rủi ro về chất lượng và nghỉ việc.|Resource|i|B|n|b|workload,risk|
+要員交代|よういんこうたい|Thay đổi nhân sự (thay người trong dự án)|要員交代の際は、最低二週間の引き継ぎ期間を設けてください。|Khi thay đổi nhân sự, hãy dành ít nhất hai tuần để bàn giao.|Resource|a|B|n|b|resource,handover|
+立ち上がり|たちあがり|Giai đoạn bắt nhịp (thời gian người mới quen việc)|新メンバーの立ち上がりを早めるため、環境構築の手順を整備しました。|Để rút ngắn giai đoạn bắt nhịp của thành viên mới, chúng tôi đã hoàn thiện thủ tục dựng môi trường.|Resource|a|B|n|n|onboarding|
+オンボーディング|おんぼーでぃんぐ|Onboarding — quy trình tiếp nhận, hòa nhập người mới|オンボーディング資料には、プロジェクトの用語集も含めています。|Trong tài liệu onboarding, chúng tôi đưa cả bảng thuật ngữ của dự án.|Resource|i|T|n|b|onboarding,team|
+後任|こうにん|Người kế nhiệm|来月から田中さんの後任として、山本さんがリーダーを務めます。|Từ tháng sau, anh Yamamoto sẽ làm leader thay thế anh Tanaka.|Organization|a|N1|n|b|handover,organization|
+マルチベンダー|まるちべんだー|Nhiều nhà cung cấp (môi trường nhiều vendor)|マルチベンダーの案件では、ベンダー間の調整役が欠かせません。|Ở dự án nhiều nhà cung cấp, không thể thiếu vai trò điều phối giữa các vendor.|Sourcing|a|T|n|b|vendor,integration|
+ベンダーコントロール|べんだーこんとろーる|Quản lý nhà cung cấp (vendor control)|発注側にもベンダーコントロールのスキルが求められています。|Phía đặt hàng cũng cần kỹ năng quản lý nhà cung cấp.|Sourcing|a|T|n|b|vendor,management|
+発注者|はっちゅうしゃ|Bên đặt hàng|仕様の最終決定権は発注者にあります。|Quyền quyết định cuối cùng về đặc tả thuộc về bên đặt hàng.|Contract|i|B|n|b|contract,role|
+受注者|じゅちゅうしゃ|Bên nhận đặt hàng|受注者として、リスクは早めに発注者へ伝える義務があります。|Với tư cách bên nhận đặt hàng, chúng tôi có nghĩa vụ báo sớm rủi ro cho bên đặt hàng.|Contract|i|B|n|b|contract,role|
+保守契約|ほしゅけいやく|Hợp đồng bảo trì|保守契約の範囲には、軽微な改修と問い合わせ対応が含まれます。|Phạm vi hợp đồng bảo trì bao gồm sửa đổi nhỏ và hỗ trợ trả lời câu hỏi.|Contract|i|B|n|b|contract,maintenance|

@@ -1,0 +1,63 @@
+# category: Project Management
+# code: pm
+# batch 08 — schedule, estimation, risk, contracts, offshore
+進捗管理|しんちょくかんり|Quản lý tiến độ|進捗管理はチケットの完了数ではなく、成果物の完成度で行います。|Quản lý tiến độ được thực hiện dựa trên mức hoàn thành sản phẩm, không phải số ticket đã đóng.|Schedule|i|B|vs|b|schedule,progress|
+進捗報告|しんちょくほうこく|Báo cáo tiến độ|毎週金曜日に、遅延の有無を含めた進捗報告をお送りします。|Mỗi thứ Sáu, chúng tôi sẽ gửi báo cáo tiến độ bao gồm cả việc có chậm trễ hay không.|Reporting|i|B|vs|b|progress,report|
+進捗率|しんちょくりつ|Tỷ lệ tiến độ (%)|製造工程の進捗率は現在七割ですが、難しい機能が残っています。|Tỷ lệ tiến độ giai đoạn lập trình hiện là bảy mươi phần trăm nhưng còn lại các chức năng khó.|Schedule|i|B|n|b|progress,metric|
+遅延|ちえん|Chậm trễ|外部APIの仕様確定が遅れ、結合テストに二日の遅延が発生しています。|Do việc chốt đặc tả API bên ngoài bị chậm, kiểm thử tích hợp đang trễ hai ngày.|Schedule|i|N1|vs|b|schedule,risk|
+前倒し|まえだおし|Đẩy sớm hơn kế hoạch|リスクの高い機能から前倒しで着手することにしました。|Chúng tôi quyết định bắt đầu sớm hơn kế hoạch từ các chức năng có rủi ro cao.|Schedule|i|B|vs|b|schedule|Đối lập: 後ろ倒し.
+後ろ倒し|うしろだおし|Lùi về sau so với kế hoạch|検証環境の準備が遅れたため、テスト開始を一週間後ろ倒しにします。|Do chuẩn bị môi trường kiểm chứng bị chậm, việc bắt đầu kiểm thử sẽ lùi một tuần.|Schedule|a|B|vs|b|schedule|
+巻き返し|まきかえし|Lấy lại tiến độ (sau khi bị chậm)|週末の追加作業で、遅れていた分の巻き返しを図ります。|Chúng tôi sẽ cố gắng lấy lại phần chậm trễ bằng việc làm thêm cuối tuần.|Schedule|a|N1|n|b|schedule,recovery|
+リカバリプラン|りかばりぷらん|Kế hoạch khắc phục (để lấy lại tiến độ/chất lượng)|遅延が三日を超えたため、リカバリプランを作成してお客様に提示します。|Vì chậm quá ba ngày nên chúng tôi sẽ lập kế hoạch khắc phục và trình cho khách hàng.|Schedule|a|B|n|b|schedule,recovery|
+工数|こうすう|Công số, khối lượng công (giờ/ngày công)|この改修に必要な工数は、設計からテストまでで約十五人日です。|Công số cần cho lần sửa đổi này từ thiết kế đến kiểm thử khoảng mười lăm ngày công.|Estimation|i|B|n|b|estimate,effort|
+人月|にんげつ|Người-tháng (đơn vị công số)|オフショアの単価は日本より安いですが、人月だけで比較するのは危険です。|Đơn giá offshore rẻ hơn Nhật nhưng chỉ so sánh bằng người-tháng thì nguy hiểm.|Estimation|i|B|n|b|estimate,cost|
+人日|にんにち|Người-ngày (đơn vị công số)|レビュー対応に二人日を見込んでおいてください。|Hãy dự tính hai người-ngày cho việc xử lý review.|Estimation|i|B|n|b|estimate,effort|
+見積もり精度|みつもりせいど|Độ chính xác của dự toán|要件が固まっていない段階では、見積もり精度に限界があります。|Ở giai đoạn yêu cầu chưa chốt, độ chính xác của dự toán có giới hạn.|Estimation|a|B|n|b|estimate,quality|
+概算見積もり|がいさんみつもり|Báo giá sơ bộ (ước tính thô)|まずは概算見積もりを提示し、要件定義後に正式見積もりを出します。|Trước tiên chúng tôi đưa báo giá sơ bộ, sau khi định nghĩa yêu cầu sẽ đưa báo giá chính thức.|Estimation|i|B|n|b|estimate|
+精緻化|せいちか|Làm cho tinh xác, chi tiết hơn|設計が進んだ段階で、見積もりの精緻化を行います。|Khi thiết kế đã tiến triển, chúng tôi sẽ làm cho dự toán chính xác hơn.|Estimation|e|N1|vs|f|estimate,refinement|
+バッファ|ばっふぁ|Khoảng dự phòng (thời gian, chi phí)|不確定要素が多いので、スケジュールに一割のバッファを確保しました。|Vì có nhiều yếu tố chưa chắc chắn nên chúng tôi đã dành mười phần trăm dự phòng trong lịch.|Schedule|i|T|n|b|schedule,risk|
+クリティカルパス|くりてぃかるぱす|Đường găng (chuỗi công việc quyết định thời hạn)|データ移行の作業がクリティカルパスになっているため、最優先で人を割り当てます。|Công việc chuyển dữ liệu đang là đường găng nên sẽ ưu tiên phân bổ người.|Schedule|a|T|n|t|schedule,pmbok|
+マイルストーン|まいるすとーん|Mốc quan trọng (milestone)|基本設計の承認を最初のマイルストーンとして設定しました。|Chúng tôi đặt việc phê duyệt thiết kế cơ bản làm mốc quan trọng đầu tiên.|Schedule|i|T|n|b|schedule,milestone|
+作業分解構成図|さぎょうぶんかいこうせいず|Cấu trúc phân rã công việc (WBS)|作業分解構成図をもとに、各タスクの担当と期限を決めます。|Dựa trên cấu trúc phân rã công việc, chúng tôi quyết định người phụ trách và hạn của từng task.|Planning|e|T|n|t|wbs,planning|Thường gọi tắt WBS.
+ガントチャート|がんとちゃーと|Biểu đồ Gantt|ガントチャートで工程の依存関係を確認すると、並行作業の余地が見えます。|Khi xem quan hệ phụ thuộc giữa các công đoạn trên biểu đồ Gantt, sẽ thấy khả năng làm song song.|Planning|i|T|n|t|schedule,tool|
+体制図|たいせいず|Sơ đồ tổ chức dự án|プロジェクトの体制図に、お客様側の窓口担当も記載してください。|Hãy ghi cả người đầu mối phía khách hàng vào sơ đồ tổ chức dự án.|Organization|i|B|n|b|organization,team|
+役割分担|やくわりぶんたん|Phân chia vai trò|日本側とベトナム側の役割分担を明確にしておかないと、作業が重複します。|Nếu không phân chia rõ vai trò giữa phía Nhật và phía Việt Nam thì công việc sẽ bị trùng lặp.|Organization|i|B|n|b|team,responsibility|
+アサイン|あさいん|Phân công (giao người vào việc/dự án)|来月から新しいメンバーを二名アサインする予定です。|Dự kiến từ tháng sau sẽ phân công thêm hai thành viên mới.|Resource|i|B|vs|b|resource,team|
+要員計画|よういんけいかく|Kế hoạch nhân sự (số người theo từng giai đoạn)|テスト工程のピークに合わせて要員計画を見直しました。|Chúng tôi đã xem lại kế hoạch nhân sự cho khớp với đỉnh của giai đoạn kiểm thử.|Resource|a|B|n|b|resource,planning|
+稼働率|かどうりつ|Tỷ lệ huy động (mức sử dụng nhân lực/thiết bị)|リーダーの稼働率が百二十パーセントを超えているため、作業を分散させます。|Vì mức huy động của leader vượt một trăm hai mươi phần trăm nên sẽ phân tán công việc.|Resource|a|B|n|b|resource,metric|Trong vận hành hệ thống còn có nghĩa tỷ lệ uptime.
+工程|こうてい|Công đoạn, giai đoạn (trong quy trình phát triển)|どの工程で混入した不具合なのかを分析してください。|Hãy phân tích lỗi đã lẫn vào ở công đoạn nào.|Process|i|N1|n|b|process,phase|
+上流工程|じょうりゅうこうてい|Công đoạn thượng nguồn (yêu cầu, thiết kế)|将来は上流工程から参画できるブリッジSEを目指しています。|Trong tương lai tôi hướng tới trở thành BrSE có thể tham gia từ công đoạn thượng nguồn.|Process|i|B|n|b|process,career|
+下流工程|かりゅうこうてい|Công đoạn hạ nguồn (lập trình, kiểm thử)|下流工程だけを請け負う体制では、仕様の背景が見えにくくなります。|Với cơ cấu chỉ nhận công đoạn hạ nguồn thì khó nhìn thấy bối cảnh của đặc tả.|Process|i|B|n|b|process|
+ウォーターフォール|うぉーたーふぉーる|Mô hình thác nước (waterfall)|ウォーターフォールでは、工程ごとに成果物の承認を得てから次へ進みます。|Trong mô hình thác nước, mỗi giai đoạn phải được phê duyệt sản phẩm rồi mới sang giai đoạn tiếp.|Methodology|i|T|n|t|methodology,waterfall|
+スプリント|すぷりんと|Sprint (chu kỳ phát triển ngắn trong Scrum)|次のスプリントでは、検索機能の改善を最優先にします。|Ở sprint tiếp theo, cải thiện chức năng tìm kiếm sẽ được ưu tiên nhất.|Agile|i|T|n|t|agile,scrum|
+振り返り|ふりかえり|Nhìn lại, rút kinh nghiệm (retrospective)|スプリントの最後に振り返りを行い、改善点を一つ決めます。|Cuối mỗi sprint, chúng tôi nhìn lại và chọn ra một điểm cải tiến.|Agile|i|B|n|b|agile,retrospective|
+プロダクトバックログ|ぷろだくとばっくろぐ|Product backlog (danh sách hạng mục sản phẩm)|新しい要望はプロダクトバックログに追加し、優先度はオーナーが決めます。|Mong muốn mới được thêm vào product backlog, còn độ ưu tiên do product owner quyết định.|Agile|a|T|n|t|agile,scrum|
+ベロシティ|べろしてぃ|Velocity (năng suất đội trong một sprint)|直近三回のベロシティから、リリースまでに必要なスプリント数を見積もりました。|Từ velocity của ba sprint gần nhất, chúng tôi ước tính số sprint cần đến khi phát hành.|Agile|a|T|n|t|agile,metric|
+朝会|あさかい|Họp buổi sáng (daily stand-up)|朝会では、昨日やったこと、今日やること、困っていることを共有します。|Trong họp buổi sáng, chia sẻ việc đã làm hôm qua, việc làm hôm nay và khó khăn.|Agile|i|B|n|b|meeting,agile|
+リスク管理|りすくかんり|Quản lý rủi ro|リスク管理表には、発生確率と影響度を必ず記載してください。|Trong bảng quản lý rủi ro, hãy luôn ghi xác suất xảy ra và mức độ ảnh hưởng.|Risk|i|B|n|b|risk|
+リスク対応策|りすくたいおうさく|Biện pháp ứng phó rủi ro|キーマンの退職に備えたリスク対応策として、ドキュメントを整備します。|Như biện pháp ứng phó rủi ro khi người chủ chốt nghỉ việc, chúng tôi hoàn thiện tài liệu.|Risk|a|B|n|b|risk,mitigation|
+回避策|かいひさく|Biện pháp né tránh, giải pháp thay thế (workaround)|根本修正までの間は、手順書に記載した回避策で対応してください。|Trong thời gian chờ sửa triệt để, hãy xử lý bằng giải pháp thay thế ghi trong tài liệu thủ tục.|Risk|a|B|n|b|workaround,incident|
+暫定対応|ざんていたいおう|Xử lý tạm thời|まず暫定対応でサービスを復旧させ、原因調査は後で行います。|Trước tiên khôi phục dịch vụ bằng xử lý tạm thời, việc điều tra nguyên nhân làm sau.|Incident|i|B|n|b|incident,workaround|
+恒久対応|こうきゅうたいおう|Xử lý triệt để (lâu dài)|恒久対応として、入力チェックのロジックを修正します。|Như biện pháp xử lý triệt để, chúng tôi sẽ sửa logic kiểm tra đầu vào.|Incident|a|B|n|b|incident,fix|Cặp đôi đi cùng 暫定対応.
+エスカレーション|えすかれーしょん|Báo cáo lên cấp cao hơn (escalation)|二時間以内に解決できない障害は、責任者へエスカレーションするルールです。|Quy tắc là sự cố không giải quyết được trong hai tiếng phải báo cáo lên người chịu trách nhiệm.|Communication|i|B|vs|b|escalation,incident|
+判断を仰ぐ|はんだんをあおぐ|Xin ý kiến quyết định (từ cấp trên/khách hàng)|仕様の解釈が分かれたため、お客様に判断を仰ぐことにしました。|Vì cách hiểu đặc tả bị chia rẽ nên chúng tôi quyết định xin ý kiến quyết định của khách hàng.|Decision|a|N1|exp|f|decision,escalation|
+予実管理|よじつかんり|Quản lý kế hoạch so với thực tế (dự toán vs thực tế)|工数の予実管理を週次で行い、乖離が大きい作業を早めに把握します。|Chúng tôi quản lý công số kế hoạch so với thực tế hàng tuần để nắm sớm công việc chênh lệch lớn.|Cost|a|B|n|b|cost,monitoring|
+予算超過|よさんちょうか|Vượt ngân sách|このままでは予算超過になるため、スコープの調整をご相談させてください。|Nếu cứ thế này sẽ vượt ngân sách, cho phép chúng tôi trao đổi việc điều chỉnh phạm vi.|Cost|i|B|n|b|cost,risk|
+赤字案件|あかじあんけん|Dự án lỗ|見積もりの甘さが原因で、この案件は赤字案件になってしまいました。|Do báo giá quá lạc quan, dự án này đã trở thành dự án lỗ.|Cost|a|B|n|n|cost,risk|
+炎上案件|えんじょうあんけん|Dự án "cháy" (dự án gặp khủng hoảng nghiêm trọng)|炎上案件の立て直しのため、経験豊富なマネージャーが投入されました。|Một quản lý giàu kinh nghiệm đã được đưa vào để vực dậy dự án đang "cháy".|Risk|a|B|n|n|risk,crisis|Từ lóng phổ biến trong ngành IT Nhật.
+火消し|ひけし|Chữa cháy (xử lý khủng hoảng dự án)|彼は社内で火消し役として、問題プロジェクトを何度も救ってきました。|Anh ấy trong công ty đóng vai "lính cứu hỏa", nhiều lần cứu các dự án có vấn đề.|Risk|a|B|n|n|crisis|
+手戻り|てもどり|Làm lại (quay lại công đoạn trước do sai sót)|上流での確認不足は、後工程での大きな手戻りにつながります。|Thiếu xác nhận ở thượng nguồn sẽ dẫn đến làm lại lớn ở công đoạn sau.|Quality|i|B|n|b|rework,quality|
+仕切り直し|しきりなおし|Làm lại từ đầu, khởi động lại (kế hoạch)|前提が大きく変わったため、計画は一度仕切り直しとなりました。|Vì tiền đề thay đổi lớn nên kế hoạch đã được khởi động lại từ đầu.|Planning|a|N1|n|b|planning,reset|
+再見積もり|さいみつもり|Báo giá lại|追加要件の影響が大きいため、再見積もりをさせていただきます。|Vì ảnh hưởng của yêu cầu bổ sung lớn nên chúng tôi xin phép báo giá lại.|Estimation|i|B|n|b|estimate,change|
+追加費用|ついかひよう|Chi phí phát sinh thêm|仕様変更に伴う追加費用は、別途お見積もりいたします。|Chi phí phát sinh do thay đổi đặc tả sẽ được báo giá riêng.|Cost|i|B|n|b|cost,change|
+請負契約|うけおいけいやく|Hợp đồng nhận khoán (cam kết hoàn thành sản phẩm)|請負契約では、成果物の完成について受注者が責任を負います。|Trong hợp đồng nhận khoán, bên nhận chịu trách nhiệm về việc hoàn thành sản phẩm.|Contract|a|B|n|f|contract,legal|
+準委任契約|じゅんいにんけいやく|Hợp đồng chuẩn ủy nhiệm (cam kết thực hiện công việc, không cam kết kết quả)|要件定義フェーズは準委任契約、開発フェーズは請負契約で締結しました。|Giai đoạn định nghĩa yêu cầu ký hợp đồng chuẩn ủy nhiệm, giai đoạn phát triển ký hợp đồng nhận khoán.|Contract|e|B|n|f|contract,legal|Khác biệt quan trọng với 請負 về trách nhiệm kết quả.
+偽装請負|ぎそううけおい|Nhận khoán trá hình (thực chất là phái cử lao động, vi phạm luật)|お客様が当社の要員に直接指示を出すと、偽装請負とみなされる恐れがあります。|Nếu khách hàng trực tiếp ra lệnh cho nhân sự của công ty ta thì có nguy cơ bị coi là nhận khoán trá hình.|Contract|e|B|n|f|contract,legal,compliance|
+検収|けんしゅう|Nghiệm thu|納品後二週間以内に検収を行い、結果をご連絡いただく契約です。|Theo hợp đồng, khách hàng nghiệm thu trong vòng hai tuần sau khi giao hàng và báo kết quả.|Contract|a|B|vs|b|contract,acceptance|
+納期|のうき|Thời hạn giao hàng|納期を守るために、優先度の低い機能は次回リリースに回します。|Để giữ đúng thời hạn giao hàng, các chức năng ưu tiên thấp sẽ chuyển sang lần phát hành sau.|Schedule|i|N2|n|b|deadline,delivery|
+成果物|せいかぶつ|Sản phẩm bàn giao (deliverable)|各工程の成果物と、その承認者を一覧にまとめました。|Tôi đã tổng hợp danh sách sản phẩm bàn giao của từng giai đoạn và người phê duyệt.|Delivery|i|B|n|b|deliverable|
+契約不適合責任|けいやくふてきごうせきにん|Trách nhiệm do không phù hợp hợp đồng (thay cho 瑕疵担保 từ 2020)|民法改正により、瑕疵担保責任は契約不適合責任に変わりました。|Do sửa đổi Bộ luật Dân sự, trách nhiệm bảo đảm khiếm khuyết đã đổi thành trách nhiệm do không phù hợp hợp đồng.|Contract|e|B|n|f|contract,legal|
+瑕疵|かし|Khiếm khuyết, lỗi (thuật ngữ pháp lý)|納品後に見つかった瑕疵については、無償で修正いたします。|Đối với khiếm khuyết phát hiện sau khi giao, chúng tôi sẽ sửa miễn phí.|Contract|e|N1|n|f|contract,legal,defect|
+オフショア開発|おふしょあかいはつ|Phát triển offshore (thuê ngoài ở nước khác)|オフショア開発では、仕様の伝え方が品質を大きく左右します。|Trong phát triển offshore, cách truyền đạt đặc tả ảnh hưởng lớn đến chất lượng.|Offshore|i|B|n|b|offshore|
+ブリッジSE|ぶりっじえすいー|BrSE — kỹ sư cầu nối (giữa khách hàng Nhật và đội offshore)|ブリッジSEは、言葉だけでなく文化や仕事の進め方の違いも橋渡しします。|BrSE không chỉ là cầu nối ngôn ngữ mà còn cả khác biệt văn hóa và cách làm việc.|Offshore|i|B|n|b|offshore,role|
+ニアショア開発|にあしょあかいはつ|Phát triển nearshore (thuê ngoài ở địa phương khác trong nước)|コミュニケーションを重視して、地方拠点でのニアショア開発を選びました。|Coi trọng giao tiếp, chúng tôi đã chọn phát triển nearshore ở cơ sở địa phương.|Offshore|a|B|n|b|outsourcing|

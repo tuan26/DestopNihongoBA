@@ -1,0 +1,52 @@
+# category: Japanese Business / Business Communication
+# code: biz
+# batch 06 — formal expressions, reporting, handover
+相見積もり|あいみつもり|Lấy báo giá từ nhiều nhà cung cấp để so sánh|今回の案件は三社から相見積もりを取る予定だそうです。|Nghe nói dự án lần này sẽ lấy báo giá so sánh từ ba công ty.|Procurement|a|B|n|b|procurement,estimate|Viết tắt khẩu ngữ: 相見積.
+値引き交渉|ねびきこうしょう|Đàm phán giảm giá|値引き交渉に応じる場合は、作業範囲の見直しもセットで提案します。|Nếu chấp nhận đàm phán giảm giá, chúng tôi sẽ đề xuất kèm việc xem xét lại phạm vi công việc.|Negotiation|i|B|n|b|negotiation,price|
+発注書|はっちゅうしょ|Đơn đặt hàng (purchase order)|発注書を受領してから、正式に作業を開始いたします。|Chúng tôi sẽ chính thức bắt đầu công việc sau khi nhận được đơn đặt hàng.|Contract|i|B|n|b|contract,procurement|Đối lại: 注文請書 (xác nhận nhận đơn).
+請求書|せいきゅうしょ|Hóa đơn yêu cầu thanh toán|月末締めで請求書を発行し、翌月末にお支払いいただきます。|Hóa đơn được phát hành theo chốt cuối tháng và thanh toán vào cuối tháng sau.|Contract|i|N2|n|b|invoice,accounting|
+不躾ながら|ぶしつけながら|Xin thứ lỗi cho sự đường đột…|不躾ながら、ご予算の上限をお伺いしてもよろしいでしょうか。|Xin thứ lỗi cho sự đường đột, tôi có thể hỏi mức ngân sách tối đa được không ạ?|Keigo|e|N1|exp|f|keigo,cushion|Câu đệm khi hỏi điều tế nhị.
+僭越ながら|せんえつながら|Xin mạn phép (khi làm việc vượt vị trí của mình)|僭越ながら、私から本日の進行を務めさせていただきます。|Xin mạn phép, tôi sẽ đảm nhận việc điều phối buổi hôm nay.|Keigo|e|N1|exp|f|keigo,meeting|
+重ね重ね|かさねがさね|Một lần nữa, hết lần này đến lần khác (nhấn mạnh xin lỗi/cảm ơn)|重ね重ねのお願いで恐縮ですが、ご確認をお願いいたします。|Thật ngại khi phải nhờ vả nhiều lần, xin anh/chị xác nhận giúp.|Keigo|a|N1|adv|f|keigo,apology|
+改めて|あらためて|Lại một lần nữa / vào dịp khác|詳細が決まりましたら、改めてご連絡いたします。|Khi chi tiết được quyết định, tôi sẽ liên lạc lại.|Email|i|N2|adv|b|email|
+引き続き|ひきつづき|Tiếp tục (như trước)|引き続きどうぞよろしくお願いいたします。|Rất mong tiếp tục nhận được sự giúp đỡ của anh/chị.|Email|i|N2|adv|b|email,closing|Câu kết email phổ biến.
+ご一読|ごいちどく|Đọc qua một lượt|議事録を送付しますので、ご一読いただけますと幸いです。|Tôi xin gửi biên bản họp, nếu anh/chị đọc qua một lượt thì thật quý hóa.|Email|a|B|n|f|email,keigo|
+ご一考|ごいっこう|Cân nhắc, suy nghĩ thử|別案もご用意しましたので、ご一考いただけますでしょうか。|Chúng tôi cũng đã chuẩn bị phương án khác, mong anh/chị cân nhắc.|Email|a|B|n|f|email,proposal|
+ご指摘|ごしてき|Sự chỉ ra, góp ý (của người khác)|ご指摘いただいた箇所を修正し、再提出いたします。|Chúng tôi sẽ sửa những chỗ anh/chị đã chỉ ra và nộp lại.|Review|i|B|n|f|review,feedback|
+ご指導ご鞭撻|ごしどうごべんたつ|Sự chỉ bảo và khích lệ|今後ともご指導ご鞭撻のほど、よろしくお願い申し上げます。|Rất mong tiếp tục nhận được sự chỉ bảo và khích lệ của quý vị.|Keigo|e|N1|exp|f|keigo,closing|Câu chào trang trọng khi nhận việc mới/kết thư.
+感謝申し上げます|かんしゃもうしあげます|Xin chân thành cảm ơn (rất trang trọng)|多大なるご協力をいただき、心より感謝申し上げます。|Chúng tôi xin chân thành cảm ơn sự hợp tác to lớn của quý vị.|Keigo|i|B|exp|f|keigo,gratitude|
+遺憾|いかん|Đáng tiếc (trang trọng, thường trong văn bản chính thức)|今回の情報漏えいは誠に遺憾であり、再発防止に全力で取り組みます。|Vụ rò rỉ thông tin lần này thật đáng tiếc, chúng tôi sẽ nỗ lực hết sức để ngăn tái phát.|Formal|e|N1|adj-na|f|formal,apology|Không hẳn là lời xin lỗi trực tiếp.
+申し伝えます|もうしつたえます|Tôi sẽ chuyển lời (khiêm nhường)|ご伝言の件、担当の佐藤に申し伝えます。|Về lời nhắn của anh/chị, tôi sẽ chuyển lời cho anh Sato phụ trách.|Phone|a|B|exp|f|keigo,phone|
+申し送り|もうしおくり|Bàn giao thông tin (cho ca/người tiếp theo)|夜間当番への申し送り事項を共有ノートに記載してください。|Hãy ghi các mục bàn giao cho người trực đêm vào sổ chia sẻ.|Handover|a|B|n|b|handover,operation|
+引き継ぎ|ひきつぎ|Bàn giao công việc|異動前に後任者への引き継ぎを完了させてください。|Hãy hoàn thành bàn giao cho người kế nhiệm trước khi chuyển công tác.|Handover|i|N2|n|b|handover|
+直行直帰|ちょっこうちょっき|Đi thẳng đến chỗ khách và về thẳng nhà (không ghé công ty)|明日はお客様先での打ち合わせのため、直行直帰します。|Ngày mai có họp ở chỗ khách hàng nên tôi đi thẳng và về thẳng nhà.|Workplace|a|B|n|b|workplace,schedule|
+定例会|ていれいかい|Họp định kỳ|毎週水曜日の定例会で、進捗と課題を報告しています。|Chúng tôi báo cáo tiến độ và vấn đề tại buổi họp định kỳ thứ Tư hàng tuần.|Meeting|i|B|n|b|meeting,routine|Thường gọi tắt: 定例.
+報連相|ほうれんそう|Báo cáo – Liên lạc – Thảo luận (nguyên tắc giao tiếp công sở Nhật)|オフショアチームとは、こまめな報連相を心がけています。|Với đội offshore, chúng tôi luôn chú ý báo cáo – liên lạc – thảo luận thường xuyên.|Business Culture|i|B|n|b|culture,communication|Viết tắt của 報告・連絡・相談.
+打診|だしん|Thăm dò ý kiến, hỏi thử|追加案件の可能性について、先方に打診してみます。|Tôi sẽ thử thăm dò phía đối tác về khả năng có thêm dự án.|Negotiation|a|N1|vs|b|negotiation,sales|
+ご一報|ごいっぽう|Báo một tiếng / liên lạc báo tin|ご不明な点がございましたら、ご一報ください。|Nếu có điểm nào chưa rõ, xin vui lòng báo cho chúng tôi.|Email|a|B|n|f|email,keigo|
+行き違い|いきちがい|Gửi lệch nhau (thư đi thư đến cùng lúc), hiểu lầm|本メールと行き違いでご送付いただいている場合は、ご容赦ください。|Nếu anh/chị đã gửi lệch nhau với email này, xin vui lòng bỏ qua.|Email|a|N1|n|b|email|Câu chuẩn trong email nhắc nhở thanh toán/trả lời.
+見解|けんかい|Quan điểm, kiến giải|性能問題の原因について、ベンダーとしての見解をお聞かせください。|Xin cho biết quan điểm của phía nhà cung cấp về nguyên nhân vấn đề hiệu năng.|Discussion|a|N1|n|f|discussion,opinion|
+所感|しょかん|Cảm nghĩ, nhận xét cá nhân|プロジェクト終了にあたり、メンバー各自の所感を共有しました。|Nhân dịp kết thúc dự án, mỗi thành viên đã chia sẻ cảm nghĩ của mình.|Discussion|e|N1|n|f|discussion,retrospective|
+忌憚のない|きたんのない|Thẳng thắn, không ngại ngần|忌憚のないご意見をいただければ、次回の改善に生かします。|Nếu nhận được ý kiến thẳng thắn, chúng tôi sẽ vận dụng để cải thiện lần sau.|Discussion|e|N1|exp|f|discussion,feedback|
+端的に|たんてきに|Một cách ngắn gọn, đi thẳng vào vấn đề|時間が限られていますので、端的にご説明いたします。|Vì thời gian có hạn, tôi xin giải thích ngắn gọn.|Discussion|a|N1|adv|b|presentation|
+結論から申し上げますと|けつろんからもうしあげますと|Xin nói kết luận trước|結論から申し上げますと、今月末のリリースは可能です。|Xin nói kết luận trước, việc phát hành cuối tháng này là khả thi.|Presentation|i|B|exp|f|presentation,report|Cách báo cáo được cấp trên Nhật đánh giá cao.
+補足|ほそく|Bổ sung (thông tin)|先ほどの説明に一点補足させてください。|Cho phép tôi bổ sung một điểm cho phần giải thích lúc nãy.|Discussion|i|N1|vs|b|discussion|
+追記|ついき|Ghi thêm, viết bổ sung|議事録に決定事項の期限を追記しました。|Tôi đã ghi thêm thời hạn của các nội dung quyết định vào biên bản.|Documentation|i|B|vs|b|documentation|
+訂正|ていせい|Đính chính, sửa lại|先ほどお送りした金額に誤りがありましたので、訂正いたします。|Số tiền tôi gửi lúc nãy có sai sót nên xin được đính chính.|Email|i|N2|vs|b|email,correction|
+差し替え|さしかえ|Thay thế (tài liệu/file bằng bản mới)|資料に誤字がありましたので、差し替えをお願いいたします。|Tài liệu có lỗi chính tả, xin vui lòng thay bằng bản mới.|Documentation|i|B|n|b|documentation,version|
+最新版|さいしんばん|Phiên bản mới nhất|共有フォルダの最新版を正としてください。|Hãy coi bản mới nhất trong thư mục chia sẻ là bản chính xác.|Documentation|i|N2|n|b|documentation,version|正とする = coi là chuẩn.
+共有事項|きょうゆうじこう|Các nội dung cần chia sẻ|朝会の最後に、各自の共有事項を一分で話してもらいます。|Cuối buổi họp sáng, mỗi người nói nội dung cần chia sẻ trong một phút.|Meeting|i|B|n|b|meeting,sharing|
+了解しました|りょうかいしました|Đã hiểu (thân mật, ngang hàng)|了解しました。手順書の更新は私が対応します。|Đã hiểu. Việc cập nhật tài liệu thủ tục tôi sẽ đảm nhận.|Keigo|i|B|exp|n|reply,caution|Bị coi là thiếu lịch sự với cấp trên/khách hàng → dùng 承知しました.
+お力添え|おちからぞえ|Sự giúp đỡ, hỗ trợ (kính ngữ)|皆様のお力添えのおかげで、無事に稼働を迎えることができました。|Nhờ sự giúp đỡ của mọi người, hệ thống đã vận hành suôn sẻ.|Keigo|a|N1|n|f|keigo,gratitude|
+ご尽力|ごじんりょく|Sự tận lực, nỗ lực hết mình (của đối phương)|短期間での対応にご尽力いただき、ありがとうございました。|Cảm ơn anh/chị đã tận lực xử lý trong thời gian ngắn.|Keigo|a|N1|n|f|keigo,gratitude|
+ご配慮|ごはいりょ|Sự quan tâm, cân nhắc chu đáo|スケジュールについてご配慮いただき、感謝しております。|Chúng tôi rất biết ơn vì anh/chị đã quan tâm chu đáo về lịch trình.|Keigo|i|N2|n|f|keigo|
+ご高配|ごこうはい|Sự quan tâm ưu ái (rất trang trọng, văn thư)|平素は格別のご高配を賜り、厚く御礼申し上げます。|Xin chân thành cảm ơn sự quan tâm đặc biệt mà quý vị luôn dành cho chúng tôi.|Keigo|e|N1|n|f|keigo,letter|Dùng trong thư/văn bản chính thức.
+お含みおきください|おふくみおきください|Xin hãy lưu ý / ghi nhớ giúp|作業当日は一時的に接続が切れる可能性がある点、お含みおきください。|Xin lưu ý rằng vào ngày làm việc kết nối có thể bị ngắt tạm thời.|Email|e|B|exp|f|email,notice|
+ご留意ください|ごりゅういください|Xin hãy lưu ý|パスワードは大文字と小文字を区別しますので、ご留意ください。|Mật khẩu phân biệt chữ hoa và chữ thường, xin hãy lưu ý.|Email|a|B|exp|f|email,notice|
+ご承知おきください|ごしょうちおきください|Xin hãy nắm rõ trước (thông báo để biết)|来月から申請様式が変わりますので、ご承知おきください。|Từ tháng sau mẫu đăng ký sẽ thay đổi, xin hãy nắm rõ.|Email|a|B|exp|f|email,notice|Với cấp trên nên dùng お含みおきください thay thế.
+ご無理を申し上げ|ごむりをもうしあげ|Đã đưa ra yêu cầu quá sức (xin lỗi khi nhờ việc khó)|短納期でご無理を申し上げ、大変恐縮です。|Chúng tôi thật áy náy vì đã yêu cầu quá sức với thời hạn ngắn như vậy.|Keigo|e|B|exp|f|keigo,apology|
+お言葉に甘えて|おことばにあまえて|Xin mạn phép nhận lời (đồng ý theo lời mời/đề nghị)|お言葉に甘えて、資料の提出は明日にさせていただきます。|Xin mạn phép nhận lời, tôi sẽ nộp tài liệu vào ngày mai.|Keigo|a|B|exp|f|keigo|
+ご迷惑をおかけし|ごめいわくをおかけし|Đã gây phiền phức (mở đầu lời xin lỗi)|システム停止によりご迷惑をおかけし、申し訳ございません。|Xin lỗi vì sự ngừng hệ thống đã gây phiền phức cho quý vị.|Apology|i|B|exp|f|apology|
+お詫び申し上げます|おわびもうしあげます|Xin thành thật xin lỗi (trang trọng)|ご不便をおかけしましたことを、心よりお詫び申し上げます。|Chúng tôi thành thật xin lỗi vì đã gây bất tiện.|Apology|i|B|exp|f|apology,formal|
+謹んで|つつしんで|Kính cẩn, trân trọng|このたびの件につきまして、謹んでお詫び申し上げます。|Về việc lần này, chúng tôi xin trân trọng gửi lời xin lỗi.|Keigo|e|N1|adv|f|keigo,formal|
+何卒|なにとぞ|Kính mong, xin hết lòng (nhấn mạnh lời nhờ)|ご多忙のところ恐縮ですが、何卒よろしくお願い申し上げます。|Thật ngại khi anh/chị bận rộn, kính mong anh/chị giúp đỡ.|Keigo|a|N1|adv|f|keigo,request|

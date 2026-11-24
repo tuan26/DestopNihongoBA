@@ -1,0 +1,53 @@
+# category: Japanese Business / Business Communication
+# code: biz
+# batch 05 — email keigo, apologies, negotiation basics
+お世話になっております|おせわになっております|Cảm ơn sự giúp đỡ (câu chào mở đầu email/điện thoại công việc)|いつもお世話になっております。ABC株式会社の田中です。|Xin cảm ơn sự giúp đỡ của quý vị. Tôi là Tanaka của công ty ABC.|Email|i|B|exp|b|email,greeting|Câu mở đầu gần như bắt buộc trong email gửi khách hàng/đối tác.
+恐れ入りますが|おそれいりますが|Thật ngại quá nhưng… / Xin lỗi đã làm phiền nhưng…|恐れ入りますが、添付資料の三ページ目をご覧いただけますでしょうか。|Xin lỗi làm phiền, anh/chị có thể xem trang thứ ba của tài liệu đính kèm được không ạ?|Email|i|B|exp|f|email,keigo,request|Đệm trước lời nhờ vả để làm mềm câu.
+恐縮ですが|きょうしゅくですが|Thật lấy làm ngại nhưng…|お忙しいところ恐縮ですが、本日中にご回答いただけますと助かります。|Thật ngại khi làm phiền lúc anh/chị bận, nếu có thể trả lời trong hôm nay thì tốt quá.|Email|a|B|exp|f|email,keigo,request|Trang trọng hơn 恐れ入りますが.
+ご確認のほど|ごかくにんのほど|(Kính mong) xem xét xác nhận giúp|修正版を送付いたしますので、ご確認のほどよろしくお願いいたします。|Tôi xin gửi bản đã sửa, kính mong anh/chị xác nhận giúp.|Email|i|B|exp|f|email,keigo,request|〜のほど làm câu nhờ vả mềm và trang trọng hơn.
+ご査収ください|ごさしゅうください|Xin vui lòng kiểm tra và nhận (tài liệu gửi kèm)|見積書を添付いたしましたので、ご査収ください。|Tôi đã đính kèm bảng báo giá, xin vui lòng kiểm tra và nhận.|Email|a|B|exp|f|email,keigo,attachment|Dùng khi gửi tài liệu, hóa đơn, báo giá.
+取り急ぎ|とりいそぎ|Trước mắt xin gửi nhanh… (thông báo vội, chi tiết sau)|取り急ぎ、受領のご連絡まで。詳細は明日改めてご報告します。|Trước mắt xin báo là đã nhận. Chi tiết tôi sẽ báo cáo lại vào ngày mai.|Email|i|B|adv|b|email|Không dùng với cấp trên/khách hàng quan trọng nếu nội dung cần chu đáo.
+念のため|ねんのため|Để cho chắc / phòng khi|念のため、明日の打ち合わせの開始時刻を再送いたします。|Để cho chắc, tôi xin gửi lại giờ bắt đầu buổi họp ngày mai.|Email|i|N2|adv|b|email,confirmation|
+ご教示ください|ごきょうじください|Xin chỉ giáo / xin cho biết|API仕様書の最新版の格納場所をご教示ください。|Xin cho tôi biết nơi lưu bản mới nhất của tài liệu đặc tả API.|Email|a|B|exp|f|email,keigo,request|Lịch sự hơn 教えてください; đọc là きょうじ (không phải きょうし).
+ご了承ください|ごりょうしょうください|Xin vui lòng thông cảm / chấp nhận|メンテナンス中はシステムをご利用いただけませんので、ご了承ください。|Trong thời gian bảo trì không thể sử dụng hệ thống, xin vui lòng thông cảm.|Email|i|B|exp|f|email,notice|
+ご容赦ください|ごようしゃください|Xin lượng thứ / mong bỏ qua cho|行き届かない点もあるかと存じますが、何卒ご容赦ください。|Có thể còn nhiều điểm chưa chu đáo, kính mong quý vị lượng thứ.|Email|a|B|exp|f|email,apology|Trang trọng hơn ご了承ください, mang ý xin lỗi.
+ご放念ください|ごほうねんください|Xin đừng bận tâm (bỏ qua nội dung trước)|先ほどのメールは誤送信ですので、ご放念ください。|Email lúc nãy là gửi nhầm, xin anh/chị đừng bận tâm.|Email|e|B|exp|f|email,keigo|Dùng khi muốn hủy/rút lại email trước.
+承知いたしました|しょうちいたしました|Tôi đã hiểu / xin tuân theo (khiêm nhường)|日程変更の件、承知いたしました。資料も合わせて修正いたします。|Về việc thay đổi lịch, tôi đã rõ. Tôi cũng sẽ sửa tài liệu cho phù hợp.|Keigo|i|B|exp|f|keigo,reply|Dùng thay 了解しました với cấp trên, khách hàng.
+かしこまりました|かしこまりました|Vâng, tôi xin tuân lệnh (rất lịch sự)|かしこまりました。資料を印刷して会議室にお持ちします。|Vâng ạ. Tôi sẽ in tài liệu và mang đến phòng họp.|Keigo|i|B|exp|f|keigo,reply|Lịch sự hơn 承知しました, thường dùng khi tiếp khách.
+拝見する|はいけんする|Xem (khiêm nhường ngữ của 見る)|送付いただいた設計書を拝見しました。二点ほど質問があります。|Tôi đã xem tài liệu thiết kế anh/chị gửi. Tôi có khoảng hai câu hỏi.|Keigo|i|N2|v|f|keigo|
+ご足労|ごそくろう|Sự phiền đi lại (cảm ơn ai đã cất công đến)|本日は弊社までご足労いただき、誠にありがとうございます。|Xin chân thành cảm ơn quý vị hôm nay đã cất công đến công ty chúng tôi.|Keigo|a|B|n|f|keigo,meeting|Dùng với người tới gặp mình.
+お手数をおかけしますが|おてすうをおかけしますが|Xin lỗi vì làm phiền anh/chị nhưng…|お手数をおかけしますが、ログを取得して共有いただけますでしょうか。|Xin lỗi làm phiền anh/chị, anh/chị có thể lấy log và chia sẻ giúp không?|Email|i|B|exp|f|email,request|
+差し支えなければ|さしつかえなければ|Nếu không có gì trở ngại thì…|差し支えなければ、現在お使いの帳票のサンプルをお送りいただけますか。|Nếu không phiền, anh/chị có thể gửi mẫu biểu mẫu đang dùng không?|Email|a|B|exp|f|email,request|
+ご都合|ごつごう|Sự thuận tiện (thời gian) của đối phương|来週のご都合をお聞かせいただけますでしょうか。|Anh/chị có thể cho biết thời gian thuận tiện trong tuần sau không ạ?|Schedule|i|B|n|f|schedule,keigo|
+折り返し|おりかえし|Gọi lại / phản hồi lại ngay|担当者が戻り次第、折り返しお電話いたします。|Ngay khi người phụ trách quay lại, chúng tôi sẽ gọi lại cho anh/chị.|Phone|i|N2|n|b|phone,reply|
+至急|しきゅう|Khẩn cấp, gấp|本番環境で障害が発生したため、至急ご確認をお願いします。|Vì có sự cố trên môi trường production, xin hãy xác nhận gấp.|Email|i|N2|adv|b|email,urgent|Thường đặt trong tiêu đề email: 【至急】.
+いただけますと幸いです|いただけますとさいわいです|Nếu được… thì thật quý hóa (nhờ vả lịch sự)|今週中にご返信いただけますと幸いです。|Nếu anh/chị phản hồi trong tuần này thì thật quý hóa.|Email|i|B|exp|f|email,request|Cách kết thúc lời nhờ vả rất phổ biến trong email.
+幸甚|こうじん|Vô cùng may mắn / hết sức biết ơn (rất trang trọng)|ご協力を賜れましたら幸甚に存じます。|Nếu nhận được sự hợp tác của quý vị thì chúng tôi vô cùng biết ơn.|Email|e|N1|n|f|email,formal|Văn viết rất trang trọng; 幸甚に存じます.
+失念|しつねん|Quên mất (cách nói trang trọng)|ご依頼いただいた件を失念しており、大変申し訳ございません。|Tôi đã quên mất việc anh/chị nhờ, thành thật xin lỗi.|Apology|a|N1|vs|f|apology|Trang trọng hơn 忘れる.
+不手際|ふてぎわ|Sự sơ suất, xử lý vụng về|弊社の不手際によりご迷惑をおかけし、深くお詫び申し上げます。|Do sơ suất của công ty chúng tôi đã gây phiền phức, chúng tôi xin thành thật xin lỗi.|Apology|a|N1|n|f|apology|
+再発防止|さいはつぼうし|Phòng ngừa tái phát|再発防止策として、リリース前のチェック項目を追加しました。|Như biện pháp phòng ngừa tái phát, chúng tôi đã thêm mục kiểm tra trước khi phát hành.|Apology|i|B|n|b|incident,quality|Mục bắt buộc trong báo cáo sự cố gửi khách hàng Nhật.
+経緯|けいい|Diễn biến, quá trình dẫn đến sự việc|仕様が変更された経緯を、新しいメンバーに説明しておいてください。|Hãy giải thích cho thành viên mới diễn biến dẫn đến việc thay đổi đặc tả.|Report|i|N1|n|b|report,history|Đọc けいい; trong văn nói đôi khi いきさつ.
+顛末|てんまつ|Đầu đuôi sự việc (từ đầu đến kết thúc)|障害の顛末を報告書にまとめ、お客様に提出しました。|Chúng tôi đã tổng hợp đầu đuôi sự cố thành báo cáo và nộp cho khách hàng.|Report|e|N1|n|f|report,incident|顛末書 = bản tường trình.
+日程調整|にっていちょうせい|Điều chỉnh / sắp xếp lịch|関係者が多いため、日程調整にはツールを使いましょう。|Vì có nhiều người liên quan nên hãy dùng công cụ để sắp xếp lịch.|Schedule|i|B|vs|b|schedule,meeting|
+リスケ|りすけ|Dời lịch (reschedule)|先方の都合で、明日の定例はリスケになりました。|Do phía khách hàng bận, buổi họp định kỳ ngày mai đã được dời lịch.|Schedule|i|B|vs|n|schedule|Khẩu ngữ nội bộ; với khách hàng nên nói 日程を変更.
+先方|せんぽう|Phía bên kia (khách hàng, đối tác)|先方の回答を待ってから、次の作業に入ります。|Chúng tôi sẽ chờ câu trả lời của phía khách hàng rồi mới bắt đầu công việc tiếp theo.|Business Terms|i|B|n|b|client,communication|Dùng khi nói chuyện nội bộ về đối tác.
+弊社|へいしゃ|Công ty chúng tôi (khiêm nhường)|弊社では、オフショア開発の体制を強化しております。|Công ty chúng tôi đang tăng cường cơ cấu phát triển offshore.|Business Terms|i|B|n|f|keigo,company|
+御社|おんしゃ|Quý công ty (dùng khi nói)|御社のご要望に沿えるよう、体制を検討いたします。|Chúng tôi sẽ xem xét cơ cấu nhân sự để đáp ứng mong muốn của quý công ty.|Business Terms|i|B|n|f|keigo,company|Văn nói dùng 御社, văn viết dùng 貴社.
+貴社|きしゃ|Quý công ty (dùng khi viết)|貴社ますますご清栄のこととお慶び申し上げます。|Chúng tôi xin chúc quý công ty ngày càng thịnh vượng.|Business Terms|i|B|n|f|keigo,company,letter|
+当方|とうほう|Phía chúng tôi|当方の確認不足により、回答が遅れてしまいました。|Do phía chúng tôi kiểm tra chưa kỹ nên câu trả lời bị chậm.|Business Terms|a|N1|n|f|communication|
+各位|かくい|Các quý vị (gửi chung nhiều người)|関係者各位、本日のリリース作業は予定通り完了しました。|Kính gửi các quý vị liên quan, công việc phát hành hôm nay đã hoàn thành đúng kế hoạch.|Email|a|B|n|f|email,greeting|Không thêm 様 sau 各位.
+ご担当者様|ごたんとうしゃさま|Kính gửi người phụ trách (khi không biết tên)|採用ご担当者様、資料を添付いたしましたのでご確認ください。|Kính gửi người phụ trách tuyển dụng, tôi đã đính kèm tài liệu, xin vui lòng xem.|Email|i|B|n|f|email,greeting|
+周知|しゅうち|Thông báo rộng rãi cho mọi người biết|新しい申請手順を全社員に周知してください。|Hãy thông báo quy trình đăng ký mới cho toàn bộ nhân viên.|Communication|i|N1|vs|b|communication,notice|周知徹底 = phổ biến triệt để.
+展開|てんかい|Phổ biến/chia sẻ (thông tin, tài liệu) cho người khác|会議の結果はチームメンバーにも展開しておきます。|Kết quả cuộc họp tôi cũng sẽ chia sẻ cho các thành viên trong nhóm.|Communication|i|B|vs|b|communication,sharing|Nghĩa business đặc biệt: 情報を展開する = share thông tin.
+根回し|ねまわし|Vận động hành lang, dàn xếp trước với các bên|会議で反対されないよう、事前に部長へ根回ししておきました。|Để không bị phản đối trong cuộc họp, tôi đã dàn xếp trước với trưởng phòng.|Business Culture|a|B|vs|b|culture,negotiation|Nét văn hóa đặc trưng Nhật.
+内諾|ないだく|Đồng ý ngầm / đồng ý không chính thức|部長から内諾は得ていますが、正式な決裁は来週です。|Đã nhận được đồng ý không chính thức từ trưởng phòng, nhưng phê duyệt chính thức là tuần sau.|Negotiation|e|N1|vs|f|approval,negotiation|
+見送り|みおくり|Hoãn lại / không thực hiện (quyết định không làm)|コストの都合で、今回は機能追加を見送りとしました。|Vì lý do chi phí, lần này đã quyết định hoãn việc bổ sung chức năng.|Decision|i|B|n|b|decision,scope|
+保留|ほりゅう|Tạm gác lại, treo lại|この課題は先方の判断待ちのため、保留にしています。|Vấn đề này đang chờ quyết định của khách hàng nên tạm gác lại.|Decision|i|N1|vs|b|decision,status|
+前向きに検討|まえむきにけんとう|Xem xét một cách tích cực|ご提案の件、社内で前向きに検討させていただきます。|Về đề xuất của anh/chị, chúng tôi xin xem xét tích cực trong nội bộ.|Negotiation|a|B|phr|f|negotiation,reply|Đôi khi là cách từ chối khéo; cần đọc bối cảnh.
+善処|ぜんしょ|Xử lý thích đáng, cố gắng giải quyết|ご指摘の点については、可能な範囲で善処いたします。|Về điểm anh/chị chỉ ra, chúng tôi sẽ cố gắng xử lý trong phạm vi có thể.|Negotiation|e|N1|vs|f|negotiation,reply|Thường mang nghĩa hứa hẹn mơ hồ.
+一任|いちにん|Giao toàn quyền|細かい画面デザインについては、開発チームに一任します。|Về thiết kế chi tiết màn hình, chúng tôi giao toàn quyền cho đội phát triển.|Decision|a|N1|vs|f|decision,delegation|
+落としどころ|おとしどころ|Điểm thỏa hiệp có thể chấp nhận|納期と費用の落としどころを探るため、複数の案を用意しました。|Để tìm điểm thỏa hiệp giữa thời hạn và chi phí, chúng tôi đã chuẩn bị nhiều phương án.|Negotiation|a|B|n|n|negotiation|
+歩み寄り|あゆみより|Sự nhượng bộ lẫn nhau để tiến gần nhau|双方の歩み寄りによって、追加費用の半額負担で合意しました。|Nhờ hai bên nhượng bộ lẫn nhau, đã thống nhất mỗi bên chịu một nửa chi phí phát sinh.|Negotiation|a|N1|n|f|negotiation|
+譲歩|じょうほ|Nhượng bộ|価格面で譲歩する代わりに、納期を一か月延ばしていただきました。|Đổi lại việc nhượng bộ về giá, chúng tôi được gia hạn thời hạn thêm một tháng.|Negotiation|a|N1|vs|f|negotiation|
+妥協点|だきょうてん|Điểm thỏa hiệp|品質を落とさずに済む妥協点を、両社で模索しています。|Hai công ty đang tìm kiếm điểm thỏa hiệp mà không làm giảm chất lượng.|Negotiation|a|N1|n|b|negotiation|
+条件提示|じょうけんていじ|Đưa ra điều kiện|先方からの条件提示を受けて、社内で受諾可否を判断します。|Sau khi nhận điều kiện từ phía đối tác, nội bộ sẽ quyết định chấp nhận hay không.|Negotiation|a|B|vs|b|negotiation,contract|
