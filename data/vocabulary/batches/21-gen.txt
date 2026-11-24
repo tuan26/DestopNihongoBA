@@ -1,0 +1,43 @@
+# category: Advanced General Business Japanese
+# code: gen
+# batch 21 — N1-level formal vocabulary frequent in reports, proposals and management discussions
+喫緊|きっきん|Cấp bách, khẩn thiết|人材の確保が、当社にとって喫緊の課題となっています。|Việc đảm bảo nhân lực đang trở thành vấn đề cấp bách đối với công ty.|Formal Vocabulary|e|N1|n|f|formal,urgency|Collocation cố định: 喫緊の課題.
+早急|さっきゅう|Khẩn trương, gấp rút|原因が判明しましたので、早急に修正版を準備いたします。|Đã rõ nguyên nhân nên chúng tôi sẽ khẩn trương chuẩn bị bản sửa.|Formal Vocabulary|a|N1|adj-na|f|formal,urgency|Đọc chuẩn さっきゅう; そうきゅう cũng được chấp nhận rộng rãi.
+是正|ぜせい|Sửa chữa cho đúng, chấn chỉnh|監査で指摘された運用ルールの不備を是正しました。|Chúng tôi đã chấn chỉnh những thiếu sót trong quy tắc vận hành bị chỉ ra khi kiểm toán.|Formal Vocabulary|a|N1|vs|f|formal,correction|
+抜本的|ばっぽんてき|Triệt để, tận gốc|部分的な改善ではなく、業務の進め方を抜本的に見直す必要があります。|Cần xem xét lại cách làm việc một cách triệt để chứ không chỉ cải thiện từng phần.|Formal Vocabulary|e|N1|adj-na|f|formal,reform|
+一環|いっかん|Một phần (của chương trình, kế hoạch lớn)|今回の研修は、人材育成の取り組みの一環として実施します。|Khóa đào tạo lần này được thực hiện như một phần của chương trình phát triển nhân lực.|Formal Vocabulary|a|N1|n|f|formal|Cấu trúc: 〜の一環として.
+鑑みる|かんがみる|Xét đến, căn cứ vào (tình hình)|現在の受注状況に鑑みて、来期の採用人数を増やすことにしました。|Xét đến tình hình nhận đơn hiện tại, chúng tôi quyết định tăng số người tuyển dụng kỳ tới.|Formal Vocabulary|e|N1|v|f|formal,reasoning|Cấu trúc: 〜に鑑み(て).
+踏まえる|ふまえる|Dựa trên, căn cứ trên|前回のレビュー結果を踏まえて、設計を修正しました。|Dựa trên kết quả review lần trước, chúng tôi đã sửa thiết kế.|Formal Vocabulary|a|N1|v|f|formal,reasoning|Cấu trúc rất hay dùng: 〜を踏まえて.
+伴う|ともなう|Đi kèm, kéo theo|組織変更に伴う権限の変更は、来月一日に反映します。|Thay đổi quyền hạn đi kèm với thay đổi tổ chức sẽ được phản ánh vào ngày mùng một tháng sau.|Formal Vocabulary|i|N1|v|f|formal,causality|
+付随|ふずい|Kèm theo, phụ thuộc theo|システム更新に付随する研修費用も、予算に含めてください。|Hãy tính cả chi phí đào tạo kèm theo việc cập nhật hệ thống vào ngân sách.|Formal Vocabulary|e|N1|vs|f|formal|
+逼迫|ひっぱく|Căng thẳng, eo hẹp (tài chính, nguồn lực)|サーバーの容量が逼迫しているため、増設を急いでいます。|Dung lượng máy chủ đang eo hẹp nên chúng tôi đang gấp rút mở rộng.|Formal Vocabulary|e|N1|vs|f|formal,resource|Hay gặp: 財政が逼迫, リソースが逼迫.
+頓挫|とんざ|Đổ vỡ giữa chừng, đình trệ|主要メンバーの退職で、新規事業の計画が頓挫しかけました。|Do thành viên chủ chốt nghỉ việc, kế hoạch kinh doanh mới suýt bị đổ vỡ giữa chừng.|Formal Vocabulary|e|N1|vs|f|formal,failure|
+難航|なんこう|Gặp nhiều khó khăn, tiến triển chậm|価格面の条件が合わず、交渉が難航しています。|Điều kiện về giá không khớp nên cuộc đàm phán đang gặp nhiều khó khăn.|Formal Vocabulary|a|N1|vs|f|formal,negotiation|
+支障|ししょう|Trở ngại, ảnh hưởng xấu|この変更による業務への支障はないと判断しています。|Chúng tôi đánh giá thay đổi này không gây trở ngại cho nghiệp vụ.|Formal Vocabulary|a|N1|n|f|formal,impact|支障をきたす = gây trở ngại.
+留意|りゅうい|Lưu ý, chú ý|海外拠点とのやり取りでは、時差に留意して連絡してください。|Khi trao đổi với chi nhánh nước ngoài, hãy lưu ý chênh lệch múi giờ khi liên lạc.|Formal Vocabulary|a|N1|vs|f|formal|留意点 = điểm cần lưu ý.
+看過|かんか|Bỏ qua, làm ngơ (điều không nên bỏ qua)|品質に関わる問題は、小さくても看過できません。|Vấn đề liên quan đến chất lượng, dù nhỏ cũng không thể làm ngơ.|Formal Vocabulary|e|N1|vs|f|formal|Thường dùng phủ định: 看過できない.
+杞憂|きゆう|Lo lắng thái quá, lo hão|移行時のデータ欠損を心配していましたが、杞憂に終わりました。|Tôi đã lo bị thiếu dữ liệu khi chuyển đổi nhưng hóa ra chỉ là lo hão.|Formal Vocabulary|e|N1|n|f|formal,idiom|杞憂に終わる = hóa ra lo thừa.
+示唆|しさ|Gợi ý, ám chỉ|アンケートの結果は、操作研修の不足を示唆しています。|Kết quả khảo sát gợi ý rằng việc đào tạo thao tác còn thiếu.|Formal Vocabulary|e|N1|vs|f|formal,analysis|
+遵守|じゅんしゅ|Tuân thủ|委託先にも、当社のセキュリティ規程の遵守を求めています。|Chúng tôi yêu cầu cả bên nhận ủy thác tuân thủ quy định bảo mật của công ty.|Formal Vocabulary|a|N1|vs|f|formal,compliance|
+準拠|じゅんきょ|Tuân theo, dựa theo (chuẩn, quy định)|画面設計は社内のデザインガイドラインに準拠しています。|Thiết kế màn hình tuân theo hướng dẫn thiết kế của công ty.|Formal Vocabulary|a|N1|vs|f|formal,standards|
+適宜|てきぎ|Tùy tình hình, khi thích hợp|進捗に応じて、計画は適宜見直します。|Kế hoạch sẽ được xem lại tùy theo tiến độ khi thích hợp.|Formal Vocabulary|a|N1|adv|f|formal|Trong tài liệu đặc tả nên tránh vì gây mơ hồ.
+随時|ずいじ|Bất cứ lúc nào, tùy lúc|ご質問は随時受け付けておりますので、お気軽にご連絡ください。|Chúng tôi nhận câu hỏi bất cứ lúc nào, xin cứ thoải mái liên hệ.|Formal Vocabulary|a|N1|adv|f|formal|
+逐次|ちくじ|Lần lượt, tuần tự từng cái một|進捗は逐次チャットで共有し、まとめて週報で報告します。|Tiến độ được chia sẻ lần lượt qua chat và tổng hợp trong báo cáo tuần.|Formal Vocabulary|e|N1|adv|f|formal|
+一律|いちりつ|Đồng loạt, như nhau cho tất cả|交通費は、距離にかかわらず一律で支給します。|Chi phí đi lại được chi như nhau bất kể khoảng cách.|Formal Vocabulary|a|N1|n|f|formal|
+概ね|おおむね|Đại khái, nhìn chung|テストは概ね順調ですが、帳票の確認が少し遅れています。|Kiểm thử nhìn chung suôn sẻ nhưng việc kiểm tra biểu mẫu hơi chậm.|Formal Vocabulary|a|N1|adv|f|formal,report|Rất hay dùng khi báo cáo tình hình.
+一概に|いちがいに|Một cách vơ đũa cả nắm (thường đi với phủ định)|オフショアだから品質が低いとは、一概には言えません。|Không thể vơ đũa cả nắm rằng vì là offshore nên chất lượng thấp.|Formal Vocabulary|e|N1|adv|f|formal|Cấu trúc: 一概に〜とは言えない.
+依然として|いぜんとして|Vẫn như cũ, vẫn còn|対策を講じましたが、依然として問い合わせは減っていません。|Dù đã áp dụng biện pháp nhưng số câu hỏi vẫn chưa giảm.|Formal Vocabulary|a|N1|adv|f|formal|
+着手|ちゃくしゅ|Bắt tay vào làm|承認が下り次第、移行作業に着手します。|Ngay khi được phê duyệt, chúng tôi sẽ bắt tay vào công việc chuyển đổi.|Formal Vocabulary|a|N1|vs|f|formal,start|
+着地|ちゃくち|Kết quả cuối cùng (ước tính kết thúc ở mức nào)|今期の売上は、計画どおりの着地になる見込みです。|Doanh thu kỳ này dự kiến sẽ kết thúc đúng như kế hoạch.|Business Jargon|e|B|vs|b|forecast,finance|Nghĩa gốc: hạ cánh. 着地見込み = dự báo kết quả.
+目処|めど|Triển vọng, mốc dự kiến|修正の目処が立ちましたら、改めてご報告いたします。|Khi đã có triển vọng về việc sửa, chúng tôi sẽ báo cáo lại.|Formal Vocabulary|a|N1|n|b|schedule,forecast|Hay viết 目途; cụm: 目処が立つ.
+見通し|みとおし|Triển vọng, dự báo tình hình|部品の供給が安定せず、納品の見通しが立っていません。|Nguồn cung linh kiện không ổn định nên chưa có triển vọng về việc giao hàng.|Formal Vocabulary|i|N1|n|b|forecast|
+打開|だかい|Phá vỡ bế tắc, tìm lối thoát|状況を打開するため、経営層を交えた会議を開きます。|Để phá vỡ bế tắc, sẽ tổ chức cuộc họp có cả ban lãnh đạo tham gia.|Formal Vocabulary|e|N1|vs|f|formal,problem-solving|打開策 = giải pháp phá thế bế tắc.
+刷新|さっしん|Đổi mới hoàn toàn|二十年使った基幹システムを刷新するプロジェクトが始まりました。|Dự án đổi mới hoàn toàn hệ thống lõi đã dùng hai mươi năm đã bắt đầu.|Formal Vocabulary|a|N1|vs|f|formal,modernization|
+推進|すいしん|Thúc đẩy|全社のデジタル化を推進するため、専任の部署が設けられました。|Một bộ phận chuyên trách đã được lập để thúc đẩy số hóa toàn công ty.|Formal Vocabulary|i|N1|vs|f|formal,initiative|
+牽引|けんいん|Dẫn dắt, kéo theo (đầu tàu)|彼女はベトナム拠点の成長を牽引してきたリーダーです。|Cô ấy là leader đã dẫn dắt sự phát triển của chi nhánh Việt Nam.|Formal Vocabulary|e|N1|vs|f|formal,leadership|
+担保|たんぽ|Đảm bảo (chất lượng, tính đúng đắn); tài sản thế chấp|自動テストで、リファクタリング後の品質を担保しています。|Chúng tôi đảm bảo chất lượng sau refactoring bằng kiểm thử tự động.|Business Jargon|a|N1|vs|b|quality,assurance|Nghĩa IT phổ biến: 品質を担保する.
+精査|せいさ|Xem xét kỹ lưỡng|見積もりの内訳を精査したうえで、ご回答いたします。|Chúng tôi sẽ trả lời sau khi xem xét kỹ lưỡng chi tiết báo giá.|Formal Vocabulary|a|N1|vs|f|formal,review|
+吟味|ぎんみ|Cân nhắc kỹ, thẩm định|各社の提案内容を吟味して、最も適したものを選びます。|Chúng tôi sẽ thẩm định kỹ đề xuất của các công ty và chọn cái phù hợp nhất.|Formal Vocabulary|e|N1|vs|f|formal,evaluation|
+勘案|かんあん|Cân nhắc tổng hợp các yếu tố|難易度と工数を勘案して、担当者を決定します。|Cân nhắc độ khó và công số để quyết định người phụ trách.|Formal Vocabulary|e|N1|vs|f|formal,decision|
+骨子|こっし|Nội dung cốt lõi, khung chính|提案書の骨子を先に固めてから、詳細を書き込みます。|Chúng tôi chốt khung chính của bản đề xuất trước rồi mới viết chi tiết.|Formal Vocabulary|e|N1|n|f|formal,documentation|
+趣旨|しゅし|Mục đích, ý chính (của văn bản, đề nghị)|本日の会議の趣旨は、来期の体制についての意見交換です。|Mục đích của cuộc họp hôm nay là trao đổi ý kiến về cơ cấu kỳ tới.|Formal Vocabulary|a|N1|n|f|formal,meeting|

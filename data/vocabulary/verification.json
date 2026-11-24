@@ -1,42 +1,43 @@
 {
  "generated_at": "2026-11-24",
  "source": "JMdict (Electronic Dictionary Research and Development Group, CC BY-SA 4.0) via jamdict-data, JMdict v1.08",
- "scope": "headword + reading existence only; Vietnamese meaning and examples not verified",
+ "scope": "headword+reading = exact JMdict entry with this reading; components = compound split into JMdict headwords whose readings concatenate exactly to the given reading (compound itself not a JMdict entry); Vietnamese meaning and examples not verified",
  "counts": {
-  "not-found": 28,
-  "headword+reading": 19
+  "components": 542,
+  "headword+reading": 443,
+  "not-found": 15
  },
  "results": {
   "要件定義": {
-   "match": "not-found",
+   "match": "components",
    "source": "JMdict (EDRDG) v1.08"
   },
   "要求定義": {
-   "match": "not-found",
+   "match": "components",
    "source": "JMdict (EDRDG) v1.08"
   },
   "業務要件": {
-   "match": "not-found",
+   "match": "components",
    "source": "JMdict (EDRDG) v1.08"
   },
   "機能要件": {
-   "match": "not-found",
+   "match": "components",
    "source": "JMdict (EDRDG) v1.08"
   },
   "非機能要件": {
-   "match": "not-found",
+   "match": "components",
    "source": "JMdict (EDRDG) v1.08"
   },
   "認識合わせ": {
-   "match": "not-found",
+   "match": "components",
    "source": "JMdict (EDRDG) v1.08"
   },
   "認識齟齬": {
-   "match": "not-found",
+   "match": "components",
    "source": "JMdict (EDRDG) v1.08"
   },
   "認識ずれ": {
-   "match": "not-found",
+   "match": "components",
    "source": "JMdict (EDRDG) v1.08"
   },
   "すり合わせ": {
@@ -56,11 +57,11 @@
    "source": "JMdict (EDRDG) v1.08"
   },
   "現状分析": {
-   "match": "not-found",
+   "match": "components",
    "source": "JMdict (EDRDG) v1.08"
   },
   "現行業務": {
-   "match": "not-found",
+   "match": "components",
    "source": "JMdict (EDRDG) v1.08"
   },
   "あるべき姿": {
@@ -68,7 +69,7 @@
    "source": "JMdict (EDRDG) v1.08"
   },
   "業務フロー": {
-   "match": "not-found",
+   "match": "components",
    "source": "JMdict (EDRDG) v1.08"
   },
   "前提条件": {
@@ -84,15 +85,15 @@
    "source": "JMdict (EDRDG) v1.08"
   },
   "スコープ外": {
-   "match": "not-found",
+   "match": "components",
    "source": "JMdict (EDRDG) v1.08"
   },
   "優先順位付け": {
-   "match": "not-found",
+   "match": "components",
    "source": "JMdict (EDRDG) v1.08"
   },
   "必須要件": {
-   "match": "not-found",
+   "match": "components",
    "source": "JMdict (EDRDG) v1.08"
   },
   "実現可能性": {
@@ -104,7 +105,7 @@
    "source": "JMdict (EDRDG) v1.08"
   },
   "網羅性": {
-   "match": "not-found",
+   "match": "components",
    "source": "JMdict (EDRDG) v1.08"
   },
   "整合性": {
@@ -116,31 +117,31 @@
    "source": "JMdict (EDRDG) v1.08"
   },
   "要件定義書": {
-   "match": "not-found",
+   "match": "components",
    "source": "JMdict (EDRDG) v1.08"
   },
   "基本設計書": {
-   "match": "not-found",
+   "match": "components",
    "source": "JMdict (EDRDG) v1.08"
   },
   "詳細設計書": {
-   "match": "not-found",
+   "match": "components",
    "source": "JMdict (EDRDG) v1.08"
   },
   "外部設計": {
-   "match": "not-found",
+   "match": "components",
    "source": "JMdict (EDRDG) v1.08"
   },
   "内部設計": {
-   "match": "not-found",
+   "match": "components",
    "source": "JMdict (EDRDG) v1.08"
   },
   "画面遷移図": {
-   "match": "not-found",
+   "match": "components",
    "source": "JMdict (EDRDG) v1.08"
   },
   "画面項目定義書": {
-   "match": "not-found",
+   "match": "components",
    "source": "JMdict (EDRDG) v1.08"
   },
   "帳票": {
@@ -148,11 +149,11 @@
    "source": "JMdict (EDRDG) v1.08"
   },
   "業務ルール": {
-   "match": "not-found",
+   "match": "components",
    "source": "JMdict (EDRDG) v1.08"
   },
   "例外フロー": {
-   "match": "not-found",
+   "match": "components",
    "source": "JMdict (EDRDG) v1.08"
   },
   "ユースケース": {
@@ -164,11 +165,11 @@
    "source": "JMdict (EDRDG) v1.08"
   },
   "関係部署": {
-   "match": "not-found",
+   "match": "components",
    "source": "JMdict (EDRDG) v1.08"
   },
   "主管部門": {
-   "match": "not-found",
+   "match": "components",
    "source": "JMdict (EDRDG) v1.08"
   },
   "キーマン": {
@@ -176,11 +177,11 @@
    "source": "JMdict (EDRDG) v1.08"
   },
   "決裁者": {
-   "match": "not-found",
+   "match": "components",
    "source": "JMdict (EDRDG) v1.08"
   },
   "承認フロー": {
-   "match": "not-found",
+   "match": "components",
    "source": "JMdict (EDRDG) v1.08"
   },
   "合意形成": {
@@ -192,6 +193,3818 @@
    "source": "JMdict (EDRDG) v1.08"
   },
   "可視化": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "見える化": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "棚卸し": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "業務改善": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "業務効率化": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "省力化": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "属人化": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "標準化": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "手運用": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "二重入力": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "費用対効果": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "導入効果": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "定量的": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "定性的": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "粒度": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "抽象度": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "具体化": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "詳細化": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "深掘り": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "掘り下げる": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "切り出し": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "論点": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "論点整理": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "懸念点": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "確認事項": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "決定事項": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "宿題事項": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "持ち帰り": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "議事録": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "たたき台": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "素案": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "提案依頼書": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "要件凍結": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "仕様変更": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "変更要求": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "影響範囲": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "影響調査": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "現行踏襲": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "移行要件": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "運用要件": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "性能要件": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "マスタメンテナンス": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "パッケージ導入": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "アドオン開発": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "フィットギャップ分析": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ユーザーストーリー": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "受け入れ条件": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ワイヤーフレーム": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "画面モック": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "要件一覧": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "取捨選択": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "課題感": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "潜在ニーズ": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "顕在化": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "暗黙知": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "形式知": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "曖昧さを排除する": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "解釈の相違": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "言った言わない": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "後出し": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "仕様確定": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "未確定事項": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "別途協議": {
+   "match": "not-found",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "想定外": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "業務分析": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "要件分析": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "業務設計": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "業務マニュアル": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "業務量": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "処理件数": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "月次処理": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "締め処理": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "承認権限": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "入力項目": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "必須項目": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "任意項目": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "初期表示": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "非活性": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "プルダウン": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "メッセージ定義": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "項目定義": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "コード値": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "区分値": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "業務日付": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "要件漏れ": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "考慮漏れ": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "抜け漏れ": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "漏れなくダブりなく": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "仮説検証": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ユーザー部門": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "情報システム部門": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "要求仕様": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "合意済み": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "アクティビティ図": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "状態遷移図": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "データフロー図": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "概念モデル": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "業務用語集": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "用語の統一": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "真の要求": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "本質的な課題": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "手段の目的化": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "現場観察": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "質問票": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "QA表": {
+   "match": "not-found",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "業務シナリオ": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "利用シーン": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "運用イメージ": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ペルソナ": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "外部インターフェース": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "連携先システム": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "帳票出力": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "画面レイアウト": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "操作性": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "使い勝手": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "運用負荷": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "改善要望": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "導入目的": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "成功基準": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "評価指標": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "次期フェーズ": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "段階的導入": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "暫定運用": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "運用回避": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "システム化範囲": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "業務改革": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "法令対応": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "内部統制": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "職務分掌": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "電子帳簿保存法": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "インボイス制度": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "要件がぶれる": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "現場の声": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "発散と収束": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "お世話になっております": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "恐れ入りますが": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "恐縮ですが": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ご確認のほど": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ご査収ください": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "取り急ぎ": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "念のため": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ご教示ください": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ご了承ください": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ご容赦ください": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ご放念ください": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "承知いたしました": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "かしこまりました": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "拝見する": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ご足労": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "お手数をおかけしますが": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "差し支えなければ": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ご都合": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "折り返し": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "至急": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "いただけますと幸いです": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "幸甚": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "失念": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "不手際": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "再発防止": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "経緯": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "顛末": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "日程調整": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "リスケ": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "先方": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "弊社": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "御社": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "貴社": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "当方": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "各位": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ご担当者様": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "周知": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "展開": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "根回し": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "内諾": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "見送り": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "保留": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "前向きに検討": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "善処": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "一任": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "落としどころ": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "歩み寄り": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "譲歩": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "妥協点": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "条件提示": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "相見積もり": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "値引き交渉": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "発注書": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "請求書": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "不躾ながら": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "僭越ながら": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "重ね重ね": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "改めて": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "引き続き": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ご一読": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ご一考": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ご指摘": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ご指導ご鞭撻": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "感謝申し上げます": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "遺憾": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "申し伝えます": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "申し送り": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "引き継ぎ": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "直行直帰": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "定例会": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "報連相": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "打診": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ご一報": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "行き違い": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "見解": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "所感": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "忌憚のない": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "端的に": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "結論から申し上げますと": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "補足": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "追記": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "訂正": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "差し替え": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "最新版": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "共有事項": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "了解しました": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "お力添え": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ご尽力": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ご配慮": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ご高配": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "お含みおきください": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ご留意ください": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ご承知おきください": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ご無理を申し上げ": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "お言葉に甘えて": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ご迷惑をおかけし": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "お詫び申し上げます": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "謹んで": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "何卒": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "前広に": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "段取り": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "手配": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "社内調整": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "確認が取れ次第": {
+   "match": "not-found",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "追ってご連絡します": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "見積書": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "押印": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "稟議": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "決裁": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "了承": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "承諾": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "快諾": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "一存": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "決めかねる": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "致しかねます": {
+   "match": "not-found",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "差し控える": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "お取り計らい": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ご高覧": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "お手すきの際に": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "候補日": {
+   "match": "not-found",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "所要時間": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "議題": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "事前共有": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "代理出席": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "冒頭": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "本題": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "脱線": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "かいつまんで": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ご認識の通りです": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "おっしゃる通り": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "異論はありません": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "一点確認させてください": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "話を戻しますと": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "念頭に置く": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "温度感": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "肌感": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "巻き取る": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "握る": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "詰める": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ボールを持っている": {
+   "match": "not-found",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "巻き込む": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "先回り": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ご意向": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "期待値調整": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "断りを入れる": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "角が立つ": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "腹落ち": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "余談": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ご遠慮ください": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "差し出がましい": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "進捗管理": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "進捗報告": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "進捗率": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "遅延": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "前倒し": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "後ろ倒し": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "巻き返し": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "リカバリプラン": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "工数": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "人月": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "人日": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "見積もり精度": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "概算見積もり": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "精緻化": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "バッファ": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "クリティカルパス": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "マイルストーン": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "作業分解構成図": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ガントチャート": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "体制図": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "役割分担": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "アサイン": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "要員計画": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "稼働率": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "工程": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "上流工程": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "下流工程": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ウォーターフォール": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "スプリント": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "振り返り": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "プロダクトバックログ": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ベロシティ": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "朝会": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "リスク管理": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "リスク対応策": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "回避策": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "暫定対応": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "恒久対応": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "エスカレーション": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "判断を仰ぐ": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "予実管理": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "予算超過": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "赤字案件": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "炎上案件": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "火消し": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "手戻り": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "仕切り直し": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "再見積もり": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "追加費用": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "請負契約": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "準委任契約": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "偽装請負": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "検収": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "納期": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "成果物": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "契約不適合責任": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "瑕疵": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "オフショア開発": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ブリッジSE": {
+   "match": "not-found",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ニアショア開発": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "内製化": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "外部委託": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "元請け": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "下請け": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "多重下請け構造": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "キックオフ": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "立ち上げ": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "完了報告": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "移行判定": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "本番稼働": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "カットオーバー": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "リリース判定": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "増員": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "体制強化": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ナレッジ共有": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "プロジェクト憲章": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "コミュニケーション計画": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "会議体": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "消化率": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "完了基準": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "出来高": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "アーンドバリューマネジメント": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "遅延の兆候": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "マイクロマネジメント": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "裁量": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "権限委譲": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "意思決定": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "スコープクリープ": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "フェーズ分け": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "移行計画": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "教育計画": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "投資判断": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "予算確保": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "原価": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "粗利": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "単価": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "生産性": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ベストエフォート": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "コミットメント": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "責任分界点": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "推進体制": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "課題管理": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "棚上げ": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "週次報告": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "月次報告": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "品質目標": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "是正措置": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "計画変更": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "リソース不足": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "過負荷": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "長時間労働": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "要員交代": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "立ち上がり": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "オンボーディング": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "後任": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "マルチベンダー": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ベンダーコントロール": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "発注者": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "受注者": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "保守契約": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "冪等性": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "実装": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "改修": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "保守性": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "可読性": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "再利用性": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "結合度": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "凝集度": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "疎結合": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "密結合": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "依存関係": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "依存性注入": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "リファクタリング": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "技術的負債": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "命名規則": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "コーディング規約": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "静的解析": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "コードレビュー": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "指摘事項": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "プルリクエスト": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "コンフリクト": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ブランチ戦略": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "バージョン管理": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "後方互換性": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "破壊的変更": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "非推奨": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "例外処理": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "例外を握りつぶす": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ログ出力": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ログレベル": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "スタックトレース": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "排他制御": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "非同期処理": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "並列処理": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "スレッドセーフ": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "競合状態": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "メモリリーク": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "計算量": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "再帰処理": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "副作用": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "不変オブジェクト": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "型安全": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "継承": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "多態性": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "カプセル化": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "抽象化": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "責務": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "単一責任の原則": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "関心の分離": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "共通化": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ハードコーディング": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "マジックナンバー": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "設定ファイル": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "環境変数": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "初期化": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "引数": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "戻り値": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "呼び出し元": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "条件分岐": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "早期リターン": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ネストが深い": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "冗長": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "重複コード": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "デッドコード": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "不具合": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "原因究明": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "再現性": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "パッチ": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ホットフィックス": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "文字化け": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "文字コード": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "改行コード": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "全角": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "半角": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "丸め誤差": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "浮動小数点": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "桁あふれ": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ゼロ除算": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ヌルポインタ例外": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "未定義": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "エンドポイント": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ステータスコード": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ペイロード": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "シリアライズ": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "パース": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "バリデーション": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "エスケープ処理": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "正規表現": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "タイムアウト": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "リトライ処理": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "指数バックオフ": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "レート制限": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ページネーション": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "タイムゾーン": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "協定世界時": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "国際化": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "コールバック": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "イベント駆動": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "共通部品": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "依存ライブラリ": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "コンパイルエラー": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "実行時エラー": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ブレークポイント": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ステップ実行": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "動作確認": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "挙動": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "仕様通り": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "不整合": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "二重送信": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "二重登録": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "同期処理": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "遅延評価": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "状態管理": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "再描画": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "前方互換性": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "移植性": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "型変換": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "型推論": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ジェネリクス": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "純粋関数": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "高階関数": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "事前条件": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "契約による設計": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "デザインパターン": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "シングルトン": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "初期値": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "空文字": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "部分一致": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "前方一致": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "完全一致": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "取り込む": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "乖離": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "組み込み": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "プロセス間通信": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "メモリ使用量": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "オブジェクト指向": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "宣言的": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "可変長引数": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "名前空間": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "グローバル変数": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "列挙型": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "アサーション": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "テスト駆動開発": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ペアプログラミング": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "コードの臭い": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "自動生成": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ORマッパー": {
+   "match": "not-found",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "静的型付け": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "動的型付け": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ガベージコレクション": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "システム構成図": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "全体構成": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "拡張性": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "可用性": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "信頼性": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "保守運用性": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "スループット": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "レイテンシ": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "応答時間": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "スケールアウト": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "スケールアップ": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "冗長化": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "単一障害点": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "フェイルオーバー": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "フェイルバック": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "負荷分散": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ロードバランサー": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "二重化": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "耐障害性": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "縮退運転": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "災害対策": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "事業継続計画": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "目標復旧時間": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "目標復旧時点": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "マイクロサービス": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "モノリシック": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "サービス分割": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "境界づけられたコンテキスト": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ドメイン駆動設計": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "レイヤードアーキテクチャ": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "クリーンアーキテクチャ": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "三層構造": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "メッセージキュー": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "非同期連携": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "システム連携": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "連携方式": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ファイル連携": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "API連携": {
+   "match": "not-found",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "APIゲートウェイ": {
+   "match": "not-found",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "リバースプロキシ": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "キャッシュ戦略": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "分散処理": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "分散トランザクション": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "結果整合性": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "強整合性": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "サーキットブレーカー": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "サービスメッシュ": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "共通基盤": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "方式設計": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "技術選定": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "技術検証": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "概念実証": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "比較検討": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "キャパシティプランニング": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "性能見積もり": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ピーク負荷": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "同時接続数": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ボトルネック": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "性能劣化": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ハイブリッド構成": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "マルチテナント": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ステートレス": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ステートフル": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "セッション管理": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "拡張ポイント": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "プラグイン機構": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "設計方針": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "設計思想": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "トレードオフ": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "将来拡張": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "段階的移行": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ストラングラーパターン": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "参照系": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "更新系": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "コマンドクエリ責務分離": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "イベントソーシング": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "バッチ基盤": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ジョブネット": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "データ連携基盤": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "認証基盤": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ヘキサゴナルアーキテクチャ": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "依存性逆転の原則": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "パブリッシュサブスクライブ": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "シーケンス図": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "コンポーネント図": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "配置図": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "非機能設計": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "性能設計": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "外部依存": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "技術スタック": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "レガシーシステム": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "モダナイゼーション": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "リプレース": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ベンダーロックイン": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "標準規格": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "アーキテクチャ決定記録": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "設計レビュー": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "後付け": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "スパイクアクセス": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "コンテンツ配信ネットワーク": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "正規化": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "非正規化": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "第三正規形": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "主キー": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "外部キー": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "複合キー": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "一意制約": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "参照整合性": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "索引": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "実行計画": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "フルスキャン": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "クエリチューニング": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "スロークエリ": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "内部結合": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "外部結合": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "副問い合わせ": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "集計関数": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "抽出条件": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "トランザクション": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ロールバック": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "分離レベル": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ダーティリード": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ファントムリード": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "楽観的排他制御": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "悲観的排他制御": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "排他ロック": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "デッドロック": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "論理削除": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "物理削除": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "論理設計": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "物理設計": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ER図": {
+   "match": "not-found",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "テーブル定義書": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "NULL許容": {
+   "match": "not-found",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "既定値": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "採番": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "シーケンス": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ストアドプロシージャ": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "トリガー": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ビュー": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "データ移行": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "洗い替え": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "差分更新": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "一括登録": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "バルクインサート": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "データクレンジング": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "名寄せ": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "重複排除": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "データ品質": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "マスタデータ": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "トランザクションデータ": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "履歴管理": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "変更履歴": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "リストア": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ポイントインタイムリカバリ": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "レプリケーション": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "読み取りレプリカ": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "シャーディング": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "パーティショニング": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "データウェアハウス": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "データレイク": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "データマート": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ETL処理": {
+   "match": "not-found",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "データパイプライン": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ストリーム処理": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "スキーマ変更": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "マイグレーションスクリプト": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "実体化ビュー": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "照合順序": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "容量見積もり": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "肥大化": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "断片化": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "統計情報": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "接続プール": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "有効桁数": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "データディクショナリ": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "NoSQLデータベース": {
+   "match": "not-found",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "キーバリューストア": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "全文検索": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "データガバナンス": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "本番環境": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "検証環境": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ステージング環境": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "開発環境": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "環境構築": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "構築手順書": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "作業手順書": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "運用設計": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "運用保守": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "死活監視": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "リソース監視": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "閾値": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "アラート通知": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "障害検知": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "一次切り分け": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ジョブスケジューラ": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "定期実行": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "構成管理": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "コードによるインフラ管理": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "継続的インテグレーション": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "継続的デリバリー": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "デプロイ": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "リリース作業": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "切り戻し": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ブルーグリーンデプロイ": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "カナリアリリース": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "コンテナ": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "コンテナイメージ": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "コンテナオーケストレーション": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "オートスケーリング": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "仮想マシン": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "サーバーレス": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "マネージドサービス": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "リージョン": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "アベイラビリティゾーン": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "サブネット": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "疎通確認": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "名前解決": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "証明書更新": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "帯域": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "通信経路": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "専用線": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "閉域網": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "オンプレミス": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "クラウド移行": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "リフトアンドシフト": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "従量課金": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "コスト最適化": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "リザーブドインスタンス": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "オブジェクトストレージ": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ログ集約": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "可観測性": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "メトリクス": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "分散トレーシング": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "監視ダッシュボード": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "作業申請": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "変更作業": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "メンテナンスウィンドウ": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "計画停止": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "サービスレベル合意": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "夜間作業": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "オンコール": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "障害報告書": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ポストモーテム": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "再起動": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "パッチ適用": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "バージョンアップ": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "サポート終了": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "踏み台サーバー": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ファイアウォール": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "セキュリティグループ": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "構成ドリフト": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ゴールデンイメージ": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "自動復旧": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ヘルスチェック": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ランブック": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "運用自動化": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ジョブ監視": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ディスク使用率": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ログローテーション": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "単体テスト": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "結合テスト": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "総合テスト": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "受入テスト": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "回帰テスト": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "デグレ": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "テスト仕様書": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "テストケース": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "テスト観点": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "テスト計画書": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "網羅率": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "コードカバレッジ": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "境界値分析": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "同値分割": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "正常系": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "異常系": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "準正常系": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "期待値": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "実行結果": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "エビデンス": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "証跡": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "不具合票": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "起票": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "再現手順": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "再テスト": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "不具合収束": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "品質分析": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "信頼度成長曲線": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "バグ密度": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "テスト密度": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "性能テスト": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "負荷テスト": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "耐久テスト": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "探索的テスト": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "テスト自動化": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "テストデータ": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "テスト環境": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "モック": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "スタブ": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ホワイトボックステスト": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ブラックボックステスト": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "分岐網羅": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "条件網羅": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "デシジョンテーブル": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ペアワイズ法": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "仕様起因": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "製造起因": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "環境起因": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "横展開": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "影響確認": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "品質保証": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "出荷判定": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "切り分け": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "静的テスト": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "レビュー記録表": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "欠陥": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "重大度": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "目視確認": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "打鍵テスト": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "シナリオテスト": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "脆弱性": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "脆弱性診断": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ペネトレーションテスト": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "認証": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "認可": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "多要素認証": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "シングルサインオン": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "アクセス制御": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "最小権限の原則": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "権限昇格": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "なりすまし": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "改ざん": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "盗聴": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "情報漏えい": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "不正アクセス": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "標的型攻撃": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "フィッシング": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ランサムウェア": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "クロスサイトスクリプティング": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "SQLインジェクション": {
+   "match": "not-found",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "クロスサイトリクエストフォージェリ": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "暗号化": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "復号": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ハッシュ化": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ソルト": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "公開鍵暗号": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "電子証明書": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "電子署名": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "秘密鍵": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "鍵管理": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "機密情報": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "個人情報保護法": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "匿名化": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "マスキング": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "監査ログ": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "侵入検知": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "ゼロトラスト": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "セキュリティインシデント": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "初動対応": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "情報セキュリティポリシー": {
+   "match": "components",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "喫緊": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "早急": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "是正": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "抜本的": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "一環": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "鑑みる": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "踏まえる": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "伴う": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "付随": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "逼迫": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "頓挫": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "難航": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "支障": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "留意": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "看過": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "杞憂": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "示唆": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "遵守": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "準拠": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "適宜": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "随時": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "逐次": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "一律": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "概ね": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "一概に": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "依然として": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "着手": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "着地": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "目処": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "見通し": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "打開": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "刷新": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "推進": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "牽引": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "担保": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "精査": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "吟味": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "勘案": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "骨子": {
+   "match": "headword+reading",
+   "source": "JMdict (EDRDG) v1.08"
+  },
+  "趣旨": {
    "match": "headword+reading",
    "source": "JMdict (EDRDG) v1.08"
   }

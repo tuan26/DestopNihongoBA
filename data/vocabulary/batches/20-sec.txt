@@ -1,0 +1,43 @@
+# category: Security
+# code: sec
+# batch 20 — vulnerabilities, authentication, attacks, cryptography, incident response
+脆弱性|ぜいじゃくせい|Lỗ hổng bảo mật|使用しているライブラリに深刻な脆弱性が見つかり、緊急でアップデートしました。|Phát hiện lỗ hổng nghiêm trọng trong thư viện đang dùng nên đã cập nhật khẩn cấp.|Vulnerability|i|T|n|t|vulnerability|
+脆弱性診断|ぜいじゃくせいしんだん|Đánh giá lỗ hổng bảo mật|公開前に外部の専門会社による脆弱性診断を受けます。|Trước khi công khai, hệ thống sẽ được công ty chuyên môn bên ngoài đánh giá lỗ hổng.|Vulnerability|a|T|n|t|assessment,vulnerability|
+ペネトレーションテスト|ぺねとれーしょんてすと|Kiểm thử xâm nhập (penetration test)|ペネトレーションテストで、管理画面への不正ログインが可能だと判明しました。|Kiểm thử xâm nhập cho thấy có thể đăng nhập trái phép vào màn hình quản trị.|Vulnerability|e|T|n|t|pentest|
+認証|にんしょう|Xác thực (authentication — xác minh danh tính)|APIの呼び出しにはトークンによる認証が必要です。|Gọi API cần xác thực bằng token.|Identity|i|T|vs|t|authentication|Phân biệt với 認可 (phân quyền).
+認可|にんか|Phân quyền (authorization — được phép làm gì)|ログインできても、認可されていない画面にはアクセスできません。|Dù đăng nhập được nhưng không thể truy cập màn hình chưa được phân quyền.|Identity|a|T|vs|t|authorization|
+多要素認証|たようそにんしょう|Xác thực đa yếu tố (MFA)|管理者アカウントには多要素認証を必須にしました。|Đã bắt buộc xác thực đa yếu tố cho tài khoản quản trị.|Identity|a|T|n|t|mfa,authentication|
+シングルサインオン|しんぐるさいんおん|Đăng nhập một lần (SSO)|シングルサインオンを導入し、社員が複数のパスワードを覚える必要をなくしました。|Đưa SSO vào để nhân viên không phải nhớ nhiều mật khẩu.|Identity|a|T|n|t|sso,authentication|
+アクセス制御|あくせすせいぎょ|Kiểm soát truy cập|部署ごとのアクセス制御により、他部署の人事データは参照できません。|Nhờ kiểm soát truy cập theo phòng ban, không thể xem dữ liệu nhân sự của phòng khác.|Access Control|i|T|n|t|access-control|
+最小権限の原則|さいしょうけんげんのげんそく|Nguyên tắc đặc quyền tối thiểu|最小権限の原則に従い、バッチ用アカウントには読み取り権限だけを与えます。|Theo nguyên tắc đặc quyền tối thiểu, tài khoản batch chỉ được cấp quyền đọc.|Access Control|e|T|n|t|least-privilege|
+権限昇格|けんげんしょうかく|Leo thang đặc quyền|一般ユーザーが管理者機能を実行できる権限昇格の脆弱性がありました。|Đã có lỗ hổng leo thang đặc quyền cho phép người dùng thường chạy chức năng quản trị.|Attacks|e|T|n|t|privilege-escalation|
+なりすまし|なりすまし|Mạo danh (spoofing)|取引先になりすましたメールで、偽の振込先が案内されました。|Một email mạo danh đối tác đã hướng dẫn tài khoản chuyển tiền giả.|Attacks|a|N1|n|n|spoofing,fraud|
+改ざん|かいざん|Giả mạo, sửa đổi trái phép (dữ liệu)|ログの改ざんを防ぐため、書き込み専用の保管先に転送しています。|Để ngăn sửa đổi trái phép log, log được chuyển tới nơi lưu chỉ cho phép ghi.|Attacks|a|N1|vs|t|tampering,integrity|Kanji đầy đủ: 改竄.
+盗聴|とうちょう|Nghe lén (đánh cắp dữ liệu đường truyền)|公衆無線LANでは通信を盗聴される恐れがあるため、VPNを使ってください。|Trên Wi-Fi công cộng có nguy cơ bị nghe lén, hãy dùng VPN.|Attacks|a|N1|vs|t|eavesdropping,network|
+情報漏えい|じょうほうろうえい|Rò rỉ thông tin|設定ミスによる情報漏えいを防ぐため、公開範囲を定期的に点検します。|Để ngăn rò rỉ thông tin do cấu hình sai, phạm vi công khai được kiểm tra định kỳ.|Incidents|i|T|n|t|data-leak|Kanji đầy đủ: 情報漏洩.
+不正アクセス|ふせいあくせす|Truy cập trái phép|深夜に海外から不正アクセスの試みが数千回記録されていました。|Đã ghi nhận hàng nghìn lần cố gắng truy cập trái phép từ nước ngoài vào ban đêm.|Attacks|i|T|n|t|intrusion|
+標的型攻撃|ひょうてきがたこうげき|Tấn công có chủ đích (targeted attack)|標的型攻撃のメールは、実在する取引先の名前を使うので見分けにくいです。|Email tấn công có chủ đích dùng tên đối tác có thật nên rất khó phân biệt.|Attacks|e|T|n|t|apt,phishing|
+フィッシング|ふぃっしんぐ|Lừa đảo phishing|フィッシングの訓練メールを全社員に送り、開封率を測定しました。|Gửi email huấn luyện phishing cho toàn bộ nhân viên và đo tỷ lệ mở.|Attacks|i|T|n|t|phishing|
+ランサムウェア|らんさむうぇあ|Mã độc tống tiền (ransomware)|ランサムウェアに備えて、ネットワークから切り離したバックアップを保管しています。|Đề phòng ransomware, chúng tôi lưu bản sao lưu tách khỏi mạng.|Attacks|a|T|n|t|ransomware,malware|
+クロスサイトスクリプティング|くろすさいとすくりぷてぃんぐ|Tấn công XSS|入力値をそのまま画面に出力していたため、クロスサイトスクリプティングの危険がありました。|Vì xuất nguyên giá trị nhập ra màn hình nên đã có nguy cơ bị XSS.|Web Security|a|T|n|t|xss,web|
+SQLインジェクション|えすきゅーえるいんじぇくしょん|Tấn công SQL injection|プレースホルダを使えば、SQLインジェクションを防ぐことができます。|Nếu dùng tham số giữ chỗ (bind variable) trong câu SQL thì có thể ngăn được SQL injection.|Web Security|a|T|n|t|sqli,web|
+クロスサイトリクエストフォージェリ|くろすさいとりくえすとふぉーじぇり|Giả mạo yêu cầu liên trang (CSRF)|更新処理にはトークンを付与して、クロスサイトリクエストフォージェリを防止します。|Gắn token vào xử lý cập nhật để ngăn CSRF.|Web Security|e|T|n|t|csrf,web|
+暗号化|あんごうか|Mã hóa|個人情報はデータベースに保存する際に暗号化しています。|Thông tin cá nhân được mã hóa khi lưu vào cơ sở dữ liệu.|Cryptography|i|T|vs|t|encryption|
+復号|ふくごう|Giải mã (decrypt)|復号に必要な鍵は、データとは別の場所で管理します。|Khóa cần để giải mã được quản lý ở nơi khác với dữ liệu.|Cryptography|a|T|vs|t|decryption|Không nói 復号化 trong văn bản chuẩn (dù hay gặp).
+ハッシュ化|はっしゅか|Băm (hashing)|パスワードは平文で保存せず、ハッシュ化して保存します。|Mật khẩu không lưu dạng văn bản thô mà được băm rồi lưu.|Cryptography|a|T|vs|t|hashing,password|
+ソルト|そると|Salt (chuỗi ngẫu nhiên thêm vào trước khi băm)|ユーザーごとに異なるソルトを付けて、同じパスワードでも別のハッシュ値にします。|Thêm salt khác nhau cho mỗi người dùng để cùng mật khẩu cũng có giá trị băm khác nhau.|Cryptography|e|T|n|t|hashing,password|
+公開鍵暗号|こうかいかぎあんごう|Mật mã khóa công khai|公開鍵暗号を使って、取引先とのファイル交換を安全に行います。|Dùng mật mã khóa công khai để trao đổi file với đối tác một cách an toàn.|Cryptography|e|T|n|t|pki,encryption|
+電子証明書|でんししょうめいしょ|Chứng chỉ điện tử|サーバーの電子証明書の有効期限が切れ、接続エラーになりました。|Chứng chỉ điện tử của máy chủ hết hạn nên đã gây lỗi kết nối.|Cryptography|a|T|n|t|certificate,pki|
+電子署名|でんししょめい|Chữ ký điện tử|契約書は電子署名で締結し、押印のための郵送をなくしました。|Hợp đồng được ký bằng chữ ký điện tử, bỏ việc gửi bưu điện để đóng dấu.|Cryptography|a|T|n|t|signature,pki|
+秘密鍵|ひみつかぎ|Khóa bí mật (private key)|秘密鍵をリポジトリにコミットしてしまったため、すぐに鍵を作り直しました。|Vì lỡ commit khóa bí mật lên repository nên đã tạo lại khóa ngay lập tức.|Cryptography|a|T|n|t|key,pki|
+鍵管理|かぎかんり|Quản lý khóa mã hóa|鍵管理はクラウドの専用サービスに任せ、定期的に鍵を更新します。|Việc quản lý khóa được giao cho dịch vụ chuyên dụng của cloud và khóa được thay định kỳ.|Cryptography|e|T|n|t|kms,key|
+機密情報|きみつじょうほう|Thông tin mật|機密情報を含む資料は、社外のチャットツールに貼り付けないでください。|Tài liệu chứa thông tin mật xin đừng dán vào công cụ chat bên ngoài công ty.|Data Protection|i|T|n|t|confidential|
+個人情報保護法|こじんじょうほうほごほう|Luật bảo vệ thông tin cá nhân (Nhật Bản)|個人情報保護法の改正に合わせて、利用目的の通知内容を見直しました。|Cùng với sửa đổi luật bảo vệ thông tin cá nhân, chúng tôi đã xem lại nội dung thông báo mục đích sử dụng.|Data Protection|e|B|n|f|privacy,law,japan|
+匿名化|とくめいか|Ẩn danh hóa|分析に使うデータは、個人を特定できないよう匿名化してから渡します。|Dữ liệu dùng để phân tích được ẩn danh hóa để không xác định được cá nhân rồi mới chuyển giao.|Data Protection|a|T|vs|t|anonymization,privacy|
+マスキング|ますきんぐ|Che giấu dữ liệu (masking)|画面に表示するカード番号は、下四桁以外をマスキングします。|Số thẻ hiển thị trên màn hình được che giấu trừ bốn số cuối.|Data Protection|a|T|vs|t|masking,privacy|
+監査ログ|かんさろぐ|Log kiểm toán|監査ログには、誰がいつどのデータを参照したかを記録します。|Log kiểm toán ghi lại ai đã xem dữ liệu nào vào lúc nào.|Monitoring|a|T|n|t|audit,logging|
+侵入検知|しんにゅうけんち|Phát hiện xâm nhập (IDS)|侵入検知の仕組みが、通常と異なる大量の通信を検出しました。|Cơ chế phát hiện xâm nhập đã phát hiện lượng truy cập lớn bất thường.|Monitoring|e|T|n|t|ids,monitoring|
+ゼロトラスト|ぜろとらすと|Zero trust (không mặc định tin cậy bất kỳ truy cập nào)|ゼロトラストの考え方では、社内ネットワークからの接続も毎回検証します。|Theo tư duy zero trust, kể cả kết nối từ mạng nội bộ cũng được kiểm chứng mỗi lần.|Security Architecture|e|T|n|t|zero-trust|
+セキュリティインシデント|せきゅりてぃいんしでんと|Sự cố an ninh thông tin|セキュリティインシデントが疑われる場合は、自己判断せずにすぐ報告してください。|Khi nghi ngờ có sự cố an ninh, đừng tự phán đoán mà hãy báo cáo ngay.|Incident Response|a|T|n|t|incident,security|
+初動対応|しょどうたいおう|Ứng phó ban đầu|初動対応として、感染した端末をネットワークから切り離しました。|Như ứng phó ban đầu, đã ngắt thiết bị bị nhiễm khỏi mạng.|Incident Response|a|B|n|b|incident,response|
+情報セキュリティポリシー|じょうほうせきゅりてぃぽりしー|Chính sách an toàn thông tin|情報セキュリティポリシーで、私物の端末での業務を禁止しています。|Chính sách an toàn thông tin cấm làm việc trên thiết bị cá nhân.|Governance|a|T|n|f|policy,governance|

@@ -1,0 +1,5 @@
+[
+ { "id": "sec-sec-0027", "field": "reading", "before": "でんしししょうめいしょ", "after": "でんししょうめいしょ", "detectedBy": "Tự rà soát khi biên soạn batch 20 (lỗi gõ thừa 「し」)" },
+ { "id": "sec-sec-0020", "field": "example_vi", "before": "Nếu dùng placeholder thì có thể ngăn được SQL injection.", "after": "Nếu dùng tham số giữ chỗ (bind variable) trong câu SQL thì có thể ngăn được SQL injection.", "detectedBy": "Validator — quy tắc placeholder" },
+ { "id": "ba-req-0109", "field": "reading", "before": "べっとぎょうぎ", "after": "べっときょうぎ", "detectedBy": "Đối chiếu JMdict mức thành phần (協議 = きょうぎ, không biến âm)" }
+]

@@ -16,7 +16,8 @@
     "e2e": "playwright test",
     "vocab:generate": "tsx scripts/generate-vocabulary-seed.ts",
     "validate:vocab": "tsx scripts/validate-vocabulary.ts",
-    "vocab:verify": "python3 scripts/verify-jmdict.py"
+    "vocab:verify": "python3 scripts/verify-jmdict.py",
+    "vocab:report": "tsx scripts/vocab-report.ts"
   },
   "dependencies": {
     "@tauri-apps/api": "^2.12.5",

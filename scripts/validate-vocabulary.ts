@@ -44,6 +44,7 @@ export const TOO_BASIC = new Set(
 const PLACEHOLDER = /(lorem|ipsum|placeholder|example sentence|sample sentence|câu ví dụ|ví dụ mẫu|todo|fixme|xxx|\?\?\?|ダミー|サンプル文|例文です|テスト用)/i;
 const JA_CHAR = /[぀-ヿ一-鿿]/;
 const VI_LETTER = /[a-zA-ZÀ-ỹđĐ]/;
+// eslint-disable-next-line no-control-regex -- detecting control characters is the purpose of this rule
 const BAD_CHARS = /[�\u0000-\u0008\u000B\u000C\u000E-\u001F]/;
 // typical mojibake sequences (UTF-8 read as Latin-1 / Shift_JIS)
 const MOJIBAKE = /(Ã.|Â.|ã\u0081|ç\u0094|�|縺|繧|竊)/;

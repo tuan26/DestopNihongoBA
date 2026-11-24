@@ -47,11 +47,63 @@ def locate_db() -> str:
     return out
 
 
+def is_kana(s: str) -> bool:
+    return all("\u3040" <= c <= "\u30ff" for c in s)
+
+
+def make_component_checker(db):
+    cache = {}
+
+    def readings_of(sub: str):
+        if sub in cache:
+            return cache[sub]
+        out = set()
+        if is_kana(sub):
+            out.add(norm_reading(sub))
+        else:
+            ids = [r[0] for r in db.execute("SELECT idseq FROM Kanji WHERE text = ?", (sub,))]
+            if ids:
+                q = "SELECT text FROM Kana WHERE idseq IN (%s)" % ",".join("?" * len(ids))
+                out = {norm_reading(r[0]) for r in db.execute(q, ids)}
+        cache[sub] = out
+        return out
+
+    def check(jp: str, reading: str) -> bool:
+        """True when jp can be segmented into JMdict headwords (or kana) whose readings concatenate to `reading`."""
+        jp = unicodedata.normalize("NFKC", jp)
+        memo = {}
+
+        def go(i: int, k: int) -> bool:
+            if i == len(jp):
+                return k == len(reading)
+            key = (i, k)
+            if key in memo:
+                return memo[key]
+            ok = False
+            for j in range(min(len(jp), i + 8), i, -1):
+                sub = jp[i:j]
+                if j - i == len(jp):  # whole-word match is handled elsewhere
+                    continue
+                for r in readings_of(sub):
+                    if r and reading.startswith(r, k) and go(j, k + len(r)):
+                        ok = True
+                        break
+                if ok:
+                    break
+            memo[key] = ok
+            return ok
+
+        return go(0, 0)
+
+    return check
+
+
 def main() -> int:
     db = sqlite3.connect(locate_db())
     version = dict(db.execute("SELECT key, value FROM meta").fetchall()).get("jmdict.version", "?")
     seed = json.load(open(os.path.join(VOCAB, "seed-v1.json"), encoding="utf-8"))
     results, counts, mismatches = {}, {}, []
+    components_ok = make_component_checker(db)
     for e in seed["entries"]:
         jp, reading = e["japanese"], norm_reading(e["reading"])
         ids = [r[0] for r in db.execute("SELECT idseq FROM Kanji WHERE text = ?", (jp,))]
@@ -60,7 +112,7 @@ def main() -> int:
             ids = [r[0] for r in db.execute("SELECT idseq FROM Kana WHERE text = ?", (jp,))]
             kana_head = bool(ids)
         if not ids:
-            match = "not-found"
+            match = "components" if components_ok(jp, reading) else "not-found"
         else:
             q = "SELECT text FROM Kana WHERE idseq IN (%s)" % ",".join("?" * len(ids))
             readings = {norm_reading(r[0]) for r in db.execute(q, ids)}
@@ -76,7 +128,7 @@ def main() -> int:
     out = {
         "generated_at": datetime.date.today().isoformat(),
         "source": f"JMdict (Electronic Dictionary Research and Development Group, CC BY-SA 4.0) via jamdict-data, JMdict v{version}",
-        "scope": "headword + reading existence only; Vietnamese meaning and examples not verified",
+        "scope": "headword+reading = exact JMdict entry with this reading; components = compound split into JMdict headwords whose readings concatenate exactly to the given reading (compound itself not a JMdict entry); Vietnamese meaning and examples not verified",
         "counts": counts,
         "results": results,
     }

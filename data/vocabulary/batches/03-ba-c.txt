@@ -16,7 +16,7 @@
 後出し|あとだし|Đưa ra sau (yêu cầu/điều kiện nêu ra muộn)|テスト中に後出しで条件を追加されると、スケジュールが守れません。|Nếu điều kiện bị bổ sung muộn trong lúc kiểm thử thì không thể giữ được tiến độ.|Change Management|a|B|n|n|change,risk|Sắc thái tiêu cực, dùng cẩn thận với khách hàng.
 仕様確定|しようかくてい|Chốt đặc tả|仕様確定が遅れているため、開発着手日を一週間ずらします。|Vì việc chốt đặc tả bị chậm nên ngày bắt đầu phát triển sẽ lùi một tuần.|Requirement Management|i|B|vs|b|specification,schedule|
 未確定事項|みかくていじこう|Các mục chưa được chốt|未確定事項が残ったまま設計に入る場合は、前提を明記してください。|Nếu bước vào thiết kế khi vẫn còn mục chưa chốt, hãy ghi rõ giả định.|Requirement Management|a|B|n|b|specification,risk|
-別途協議|べっとぎょうぎ|Thảo luận riêng sau (để xác định sau)|保守費用については別途協議とさせていただければと存じます。|Về chi phí bảo trì, chúng tôi xin phép được thảo luận riêng sau.|Negotiation|a|B|n|f|negotiation,contract|Cụm hay xuất hiện trong báo giá/hợp đồng.
+別途協議|べっときょうぎ|Thảo luận riêng sau (để xác định sau)|保守費用については別途協議とさせていただければと存じます。|Về chi phí bảo trì, chúng tôi xin phép được thảo luận riêng sau.|Negotiation|a|B|n|f|negotiation,contract|Cụm hay xuất hiện trong báo giá/hợp đồng.
 想定外|そうていがい|Ngoài dự kiến|想定外の入力値が来た場合でも、システムが停止しないようにしてください。|Ngay cả khi nhận giá trị nhập ngoài dự kiến, hãy đảm bảo hệ thống không bị dừng.|Analysis|i|N2|adj-na|n|risk,exception|
 業務分析|ぎょうむぶんせき|Phân tích nghiệp vụ|業務分析の結果を踏まえて、システム化の範囲を提案します。|Dựa trên kết quả phân tích nghiệp vụ, chúng tôi sẽ đề xuất phạm vi hệ thống hóa.|Business Analysis|i|B|vs|b|analysis,ba|
 要件分析|ようけんぶんせき|Phân tích yêu cầu|要件分析では、要望同士の矛盾がないかも確認します。|Trong phân tích yêu cầu, chúng tôi cũng kiểm tra xem các mong muốn có mâu thuẫn nhau không.|Requirement Definition|i|B|vs|b|analysis,requirement|

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useApp } from '../app/AppContext';
 import { Modal } from '../components/Modal';
-import { applyImport, type DuplicateStrategy, type ImportPreview } from '../core/excel/import';
+import type { DuplicateStrategy, ImportPreview } from '../core/excel/import';
 import { backupDatabase } from '../platform/native';
 
 export function ImportDialog({ name, preview, onClose, onDone }: { name: string; preview: ImportPreview; onClose: () => void; onDone: () => void }) {
@@ -16,6 +16,7 @@ export function ImportDialog({ name, preview, onClose, onDone }: { name: string;
     setBusy(true);
     try {
       await backupDatabase('pre-import');
+      const { applyImport } = await import('../core/excel/import');
       const r = await applyImport(db, preview, strategy);
       toast(`Import xong: ${r.inserted} mới, ${r.updated} cập nhật, ${r.skipped} bỏ qua, ${r.failed} lỗi`, 'success');
       onDone();

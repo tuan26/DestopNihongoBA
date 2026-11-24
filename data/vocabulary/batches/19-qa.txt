@@ -1,0 +1,63 @@
+# category: Testing / QA
+# code: qa
+# batch 19 — test levels, design techniques, defect management, quality metrics
+単体テスト|たんたいてすと|Kiểm thử đơn vị (unit test)|単体テストで分岐をすべて通したうえで、結合テストに進みます。|Sau khi đi qua tất cả các nhánh trong kiểm thử đơn vị mới chuyển sang kiểm thử tích hợp.|Test Levels|i|T|n|t|testing,unit|Viết tắt: UT.
+結合テスト|けつごうてすと|Kiểm thử tích hợp|結合テストでは、画面からデータベースまでの一連の流れを確認します。|Trong kiểm thử tích hợp, xác nhận toàn bộ luồng từ màn hình tới cơ sở dữ liệu.|Test Levels|i|T|n|t|testing,integration|Viết tắt: IT.
+総合テスト|そうごうてすと|Kiểm thử tổng hợp (system test)|総合テストは、本番に近いデータ量と業務シナリオで実施します。|Kiểm thử tổng hợp được thực hiện với lượng dữ liệu và kịch bản nghiệp vụ gần với production.|Test Levels|i|T|n|t|testing,system|Còn gọi: システムテスト (ST).
+受入テスト|うけいれてすと|Kiểm thử chấp nhận (UAT)|受入テストはお客様が主体となり、業務担当者が操作します。|Kiểm thử chấp nhận do khách hàng chủ trì, nhân viên nghiệp vụ thao tác.|Test Levels|i|T|n|t|testing,uat|
+回帰テスト|かいきてすと|Kiểm thử hồi quy|修正の影響がないことを確かめるため、主要機能の回帰テストを自動で流しています。|Để xác nhận sửa đổi không gây ảnh hưởng, chúng tôi chạy tự động kiểm thử hồi quy các chức năng chính.|Test Types|a|T|n|t|testing,regression|
+デグレ|でぐれ|Lỗi hồi quy (chức năng đang chạy tốt bị hỏng sau khi sửa)|帳票の修正で、別の画面の合計金額がデグレしていました。|Do sửa biểu mẫu mà tổng tiền ở màn hình khác bị lỗi hồi quy.|Defects|a|T|n|t|regression,defect|Viết tắt của デグレード (degrade), từ lóng rất phổ biến ở Nhật.
+テスト仕様書|てすとしようしょ|Tài liệu đặc tả kiểm thử|テスト仕様書には、前提条件、操作手順、期待値を必ず記載してください。|Trong tài liệu đặc tả kiểm thử, nhất định phải ghi điều kiện tiền đề, thao tác và giá trị kỳ vọng.|Test Documentation|i|T|n|t|documentation,testing|
+テストケース|てすとけーす|Test case|追加された条件分岐に対応するテストケースが不足しています。|Đang thiếu test case tương ứng với các nhánh điều kiện mới được thêm.|Test Design|i|T|n|t|testing,design|
+テスト観点|てすとかんてん|Góc nhìn kiểm thử (test viewpoint)|テスト観点を先に洗い出してから、具体的なケースに落とし込みます。|Trước tiên liệt kê các góc nhìn kiểm thử rồi mới chuyển thành case cụ thể.|Test Design|a|T|n|t|testing,design|Thuật ngữ đặc trưng trong QA Nhật (観点表).
+テスト計画書|てすとけいかくしょ|Kế hoạch kiểm thử|テスト計画書で、対象範囲、体制、完了条件を合意しておきます。|Thống nhất phạm vi, cơ cấu và điều kiện hoàn thành trong kế hoạch kiểm thử.|Test Documentation|i|T|n|t|planning,testing|
+網羅率|もうらりつ|Tỷ lệ bao phủ|仕様書の項目に対するテストの網羅率は九十八パーセントです。|Tỷ lệ bao phủ kiểm thử so với các mục trong tài liệu đặc tả là chín mươi tám phần trăm.|Quality Metrics|a|T|n|t|coverage,metric|
+コードカバレッジ|こーどかばれっじ|Độ bao phủ mã (code coverage)|コードカバレッジが高くても、仕様の誤りまでは見つけられません。|Dù độ bao phủ mã cao cũng không tìm ra được sai sót trong đặc tả.|Quality Metrics|a|T|n|t|coverage,metric|
+境界値分析|きょうかいちぶんせき|Phân tích giá trị biên|境界値分析により、十九歳と二十歳の判定を重点的に確認しました。|Bằng phân tích giá trị biên, chúng tôi tập trung kiểm tra phán định giữa mười chín và hai mươi tuổi.|Test Design|a|T|n|t|test-design,boundary|
+同値分割|どうちぶんかつ|Phân vùng tương đương|同値分割を使って、無駄なテストケースを減らしました。|Dùng phân vùng tương đương để giảm các test case thừa.|Test Design|a|T|n|t|test-design|
+正常系|せいじょうけい|Luồng bình thường (case thành công)|まず正常系を確認し、その後でエラーの場合を確認します。|Trước tiên kiểm tra luồng bình thường, sau đó mới kiểm tra các trường hợp lỗi.|Test Design|i|T|n|t|test-design|
+異常系|いじょうけい|Luồng bất thường (case lỗi)|異常系のテストでは、通信切断やディスク不足も想定してください。|Trong kiểm thử luồng bất thường, hãy giả định cả mất kết nối và thiếu dung lượng đĩa.|Test Design|i|T|n|t|test-design,error|
+準正常系|じゅんせいじょうけい|Luồng bán bình thường (lỗi nghiệp vụ dự kiến như nhập sai)|入力ミスによるエラー表示は、準正常系として整理しています。|Hiển thị lỗi do nhập sai được sắp xếp vào nhóm luồng bán bình thường.|Test Design|e|T|n|t|test-design|Khái niệm đặc thù ở Nhật, ít thấy trong tài liệu tiếng Anh.
+期待値|きたいち|Giá trị/kết quả kỳ vọng|期待値があいまいなテストケースは、合否を判断できません。|Test case có kết quả kỳ vọng mơ hồ thì không thể phán định đạt hay không.|Test Design|i|T|n|t|testing,expected|
+実行結果|じっこうけっか|Kết quả thực hiện|実行結果が期待値と異なる場合は、不具合として記録します。|Nếu kết quả thực hiện khác với kỳ vọng thì ghi nhận là lỗi.|Test Execution|i|T|n|t|testing|
+エビデンス|えびでんす|Bằng chứng kiểm thử (ảnh chụp, log)|テストのエビデンスとして、画面のスクリーンショットを保存してください。|Hãy lưu ảnh chụp màn hình làm bằng chứng kiểm thử.|Test Execution|i|T|n|t|evidence,testing|Khách hàng Nhật rất coi trọng エビデンス.
+証跡|しょうせき|Dấu vết, bằng chứng lưu lại (audit trail)|本番作業の証跡として、実行したコマンドと結果を保存します。|Làm bằng chứng của thao tác production, lưu lại lệnh đã chạy và kết quả.|Test Execution|e|T|n|f|evidence,audit|
+不具合票|ふぐあいひょう|Phiếu báo lỗi|不具合票には、再現手順と発生環境を正確に書いてください。|Trong phiếu báo lỗi, hãy ghi chính xác thủ tục tái hiện và môi trường phát sinh.|Defect Management|i|T|n|t|defect,tracking|
+起票|きひょう|Lập phiếu (tạo ticket/phiếu)|テスト中に見つけた問題は、その日のうちに起票してください。|Vấn đề phát hiện trong lúc kiểm thử hãy lập phiếu ngay trong ngày.|Defect Management|a|B|vs|b|ticket,defect|
+再現手順|さいげんてじゅん|Các bước tái hiện lỗi|再現手順が分からない不具合は、まずログから発生条件を推測します。|Với lỗi chưa rõ các bước tái hiện, trước tiên suy đoán điều kiện phát sinh từ log.|Defect Management|i|T|n|t|defect,debugging|
+再テスト|さいてすと|Kiểm thử lại (sau khi sửa)|修正が完了した不具合は、起票者が再テストしてクローズします。|Lỗi đã sửa xong sẽ được người lập phiếu kiểm thử lại rồi đóng.|Test Execution|i|T|n|t|retest|
+不具合収束|ふぐあいしゅうそく|Lỗi hội tụ (số lỗi mới giảm dần, ổn định)|リリース判定の条件として、不具合収束を確認できることを挙げています。|Một điều kiện để quyết định phát hành là xác nhận được số lỗi đã hội tụ.|Quality Metrics|e|T|n|t|quality,metric|
+品質分析|ひんしつぶんせき|Phân tích chất lượng|品質分析の結果、特定の開発者のモジュールに不具合が集中していました。|Kết quả phân tích chất lượng cho thấy lỗi tập trung ở module của một số lập trình viên.|Quality Metrics|a|T|n|t|quality,analysis|
+信頼度成長曲線|しんらいどせいちょうきょくせん|Đường cong tăng trưởng độ tin cậy (đồ thị số lỗi tích lũy)|信頼度成長曲線がまだ上向きのため、テストの継続が必要です。|Đường cong tăng trưởng độ tin cậy vẫn đang đi lên nên cần tiếp tục kiểm thử.|Quality Metrics|e|T|n|t|quality,metric|Thường gọi: バグ曲線, ゴンペルツ曲線.
+バグ密度|ばぐみつど|Mật độ lỗi (số lỗi / quy mô mã)|このモジュールはバグ密度が基準値の二倍なので、追加レビューを行います。|Module này có mật độ lỗi gấp đôi mức chuẩn nên sẽ review bổ sung.|Quality Metrics|a|T|n|t|quality,metric|
+テスト密度|てすとみつど|Mật độ kiểm thử (số case / quy mô mã)|テスト密度が低い機能は、テストケースの追加を検討してください。|Với chức năng có mật độ kiểm thử thấp, hãy cân nhắc bổ sung test case.|Quality Metrics|e|T|n|t|quality,metric|
+性能テスト|せいのうてすと|Kiểm thử hiệu năng|性能テストで、検索画面が要件の三秒を超えることが分かりました。|Kiểm thử hiệu năng cho thấy màn hình tìm kiếm vượt quá ba giây theo yêu cầu.|Test Types|i|T|n|t|performance,testing|
+負荷テスト|ふかてすと|Kiểm thử tải|負荷テストでは、想定の二倍のアクセスを三十分間かけ続けます。|Trong kiểm thử tải, liên tục tạo truy cập gấp đôi dự kiến trong ba mươi phút.|Test Types|i|T|n|t|load,testing|
+耐久テスト|たいきゅうてすと|Kiểm thử độ bền (chạy lâu dài)|耐久テストを七十二時間行い、メモリの増加がないことを確認しました。|Đã chạy kiểm thử độ bền bảy mươi hai giờ để xác nhận bộ nhớ không tăng.|Test Types|a|T|n|t|endurance,testing|
+探索的テスト|たんさくてきてすと|Kiểm thử thăm dò (exploratory testing)|仕様書にない操作の問題を見つけるため、探索的テストの時間も確保します。|Để phát hiện vấn đề với thao tác không có trong đặc tả, dành cả thời gian cho kiểm thử thăm dò.|Test Types|a|T|n|t|exploratory,testing|
+テスト自動化|てすとじどうか|Tự động hóa kiểm thử|テスト自動化の対象は、変更が少なく繰り返し実行する画面から選びます。|Đối tượng tự động hóa kiểm thử được chọn từ các màn hình ít thay đổi và chạy lặp lại.|Test Automation|a|T|n|t|automation,testing|
+テストデータ|てすとでーた|Dữ liệu kiểm thử|テストデータに本番の個人情報をそのまま使うことは禁止されています。|Cấm dùng nguyên thông tin cá nhân của production làm dữ liệu kiểm thử.|Test Execution|i|T|n|t|testing,data|
+テスト環境|てすとかんきょう|Môi trường kiểm thử|テスト環境が一つしかないため、チーム間で利用時間を調整しています。|Vì chỉ có một môi trường kiểm thử nên các đội phải điều chỉnh thời gian sử dụng.|Test Execution|i|T|n|t|environment,testing|
+モック|もっく|Mock (đối tượng giả lập có kiểm tra tương tác)|外部APIはモックに置き換えて、単体テストを安定させています。|API bên ngoài được thay bằng mock để kiểm thử đơn vị ổn định.|Test Doubles|a|T|n|t|testing,mock|
+スタブ|すたぶ|Stub (thành phần giả trả về giá trị cố định)|未完成の在庫サービスはスタブで代用して、結合テストを先に進めます。|Dịch vụ tồn kho chưa hoàn thành được thay bằng stub để tiến hành kiểm thử tích hợp trước.|Test Doubles|a|T|n|t|testing,stub|
+ホワイトボックステスト|ほわいとぼっくすてすと|Kiểm thử hộp trắng|ホワイトボックステストでは、ソースコードの分岐を見ながらケースを作ります。|Trong kiểm thử hộp trắng, tạo case trong khi xem các nhánh của mã nguồn.|Test Design|a|T|n|t|testing,white-box|
+ブラックボックステスト|ぶらっくぼっくすてすと|Kiểm thử hộp đen|ブラックボックステストは、仕様書だけを見て入力と出力を確認します。|Kiểm thử hộp đen chỉ dựa vào tài liệu đặc tả để kiểm tra đầu vào và đầu ra.|Test Design|a|T|n|t|testing,black-box|
+分岐網羅|ぶんきもうら|Bao phủ nhánh (branch coverage, C1)|単体テストの完了条件は、分岐網羅百パーセントとしています。|Điều kiện hoàn thành kiểm thử đơn vị là bao phủ nhánh một trăm phần trăm.|Test Design|e|T|n|t|coverage,test-design|
+条件網羅|じょうけんもうら|Bao phủ điều kiện (condition coverage, C2)|複合条件が多い計算処理は、条件網羅でテストしました。|Xử lý tính toán có nhiều điều kiện phức hợp đã được kiểm thử theo bao phủ điều kiện.|Test Design|e|T|n|t|coverage,test-design|
+デシジョンテーブル|でしじょんてーぶる|Bảng quyết định (decision table)|割引条件の組み合わせをデシジョンテーブルで整理しました。|Các tổ hợp điều kiện giảm giá đã được sắp xếp bằng bảng quyết định.|Test Design|a|T|n|t|test-design|
+ペアワイズ法|ぺあわいずほう|Phương pháp pairwise (kiểm thử tổ hợp cặp)|設定項目の組み合わせが膨大なため、ペアワイズ法でケースを絞りました。|Vì tổ hợp các mục cấu hình quá lớn nên đã thu hẹp case bằng phương pháp pairwise.|Test Design|e|T|n|t|test-design,combinatorial|
+仕様起因|しようきいん|Nguyên nhân do đặc tả|今回の不具合は実装ミスではなく、仕様起因と判断しました。|Lỗi lần này được xác định không phải do lập trình sai mà là do đặc tả.|Defect Analysis|a|T|n|t|root-cause,defect|
+製造起因|せいぞうきいん|Nguyên nhân do lập trình (giai đoạn chế tạo)|製造起因の不具合が多いため、コードレビューの観点を見直します。|Vì nhiều lỗi do lập trình nên sẽ xem lại góc nhìn khi review mã.|Defect Analysis|a|T|n|t|root-cause,defect|製造 = công đoạn lập trình trong cách nói Nhật.
+環境起因|かんきょうきいん|Nguyên nhân do môi trường|テスト環境の設定ミスによる環境起因の事象は、不具合件数から除外します。|Các hiện tượng do môi trường vì cấu hình sai môi trường test được loại khỏi số lỗi.|Defect Analysis|a|T|n|t|root-cause,environment|
+横展開|よこてんかい|Mở rộng áp dụng ngang (kiểm tra/sửa các chỗ tương tự)|同じ書き方をしている箇所がないか、全モジュールに横展開して確認してください。|Hãy mở rộng kiểm tra ra tất cả module xem còn chỗ nào viết giống vậy không.|Defect Analysis|a|B|vs|b|quality,prevention|Từ rất quan trọng khi báo cáo lỗi với khách hàng Nhật.
+影響確認|えいきょうかくにん|Kiểm tra ảnh hưởng|共通部品を修正したので、利用している全画面の影響確認が必要です。|Vì đã sửa thành phần dùng chung nên cần kiểm tra ảnh hưởng ở tất cả các màn hình sử dụng nó.|Test Execution|i|B|n|b|impact,regression|
+品質保証|ひんしつほしょう|Đảm bảo chất lượng (QA)|品質保証部門の承認がないと、製品を出荷できません。|Không có phê duyệt của bộ phận đảm bảo chất lượng thì không thể xuất xưởng sản phẩm.|Quality Management|i|T|n|t|qa,quality|
+出荷判定|しゅっかはんてい|Đánh giá cho phép xuất xưởng (release quality gate)|出荷判定会議では、未解決の重大な不具合がゼロであることを確認します。|Trong cuộc họp đánh giá xuất xưởng, xác nhận không còn lỗi nghiêm trọng chưa giải quyết.|Quality Management|a|T|n|t|release,quality-gate|
+切り分け|きりわけ|Khoanh vùng nguyên nhân (isolate vấn đề)|アプリとネットワークのどちらの問題か、まず切り分けを行います。|Trước tiên khoanh vùng xem là vấn đề của ứng dụng hay mạng.|Debugging|a|T|n|t|debugging,triage|
+静的テスト|せいてきてすと|Kiểm thử tĩnh (review, phân tích không chạy mã)|設計書のレビューも静的テストの一つとして計画に含めます。|Review tài liệu thiết kế cũng được đưa vào kế hoạch như một dạng kiểm thử tĩnh.|Test Types|a|T|n|t|review,testing|
+レビュー記録表|れびゅーきろくひょう|Biểu ghi chép review|指摘内容と対応状況は、レビュー記録表で管理しています。|Nội dung góp ý và tình trạng xử lý được quản lý bằng biểu ghi chép review.|Quality Management|a|B|n|b|review,documentation|
+欠陥|けっかん|Khiếm khuyết (defect)|上流工程で作り込まれた欠陥ほど、修正コストが高くなります。|Khiếm khuyết sinh ra ở công đoạn càng thượng nguồn thì chi phí sửa càng cao.|Defects|a|N1|n|t|defect,quality|
+重大度|じゅうだいど|Mức độ nghiêm trọng (severity)|データが消える不具合は、重大度を最高に設定してください。|Lỗi làm mất dữ liệu hãy đặt mức độ nghiêm trọng cao nhất.|Defect Management|a|T|n|t|severity,defect|
+目視確認|もくしかくにん|Kiểm tra bằng mắt|帳票のレイアウトは自動では判定できないため、目視確認で行います。|Bố cục biểu mẫu không thể phán định tự động nên sẽ kiểm tra bằng mắt.|Test Execution|a|T|vs|t|manual,testing|
+打鍵テスト|だけんてすと|Kiểm thử bằng thao tác bàn phím thực tế (manual test trên màn hình)|自動化できない画面は、テスターが打鍵テストで確認しています。|Các màn hình không tự động hóa được thì tester kiểm tra bằng thao tác bàn phím thực tế.|Test Execution|e|T|n|t|manual,testing,japan|Thuật ngữ đặc thù Nhật.
+シナリオテスト|しなりおてすと|Kiểm thử theo kịch bản|受注から出荷までの一連の流れを、シナリオテストで確認します。|Toàn bộ luồng từ nhận đơn đến xuất hàng được kiểm tra bằng kiểm thử theo kịch bản.|Test Types|i|T|n|t|scenario,testing|
