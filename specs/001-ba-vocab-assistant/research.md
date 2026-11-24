@@ -8,11 +8,13 @@
   Flutter desktop (hệ sinh thái SQLite/Excel kém hơn cho use case này).
 
 ## R2. SQLite access
-- **Decision**: `tauri-plugin-sql` (sqlx, feature `sqlite`) trong app; `sql.js` trong test & browser preview, cùng interface `Database`.
-- **Rationale**: Logic SQL viết một lần ở TS; test integration thật với SQLite engine.
-- **Lưu ý**: plugin-sql dùng pool → transaction được thực hiện bằng gom các câu lệnh vào `executeBatch` / câu lệnh
-  `BEGIN…COMMIT` gửi trong một lời gọi; adapter Tauri đảm bảo chạy tuần tự (mutex trong JS).
-- **Alternatives**: rusqlite + command riêng cho từng truy vấn (nhiều boilerplate Rust, khó test từ TS).
+- **Decision (revised during implementation)**: Rust giữ **một** connection `rusqlite` (feature `bundled`, WAL) và expose 3 command
+  `db_execute`, `db_select`, `db_batch`; frontend dùng adapter `TauriDatabase`. Test & browser preview dùng `sql.js` qua cùng interface `Database`.
+- **Rationale**: Ban đầu chọn `tauri-plugin-sql`, nhưng plugin dùng connection pool (sqlx) → các câu `BEGIN…COMMIT` gửi riêng lẻ có thể
+  rơi vào connection khác nhau, transaction không an toàn. Một connection duy nhất + "tx owner" theo label cửa sổ (window khác phải chờ
+  đến khi COMMIT/ROLLBACK, timeout 15 s thì rollback) đảm bảo atomic; `db_batch` chạy nhiều câu trong một transaction/IPC
+  (seed 1.000 từ ≈ 2.000 câu chỉ 1 round-trip). Đồng thời cho phép backup bằng `VACUUM INTO` trước khi migrate.
+- **Alternatives**: tauri-plugin-sql (loại vì lý do trên); viết command Rust riêng cho từng truy vấn (nhiều boilerplate, khó test từ TS).
 
 ## R3. Spaced repetition
 - **Decision**: `ts-fsrs` (open-spaced-repetition, MIT) — triển khai chính thức FSRS cho TypeScript.

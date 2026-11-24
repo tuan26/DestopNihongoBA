@@ -215,7 +215,9 @@ html.card-window, html.card-window body, html.card-window #root { background: tr
 .fc-bottom { display: flex; align-items: center; gap: 3px; padding: 4px 6px 6px; }
 .fc-rate { flex: 1; border: 1px solid var(--border); background: transparent; border-radius: 6px; padding: 3px 0; font-size: 11px; cursor: pointer; font-weight: 600; }
 .fc-rate:hover { background: var(--surface-2); }
+.fc-mini { flex-direction: row; }
 .fc-mini .fc-body { flex-direction: row; gap: 8px; }
+.fc-mini-handle { width: 14px; display: grid; place-items: center; cursor: grab; color: var(--muted); font-size: 14px; }
 .fc-mini .fc-word { font-size: calc(20px * var(--font-scale)); }
 .fc-empty { color: var(--muted); font-size: 12px; }
 .fc-menu {

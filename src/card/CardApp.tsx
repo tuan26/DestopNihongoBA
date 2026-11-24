@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useApp } from '../app/AppContext';
 import { CARD_MODE_LABELS, getKv, setKv, type CardMode } from '../core/settings/settings';
-import { buildQueue } from '../core/study/modes';
+import { buildCardDeck } from '../core/study/cardDeck';
 import { rateWord } from '../core/srs/reviewService';
 import { RATING_LABELS, type UserRating } from '../core/srs/scheduler';
 import { getVocabulary, setFavorite } from '../core/vocabulary/repository';
@@ -13,19 +13,6 @@ import {
 import { speakJapanese } from '../platform/tts';
 
 const BOUNDS_KEY = 'card.bounds';
-
-/** Build the card deck: due words first, then new words, then weakest learned words. */
-export async function buildCardDeck(
-  db: Parameters<typeof buildQueue>[0],
-  deck: string,
-  newPerDay: number,
-  exclude: number[] = [],
-): Promise<VocabWithReview[]> {
-  const daily = deck === 'smart' ? await buildQueue(db, 'daily', { newPerDay, limit: 40, excludeIds: exclude }) : [];
-  if (daily.length >= 5) return daily;
-  const more = await buildQueue(db, 'ja_vi', { deck, limit: 40, excludeIds: [...exclude, ...daily.map((d) => d.id)] });
-  return [...daily, ...more];
-}
 
 export function CardApp() {
   const { db, settings, updateSettings, dataVersion, dataChanged } = useApp();
@@ -222,7 +209,7 @@ export function CardApp() {
     >
       {!isMini && (
         <div className="fc-top">
-          <div className={`drag${locked ? ' locked' : ''}`} onMouseDown={onDragStart} data-tauri-drag-region={locked ? undefined : true} title={locked ? 'Card đang bị khóa vị trí' : 'Kéo để di chuyển'}>
+          <div className={`drag${locked ? ' locked' : ''}`} onMouseDown={onDragStart} title={locked ? 'Card đang bị khóa vị trí' : 'Kéo để di chuyển'}>
             {locked ? '🔒' : '⋮⋮'} {current ? CATEGORY_LABELS_VI[current.category] ?? current.category : 'Japanese BA'}
           </div>
           <button className={`icon-btn${current?.is_favorite ? ' on' : ''}`} onClick={() => void toggleFav()} title="Yêu thích (F)" data-testid="card-fav">
@@ -255,10 +242,14 @@ export function CardApp() {
         </div>
       )}
 
+      {isMini && !locked && (
+        <div className="fc-mini-handle" onMouseDown={onDragStart} title="Kéo để di chuyển">
+          ⋮
+        </div>
+      )}
       <div
         className="fc-body"
         onClick={() => setRevealed((r) => !r)}
-        onMouseDown={isMini ? onDragStart : undefined}
         onDoubleClick={isMini ? () => void updateSettings({ 'card.mode': 'ja_reading' }) : undefined}
         title={isMini ? `${current?.reading ?? ''} — ${current?.vietnamese ?? ''} (nhấp đúp để mở rộng)` : undefined}
       >

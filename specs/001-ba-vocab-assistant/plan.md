@@ -8,7 +8,7 @@
 
 Ứng dụng desktop Windows local-first gồm 2 cửa sổ Tauri: **main window** (Dashboard, Thư viện, Học, AI Discovery,
 Thống kê, Cài đặt) và **floating card** (always-on-top, không viền, trong suốt, không lấy focus). Toàn bộ logic domain
-viết bằng TypeScript trên một interface `Database` trừu tượng; trong app dùng `tauri-plugin-sql` (SQLite),
+viết bằng TypeScript trên một interface `Database` trừu tượng; trong app dùng SQLite qua `rusqlite` phía Rust (một connection, IPC `db_execute/db_select/db_batch`),
 trong test và chế độ xem trước trên trình duyệt dùng `sql.js` (SQLite WASM) — cùng một SQL, cùng migrations.
 Spaced repetition dùng `ts-fsrs`. Excel dùng `exceljs`. AI provider được gọi từ phía Rust (reqwest) để API key
 không bao giờ đi qua WebView. Dataset 1.000 từ được biên soạn theo batch, lưu ở `data/vocabulary/`, sinh JSON/CSV/XLSX
@@ -18,7 +18,7 @@ bằng script, kiểm tra bằng validator và đóng gói vào bundle frontend 
 
 **Language/Version**: TypeScript 5.9 (strict), Rust stable (1.97), Node 22 cho tooling
 
-**Primary Dependencies**: Tauri 2.x; plugins: sql (sqlite), global-shortcut, autostart, dialog, fs, single-instance;
+**Primary Dependencies**: Tauri 2.x; plugins: global-shortcut, autostart, dialog, single-instance; rusqlite (bundled SQLite);
 React 19 + react-router 7; ts-fsrs 5/6; exceljs 4.4; sql.js 1.x (test/preview); reqwest (Rust, AI)
 
 **Storage**: SQLite file `vocab.db` trong `%APPDATA%/com.nihongoba.vocab/`; backups trong `.../backups/`;
@@ -103,6 +103,8 @@ docs/                        # vocabulary-seed-report.md, user-guide.md
 .github/workflows/           # ci.yml (Linux tests), release-windows.yml (installer)
 ```
 
+**Ghi chú triển khai**: xem research R2 — đổi từ tauri-plugin-sql sang rusqlite vì an toàn transaction.
+
 **Structure Decision**: Một project Tauri duy nhất. Domain logic trong `src/core` để test độc lập; `src/platform`
 là lớp mỏng nối với Tauri. Rust chỉ đảm nhận những việc bắt buộc native (cửa sổ, tray, backup trước khi mở DB,
 HTTP AI có key, autostart/shortcut qua plugin).
@@ -140,5 +142,5 @@ HTTP AI có key, autostart/shortcut qua plugin).
 
 | Violation | Why Needed | Simpler Alternative Rejected Because |
 |---|---|---|
-| Hai adapter DB (tauri-plugin-sql + sql.js) | Test domain trên Node/CI và preview E2E không cần Windows | Mock DB không kiểm chứng SQL thật; chỉ test trên Tauri thì không chạy được CI Linux nhanh |
+| Hai adapter DB (rusqlite IPC + sql.js) | Test domain trên Node/CI và preview E2E không cần Windows | Mock DB không kiểm chứng SQL thật; chỉ test trên Tauri thì không chạy được CI Linux nhanh |
 | Gọi AI từ Rust thay vì fetch trong WebView | Giữ API key ngoài JS context, tránh CORS | Gọi từ frontend làm lộ key trong devtools/bộ nhớ WebView |

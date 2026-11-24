@@ -13,6 +13,8 @@ npm run e2e            # Playwright trên bản preview
 npm run typecheck && npm run lint
 npm run vocab:generate # batches → seed-v1.json/csv/xlsx + template
 npm run validate:vocab # validator dataset
+npm run vocab:verify   # đối chiếu JMdict (tùy chọn)
+npm run vocab:report   # sinh docs/vocabulary-seed-report.md
 npm run tauri build    # build installer (trên Windows)
 ```
 

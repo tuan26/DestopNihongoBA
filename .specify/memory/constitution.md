@@ -1,6 +1,7 @@
 <!--
 Sync Impact Report
-- Version change: (template) → 1.0.0
+- Version change: 1.0.0 → 1.0.1 (PATCH: làm rõ thư viện SQLite theo research R2)
+- Previous: (template) → 1.0.0
 - Added principles: I–VII (all new)
 - Added sections: Ràng buộc kỹ thuật, Quy trình phát triển & Quality Gates, Governance
 - Templates: plan-template.md ✅ (Constitution Check dùng các nguyên tắc dưới), spec-template.md ✅, tasks-template.md ✅
@@ -51,13 +52,13 @@ khác khi hiển thị/đổi từ. Không đăng ký global shortcut khi ngư�
 
 ### VII. Đơn giản, nhẹ, dùng thư viện đáng tin cậy
 Ưu tiên Tauri 2 (bundle nhỏ, WebView2) thay vì Electron. Dùng thư viện đã kiểm chứng thay vì tự viết:
-`ts-fsrs` cho spaced repetition, `exceljs` cho .xlsx, plugin chính thức của Tauri cho SQL, autostart,
+`ts-fsrs` cho spaced repetition, `exceljs` cho .xlsx, `rusqlite` cho SQLite, plugin chính thức của Tauri cho autostart,
 global-shortcut, dialog, single-instance. YAGNI: không thêm server, không thêm tài khoản.
 
 ## Ràng buộc kỹ thuật
 
 - Nền tảng mục tiêu: Windows 10/11 x64 (WebView2). Linux chỉ dùng để phát triển/CI.
-- Stack: Tauri 2, Rust (stable), React 19, TypeScript 5.x (strict), Vite, SQLite (tauri-plugin-sql), ts-fsrs, exceljs.
+- Stack: Tauri 2, Rust (stable), React 19, TypeScript 5.x (strict), Vite, SQLite (rusqlite, bundled), ts-fsrs, exceljs.
 - Giao diện: tiếng Việt; nội dung học: tiếng Nhật + tiếng Việt. Hỗ trợ dark/light mode, cỡ chữ điều chỉnh được.
 - Hiệu năng: khởi động lần đầu (bao gồm import 1.000 từ) < 5 giây trên máy văn phòng phổ thông;
   đổi từ trên card < 100 ms.
@@ -77,4 +78,4 @@ Constitution này có hiệu lực cao hơn mọi quy ước khác trong reposit
 và rà soát lại plan/tasks bị ảnh hưởng. Mọi review phải kiểm tra tuân thủ các nguyên tắc I–VII;
 mọi độ phức tạp vượt nguyên tắc VII phải được giải thích trong mục Complexity Tracking của plan.
 
-**Version**: 1.0.0 | **Ratified**: 2026-11-24 | **Last Amended**: 2026-11-24
+**Version**: 1.0.1 | **Ratified**: 2026-11-24 | **Last Amended**: 2026-11-24

@@ -17,7 +17,7 @@ pub fn run() {
         .plugin(tauri_plugin_global_shortcut::Builder::new().build())
         .setup(|app| {
             let handle = app.handle().clone();
-            let database = db::Db::open(&handle).map_err(|e| Box::<dyn std::error::Error>::from(e))?;
+            let database = db::Db::open(&handle).map_err(Box::<dyn std::error::Error>::from)?;
             app.manage(database);
             windows::setup_tray(&handle)?;
             let minimized = std::env::args().any(|a| a == "--minimized");

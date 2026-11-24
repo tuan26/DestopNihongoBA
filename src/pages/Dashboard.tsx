@@ -4,6 +4,11 @@ import { useApp } from '../app/AppContext';
 import { getCategoryProgress, getDashboardStats, type CategoryProgress, type DashboardStats } from '../core/stats/stats';
 import { CATEGORY_LABELS_VI } from '../core/vocabulary/types';
 
+const greeting = () => {
+  const h = new Date().getHours();
+  return h < 10 ? 'おはようございます' : h < 18 ? 'こんにちは' : 'お疲れ様です';
+};
+
 export function Dashboard() {
   const { db, dataVersion, settings } = useApp();
   const [s, setS] = useState<DashboardStats | null>(null);
@@ -25,7 +30,7 @@ export function Dashboard() {
   return (
     <>
       <div className="page-title">
-        <h1>おはようございます 👋</h1>
+        <h1>{greeting()} 👋</h1>
         <div className="spacer" />
         {s.pendingSuggestions > 0 && (
           <Link to="/discovery" className="badge badge-primary">
