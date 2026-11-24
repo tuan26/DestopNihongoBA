@@ -1,0 +1,43 @@
+# category: Cloud / DevOps / Infrastructure
+# code: cloud
+# batch 17 — environments, operations design, monitoring, CI/CD, cloud basics
+本番環境|ほんばんかんきょう|Môi trường production (vận hành thật)|本番環境での作業は、必ず二人体制で手順書を読み合わせながら行います。|Công việc trên môi trường production luôn làm theo chế độ hai người, vừa đọc đối chiếu tài liệu thủ tục.|Environments|i|T|n|t|environment,production|
+検証環境|けんしょうかんきょう|Môi trường kiểm chứng|本番と同じ構成の検証環境で、リリース前の最終確認を行います。|Kiểm tra lần cuối trước phát hành trên môi trường kiểm chứng có cấu hình giống production.|Environments|i|T|n|t|environment,testing|
+ステージング環境|すてーじんぐかんきょう|Môi trường staging|ステージング環境には、匿名化した本番データを入れています。|Môi trường staging chứa dữ liệu production đã được ẩn danh hóa.|Environments|i|T|n|t|environment,staging|
+開発環境|かいはつかんきょう|Môi trường phát triển|新メンバーが一日で開発環境を用意できるよう、手順を自動化しました。|Chúng tôi đã tự động hóa thủ tục để thành viên mới có thể chuẩn bị môi trường phát triển trong một ngày.|Environments|i|T|n|t|environment,development|
+環境構築|かんきょうこうちく|Dựng môi trường|環境構築の手順が人によって違い、動作に差が出ていました。|Thủ tục dựng môi trường khác nhau tùy người nên hành vi bị chênh lệch.|Environments|i|T|vs|t|environment,setup|
+構築手順書|こうちくてじゅんしょ|Tài liệu thủ tục dựng hệ thống|構築手順書どおりに作業すれば、誰でも同じサーバーを作れる状態を目指します。|Mục tiêu là bất kỳ ai làm theo tài liệu thủ tục dựng cũng tạo ra được máy chủ giống nhau.|Documentation|a|T|n|t|documentation,setup|
+作業手順書|さぎょうてじゅんしょ|Tài liệu thủ tục thao tác (cho từng lần làm việc)|本番作業の前日に、作業手順書のレビューを実施します。|Một ngày trước khi làm việc trên production, sẽ review tài liệu thủ tục thao tác.|Documentation|i|B|n|b|documentation,operation|
+運用設計|うんようせっけい|Thiết kế vận hành|運用設計では、監視、バックアップ、障害時の連絡体制を定義します。|Trong thiết kế vận hành, định nghĩa giám sát, sao lưu và cơ chế liên lạc khi có sự cố.|Operations|a|T|n|t|operation,design|
+運用保守|うんようほしゅ|Vận hành và bảo trì|リリース後の運用保守は、別の保守チームに引き継ぎます。|Việc vận hành bảo trì sau phát hành sẽ được bàn giao cho một đội bảo trì khác.|Operations|i|B|n|b|operation,maintenance|
+死活監視|しかつかんし|Giám sát sống/chết (kiểm tra máy chủ còn hoạt động)|死活監視で応答がない場合は、担当者に電話で通知されます。|Khi giám sát sống/chết không nhận được phản hồi, người phụ trách sẽ được thông báo qua điện thoại.|Monitoring|a|T|n|t|monitoring,availability|
+リソース監視|りそーすかんし|Giám sát tài nguyên (CPU, bộ nhớ, đĩa)|リソース監視のグラフを見ると、毎朝九時にCPUが高騰しています。|Nhìn biểu đồ giám sát tài nguyên thấy CPU tăng vọt vào chín giờ sáng mỗi ngày.|Monitoring|a|T|n|t|monitoring,resource|
+閾値|しきいち|Ngưỡng (threshold)|ディスク使用率の閾値を八十パーセントに設定し、超えたら警告を出します。|Ngưỡng tỷ lệ dùng đĩa được đặt ở tám mươi phần trăm, vượt quá sẽ cảnh báo.|Monitoring|a|T|n|t|monitoring,alert|Đọc chuẩn しきいち; nhiều người đọc いきち.
+アラート通知|あらーとつうち|Thông báo cảnh báo (alert)|夜間のアラート通知が多すぎて、本当に重要な警告が埋もれています。|Thông báo cảnh báo ban đêm quá nhiều nên các cảnh báo thực sự quan trọng bị chìm.|Monitoring|i|T|n|t|alert,monitoring|
+障害検知|しょうがいけんち|Phát hiện sự cố|お客様からの連絡より先に障害検知できる仕組みを整えます。|Chúng tôi xây dựng cơ chế để phát hiện sự cố trước khi khách hàng liên lạc.|Incident Management|a|T|n|t|incident,monitoring|
+一次切り分け|いちじきりわけ|Khoanh vùng sơ bộ (xác định ban đầu sự cố nằm ở đâu)|夜間当番が一次切り分けを行い、アプリの問題であれば開発チームを呼び出します。|Người trực đêm khoanh vùng sơ bộ, nếu là vấn đề ứng dụng thì gọi đội phát triển.|Incident Management|e|T|n|t|incident,triage|
+ジョブスケジューラ|じょぶすけじゅーら|Bộ lập lịch job|ジョブスケジューラで、月末のみ実行する処理を設定しました。|Đã cài đặt xử lý chỉ chạy vào cuối tháng trên bộ lập lịch job.|Automation|a|T|n|t|batch,scheduler|
+定期実行|ていきじっこう|Chạy định kỳ|ログの削除は、毎週日曜の深夜に定期実行しています。|Việc xóa log được chạy định kỳ vào nửa đêm Chủ nhật hàng tuần.|Automation|i|T|n|t|scheduler,batch|
+構成管理|こうせいかんり|Quản lý cấu hình|サーバーの設定変更はすべて構成管理ツールで行い、手作業での変更を禁止します。|Mọi thay đổi cấu hình máy chủ đều làm bằng công cụ quản lý cấu hình, cấm thay đổi thủ công.|Configuration|a|T|n|t|configuration,iac|
+コードによるインフラ管理|こーどによるいんふらかんり|Quản lý hạ tầng bằng mã (IaC)|コードによるインフラ管理を導入し、環境の差異をなくしました。|Đưa quản lý hạ tầng bằng mã vào để loại bỏ khác biệt giữa các môi trường.|Configuration|e|T|n|t|iac,automation|Thường gọi: IaC.
+継続的インテグレーション|けいぞくてきいんてぐれーしょん|Tích hợp liên tục (CI)|継続的インテグレーションで、プッシュのたびにテストが自動実行されます。|Với tích hợp liên tục, test được tự động chạy mỗi lần push.|CI/CD|a|T|n|t|ci,automation|
+継続的デリバリー|けいぞくてきでりばりー|Chuyển giao liên tục (CD)|継続的デリバリーにより、いつでも本番へリリースできる状態を保ちます。|Nhờ chuyển giao liên tục, luôn giữ trạng thái có thể phát hành lên production bất cứ lúc nào.|CI/CD|e|T|n|t|cd,automation|
+デプロイ|でぷろい|Triển khai (deploy) ứng dụng lên môi trường|デプロイは業務時間外に行い、終了後に動作確認の結果を共有します。|Việc deploy làm ngoài giờ làm việc và sau khi xong sẽ chia sẻ kết quả kiểm tra hoạt động.|CI/CD|i|T|vs|t|deploy,release|
+リリース作業|りりーすさぎょう|Công việc phát hành|リリース作業中は、お客様への影響を考えてサービスを一時停止します。|Trong lúc làm công việc phát hành, xét ảnh hưởng tới khách hàng nên tạm dừng dịch vụ.|Release|i|B|n|b|release,operation|
+切り戻し|きりもどし|Quay về trạng thái/phiên bản trước (rollback khi phát hành lỗi)|リリース後に重大な不具合が見つかった場合の切り戻し手順も用意してください。|Hãy chuẩn bị cả thủ tục quay về phiên bản trước nếu phát hiện lỗi nghiêm trọng sau phát hành.|Release|a|T|n|t|rollback,release|
+ブルーグリーンデプロイ|ぶるーぐりーんでぷろい|Triển khai blue-green|ブルーグリーンデプロイなら、問題があれば旧環境にすぐ戻せます。|Với triển khai blue-green, nếu có vấn đề có thể quay ngay về môi trường cũ.|Release|e|T|n|t|deploy,strategy|
+カナリアリリース|かなりありりーす|Phát hành canary (cho một phần nhỏ người dùng trước)|新機能はカナリアリリースで、まず五パーセントの利用者に公開します。|Chức năng mới được phát hành canary, trước tiên mở cho năm phần trăm người dùng.|Release|e|T|n|t|deploy,strategy|
+コンテナ|こんてな|Container (đóng gói ứng dụng và môi trường)|アプリをコンテナにしたことで、開発と本番の動きの差がなくなりました。|Nhờ đóng gói ứng dụng thành container, sự khác biệt hành vi giữa dev và production đã biến mất.|Containers|i|T|n|t|container|
+コンテナイメージ|こんてないめーじ|Image container|コンテナイメージは脆弱性スキャンを通過したものだけを本番で使います。|Chỉ dùng trên production những image container đã qua quét lỗ hổng.|Containers|a|T|n|t|container,security|
+コンテナオーケストレーション|こんてなおーけすとれーしょん|Điều phối container (orchestration)|コンテナオーケストレーションにより、障害の起きたコンテナは自動で再作成されます。|Nhờ điều phối container, container gặp sự cố sẽ được tự động tạo lại.|Containers|e|T|n|t|container,orchestration|
+オートスケーリング|おーとすけーりんぐ|Tự động mở rộng quy mô (auto scaling)|オートスケーリングの上限を設定しておかないと、費用が急増する恐れがあります。|Nếu không đặt giới hạn tự động mở rộng, chi phí có thể tăng vọt.|Scalability|a|T|n|t|scaling,cost|
+仮想マシン|かそうましん|Máy ảo|古いアプリは仮想マシンのまま移行し、新しいサービスはコンテナで構築します。|Ứng dụng cũ được chuyển nguyên dạng máy ảo, còn dịch vụ mới được dựng bằng container.|Compute|i|T|n|t|vm,compute|
+サーバーレス|さーばーれす|Serverless (không quản lý máy chủ)|アクセスが少ない処理はサーバーレスにして、待機中の費用をなくしました。|Các xử lý ít truy cập được chuyển sang serverless để không tốn chi phí khi chờ.|Compute|a|T|n|t|serverless,cost|
+マネージドサービス|まねーじどさーびす|Dịch vụ được quản lý (managed service)|データベースはマネージドサービスを使い、パッチ適用の手間を減らしています。|Cơ sở dữ liệu dùng dịch vụ được quản lý để giảm công sức áp dụng bản vá.|Cloud Services|a|T|n|t|managed,cloud|
+リージョン|りーじょん|Region (khu vực trung tâm dữ liệu của cloud)|個人情報の保管場所の規制により、国内のリージョンを利用しています。|Do quy định về nơi lưu trữ thông tin cá nhân, chúng tôi dùng region trong nước.|Cloud Services|i|T|n|t|cloud,region|
+アベイラビリティゾーン|あべいらびりてぃぞーん|Vùng sẵn sàng (availability zone)|サーバーを二つのアベイラビリティゾーンに分けて配置しています。|Máy chủ được bố trí chia ra hai vùng sẵn sàng.|Cloud Services|a|T|n|t|cloud,availability|
+サブネット|さぶねっと|Mạng con (subnet)|データベースは外部から接続できないプライベートサブネットに置きます。|Cơ sở dữ liệu được đặt trong subnet riêng không thể kết nối từ bên ngoài.|Networking|a|T|n|t|network|
+疎通確認|そつうかくにん|Kiểm tra thông kết nối (connectivity check)|ファイアウォールの設定変更後、連携先との疎通確認を行いました。|Sau khi thay đổi cấu hình firewall, chúng tôi đã kiểm tra thông kết nối với hệ thống liên kết.|Networking|a|T|n|t|network,verification|Từ rất hay dùng trong dự án Nhật.
+名前解決|なまえかいけつ|Phân giải tên miền (DNS resolution)|名前解決ができず、APIのホスト名で接続に失敗していました。|Không phân giải được tên miền nên kết nối bằng hostname của API bị thất bại.|Networking|a|T|n|t|dns,network|
+証明書更新|しょうめいしょこうしん|Gia hạn chứng chỉ (SSL/TLS)|証明書更新を忘れると、利用者のブラウザに警告が表示されます。|Nếu quên gia hạn chứng chỉ, trình duyệt của người dùng sẽ hiển thị cảnh báo.|Operations|a|T|n|t|certificate,tls|
+帯域|たいいき|Băng thông|夜間のバックアップ転送が回線の帯域を圧迫しています。|Việc truyền sao lưu ban đêm đang chèn ép băng thông đường truyền.|Networking|a|T|n|t|network,bandwidth|

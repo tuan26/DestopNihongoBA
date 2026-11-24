@@ -1,0 +1,43 @@
+# category: Cloud / DevOps / Infrastructure
+# code: cloud
+# batch 18 — networks, cost, observability, change & incident operations
+通信経路|つうしんけいろ|Đường truyền thông (network path)|社内システムへの通信経路は、すべてVPNを経由させています。|Mọi đường truyền thông tới hệ thống nội bộ đều phải đi qua VPN.|Networking|a|T|n|t|network,security|
+専用線|せんようせん|Đường truyền riêng (leased line)|データセンターとクラウドの間は専用線で接続しています。|Trung tâm dữ liệu và cloud được kết nối bằng đường truyền riêng.|Networking|a|T|n|t|network|
+閉域網|へいいきもう|Mạng khép kín (mạng riêng không qua internet)|金融機関との接続は、インターネットではなく閉域網を使用します。|Kết nối với tổ chức tài chính dùng mạng khép kín thay vì internet.|Networking|e|T|n|t|network,security|
+オンプレミス|おんぷれみす|On-premise (máy chủ tự quản lý tại chỗ)|オンプレミスのサーバーは保守切れを迎えるため、クラウドへ移します。|Máy chủ on-premise sắp hết hạn bảo trì nên sẽ chuyển lên cloud.|Infrastructure|i|T|n|t|on-premise,cloud|Viết tắt: オンプレ.
+クラウド移行|くらうどいこう|Di chuyển lên cloud|クラウド移行の第一段階として、開発環境から移します。|Ở giai đoạn đầu của việc di chuyển lên cloud, chúng tôi chuyển môi trường phát triển trước.|Migration|i|T|n|t|cloud,migration|
+リフトアンドシフト|りふとあんどしふと|Lift & shift (chuyển nguyên trạng lên cloud)|まずはリフトアンドシフトで移し、その後に最適化を進めます。|Trước tiên chuyển nguyên trạng, sau đó mới tiến hành tối ưu hóa.|Migration|e|T|n|t|cloud,migration|
+従量課金|じゅうりょうかきん|Tính phí theo mức sử dụng|従量課金のため、使っていない検証環境は夜間に停止しています。|Vì tính phí theo mức sử dụng nên môi trường kiểm chứng không dùng được tắt vào ban đêm.|Cost Management|a|T|n|t|cost,cloud|
+コスト最適化|こすとさいてきか|Tối ưu chi phí|コスト最適化の結果、毎月のクラウド費用を三割削減できました。|Kết quả tối ưu chi phí đã giảm được ba mươi phần trăm chi phí cloud hàng tháng.|Cost Management|a|T|n|t|cost,finops|
+リザーブドインスタンス|りざーぶどいんすたんす|Instance đặt trước (reserved instance)|常時稼働するサーバーはリザーブドインスタンスにして、費用を抑えています。|Máy chủ chạy liên tục được chuyển sang reserved instance để giảm chi phí.|Cost Management|e|T|n|t|cost,cloud|
+オブジェクトストレージ|おぶじぇくとすとれーじ|Lưu trữ đối tượng (object storage)|帳票のPDFはオブジェクトストレージに保存し、一年後に低価格の層へ移します。|File PDF biểu mẫu được lưu vào object storage và sau một năm chuyển sang tầng giá thấp.|Storage|a|T|n|t|storage,cloud|
+ログ集約|ろぐしゅうやく|Tập trung log|全サーバーのログを一か所にログ集約し、横断的に検索できるようにしました。|Log của tất cả máy chủ được tập trung về một chỗ để có thể tìm kiếm xuyên suốt.|Observability|a|T|n|t|logging,observability|
+可観測性|かかんそくせい|Khả năng quan sát (observability)|マイクロサービスでは、可観測性がないと障害の原因を特定できません。|Với microservices, nếu không có khả năng quan sát thì không xác định được nguyên nhân sự cố.|Observability|e|T|n|t|observability|
+メトリクス|めとりくす|Chỉ số đo lường (metrics)|応答時間とエラー率のメトリクスを、ダッシュボードで常に表示しています。|Các chỉ số thời gian phản hồi và tỷ lệ lỗi luôn được hiển thị trên dashboard.|Observability|a|T|n|t|metrics,monitoring|
+分散トレーシング|ぶんさんとれーしんぐ|Truy vết phân tán (distributed tracing)|分散トレーシングで、どのサービスで時間がかかっているかを特定しました。|Bằng truy vết phân tán, chúng tôi đã xác định được dịch vụ nào đang tốn thời gian.|Observability|e|T|n|t|tracing,observability|
+監視ダッシュボード|かんしだっしゅぼーど|Dashboard giám sát|監視ダッシュボードを大型モニターに映し、チーム全員で状況を共有しています。|Dashboard giám sát được chiếu lên màn hình lớn để cả đội cùng nắm tình hình.|Monitoring|i|T|n|t|monitoring,dashboard|
+作業申請|さぎょうしんせい|Đăng ký xin phép thao tác (trên hệ thống)|本番サーバーへのログインには、事前の作業申請と承認が必要です。|Để đăng nhập máy chủ production cần đăng ký xin phép và được phê duyệt trước.|Change Management|a|B|n|b|change,governance|
+変更作業|へんこうさぎょう|Công việc thay đổi (trên hệ thống đang vận hành)|変更作業は影響の少ない土曜日の深夜に実施します。|Công việc thay đổi được thực hiện vào nửa đêm thứ Bảy khi ảnh hưởng ít.|Change Management|i|B|n|b|change,operation|
+メンテナンスウィンドウ|めんてなんすうぃんどう|Khung giờ bảo trì|毎月第二日曜の午前二時から四時をメンテナンスウィンドウとしています。|Khung giờ bảo trì là từ hai đến bốn giờ sáng Chủ nhật tuần thứ hai mỗi tháng.|Change Management|a|T|n|t|maintenance,schedule|
+計画停止|けいかくていし|Dừng hệ thống có kế hoạch|計画停止の一週間前までに、利用者へ告知してください。|Hãy thông báo cho người dùng ít nhất một tuần trước khi dừng hệ thống có kế hoạch.|Change Management|a|B|n|b|maintenance,downtime|
+サービスレベル合意|さーびすれべるごうい|Thỏa thuận mức dịch vụ (SLA)|サービスレベル合意で、障害時は一時間以内に初回回答することになっています。|Theo SLA, khi có sự cố phải phản hồi lần đầu trong vòng một giờ.|Service Management|e|T|n|f|sla,contract|
+夜間作業|やかんさぎょう|Làm việc ban đêm (thao tác hệ thống ngoài giờ)|夜間作業の翌日は、担当者の勤務開始を午後からにしています。|Ngày hôm sau ca làm đêm, người phụ trách bắt đầu làm việc từ buổi chiều.|Operations|i|B|n|b|operation,schedule|
+オンコール|おんこーる|Trực sẵn sàng gọi (on-call)|オンコール当番は一週間交代で、障害時は三十分以内に対応を開始します。|Ca trực on-call luân phiên mỗi tuần, khi có sự cố phải bắt đầu xử lý trong ba mươi phút.|Incident Management|a|T|n|t|incident,on-call|
+障害報告書|しょうがいほうこくしょ|Báo cáo sự cố|障害報告書には、発生事象、原因、影響範囲、再発防止策を記載します。|Trong báo cáo sự cố ghi hiện tượng, nguyên nhân, phạm vi ảnh hưởng và biện pháp phòng ngừa tái phát.|Incident Management|i|B|n|b|incident,report|
+ポストモーテム|ぽすともーてむ|Phân tích sau sự cố (postmortem)|ポストモーテムでは個人を責めず、仕組みの改善点に焦点を当てます。|Trong phân tích sau sự cố, không đổ lỗi cá nhân mà tập trung vào cải tiến cơ chế.|Incident Management|e|T|n|t|incident,culture|
+再起動|さいきどう|Khởi động lại|メモリ不足のため、暫定的にアプリケーションを再起動して復旧しました。|Do thiếu bộ nhớ nên đã tạm thời khởi động lại ứng dụng để khôi phục.|Operations|i|T|vs|t|operation,recovery|
+パッチ適用|ぱっちてきよう|Áp dụng bản vá|OSのパッチ適用は、検証環境で一週間確認してから本番に行います。|Việc áp dụng bản vá hệ điều hành được làm trên production sau khi kiểm tra một tuần ở môi trường kiểm chứng.|Maintenance|a|T|n|t|patch,maintenance|
+バージョンアップ|ばーじょんあっぷ|Nâng cấp phiên bản|ミドルウェアのバージョンアップに伴い、設定項目の名称が変わりました。|Cùng với việc nâng cấp phiên bản middleware, tên các mục cấu hình đã thay đổi.|Maintenance|i|T|vs|t|upgrade|Wasei-eigo; tiếng Anh là upgrade.
+サポート終了|さぽーとしゅうりょう|Hết hỗ trợ (EOL)|現在のOSは来年サポート終了となるため、移行計画を立てています。|Hệ điều hành hiện tại sẽ hết hỗ trợ vào năm sau nên chúng tôi đang lập kế hoạch chuyển đổi.|Maintenance|i|T|n|t|eol,lifecycle|
+踏み台サーバー|ふみだいさーばー|Máy chủ trung gian (bastion host)|本番環境へは、必ず踏み台サーバーを経由して接続します。|Kết nối tới môi trường production nhất định phải đi qua máy chủ trung gian.|Security Operations|a|T|n|t|bastion,security|
+ファイアウォール|ふぁいあうぉーる|Tường lửa|連携先のIPアドレスだけを許可するよう、ファイアウォールを設定しました。|Đã cấu hình tường lửa chỉ cho phép địa chỉ IP của hệ thống liên kết.|Networking|i|T|n|t|network,security|
+セキュリティグループ|せきゅりてぃぐるーぷ|Security group (tường lửa ảo trên cloud)|セキュリティグループで、管理用ポートへのアクセスを社内からに限定しています。|Bằng security group, truy cập tới cổng quản trị chỉ giới hạn từ nội bộ.|Cloud Services|a|T|n|t|network,security,cloud|
+構成ドリフト|こうせいどりふと|Lệch cấu hình (configuration drift)|手作業による変更が原因で構成ドリフトが発生し、本番と検証で設定が違っていました。|Do thay đổi thủ công đã phát sinh lệch cấu hình, khiến thiết lập production và kiểm chứng khác nhau.|Configuration|e|T|n|t|configuration,iac|
+ゴールデンイメージ|ごーるでんいめーじ|Image chuẩn (golden image)|サーバーはゴールデンイメージから作成し、初期設定のばらつきを防ぎます。|Máy chủ được tạo từ golden image để tránh sai khác thiết lập ban đầu.|Configuration|e|T|n|t|image,standardization|
+自動復旧|じどうふっきゅう|Tự động khôi phục|プロセスが落ちた場合は自動復旧し、その事実だけを通知します。|Khi tiến trình bị dừng sẽ tự động khôi phục và chỉ thông báo việc đó.|Operations|a|T|n|t|recovery,automation|
+ヘルスチェック|へるすちぇっく|Kiểm tra sức khỏe hệ thống (health check)|ヘルスチェック用のエンドポイントでは、データベース接続も確認します。|Endpoint dùng cho health check cũng kiểm tra kết nối cơ sở dữ liệu.|Monitoring|a|T|n|t|monitoring,availability|
+ランブック|らんぶっく|Sổ tay xử lý vận hành (runbook)|よくあるアラートには、対応方法をまとめたランブックを用意しています。|Với các cảnh báo thường gặp, chúng tôi chuẩn bị runbook tổng hợp cách xử lý.|Operations|e|T|n|t|runbook,operation|
+運用自動化|うんようじどうか|Tự động hóa vận hành|定型的な再実行作業は、運用自動化で人手を介さずに処理しています。|Các thao tác chạy lại mang tính định kỳ được xử lý không cần người nhờ tự động hóa vận hành.|Automation|a|T|n|t|automation,operation|
+ジョブ監視|じょぶかんし|Giám sát job|ジョブ監視で、予定時刻を過ぎても終わらない処理を検知します。|Bằng giám sát job, chúng tôi phát hiện các xử lý quá giờ dự kiến mà chưa xong.|Monitoring|a|T|n|t|batch,monitoring|
+ディスク使用率|でぃすくしようりつ|Tỷ lệ sử dụng đĩa|ディスク使用率が九割を超え、ログが書き込めなくなっていました。|Tỷ lệ sử dụng đĩa vượt chín mươi phần trăm nên log không ghi được nữa.|Monitoring|i|T|n|t|storage,monitoring|
+ログローテーション|ろぐろーてーしょん|Xoay vòng log (log rotation)|ログローテーションの設定がなく、一つのファイルが数十ギガに膨らんでいました。|Không có thiết lập xoay vòng log nên một file đã phình lên vài chục GB.|Operations|a|T|n|t|logging,maintenance|
