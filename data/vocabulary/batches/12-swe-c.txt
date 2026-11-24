@@ -1,0 +1,53 @@
+# category: Software Engineering
+# code: swe
+# batch 12 — debugging, behavior, paradigms, practices
+コンパイルエラー|こんぱいるえらー|Lỗi biên dịch|ライブラリを更新したら、型の不一致でコンパイルエラーが出ました。|Sau khi cập nhật thư viện thì xuất hiện lỗi biên dịch do không khớp kiểu.|Debugging|i|T|n|t|build,error|
+実行時エラー|じっこうじえらー|Lỗi khi chạy (runtime error)|コンパイルは通りますが、特定のデータで実行時エラーになります。|Biên dịch thì qua nhưng với dữ liệu cụ thể lại bị lỗi khi chạy.|Debugging|i|T|n|t|runtime,error|
+ブレークポイント|ぶれーくぽいんと|Điểm dừng (breakpoint) khi debug|ブレークポイントを置いて、変数の値がどこで変わるか確認しましょう。|Hãy đặt breakpoint để kiểm tra giá trị biến thay đổi ở đâu.|Debugging|i|T|n|t|debugging,tool|
+ステップ実行|すてっぷじっこう|Chạy từng bước (step execution) khi debug|ステップ実行で追ったところ、条件式の判定が逆になっていました。|Khi chạy từng bước để theo dõi, phát hiện điều kiện bị đảo ngược.|Debugging|a|T|n|t|debugging|
+動作確認|どうさかくにん|Kiểm tra hoạt động (chạy thử xác nhận)|修正後の動作確認は、本番と同じデータ量で行ってください。|Hãy kiểm tra hoạt động sau khi sửa với lượng dữ liệu giống production.|Verification|i|T|vs|t|verification,testing|
+挙動|きょどう|Hành vi, cách hoạt động (của hệ thống)|ブラウザによって挙動が異なるため、対応ブラウザを限定しました。|Vì hành vi khác nhau tùy trình duyệt nên đã giới hạn trình duyệt hỗ trợ.|Verification|a|N1|n|t|behavior|Rất hay dùng: 想定外の挙動, 挙動がおかしい.
+仕様通り|しようどおり|Đúng như đặc tả|お問い合わせの動きは不具合ではなく、仕様通りの動作です。|Hành vi được hỏi không phải lỗi mà là hoạt động đúng như đặc tả.|Verification|i|B|exp|b|specification,support|
+不整合|ふせいごう|Sự không nhất quán, không khớp (dữ liệu)|途中でエラーが起きたため、注文と在庫のデータに不整合が生じました。|Vì lỗi xảy ra giữa chừng nên dữ liệu đơn hàng và tồn kho đã không khớp nhau.|Data Handling|a|T|n|t|data,bug|
+二重送信|にじゅうそうしん|Gửi hai lần (double submit)|ボタンの連打による二重送信を防ぐため、押下後は非活性にします。|Để tránh gửi hai lần do nhấn nút liên tục, nút sẽ bị vô hiệu sau khi nhấn.|Web Development|a|T|n|t|web,bug|
+二重登録|にじゅうとうろく|Đăng ký trùng hai lần|通信が切れて再送された場合でも、二重登録にならないようにしてください。|Kể cả khi mất kết nối và gửi lại, hãy đảm bảo không bị đăng ký trùng.|Data Handling|a|T|n|t|data,idempotency|
+同期処理|どうきしょり|Xử lý đồng bộ|決済の結果は画面に即時表示する必要があるため、同期処理で行います。|Kết quả thanh toán cần hiển thị ngay trên màn hình nên được xử lý đồng bộ.|Concurrency|i|T|n|t|sync|
+遅延評価|ちえんひょうか|Đánh giá trễ (lazy evaluation)|遅延評価により、実際に必要になるまで重い計算は実行されません。|Nhờ đánh giá trễ, phép tính nặng không được thực hiện cho đến khi thật sự cần.|Programming Concepts|e|T|n|t|functional,performance|
+状態管理|じょうたいかんり|Quản lý trạng thái (state management)|画面が増えてきたので、状態管理の仕組みを導入します。|Số màn hình tăng lên nên sẽ đưa cơ chế quản lý trạng thái vào.|Frontend|a|T|n|t|frontend,state|
+再描画|さいびょうが|Vẽ lại (re-render) giao diện|入力のたびに一覧全体が再描画され、動作が重くなっています。|Mỗi lần nhập là toàn bộ danh sách bị vẽ lại, khiến thao tác trở nên nặng.|Frontend|a|T|vs|t|frontend,performance|
+前方互換性|ぜんぽうごかんせい|Tính tương thích về sau (forward compatibility)|未知の項目を無視する設計にして、前方互換性を確保しています。|Thiết kế bỏ qua các trường chưa biết để đảm bảo tương thích về sau.|API Design|e|T|n|t|compatibility|
+移植性|いしょくせい|Tính khả chuyển (portability)|OS固有の処理を減らして、移植性を高めました。|Chúng tôi giảm các xử lý phụ thuộc hệ điều hành để tăng tính khả chuyển.|Code Quality|e|T|n|t|portability|
+型変換|かたへんかん|Chuyển đổi kiểu dữ liệu|文字列から数値への型変換に失敗した場合の処理が抜けていました。|Thiếu phần xử lý khi chuyển đổi kiểu từ chuỗi sang số thất bại.|Programming Concepts|i|T|n|t|types|
+型推論|かたすいろん|Suy luận kiểu (type inference)|型推論があるので、すべての変数に型を書く必要はありません。|Vì có suy luận kiểu nên không cần ghi kiểu cho mọi biến.|Programming Concepts|a|T|n|t|types|
+ジェネリクス|じぇねりくす|Generics (kiểu tổng quát)|ジェネリクスを使って、どの型の一覧でも扱える関数にしました。|Dùng generics để tạo hàm xử lý được danh sách của bất kỳ kiểu nào.|Programming Concepts|a|T|n|t|types|
+純粋関数|じゅんすいかんすう|Hàm thuần khiết (pure function)|計算ロジックを純粋関数にしたことで、単体テストが簡単になりました。|Nhờ biến logic tính toán thành hàm thuần khiết, kiểm thử đơn vị trở nên đơn giản.|Programming Concepts|e|T|n|t|functional,testing|
+高階関数|こうかいかんすう|Hàm bậc cao (higher-order function)|共通のエラー処理を高階関数で包む形にしました。|Chúng tôi bọc xử lý lỗi dùng chung bằng hàm bậc cao.|Programming Concepts|e|T|n|t|functional|
+事前条件|じぜんじょうけん|Điều kiện tiên quyết (precondition)|この関数の事前条件として、引数の配列は空でないことを前提とします。|Điều kiện tiên quyết của hàm này là mảng tham số không rỗng.|Programming Concepts|a|T|n|t|contract,design|Đối lập: 事後条件.
+契約による設計|けいやくによるせっけい|Thiết kế theo hợp đồng (Design by Contract)|契約による設計の考え方で、入力と出力の条件を明文化しました。|Theo tư duy thiết kế theo hợp đồng, chúng tôi đã văn bản hóa điều kiện đầu vào và đầu ra.|Design Principles|e|T|n|t|design,contract|
+デザインパターン|でざいんぱたーん|Mẫu thiết kế (design pattern)|デザインパターンは目的ではなく、問題を解くための道具です。|Mẫu thiết kế không phải là mục đích mà là công cụ để giải quyết vấn đề.|Design Principles|i|T|n|t|design,pattern|
+シングルトン|しんぐるとん|Singleton (mẫu chỉ có một instance)|設定情報はシングルトンで保持していますが、テストでは差し替えが難しいです。|Thông tin cấu hình đang giữ bằng singleton nhưng khi test thì khó thay thế.|Design Patterns|a|T|n|t|pattern|
+初期値|しょきち|Giá trị ban đầu|未入力の場合は、検索期間の初期値として直近一か月を設定します。|Nếu chưa nhập, khoảng tìm kiếm sẽ đặt giá trị ban đầu là một tháng gần nhất.|Programming Concepts|i|T|n|t|default,ui|
+空文字|からもじ|Chuỗi rỗng|空文字とnullを区別して扱うかどうか、仕様を確認させてください。|Cho phép tôi xác nhận đặc tả có phân biệt chuỗi rỗng với null hay không.|Data Handling|a|T|n|t|string,validation|
+部分一致|ぶぶんいっち|Khớp một phần (tìm kiếm chứa chuỗi)|顧客名の検索は部分一致とし、大文字と小文字は区別しません。|Tìm kiếm tên khách hàng là khớp một phần, không phân biệt chữ hoa thường.|Search|i|T|n|t|search|
+前方一致|ぜんぽういっち|Khớp phần đầu (bắt đầu bằng)|商品コードは前方一致で検索できるようにしてください。|Hãy cho phép tìm mã sản phẩm theo kiểu khớp phần đầu.|Search|a|T|n|t|search|
+完全一致|かんぜんいっち|Khớp hoàn toàn|メールアドレスの重複チェックは完全一致で判定します。|Kiểm tra trùng địa chỉ email được xác định bằng khớp hoàn toàn.|Search|i|T|n|t|search,validation|
+取り込む|とりこむ|Đưa vào, tích hợp (thay đổi, dữ liệu)|メインブランチの最新の変更を、作業ブランチに取り込んでください。|Hãy đưa thay đổi mới nhất của nhánh chính vào nhánh làm việc.|Version Control|i|N1|v|t|git,merge|
+乖離|かいり|Sự chênh lệch, tách rời (giữa hai thứ lẽ ra phải khớp)|設計書と実装の乖離が大きく、ドキュメントが信用できなくなっています。|Chênh lệch giữa tài liệu thiết kế và mã thực tế lớn đến mức không còn tin tài liệu được.|Documentation|e|N1|vs|f|documentation,quality|
+組み込み|くみこみ|Nhúng (embedded); tích hợp sẵn|組み込みソフトウェアでは、メモリの使用量に厳しい制限があります。|Trong phần mềm nhúng có giới hạn nghiêm ngặt về lượng bộ nhớ sử dụng.|Domains|i|T|n|t|embedded|
+プロセス間通信|ぷろせすかんつうしん|Giao tiếp giữa các tiến trình (IPC)|画面とバックエンドはプロセス間通信でデータをやり取りします。|Màn hình và backend trao đổi dữ liệu qua giao tiếp giữa các tiến trình.|Systems|e|T|n|t|ipc,os|
+メモリ使用量|めもりしようりょう|Lượng bộ nhớ sử dụng|大量データを一度に読み込むと、メモリ使用量が急増します。|Nếu đọc lượng lớn dữ liệu một lần, lượng bộ nhớ sử dụng sẽ tăng vọt.|Performance|i|T|n|t|memory,performance|
+オブジェクト指向|おぶじぇくとしこう|Hướng đối tượng|オブジェクト指向の考え方で、業務の概念をクラスとして表現します。|Theo tư duy hướng đối tượng, các khái niệm nghiệp vụ được biểu diễn thành class.|Paradigms|i|T|n|t|oop,paradigm|
+宣言的|せんげんてき|Mang tính khai báo (declarative)|宣言的に書くことで、何をしたいのかがコードから読み取りやすくなります。|Viết theo kiểu khai báo giúp dễ đọc ra từ mã là muốn làm gì.|Paradigms|e|T|adj-na|t|paradigm|Đối lập: 命令的 (imperative).
+可変長引数|かへんちょうひきすう|Tham số có độ dài thay đổi (varargs)|ログ関数は可変長引数で、任意の数の値を受け取れます。|Hàm log dùng tham số độ dài thay đổi, có thể nhận số lượng giá trị tùy ý.|Programming Concepts|e|T|n|t|function|
+名前空間|なまえくうかん|Không gian tên (namespace)|同じクラス名が衝突しないよう、機能ごとに名前空間を分けています。|Để tên class không xung đột, chúng tôi tách không gian tên theo từng chức năng.|Programming Concepts|a|T|n|t|namespace|
+グローバル変数|ぐろーばるへんすう|Biến toàn cục|グローバル変数に状態を持たせると、テストの順番で結果が変わります。|Nếu để biến toàn cục giữ trạng thái thì kết quả test thay đổi theo thứ tự chạy.|Programming Concepts|i|T|n|t|anti-pattern|
+列挙型|れっきょがた|Kiểu liệt kê (enum)|ステータスは文字列ではなく列挙型で定義してください。|Hãy định nghĩa trạng thái bằng kiểu liệt kê thay vì chuỗi.|Programming Concepts|a|T|n|t|types,enum|
+アサーション|あさーしょん|Assertion (khẳng định trong mã/test)|テストのアサーションが一つもないため、何も検証されていません。|Vì test không có assertion nào nên chẳng có gì được kiểm chứng.|Testing Code|a|T|n|t|testing|
+テスト駆動開発|てすとくどうかいはつ|Phát triển hướng kiểm thử (TDD)|テスト駆動開発では、先に失敗するテストを書いてから実装します。|Trong TDD, viết test thất bại trước rồi mới hiện thực.|Practices|a|T|n|t|tdd,practice|
+ペアプログラミング|ぺあぷろぐらみんぐ|Lập trình cặp|難しい機能はペアプログラミングで進め、知識の偏りを防ぎます。|Chức năng khó được làm bằng lập trình cặp để tránh kiến thức bị dồn vào một người.|Practices|i|T|n|t|practice,team|
+コードの臭い|こーどのにおい|Mùi mã (code smell — dấu hiệu thiết kế có vấn đề)|長すぎるメソッドは、典型的なコードの臭いです。|Method quá dài là một "mùi mã" điển hình.|Code Quality|e|T|phr|t|refactoring,quality|
+自動生成|じどうせいせい|Tạo tự động (mã, tài liệu)|APIクライアントは仕様書から自動生成しているので、手で編集しないでください。|API client được tạo tự động từ tài liệu đặc tả, đừng chỉnh sửa bằng tay.|Tooling|i|T|vs|t|codegen,tool|
+ORマッパー|おーあーるまっぱー|ORM — ánh xạ đối tượng–quan hệ|ORマッパーが発行するSQLを確認したところ、不要な結合がありました。|Khi kiểm tra câu SQL do ORM sinh ra, phát hiện có phép nối không cần thiết.|Data Access|a|T|n|t|orm,database|
+静的型付け|せいてきかたづけ|Định kiểu tĩnh|静的型付けの言語では、多くの誤りを実行前に発見できます。|Với ngôn ngữ định kiểu tĩnh, có thể phát hiện nhiều lỗi trước khi chạy.|Paradigms|a|T|n|t|types,language|
+動的型付け|どうてきかたづけ|Định kiểu động|動的型付けの言語は手軽ですが、大規模開発では型の誤りに注意が必要です。|Ngôn ngữ định kiểu động thì tiện, nhưng khi phát triển quy mô lớn cần chú ý lỗi kiểu.|Paradigms|a|T|n|t|types,language|
+ガベージコレクション|がべーじこれくしょん|Thu gom rác (garbage collection)|ガベージコレクションによる一時停止で、応答が遅れることがあります。|Đôi khi phản hồi bị chậm do tạm dừng vì thu gom rác.|Performance|a|T|n|t|memory,runtime|

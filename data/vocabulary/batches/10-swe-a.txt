@@ -1,0 +1,53 @@
+# category: Software Engineering
+# code: swe
+# batch 10 — code quality, design principles, concurrency
+冪等性|べきとうせい|Tính idempotent — thực hiện cùng một thao tác nhiều lần vẫn cho kết quả tương đương một lần|このAPIは冪等性を保証する必要があります。|API này cần đảm bảo tính idempotent.|API Design|a|T|n|t|api,design|Quan trọng khi thiết kế retry, xử lý thanh toán.
+実装|じっそう|Hiện thực hóa, lập trình (implementation)|設計書の通りに実装したのですが、性能が要件を満たしていません。|Tôi đã lập trình đúng theo tài liệu thiết kế nhưng hiệu năng không đạt yêu cầu.|Development|i|T|vs|t|implementation|
+改修|かいしゅう|Sửa đổi, nâng cấp (hệ thống hiện có)|既存の帳票機能を改修して、新しい税率に対応させます。|Sửa đổi chức năng biểu mẫu hiện có để đáp ứng thuế suất mới.|Development|i|B|vs|b|maintenance,change|
+保守性|ほしゅせい|Tính dễ bảo trì|短期的な速さより、長期的な保守性を優先して設計しましょう。|Hãy thiết kế ưu tiên tính dễ bảo trì lâu dài hơn tốc độ ngắn hạn.|Code Quality|i|T|n|t|quality,maintainability|
+可読性|かどくせい|Tính dễ đọc (của mã nguồn)|処理を小さな関数に分けたことで、コードの可読性が上がりました。|Nhờ chia xử lý thành các hàm nhỏ, tính dễ đọc của mã đã tăng.|Code Quality|i|T|n|t|quality,readability|
+再利用性|さいりようせい|Tính tái sử dụng|再利用性を意識しすぎると、かえって設計が複雑になることがあります。|Nếu quá chú trọng tính tái sử dụng, đôi khi thiết kế lại trở nên phức tạp.|Code Quality|a|T|n|t|quality,reuse|
+結合度|けつごうど|Độ kết dính giữa các module (coupling)|モジュール間の結合度が高いと、一つの変更が広い範囲に波及します。|Nếu độ kết dính giữa các module cao, một thay đổi sẽ lan ra phạm vi rộng.|Design Principles|a|T|n|t|design,coupling|
+凝集度|ぎょうしゅうど|Độ gắn kết nội bộ module (cohesion)|一つのクラスに無関係な処理が混ざっており、凝集度が低い状態です。|Một class đang trộn lẫn các xử lý không liên quan, độ gắn kết thấp.|Design Principles|e|T|n|t|design,cohesion|Mục tiêu: 高凝集・低結合.
+疎結合|そけつごう|Liên kết lỏng (loose coupling)|サービス同士を疎結合にしておけば、個別にリリースできます。|Nếu để các dịch vụ liên kết lỏng với nhau thì có thể phát hành riêng lẻ.|Design Principles|a|T|n|t|design,coupling|
+密結合|みつけつごう|Liên kết chặt (tight coupling)|画面とデータベース処理が密結合になっているため、テストが書きにくいです。|Màn hình và xử lý cơ sở dữ liệu đang liên kết chặt nên khó viết test.|Design Principles|a|T|n|t|design,coupling|
+依存関係|いぞんかんけい|Quan hệ phụ thuộc|ライブラリの依存関係が複雑で、バージョンを上げられません。|Quan hệ phụ thuộc của thư viện phức tạp nên không nâng phiên bản được.|Dependencies|i|T|n|t|dependency|
+依存性注入|いぞんせいちゅうにゅう|Tiêm phụ thuộc (dependency injection)|依存性注入を使うと、テスト時にモックへ差し替えやすくなります。|Dùng dependency injection sẽ dễ thay bằng mock khi kiểm thử.|Design Principles|e|T|n|t|design,di|
+リファクタリング|りふぁくたりんぐ|Tái cấu trúc mã (refactoring)|機能追加の前に、重複している処理をリファクタリングしました。|Trước khi thêm chức năng, tôi đã refactor các xử lý bị trùng lặp.|Code Quality|i|T|vs|t|refactoring,quality|
+技術的負債|ぎじゅつてきふさい|Nợ kỹ thuật|納期優先で積み重なった技術的負債が、開発速度を下げています。|Nợ kỹ thuật tích tụ do ưu tiên thời hạn đang làm giảm tốc độ phát triển.|Code Quality|a|T|n|t|technical-debt|
+命名規則|めいめいきそく|Quy tắc đặt tên|変数名は命名規則に従い、略語の使用は避けてください。|Tên biến hãy theo quy tắc đặt tên và tránh dùng từ viết tắt.|Coding Standards|i|T|n|t|naming,standards|
+コーディング規約|こーでぃんぐきやく|Quy ước lập trình (coding convention)|コーディング規約に違反している箇所は、自動チェックで検出されます。|Những chỗ vi phạm quy ước lập trình sẽ được phát hiện bằng kiểm tra tự động.|Coding Standards|i|T|n|t|standards|
+静的解析|せいてきかいせき|Phân tích tĩnh (mã nguồn)|静的解析ツールで、未使用の変数と潜在的な不具合を洗い出しました。|Chúng tôi đã dùng công cụ phân tích tĩnh để liệt kê biến không dùng và lỗi tiềm ẩn.|Code Quality|a|T|n|t|quality,tool|
+コードレビュー|こーどれびゅー|Review mã nguồn|コードレビューでは、動くかどうかだけでなく読みやすさも確認します。|Khi review mã, không chỉ kiểm tra có chạy hay không mà cả tính dễ đọc.|Code Quality|i|T|n|t|review,quality|
+指摘事項|してきじこう|Các điểm bị chỉ ra (trong review)|レビューの指摘事項は、すべて対応してから再レビューを依頼してください。|Hãy xử lý tất cả các điểm bị chỉ ra trong review rồi mới yêu cầu review lại.|Review|i|B|n|b|review,feedback|
+プルリクエスト|ぷるりくえすと|Pull request|一つのプルリクエストには、一つの目的の変更だけを含めましょう。|Mỗi pull request chỉ nên chứa thay đổi cho một mục đích.|Version Control|i|T|n|t|git,review|Viết tắt: プルリク, PR.
+コンフリクト|こんふりくと|Xung đột (khi merge mã)|同じファイルを同時に編集したため、マージ時にコンフリクトが発生しました。|Vì cùng sửa một file đồng thời nên khi merge đã phát sinh xung đột.|Version Control|i|T|n|t|git,merge|
+ブランチ戦略|ぶらんちせんりゃく|Chiến lược phân nhánh (branching strategy)|リリース頻度に合わせて、チームのブランチ戦略を見直しました。|Chúng tôi đã xem lại chiến lược phân nhánh của đội cho phù hợp với tần suất phát hành.|Version Control|a|T|n|t|git,process|
+バージョン管理|ばーじょんかんり|Quản lý phiên bản|設計書もソースコードと同じくバージョン管理の対象にしています。|Tài liệu thiết kế cũng được quản lý phiên bản giống như mã nguồn.|Version Control|i|T|n|t|version-control|
+後方互換性|こうほうごかんせい|Tính tương thích ngược|APIを変更する際は、既存のクライアントのために後方互換性を維持してください。|Khi thay đổi API, hãy duy trì tương thích ngược cho các client hiện có.|API Design|a|T|n|t|compatibility,api|
+破壊的変更|はかいてきへんこう|Thay đổi phá vỡ tương thích (breaking change)|メジャーバージョンを上げるときは、破壊的変更の一覧をリリースノートに記載します。|Khi nâng phiên bản chính, danh sách breaking change sẽ được ghi trong release note.|API Design|a|T|n|t|compatibility,release|
+非推奨|ひすいしょう|Không khuyến khích dùng nữa (deprecated)|このメソッドは非推奨になったため、新しいメソッドに置き換えてください。|Method này đã bị deprecated nên hãy thay bằng method mới.|API Design|a|T|n|t|deprecation,api|
+例外処理|れいがいしょり|Xử lý ngoại lệ|外部サービスの呼び出しには、必ず例外処理を入れてください。|Hãy luôn thêm xử lý ngoại lệ cho các lời gọi dịch vụ bên ngoài.|Error Handling|i|T|n|t|exception,error-handling|
+例外を握りつぶす|れいがいをにぎりつぶす|Nuốt ngoại lệ (bắt lỗi rồi bỏ qua, không xử lý)|例外を握りつぶすと、障害の原因が追えなくなります。|Nếu nuốt ngoại lệ thì sẽ không truy được nguyên nhân sự cố.|Error Handling|a|T|exp|t|exception,anti-pattern|Anti-pattern hay bị chỉ ra trong code review.
+ログ出力|ろぐしゅつりょく|Xuất log|個人情報がログ出力されないよう、マスキング処理を入れました。|Chúng tôi đã thêm xử lý che giấu để thông tin cá nhân không bị xuất ra log.|Logging|i|T|n|t|logging|
+ログレベル|ろぐれべる|Mức log (DEBUG, INFO, WARN, ERROR)|本番環境ではログレベルをINFO以上に設定しています。|Trên môi trường production, mức log được đặt từ INFO trở lên.|Logging|i|T|n|t|logging,configuration|
+スタックトレース|すたっくとれーす|Stack trace (dấu vết ngăn xếp khi lỗi)|エラー報告の際は、画面のメッセージだけでなくスタックトレースも添付してください。|Khi báo lỗi, hãy đính kèm cả stack trace chứ không chỉ thông báo trên màn hình.|Debugging|i|T|n|t|debugging,error|
+排他制御|はいたせいぎょ|Điều khiển loại trừ (đảm bảo chỉ một tiến trình truy cập tài nguyên tại một thời điểm)|在庫の引き当て処理には、二重引き当てを防ぐ排他制御が必要です。|Xử lý phân bổ tồn kho cần điều khiển loại trừ để tránh phân bổ hai lần.|Concurrency|a|T|n|t|concurrency,locking|
+非同期処理|ひどうきしょり|Xử lý bất đồng bộ|メール送信は非同期処理にして、画面の応答を速くします。|Việc gửi email sẽ chuyển sang xử lý bất đồng bộ để màn hình phản hồi nhanh hơn.|Concurrency|i|T|n|t|async|
+並列処理|へいれつしょり|Xử lý song song|画像の変換を並列処理にしたところ、処理時間が四分の一になりました。|Khi chuyển việc chuyển đổi ảnh sang xử lý song song, thời gian xử lý còn một phần tư.|Concurrency|a|T|n|t|parallelism,performance|
+スレッドセーフ|すれっどせーふ|An toàn đa luồng (thread-safe)|このクラスはスレッドセーフではないので、共有して使わないでください。|Class này không thread-safe nên đừng dùng chung.|Concurrency|a|T|adj-na|t|concurrency,thread|
+競合状態|きょうごうじょうたい|Tình trạng tranh chấp (race condition)|同時に更新した場合に競合状態が起き、残高がずれることがあります。|Khi cập nhật đồng thời có thể xảy ra race condition khiến số dư bị lệch.|Concurrency|e|T|n|t|concurrency,bug|
+メモリリーク|めもりりーく|Rò rỉ bộ nhớ|長時間稼働させるとメモリリークでサーバーが停止します。|Nếu chạy lâu thì máy chủ sẽ dừng do rò rỉ bộ nhớ.|Performance|i|T|n|t|memory,bug|
+計算量|けいさんりょう|Độ phức tạp tính toán|二重ループの計算量が大きく、データが増えると急激に遅くなります。|Vòng lặp lồng nhau có độ phức tạp tính toán lớn nên khi dữ liệu tăng sẽ chậm đột ngột.|Algorithms|a|T|n|t|algorithm,performance|
+再帰処理|さいきしょり|Xử lý đệ quy|階層の深い組織図は、再帰処理で展開しています。|Sơ đồ tổ chức nhiều tầng được triển khai bằng xử lý đệ quy.|Algorithms|a|T|n|t|algorithm,recursion|
+副作用|ふくさよう|Tác dụng phụ (hàm làm thay đổi trạng thái bên ngoài)|この関数は引数を書き換える副作用があるので注意してください。|Hàm này có tác dụng phụ là ghi đè tham số nên hãy chú ý.|Programming Concepts|a|T|n|t|functional,bug|
+不変オブジェクト|ふへんおぶじぇくと|Đối tượng bất biến (immutable object)|金額は不変オブジェクトとして扱い、計算のたびに新しいインスタンスを返します。|Số tiền được xử lý như đối tượng bất biến, mỗi lần tính sẽ trả về instance mới.|Programming Concepts|e|T|n|t|immutability,design|
+型安全|かたあんぜん|An toàn kiểu dữ liệu (type safety)|TypeScriptを導入して、型安全なコードに移行しています。|Chúng tôi đưa TypeScript vào và đang chuyển sang mã an toàn kiểu.|Programming Concepts|a|T|n|t|types|
+継承|けいしょう|Kế thừa (OOP)|継承を多用すると、親クラスの変更が子クラスに影響しやすくなります。|Nếu lạm dụng kế thừa, thay đổi của lớp cha dễ ảnh hưởng tới lớp con.|OOP|i|T|vs|t|oop|
+多態性|たたいせい|Tính đa hình (polymorphism)|多態性を活用して、支払い方法ごとの分岐をなくしました。|Tận dụng tính đa hình, chúng tôi đã loại bỏ việc rẽ nhánh theo từng phương thức thanh toán.|OOP|e|T|n|t|oop|Còn gọi: ポリモーフィズム.
+カプセル化|かぷせるか|Đóng gói (encapsulation)|カプセル化により、内部のデータ構造を変更しても呼び出し側に影響しません。|Nhờ đóng gói, thay đổi cấu trúc dữ liệu bên trong cũng không ảnh hưởng tới phía gọi.|OOP|a|T|n|t|oop|
+抽象化|ちゅうしょうか|Trừu tượng hóa|保存先の違いを抽象化して、ファイルでもクラウドでも同じ操作で扱えるようにしました。|Chúng tôi trừu tượng hóa sự khác biệt nơi lưu để có thể thao tác giống nhau cả với file lẫn cloud.|Design Principles|a|T|vs|t|abstraction,design|
+責務|せきむ|Trách nhiệm (của class/module)|このクラスは責務が多すぎるので、三つに分割しましょう。|Class này có quá nhiều trách nhiệm, hãy chia thành ba.|Design Principles|a|N1|n|t|design,responsibility|
+単一責任の原則|たんいつせきにんのげんそく|Nguyên tắc trách nhiệm đơn nhất (SRP)|単一責任の原則に従えば、変更理由が一つのクラスに集中します。|Nếu theo nguyên tắc trách nhiệm đơn nhất, lý do thay đổi sẽ tập trung vào một class.|Design Principles|e|T|n|t|solid,design|
+関心の分離|かんしんのぶんり|Tách biệt mối quan tâm (separation of concerns)|画面表示と業務ロジックを分けるのは、関心の分離の基本です。|Tách hiển thị màn hình và logic nghiệp vụ là cơ bản của tách biệt mối quan tâm.|Design Principles|e|T|n|t|design,architecture|
+共通化|きょうつうか|Dùng chung hóa (gom xử lý giống nhau thành phần chung)|似た処理が五か所にあるので、共通化して保守しやすくします。|Có xử lý giống nhau ở năm chỗ nên sẽ gom thành phần dùng chung cho dễ bảo trì.|Code Quality|i|T|vs|t|reuse,refactoring|

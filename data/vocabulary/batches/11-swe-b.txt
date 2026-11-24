@@ -1,0 +1,53 @@
+# category: Software Engineering
+# code: swe
+# batch 11 — implementation details, text handling, API & error handling
+ハードコーディング|はーどこーでぃんぐ|Viết cứng giá trị vào mã nguồn (hard-coding)|税率をハードコーディングしていたため、法改正のたびにリリースが必要でした。|Vì thuế suất bị viết cứng trong mã nên mỗi lần luật thay đổi đều phải phát hành lại.|Code Quality|i|T|vs|t|anti-pattern,configuration|
+マジックナンバー|まじっくなんばー|Số ma thuật (hằng số không rõ nghĩa trong mã)|条件式の「7」はマジックナンバーなので、意味のある定数名を付けてください。|Số "7" trong biểu thức điều kiện là magic number, hãy đặt tên hằng có ý nghĩa.|Code Quality|a|T|n|t|anti-pattern,readability|
+設定ファイル|せっていふぁいる|File cấu hình|接続先の情報は設定ファイルに外出しして、環境ごとに切り替えます。|Thông tin kết nối được tách ra file cấu hình và chuyển đổi theo từng môi trường.|Configuration|i|T|n|t|configuration|外出し = tách ra bên ngoài.
+環境変数|かんきょうへんすう|Biến môi trường|パスワードはソースコードに書かず、環境変数から読み込みます。|Mật khẩu không viết trong mã nguồn mà đọc từ biến môi trường.|Configuration|i|T|n|t|configuration,security|
+初期化|しょきか|Khởi tạo (giá trị ban đầu)|ループの前でカウンタを初期化し忘れていました。|Tôi đã quên khởi tạo biến đếm trước vòng lặp.|Programming Concepts|i|T|vs|t|initialization|
+引数|ひきすう|Tham số (đối số) của hàm|引数が五つ以上ある関数は、オブジェクトにまとめることを検討してください。|Với hàm có từ năm tham số trở lên, hãy cân nhắc gom thành một object.|Programming Concepts|i|T|n|t|function|Đọc là ひきすう (không phải いんすう).
+戻り値|もどりち|Giá trị trả về|この関数はエラー時に戻り値としてnullを返す仕様です。|Theo đặc tả, hàm này trả về null làm giá trị trả về khi có lỗi.|Programming Concepts|i|T|n|t|function|
+呼び出し元|よびだしもと|Phía gọi (caller)|例外は呼び出し元で捕捉し、ユーザー向けのメッセージに変換します。|Ngoại lệ được bắt ở phía gọi và chuyển thành thông báo cho người dùng.|Programming Concepts|a|T|n|t|function,exception|Đối lập: 呼び出し先.
+条件分岐|じょうけんぶんき|Rẽ nhánh điều kiện|条件分岐が複雑すぎるので、判定表を作ってテストケースを整理しましょう。|Rẽ nhánh điều kiện quá phức tạp, hãy lập bảng quyết định để sắp xếp test case.|Programming Concepts|i|T|n|t|logic|
+早期リターン|そうきりたーん|Trả về sớm (early return)|エラー条件は早期リターンにして、ネストを浅くしました。|Các điều kiện lỗi được xử lý bằng early return để giảm độ lồng nhau.|Code Quality|a|T|n|t|readability,pattern|
+ネストが深い|ねすとがふかい|Lồng nhau quá sâu (mã khó đọc)|ネストが深いコードは、読み手が条件を追うのに苦労します。|Mã lồng nhau quá sâu khiến người đọc vất vả theo dõi điều kiện.|Code Quality|i|T|exp|t|readability|
+冗長|じょうちょう|Dư thừa, rườm rà|同じチェックを二回行っており、処理が冗長になっています。|Cùng một phép kiểm tra được thực hiện hai lần nên xử lý bị dư thừa.|Code Quality|a|N1|adj-na|t|readability,refactoring|Trong kiến trúc, 冗長化 lại mang nghĩa dự phòng (redundancy).
+重複コード|ちょうふくこーど|Mã bị trùng lặp|重複コードを放置すると、修正漏れの原因になります。|Nếu để mặc mã trùng lặp sẽ là nguyên nhân bỏ sót khi sửa.|Code Quality|i|T|n|t|refactoring|
+デッドコード|でっどこーど|Mã chết (không bao giờ được thực thi)|五年前の機能のデッドコードが残っていたので削除しました。|Còn sót mã chết của chức năng từ năm năm trước nên tôi đã xóa.|Code Quality|a|T|n|t|cleanup|
+不具合|ふぐあい|Lỗi, trục trặc (bug)|一覧画面で並び順が正しくない不具合を修正しました。|Tôi đã sửa lỗi thứ tự sắp xếp không đúng trên màn hình danh sách.|Debugging|i|N2|n|b|bug,defect|Từ trang trọng hơn バグ, dùng với khách hàng.
+原因究明|げんいんきゅうめい|Truy tìm làm rõ nguyên nhân|原因究明が終わるまでは、同じ処理の実行を控えてください。|Cho đến khi làm rõ nguyên nhân, hãy tạm ngừng chạy cùng xử lý đó.|Debugging|a|N1|vs|f|root-cause,incident|
+再現性|さいげんせい|Tính tái hiện (lỗi có tái hiện được không)|この不具合は再現性が低く、特定の時間帯にだけ発生します。|Lỗi này khó tái hiện, chỉ xảy ra vào một khung giờ cụ thể.|Debugging|a|T|n|t|bug,debugging|
+パッチ|ぱっち|Bản vá|セキュリティパッチは、検証後一週間以内に適用します。|Bản vá bảo mật được áp dụng trong vòng một tuần sau khi kiểm chứng.|Maintenance|i|T|n|t|patch,maintenance|
+ホットフィックス|ほっとふぃっくす|Bản sửa nóng (hotfix khẩn cấp)|請求金額の誤りはホットフィックスとして当日中にリリースしました。|Lỗi sai số tiền hóa đơn đã được phát hành dưới dạng hotfix ngay trong ngày.|Maintenance|a|T|n|t|release,incident|
+文字化け|もじばけ|Lỗi hiển thị ký tự (mojibake)|CSVをExcelで開くと日本語が文字化けするので、BOM付きで出力します。|Khi mở CSV bằng Excel thì tiếng Nhật bị lỗi ký tự nên sẽ xuất kèm BOM.|Text Encoding|i|T|vs|t|encoding,bug|
+文字コード|もじこーど|Mã ký tự (encoding: UTF-8, Shift_JIS…)|連携ファイルの文字コードは、相手システムに合わせてShift_JISにします。|Mã ký tự của file liên kết sẽ là Shift_JIS cho khớp với hệ thống đối tác.|Text Encoding|i|T|n|t|encoding|
+改行コード|かいぎょうこーど|Mã xuống dòng (CRLF/LF)|改行コードの違いで、Windowsで作ったファイルの差分が全行に出ています。|Do khác biệt mã xuống dòng, file tạo trên Windows hiện diff ở tất cả các dòng.|Text Encoding|a|T|n|t|encoding|
+全角|ぜんかく|Ký tự full-width (độ rộng toàn phần)|電話番号に全角数字が入力された場合は、半角に変換して保存します。|Khi số điện thoại được nhập bằng số full-width, sẽ chuyển sang half-width rồi lưu.|Text Encoding|i|T|n|t|japanese-text,validation|Vấn đề đặc thù của nhập liệu tiếng Nhật.
+半角|はんかく|Ký tự half-width (độ rộng nửa)|ログインIDは半角英数字のみ使用できます。|ID đăng nhập chỉ được dùng chữ và số half-width.|Text Encoding|i|T|n|t|japanese-text,validation|半角カナ thường gây lỗi trong hệ thống cũ.
+丸め誤差|まるめごさ|Sai số làm tròn|浮動小数点で金額を計算すると、丸め誤差で一円ずれることがあります。|Nếu tính tiền bằng số thực dấu phẩy động, có thể lệch một yên do sai số làm tròn.|Numerics|a|T|n|t|numeric,bug|
+浮動小数点|ふどうしょうすうてん|Dấu phẩy động (floating point)|金額の計算には浮動小数点型ではなく、十進数型を使ってください。|Để tính tiền, hãy dùng kiểu thập phân thay vì kiểu dấu phẩy động.|Numerics|a|T|n|t|numeric,types|
+桁あふれ|けたあふれ|Tràn số (overflow do vượt số chữ số)|集計値が九桁を超えると桁あふれが発生するため、型を見直しました。|Khi giá trị tổng hợp vượt chín chữ số sẽ bị tràn số nên đã xem lại kiểu dữ liệu.|Numerics|a|T|n|t|numeric,bug|
+ゼロ除算|ぜろじょざん|Chia cho không|件数が0件のときに平均を計算すると、ゼロ除算のエラーになります。|Nếu tính trung bình khi số bản ghi là 0 thì sẽ lỗi chia cho không.|Numerics|a|T|n|t|numeric,bug|
+ヌルポインタ例外|ぬるぽいんたれいがい|Ngoại lệ con trỏ null (NullPointerException)|顧客情報が未登録の場合にヌルポインタ例外が発生していました。|Khi thông tin khách hàng chưa đăng ký đã phát sinh ngoại lệ con trỏ null.|Error Handling|a|T|n|t|exception,bug|Khẩu ngữ: ヌルポ.
+未定義|みていぎ|Chưa được định nghĩa (undefined)|未定義の値を参照したため、画面が真っ白になりました。|Do tham chiếu giá trị chưa định nghĩa nên màn hình bị trắng trơn.|Programming Concepts|i|T|n|t|javascript,bug|
+エンドポイント|えんどぽいんと|Endpoint (địa chỉ API)|新しいエンドポイントを追加する場合は、API仕様書も更新してください。|Khi thêm endpoint mới, hãy cập nhật cả tài liệu đặc tả API.|API Design|i|T|n|t|api|
+ステータスコード|すてーたすこーど|Mã trạng thái HTTP|入力エラーの場合は、ステータスコード400を返します。|Trong trường hợp lỗi đầu vào sẽ trả về mã trạng thái 400.|API Design|i|T|n|t|http,api|
+ペイロード|ぺいろーど|Payload (phần dữ liệu chính của request/response)|ペイロードが大きすぎるとゲートウェイで拒否されます。|Nếu payload quá lớn sẽ bị gateway từ chối.|API Design|a|T|n|t|api,http|
+シリアライズ|しりあらいず|Tuần tự hóa (chuyển object thành chuỗi/byte)|日付型をシリアライズする際の形式をISO 8601に統一しました。|Chúng tôi đã thống nhất định dạng khi tuần tự hóa kiểu ngày theo ISO 8601.|Data Handling|a|T|vs|t|serialization,json|Đối lập: デシリアライズ.
+パース|ぱーす|Phân tích cú pháp (parse)|日付文字列のパースに失敗した場合は、入力エラーとして扱います。|Nếu phân tích chuỗi ngày thất bại thì xử lý như lỗi đầu vào.|Data Handling|i|T|vs|t|parsing|
+バリデーション|ばりでーしょん|Kiểm tra tính hợp lệ (validation)|バリデーションは画面とサーバーの両方で行います。|Kiểm tra tính hợp lệ được thực hiện cả ở màn hình lẫn máy chủ.|Data Handling|i|T|n|t|validation|Tiếng Nhật thuần: 入力チェック.
+エスケープ処理|えすけーぷしょり|Xử lý escape (thoát ký tự đặc biệt)|画面に表示する文字列には、必ずエスケープ処理を行ってください。|Chuỗi hiển thị lên màn hình nhất định phải được xử lý escape.|Data Handling|a|T|n|t|security,xss|
+正規表現|せいきひょうげん|Biểu thức chính quy (regex)|郵便番号の形式チェックに正規表現を使っています。|Chúng tôi dùng biểu thức chính quy để kiểm tra định dạng mã bưu điện.|Data Handling|a|T|n|t|regex|
+タイムアウト|たいむあうと|Hết thời gian chờ (timeout)|外部APIの応答がない場合に備え、タイムアウトを十秒に設定しました。|Đề phòng API bên ngoài không phản hồi, chúng tôi đặt timeout là mười giây.|Error Handling|i|T|n|t|network,resilience|
+リトライ処理|りとらいしょり|Xử lý thử lại (retry)|通信エラー時のリトライ処理は最大三回までとします。|Xử lý thử lại khi lỗi kết nối được giới hạn tối đa ba lần.|Error Handling|i|T|n|t|resilience,network|
+指数バックオフ|しすうばっくおふ|Lùi theo cấp số mũ (exponential backoff)|リトライ間隔には指数バックオフを使い、相手サーバーへの負荷を抑えます。|Dùng exponential backoff cho khoảng cách thử lại để giảm tải cho máy chủ đối tác.|Error Handling|e|T|n|t|resilience,algorithm|
+レート制限|れーとせいげん|Giới hạn tần suất gọi (rate limit)|このAPIには一分あたり六十回のレート制限があります。|API này có giới hạn tần suất sáu mươi lần mỗi phút.|API Design|a|T|n|t|api,throttling|
+ページネーション|ぺーじねーしょん|Phân trang (pagination)|一覧APIはページネーションに対応し、一度に百件まで返します。|API danh sách hỗ trợ phân trang, mỗi lần trả tối đa một trăm bản ghi.|API Design|i|T|n|t|api,performance|
+タイムゾーン|たいむぞーん|Múi giờ|ベトナムと日本ではタイムゾーンが二時間違うので、日時はUTCで保存します。|Việt Nam và Nhật lệch múi giờ hai tiếng nên ngày giờ được lưu theo UTC.|Date & Time|i|T|n|t|datetime,i18n|
+協定世界時|きょうていせかいじ|Giờ phối hợp quốc tế (UTC)|ログの時刻はすべて協定世界時で記録し、表示時に変換します。|Thời gian trong log được ghi bằng UTC và chuyển đổi khi hiển thị.|Date & Time|e|T|n|t|datetime,utc|
+国際化|こくさいか|Quốc tế hóa (i18n)|国際化対応として、画面の文言をリソースファイルに切り出しました。|Để quốc tế hóa, chúng tôi đã tách các câu chữ trên màn hình ra file resource.|Internationalization|a|T|n|t|i18n|
+コールバック|こーるばっく|Callback (hàm gọi lại)|処理完了時にコールバックで結果を通知する仕組みです。|Đây là cơ chế thông báo kết quả bằng callback khi xử lý hoàn tất.|Programming Concepts|a|T|n|t|async,function|
+イベント駆動|いべんとくどう|Hướng sự kiện (event-driven)|注文確定をきっかけに在庫と配送が動く、イベント駆動の設計にしました。|Chúng tôi thiết kế theo hướng sự kiện, khi đơn hàng được xác nhận thì tồn kho và giao hàng sẽ chạy.|Programming Concepts|a|T|n|t|event,architecture|
+共通部品|きょうつうぶひん|Thành phần dùng chung (common component)|日付の入力欄は共通部品を使い、画面ごとに作らないでください。|Ô nhập ngày hãy dùng thành phần chung, đừng tạo riêng ở mỗi màn hình.|Code Quality|i|T|n|t|reuse,component|
+依存ライブラリ|いぞんらいぶらり|Thư viện phụ thuộc|依存ライブラリの脆弱性は、毎週自動でチェックしています。|Lỗ hổng của các thư viện phụ thuộc được kiểm tra tự động hàng tuần.|Dependencies|i|T|n|t|dependency,security|
