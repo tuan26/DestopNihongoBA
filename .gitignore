@@ -12,3 +12,4 @@ playwright-report/
 .env.*
 ai-keys.json
 .DS_Store
+data/vocabulary/.verify-cache/
