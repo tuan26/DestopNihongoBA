@@ -103,7 +103,15 @@ fn corner_position(w: &WebviewWindow, corner: &str) -> Result<PhysicalPosition<i
         .or(w.primary_monitor().map_err(|e| e.to_string())?)
         .ok_or_else(|| "no monitor".to_string())?;
     let area = monitor.work_area();
-    let size = w.outer_size().map_err(|e| e.to_string())?;
+    // A window that has not been mapped yet can report 0×0; fall back to inner size, then to the configured default.
+    let mut size = w.outer_size().map_err(|e| e.to_string())?;
+    if size.width == 0 || size.height == 0 {
+        size = w.inner_size().map_err(|e| e.to_string())?;
+    }
+    if size.width == 0 || size.height == 0 {
+        let s = monitor.scale_factor();
+        size = PhysicalSize::new((360.0 * s) as u32, (210.0 * s) as u32);
+    }
     let margin = (16.0 * monitor.scale_factor()) as i32;
     let left = area.position.x + margin;
     let top = area.position.y + margin;

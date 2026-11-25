@@ -37,7 +37,7 @@ function Shell() {
   // Startup: show the card if wanted, apply opt-in global shortcut.
   useEffect(() => {
     if (!isTauri()) return;
-    if (settings['card.visible'] && settings['card.showOnStartup']) void showCard();
+    if (settings['card.visible'] && settings['card.showOnStartup']) void showCard().then(() => setCardOn(true));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   useEffect(() => {
@@ -47,9 +47,12 @@ function Shell() {
     );
   }, [settings, toast]);
   useEffect(() => {
-    void isCardVisible().then(setCardOn);
+    const t = setTimeout(() => void isCardVisible().then(setCardOn), 800);
     const p = onEvent<{ visible: boolean }>(EVENTS.cardVisibility, (e) => setCardOn(e.visible));
-    return () => void p.then((u) => u());
+    return () => {
+      clearTimeout(t);
+      void p.then((u) => u());
+    };
   }, [dataVersion]);
 
   return (
