@@ -85,6 +85,13 @@ export function Dashboard() {
             <p>Từ vựng họp & thảo luận yêu cầu</p>
           </div>
         </Link>
+        <Link to="/quiz" className="card mode-tile" style={{ textDecoration: 'none', color: 'inherit' }} data-testid="dash-quiz">
+          <div className="mode-icon">🎮</div>
+          <div>
+            <h3>Trò chơi & Quiz</h3>
+            <p>Trắc nghiệm, ghép cặp, đúng/sai 60 giây…</p>
+          </div>
+        </Link>
         <Link to="/study" className="card mode-tile" style={{ textDecoration: 'none', color: 'inherit' }}>
           <div className="mode-icon">🧠</div>
           <div>

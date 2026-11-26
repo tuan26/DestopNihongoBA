@@ -115,6 +115,25 @@ CREATE TABLE dataset_versions (
 );
 `,
   },
+  {
+    version: 2,
+    name: 'quiz_results',
+    sql: `
+CREATE TABLE quiz_results (
+  id          INTEGER PRIMARY KEY AUTOINCREMENT,
+  game        TEXT NOT NULL,
+  variant     TEXT,
+  source      TEXT,
+  score       INTEGER NOT NULL,
+  correct     INTEGER NOT NULL,
+  total       INTEGER NOT NULL,
+  duration_ms INTEGER NOT NULL,
+  wrong_ids   TEXT NOT NULL DEFAULT '[]',
+  played_at   TEXT NOT NULL
+);
+CREATE INDEX idx_quiz_game ON quiz_results(game, score);
+`,
+  },
 ];
 
 const splitStatements = (sql: string) =>

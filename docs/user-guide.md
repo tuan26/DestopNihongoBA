@@ -38,21 +38,36 @@
 Vào **Học** để chọn 1 trong 12 chế độ. Trong phiên: `Space` hiện đáp án, `1`–`4` đánh giá, `Enter` = Nhớ, `F` yêu thích.
 Từ đánh giá **Quên** (hoặc từ mới đang ở bước học) sẽ quay lại ngay trong phiên. Tiến độ được lưu sau mỗi lần đánh giá.
 
-## 5. Thư viện
+## 5. Trò chơi & Quiz
+
+Menu **Trò chơi & Quiz** (hoặc ô 🎮 trên Tổng quan). Chọn nguồn từ (Từ đã học / Tất cả / Hay quên / Yêu thích / theo chủ đề) rồi chọn trò:
+
+| Trò | Cách chơi | Phím |
+|---|---|---|
+| Trắc nghiệm | 10 câu, 4 đáp án; hướng Nhật→Việt, Việt→Nhật hoặc Kanji→Cách đọc | `1`–`4`, `Enter` sang câu |
+| Ghép cặp | Ghép 6 từ tiếng Nhật với nghĩa; nhanh và ít lỗi = điểm cao | chuột |
+| Đúng hay Sai 60s | Nghĩa hiển thị có đúng không? Trả lời liên tiếp đúng để nhân điểm | `←` Sai · `→` Đúng |
+| Gõ cách đọc | Nhìn kanji, gõ cách đọc bằng bộ gõ tiếng Nhật (hiragana hoặc katakana đều được) | `Enter` |
+| Điền từ vào câu | Câu ví dụ bị che một từ, chọn từ đúng | `1`–`4` |
+
+Kết quả quiz **không tự thay đổi lịch ôn**. Cuối ván có danh sách từ trả lời sai và nút **Đưa từ sai vào ôn lại**
+(đánh dấu "Quên" để các từ đó quay lại sớm trong Ôn tập hằng ngày). Điểm cao nhất và các ván gần đây được lưu trên máy.
+
+## 6. Thư viện
 
 - Tìm kiếm: gõ kanji, kana (hiragana hay katakana đều được) hoặc tiếng Việt (có dấu hay không dấu).
 - Bấm một dòng để xem chi tiết: phát âm, ghi chú cá nhân, collection, yêu thích, sửa, học lại từ đầu, ẩn.
 - **Từ gốc** (dataset) chỉ có thể **Ẩn** (bỏ ẩn bằng bộ lọc “Đã ẩn”). Từ bạn tự thêm/import/AI có thể **Xóa** (có xác nhận).
 - Sửa từ gốc: bản sửa của bạn được giữ nguyên khi app cập nhật dataset.
 
-## 6. Excel
+## 7. Excel
 
 - **Export Excel**: toàn bộ từ (kể cả đã ẩn) + trạng thái học + sheet lịch sử ôn.
 - **Template Excel**: file mẫu có sheet “Hướng dẫn” mô tả cột.
 - **Import Excel**: chọn file → màn hình xem trước cho biết dòng Mới / Trùng / Lỗi (kèm số dòng và lý do) → chọn khi trùng:
   *Bỏ qua* hoặc *Cập nhật nội dung (giữ tiến độ học)* → Import. Database được sao lưu tự động trước khi import.
 
-## 7. AI Discovery (tùy chọn, cần Internet)
+## 8. AI Discovery (tùy chọn, cần Internet)
 
 1. Cài đặt › AI Discovery: chọn provider (Anthropic Claude / OpenAI), model, dán API key › Lưu.
    Hoặc đặt biến môi trường `ANTHROPIC_API_KEY` / `OPENAI_API_KEY` rồi mở lại app.
@@ -64,12 +79,12 @@ Từ đánh giá **Quên** (hoặc từ mới đang ở bước học) sẽ quay
 native của app đọc; không nằm trong database, không xuất ra Excel, không gửi đi đâu ngoài API của provider bạn chọn.
 Chi phí gọi API do tài khoản provider của bạn chịu.
 
-## 8. Sao lưu & khôi phục
+## 9. Sao lưu & khôi phục
 
 - Tự động: trước mỗi lần nâng cấp schema, nâng cấp dataset, import Excel, khôi phục. Giữ 10 bản gần nhất trong `...\backups\`.
 - Thủ công: Cài đặt › Dữ liệu & sao lưu › **Sao lưu ngay**; chọn một bản › **Khôi phục** (app sao lưu dữ liệu hiện tại trước, rồi khởi động lại).
 
-## 9. Câu hỏi thường gặp
+## 10. Câu hỏi thường gặp
 
 - **Không nghe phát âm?** Windows Settings › Time & language › Speech › Add voices › 日本語.
 - **Card nằm ngoài màn hình sau khi rút màn hình phụ?** Khởi động lại app (card tự về góc mặc định) hoặc Cài đặt › “Đưa card về vị trí này”.

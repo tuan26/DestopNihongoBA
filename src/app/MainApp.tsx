@@ -5,6 +5,7 @@ import { Dashboard } from '../pages/Dashboard';
 import { Library } from '../pages/Library';
 import { StudyHome, StudySession } from '../pages/Study';
 import { Discovery } from '../pages/Discovery';
+import { QuizHome, QuizPlay } from '../pages/Quiz';
 import { Statistics } from '../pages/Statistics';
 import { Settings } from '../pages/Settings';
 import { EVENTS, onEvent, setGlobalShortcut, showCard, toggleCard, isCardVisible } from '../platform/native';
@@ -15,6 +16,7 @@ const NAV = [
   { to: '/', label: 'Tổng quan', icon: '🏠' },
   { to: '/library', label: 'Thư viện từ vựng', icon: '📚' },
   { to: '/study', label: 'Học', icon: '🧠' },
+  { to: '/quiz', label: 'Trò chơi & Quiz', icon: '🎮' },
   { to: '/discovery', label: 'AI Discovery', icon: '✨' },
   { to: '/stats', label: 'Thống kê', icon: '📈' },
   { to: '/settings', label: 'Cài đặt', icon: '⚙️' },
@@ -90,6 +92,8 @@ function Shell() {
           <Route path="/library/:id" element={<Library />} />
           <Route path="/study" element={<StudyHome />} />
           <Route path="/study/:mode" element={<StudySession />} />
+          <Route path="/quiz" element={<QuizHome />} />
+          <Route path="/quiz/:game" element={<QuizPlay />} />
           <Route path="/discovery" element={<Discovery />} />
           <Route path="/stats" element={<Statistics />} />
           <Route path="/settings" element={<Settings />} />
