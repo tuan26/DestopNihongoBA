@@ -2,7 +2,7 @@ mod ai;
 mod db;
 mod windows;
 
-use tauri::{Manager, WindowEvent};
+use tauri::{Manager, WebviewWindowBuilder, WindowEvent};
 
 pub fn run() {
     tauri::Builder::default()
@@ -19,6 +19,12 @@ pub fn run() {
             let handle = app.handle().clone();
             let database = db::Db::open(&handle).map_err(Box::<dyn std::error::Error>::from)?;
             app.manage(database);
+            // Windows are declared with `create: false` and built only now, after the DB state is managed:
+            // otherwise a fast WebView2 can call `db_*` commands before `.manage()` ran ("state not managed").
+            let configs = app.config().app.windows.clone();
+            for cfg in configs.iter() {
+                WebviewWindowBuilder::from_config(&handle, cfg)?.build()?;
+            }
             windows::setup_tray(&handle)?;
             let minimized = std::env::args().any(|a| a == "--minimized");
             if !minimized {

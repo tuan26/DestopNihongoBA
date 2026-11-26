@@ -20,7 +20,8 @@
         "minWidth": 860,
         "minHeight": 560,
         "center": true,
-        "visible": false
+        "visible": false,
+        "create": false
       },
       {
         "label": "card",
@@ -36,7 +37,8 @@
         "resizable": true,
         "focus": false,
         "shadow": false,
-        "visible": false
+        "visible": false,
+        "create": false
       }
     ],
     "security": {
@@ -45,14 +47,31 @@
   },
   "bundle": {
     "active": true,
-    "targets": ["nsis", "msi"],
+    "targets": [
+      "nsis",
+      "msi"
+    ],
     "category": "Education",
     "shortDescription": "Học từ vựng tiếng Nhật cho BA/BrSE/IT",
     "longDescription": "Floating vocabulary card + spaced repetition (FSRS) với 1.000 từ vựng tiếng Nhật chuyên ngành BA/BrSE/IT.",
-    "icon": ["icons/32x32.png", "icons/128x128.png", "icons/128x128@2x.png", "icons/icon.icns", "icons/icon.ico"],
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
     "windows": {
-      "webviewInstallMode": { "type": "embedBootstrapper" },
-      "nsis": { "installMode": "currentUser", "languages": ["English", "Vietnamese"] }
+      "webviewInstallMode": {
+        "type": "embedBootstrapper"
+      },
+      "nsis": {
+        "installMode": "currentUser",
+        "languages": [
+          "English",
+          "Vietnamese"
+        ]
+      }
     }
   }
 }
