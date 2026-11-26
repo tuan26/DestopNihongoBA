@@ -8,7 +8,10 @@ import { deleteAllN1, importPack } from '../../core/n1/importer';
 import { summarizePack, validatePack, type Pack, type PackSummary } from '../../core/n1/pack';
 import { listN1Decks, n1Stats, type N1DeckInfo, type N1Stats } from '../../core/n1/practice';
 import { setKv } from '../../core/settings/settings';
-import { backupDatabase, confirmDialog, openJsonText } from '../../platform/native';
+import { backupDatabase, confirmDialog, n1FileIO, openJsonText } from '../../platform/native';
+import { getN1Source, importN1File, syncN1, N1_AUTO_KEY, N1_SOURCE_KEY, type N1Source } from '../../core/n1/autoSync';
+import { getKv } from '../../core/settings/settings';
+import { isTauri } from '../../platform/env';
 
 export function N1Home() {
   const { db, dataVersion, dataChanged, toast } = useApp();
@@ -19,13 +22,43 @@ export function N1Home() {
   const [newPerDay, setNewPerDay] = useState(30);
   const [pending, setPending] = useState<{ file: string; pack: Pack; summary: PackSummary } | null>(null);
   const [busy, setBusy] = useState(false);
+  const [source, setSource] = useState<N1Source | null>(null);
+  const [searching, setSearching] = useState(false);
+  const [notFound, setNotFound] = useState(false);
+  const [pendingPath, setPendingPath] = useState<string | null>(null);
 
   const reload = useCallback(async () => {
     setStats(await n1Stats(db));
     setDecks(await listN1Decks(db));
     setNewPerDay(await n1NewPerDay(db));
+    setSource(await getN1Source(db));
   }, [db]);
   useEffect(() => void reload(), [reload, dataVersion]);
+
+  const runSync = useCallback(
+    async (search: 'always' | 'never') => {
+      setSearching(true);
+      setNotFound(false);
+      const r = await syncN1(db, n1FileIO(), { search });
+      setSearching(false);
+      if (r.status === 'imported') {
+        toast(`Đã nhập ${r.result.cards.inserted} thẻ, ${r.result.questions.inserted} câu từ ${r.path}`, 'success');
+        dataChanged('n1-sync');
+      } else if (r.status === 'not-found') setNotFound(true);
+      else if (r.status === 'error') toast(`Không nhập được ${r.path ?? ''}: ${r.message}`, 'error');
+      else if (r.status === 'unchanged') toast('Dữ liệu N1 đã là mới nhất', 'info');
+      else if (r.status === 'skipped' && search === 'never') toast('Không thấy file nguồn ở vị trí cũ. Hãy bấm "Nhập dữ liệu N1" để chọn lại.', 'error');
+      await reload();
+    },
+    [db, toast, dataChanged, reload],
+  );
+
+  // Nothing imported yet: look for the user's own n1_data.json automatically (desktop).
+  useEffect(() => {
+    if (!isTauri() || !stats || stats.decks > 0) return;
+    void getKv<boolean>(db, N1_AUTO_KEY, true).then((auto) => (auto ? runSync('always') : setNotFound(false)));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [stats?.decks]);
 
   const pick = async () => {
     const f = await openJsonText();
@@ -36,6 +69,7 @@ export function N1Home() {
       const errs = validatePack(pack);
       if (errs.length) throw new Error(errs.slice(0, 5).join('\n'));
       setPending({ file: f.name, pack, summary: summarizePack(pack) });
+      setPendingPath(f.path ?? null);
     } catch (e) {
       toast((e as Error).message, 'error');
     } finally {
@@ -48,7 +82,16 @@ export function N1Home() {
     setBusy(true);
     try {
       await backupDatabase('pre-n1-import');
-      const r = await importPack(db, pending.pack);
+      let r;
+      if (pendingPath && isTauri()) {
+        // remember the file so later changes are picked up automatically
+        const { fileModified } = await import('../../platform/native');
+        const out = await importN1File(db, n1FileIO(), pendingPath, (await fileModified(pendingPath)) ?? 0, 'forced');
+        if (out.status !== 'imported') throw new Error(out.status === 'error' ? out.message : out.status);
+        r = out.result;
+      } else {
+        r = await importPack(db, pending.pack);
+      }
       toast(`Đã nhập: ${r.cards.inserted} thẻ mới, ${r.questions.inserted} câu mới (cập nhật ${r.cards.updated + r.questions.updated})`, 'success');
       setPending(null);
       dataChanged('n1-import');
@@ -84,9 +127,25 @@ export function N1Home() {
         <button className="btn" onClick={() => void pick()} disabled={busy} data-testid="n1-import">⬆ Nhập dữ liệu N1</button>
       </div>
 
-      {stats.decks === 0 ? (
+      {stats.decks === 0 && searching ? (
+        <div className="card col" style={{ maxWidth: 760 }} data-testid="n1-searching">
+          <h3 style={{ margin: 0 }}>🔎 Đang tìm file n1_data.json trên máy của bạn…</h3>
+          <p className="muted" style={{ margin: 0 }}>Tìm trong thư mục người dùng (Desktop, Documents, Downloads, thư mục dự án). Có thể mất vài giây.</p>
+        </div>
+      ) : stats.decks === 0 ? (
         <div className="card col" style={{ maxWidth: 760 }}>
-          <h3 style={{ margin: 0 }}>Chưa có dữ liệu N1</h3>
+          <h3 style={{ margin: 0 }}>{notFound ? 'Không tìm thấy file n1_data.json trên máy' : 'Chưa có dữ liệu N1'}</h3>
+          {notFound && (
+            <p style={{ margin: 0 }}>
+              App đã tìm trong thư mục người dùng nhưng không thấy. Hãy chạy crawler của bạn để tạo file, hoặc bấm <b>Nhập dữ liệu N1</b> để chọn
+              file thủ công (thường nằm ở <code>Clawer_nihongo\n1-learning-app\src\data\n1_data.json</code>).
+            </p>
+          )}
+          {isTauri() && (
+            <div>
+              <button className="btn" onClick={() => void runSync('always')}>🔎 Tìm lại</button>
+            </div>
+          )}
           <p style={{ margin: 0 }}>
             Bấm <b>Nhập dữ liệu N1</b> và chọn file <code>n1_data.json</code> (đầu ra của crawler của bạn) hoặc một file <code>jbv-pack</code>.
             App sẽ tự lấy các bộ flashcard và đề trắc nghiệm; video/slide/bài text được bỏ qua.
@@ -155,6 +214,16 @@ export function N1Home() {
             ))}
           </div>
 
+          {source && (
+            <div className="card row small" style={{ marginTop: 14 }} data-testid="n1-source">
+              <span>
+                📄 Nguồn: <code style={{ wordBreak: 'break-all' }}>{source.path}</code> · nhập lúc {new Date(source.importedAt).toLocaleString('vi-VN')}.
+                App tự nhập lại khi file này thay đổi.
+              </span>
+              <div style={{ flex: 1 }} />
+              <button className="btn btn-sm" disabled={searching} onClick={() => void runSync('never')}>🔄 Đồng bộ ngay</button>
+            </div>
+          )}
           <div className="card row" style={{ marginTop: 14 }}>
             <label className="field">
               Thẻ N1 mới mỗi ngày
@@ -178,6 +247,8 @@ export function N1Home() {
                 if (!(await confirmDialog('Xóa toàn bộ dữ liệu N1 đã nhập cùng tiến độ học N1? (1.000 từ BA không bị ảnh hưởng)'))) return;
                 await backupDatabase('pre-n1-delete');
                 await deleteAllN1(db);
+                await setKv(db, N1_SOURCE_KEY, null);
+                await setKv(db, N1_AUTO_KEY, false);
                 dataChanged('n1-delete');
                 await reload();
               }}

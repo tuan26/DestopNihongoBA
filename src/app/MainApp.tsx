@@ -14,6 +14,8 @@ import { Settings } from '../pages/Settings';
 import { EVENTS, onEvent, setGlobalShortcut, showCard, toggleCard, isCardVisible } from '../platform/native';
 import { isTauri } from '../platform/env';
 import { useDiscoveryScheduler } from '../pages/discoveryScheduler';
+import { syncN1 } from '../core/n1/autoSync';
+import { n1FileIO } from '../platform/native';
 
 const NAV = [
   { to: '/', label: 'Tổng quan', icon: '🏠' },
@@ -39,6 +41,22 @@ function Shell() {
   const { settings, toast, dataVersion } = useApp();
   const [cardOn, setCardOn] = useState(false);
   useDiscoveryScheduler();
+
+  // Startup: keep the user's own N1 data in sync with their n1_data.json (search at most once a day if none yet).
+  const { db, dataChanged } = useApp();
+  useEffect(() => {
+    if (!isTauri()) return;
+    const t = setTimeout(() => {
+      void syncN1(db, n1FileIO(), { search: 'daily' }).then((r) => {
+        if (r.status === 'imported') {
+          toast(`Ôn N1: đã ${r.reason === 'changed' ? 'cập nhật' : 'nhập'} dữ liệu từ ${r.path}`, 'success');
+          dataChanged('n1-sync');
+        }
+      });
+    }, 2500);
+    return () => clearTimeout(t);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   // Startup: show the card if wanted, apply opt-in global shortcut.
   useEffect(() => {

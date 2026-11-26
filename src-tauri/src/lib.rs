@@ -1,5 +1,6 @@
 mod ai;
 mod db;
+mod n1;
 mod windows;
 
 use tauri::{Manager, WebviewWindowBuilder, WindowEvent};
@@ -53,6 +54,9 @@ pub fn run() {
             db::save_file,
             db::read_file,
             db::read_text_file,
+            n1::find_n1_data,
+            n1::file_modified,
+            n1::read_n1_file,
             windows::show_card,
             windows::hide_card,
             windows::toggle_card,

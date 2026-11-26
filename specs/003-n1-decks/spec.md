@@ -12,6 +12,11 @@
 - Q: Video/slide/text? → A: Không nhập (không phải dữ liệu ôn tập). Câu tự luận/ghép/sắp xếp (≈100 câu) bỏ qua, ghi số lượng trong báo cáo nhập.
 - Q: Câu nghe có audioUrl? → A: Giữ link, phát khi có Internet; không tải file về.
 
+### Session 2026-11-27
+- Q (người dùng): "ấn vào Ôn N1 không có gì, tự nhập dữ liệu cho tôi" → A: Vẫn không đóng gói dữ liệu; thay vào đó app **tự tìm `n1_data.json`
+  trên máy người dùng** (thư mục home, bỏ qua node_modules/.git/AppData…, giới hạn độ sâu 7 và 4 giây), tự nhập, nhớ đường dẫn và tự nhập lại
+  khi file thay đổi. Xóa dữ liệu N1 thì tắt tự nhập cho tới khi người dùng chủ động tìm/nhập lại.
+
 ## User Stories
 1. **(P1) Nhập dữ liệu**: chọn file → xem tóm tắt (số khóa, bộ flashcard, thẻ, đề, câu, câu bỏ qua) → nhập. Nhập lại file mới hơn không mất tiến độ, không trùng.
 2. **(P1) Flashcard N1 với FSRS**: "Ôn flashcard hôm nay" (đến hạn + mới trong hạn mức), hoặc học theo từng bộ; Quên/Khó/Nhớ/Dễ.
@@ -28,6 +33,7 @@
 - FR-206 Lưu mọi lượt trả lời; sổ câu sai = câu có lượt gần nhất sai.
 - FR-207 Xóa toàn bộ dữ liệu N1 đã nhập (có xác nhận).
 - FR-208 Không có dữ liệu khóa học trong repo, test dùng dữ liệu giả lập.
+- FR-209 Tự tìm & tự nhập `n1_data.json` trên máy người dùng; nhớ nguồn; tự đồng bộ khi file thay đổi (khởi động app / nút Đồng bộ ngay).
 
 ## Success Criteria
 - SC-201 Nhập file ~24 MB (~7.000 thẻ, ~9.500 câu) < 30 giây trên laptop văn phòng.

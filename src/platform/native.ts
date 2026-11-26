@@ -219,13 +219,13 @@ export async function aiGenerate(req: { provider: string; model: string; system:
 }
 
 /** Pick a JSON file and return its text (N1 deck import). */
-export async function openJsonText(): Promise<{ name: string; text: string } | null> {
+export async function openJsonText(): Promise<{ name: string; text: string; path?: string } | null> {
   if (isTauri()) {
     const { open } = await import('@tauri-apps/plugin-dialog');
     const path = await open({ multiple: false, filters: [{ name: 'JSON', extensions: ['json'] }] });
     if (!path || Array.isArray(path)) return null;
     const text = await inv<string>('read_text_file', { path });
-    return { name: String(path).split(/[\\/]/).pop() ?? 'data.json', text };
+    return { name: String(path).split(/[\\/]/).pop() ?? 'data.json', text, path: String(path) };
   }
   return new Promise((resolve) => {
     const input = document.createElement('input');
@@ -237,4 +237,30 @@ export async function openJsonText(): Promise<{ name: string; text: string } | n
     };
     input.click();
   });
+}
+
+export interface FoundFile {
+  path: string;
+  size: number;
+  modified: number;
+}
+/** Desktop only: look for the user's own n1_data.json under the home folder. */
+export async function findN1Data(): Promise<FoundFile[]> {
+  return isTauri() ? inv<FoundFile[]>('find_n1_data') : [];
+}
+export async function fileModified(path: string): Promise<number | null> {
+  return isTauri() ? inv<number | null>('file_modified', { path }) : null;
+}
+export async function readN1File(path: string): Promise<string> {
+  return inv<string>('read_n1_file', { path });
+}
+
+/** File access used by N1 auto-sync (desktop). */
+export function n1FileIO() {
+  return {
+    find: findN1Data,
+    modified: async (p: string) => fileModified(p),
+    read: readN1File,
+    backup: (reason: string) => backupDatabase(reason),
+  };
 }

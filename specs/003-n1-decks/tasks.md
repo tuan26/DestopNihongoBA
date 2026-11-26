@@ -12,3 +12,5 @@
 - Vitest 31/31 (dữ liệu giả lập); Playwright 7/7 (nhập pack → flashcard → làm đề → sổ câu sai).
 - Thử cục bộ với file thật của người dùng (KHÔNG commit): 7.324 thẻ, 9.793 câu, 746 bộ; chuyển đổi 0,13 s, nhập ~1,2 s; nhập lại 0 trùng.
 - Repo không chứa nội dung khóa học (fixture e2e do tự viết).
+- [x] T209 Tự tìm & tự nhập n1_data.json (Rust find_n1_data/file_modified/read_n1_file, core/n1/autoSync.ts, tests 2 ca)
+  — kiểm chứng trên app desktop (Xvfb): tự nhập lúc khởi động, bỏ qua bản trong node_modules, file đổi → nhập thêm, tiến độ giữ nguyên.
