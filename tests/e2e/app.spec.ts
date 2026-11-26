@@ -19,7 +19,8 @@ test.describe('browser preview (sql.js adapter)', () => {
     await page.goto('/#/');
     await expect(page.locator('.stat', { hasText: 'Đã ôn hôm nay' })).toContainText('5');
 
-    // persists after reload (IndexedDB)
+    // persists after reload (IndexedDB). Give the throttled writer (250 ms) time to flush, as a real user would.
+    await page.waitForTimeout(1500);
     await page.reload();
     await expect(page.locator('.stat', { hasText: 'Đã ôn hôm nay' })).toContainText('5', { timeout: 30_000 });
 
