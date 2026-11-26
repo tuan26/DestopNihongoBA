@@ -305,3 +305,14 @@ pub async fn read_file(path: String) -> Result<Vec<u8>, String> {
     }
     std::fs::read(&path).map_err(|e| e.to_string())
 }
+
+/// Read a user-chosen JSON file (N1 deck import). Returned as a string to avoid huge byte arrays over IPC.
+#[tauri::command]
+pub async fn read_text_file(path: String) -> Result<String, String> {
+    check_ext(&path, &[".json"])?;
+    let meta = std::fs::metadata(&path).map_err(|e| e.to_string())?;
+    if meta.len() > 150 * 1024 * 1024 {
+        return Err("File quá lớn (tối đa 150 MB)".into());
+    }
+    std::fs::read_to_string(&path).map_err(|e| e.to_string())
+}

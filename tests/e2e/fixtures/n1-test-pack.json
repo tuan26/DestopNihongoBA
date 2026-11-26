@@ -1,0 +1,111 @@
+{
+ "format": "jbv-pack",
+ "version": 1,
+ "name": "Bộ test",
+ "decks": [
+  {
+   "key": "t-fc",
+   "kind": "flashcard",
+   "title": "Flashcard thử",
+   "course": "Khóa thử",
+   "section": "Phần 1",
+   "order": 1,
+   "cards": [
+    {
+     "key": "c0",
+     "front": "試験語0",
+     "back": "nghĩa thử 0\nví dụ 0",
+     "reading": "しけんご"
+    },
+    {
+     "key": "c1",
+     "front": "試験語1",
+     "back": "nghĩa thử 1\nví dụ 1",
+     "reading": "しけんご"
+    },
+    {
+     "key": "c2",
+     "front": "試験語2",
+     "back": "nghĩa thử 2\nví dụ 2",
+     "reading": "しけんご"
+    },
+    {
+     "key": "c3",
+     "front": "試験語3",
+     "back": "nghĩa thử 3\nví dụ 3",
+     "reading": "しけんご"
+    },
+    {
+     "key": "c4",
+     "front": "試験語4",
+     "back": "nghĩa thử 4\nví dụ 4",
+     "reading": "しけんご"
+    },
+    {
+     "key": "c5",
+     "front": "試験語5",
+     "back": "nghĩa thử 5\nví dụ 5",
+     "reading": "しけんご"
+    }
+   ]
+  },
+  {
+   "key": "t-qz",
+   "kind": "quiz",
+   "title": "Đề thử",
+   "course": "Khóa thử",
+   "section": "Phần 1",
+   "order": 2,
+   "questions": [
+    {
+     "key": "q0",
+     "prompt": "Câu hỏi thử số 0 (　　)",
+     "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "answer": 0,
+     "explanation": "Giải thích 0"
+    },
+    {
+     "key": "q1",
+     "prompt": "Câu hỏi thử số 1 (　　)",
+     "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "answer": 1,
+     "explanation": "Giải thích 1"
+    },
+    {
+     "key": "q2",
+     "prompt": "Câu hỏi thử số 2 (　　)",
+     "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "answer": 2,
+     "explanation": "Giải thích 2"
+    },
+    {
+     "key": "q3",
+     "prompt": "Câu hỏi thử số 3 (　　)",
+     "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "answer": 3,
+     "explanation": "Giải thích 3"
+    }
+   ]
+  }
+ ]
+}

@@ -134,6 +134,71 @@ CREATE TABLE quiz_results (
 CREATE INDEX idx_quiz_game ON quiz_results(game, score);
 `,
   },
+  {
+    version: 3,
+    name: 'n1_decks',
+    sql: `
+CREATE TABLE n1_decks (
+  id          INTEGER PRIMARY KEY AUTOINCREMENT,
+  key         TEXT NOT NULL UNIQUE,
+  pack        TEXT NOT NULL,
+  kind        TEXT NOT NULL,
+  title       TEXT NOT NULL,
+  course      TEXT,
+  section     TEXT,
+  ord         INTEGER NOT NULL DEFAULT 0,
+  imported_at TEXT NOT NULL
+);
+CREATE TABLE n1_cards (
+  id       INTEGER PRIMARY KEY AUTOINCREMENT,
+  deck_id  INTEGER NOT NULL REFERENCES n1_decks(id) ON DELETE CASCADE,
+  key      TEXT NOT NULL UNIQUE,
+  front    TEXT NOT NULL,
+  back     TEXT NOT NULL,
+  reading  TEXT,
+  ord      INTEGER NOT NULL DEFAULT 0
+);
+CREATE INDEX idx_n1_cards_deck ON n1_cards(deck_id);
+CREATE TABLE n1_card_states (
+  card_id         INTEGER PRIMARY KEY REFERENCES n1_cards(id) ON DELETE CASCADE,
+  due             TEXT NOT NULL,
+  stability       REAL NOT NULL DEFAULT 0,
+  difficulty      REAL NOT NULL DEFAULT 0,
+  elapsed_days    INTEGER NOT NULL DEFAULT 0,
+  scheduled_days  INTEGER NOT NULL DEFAULT 0,
+  learning_steps  INTEGER NOT NULL DEFAULT 0,
+  reps            INTEGER NOT NULL DEFAULT 0,
+  lapses          INTEGER NOT NULL DEFAULT 0,
+  state           INTEGER NOT NULL DEFAULT 0,
+  last_review     TEXT,
+  last_rating     INTEGER,
+  first_studied   TEXT
+);
+CREATE INDEX idx_n1_states_due ON n1_card_states(due);
+CREATE TABLE n1_questions (
+  id          INTEGER PRIMARY KEY AUTOINCREMENT,
+  deck_id     INTEGER NOT NULL REFERENCES n1_decks(id) ON DELETE CASCADE,
+  key         TEXT NOT NULL UNIQUE,
+  ord         INTEGER NOT NULL DEFAULT 0,
+  passage     TEXT,
+  prompt      TEXT NOT NULL,
+  options     TEXT NOT NULL,
+  answer      INTEGER NOT NULL,
+  explanation TEXT,
+  tag         TEXT,
+  audio_url   TEXT
+);
+CREATE INDEX idx_n1_questions_deck ON n1_questions(deck_id);
+CREATE TABLE n1_attempts (
+  id          INTEGER PRIMARY KEY AUTOINCREMENT,
+  question_id INTEGER NOT NULL REFERENCES n1_questions(id) ON DELETE CASCADE,
+  chosen      INTEGER NOT NULL,
+  correct     INTEGER NOT NULL,
+  answered_at TEXT NOT NULL
+);
+CREATE INDEX idx_n1_attempts_q ON n1_attempts(question_id, id);
+`,
+  },
 ];
 
 const splitStatements = (sql: string) =>

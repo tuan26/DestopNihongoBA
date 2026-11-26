@@ -52,6 +52,7 @@ pub fn run() {
             db::db_path,
             db::save_file,
             db::read_file,
+            db::read_text_file,
             windows::show_card,
             windows::hide_card,
             windows::toggle_card,

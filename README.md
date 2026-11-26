@@ -23,6 +23,8 @@ bằng một **floating vocabulary card** luôn nổi trên màn hình, kết h�
   Business Japanese, IT nâng cao, Từ hay quên, Thử thách ngẫu nhiên. Lịch ôn **FSRS** (`ts-fsrs`), lưu lịch sử mọi lượt ôn.
 - **Trò chơi & Quiz**: Trắc nghiệm (3 hướng), Ghép cặp, Đúng/Sai 60 giây, Gõ cách đọc, Điền từ vào câu; điểm, combo, kỷ lục;
   đưa từ trả lời sai vào lịch ôn FSRS.
+- **Ôn N1**: nhập bộ flashcard & đề trắc nghiệm N1 của riêng bạn (file `n1_data.json` của crawler hoặc `jbv-pack`), FSRS riêng,
+  luyện đề có giải thích, sổ câu sai. Dữ liệu chỉ nằm trong database cục bộ, không có trong repo/bộ cài.
 - **Thư viện**: tìm theo kanji / kana (không phân biệt hiragana–katakana) / tiếng Việt (không dấu cũng được), lọc theo category,
   độ khó, JLPT, nguồn, yêu thích, từ hay quên, collection; thêm/sửa từ, ghi chú, ẩn từ gốc, xóa từ cá nhân (có xác nhận), collections.
 - **Excel**: export (kèm trạng thái học & lịch sử ôn), import có preview, báo lỗi từng dòng, phát hiện trùng, chọn Bỏ qua/Cập nhật,

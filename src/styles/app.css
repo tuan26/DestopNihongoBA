@@ -265,3 +265,21 @@ html.card-window, html.card-window body, html.card-window #root { background: tr
 .tf-buttons .btn { border-width: 2px; font-weight: 700; padding: 18px; }
 .quiz-prompt.tf-right { background: rgba(47, 158, 68, 0.15); }
 .quiz-prompt.tf-wrong { background: rgba(224, 49, 49, 0.15); }
+
+/* ---------- N1 ---------- */
+.n1-course { border-top: 1px solid var(--border); padding: 8px 0; }
+.n1-course > summary { cursor: pointer; padding: 4px 0; }
+.n1-section { margin: 6px 0 10px 14px; }
+.n1-section-title { margin: 6px 0 4px; font-weight: 600; }
+.n1-deck-row { display: flex; align-items: center; gap: 10px; padding: 5px 6px; border-radius: 6px; }
+.n1-deck-row:hover { background: var(--surface-2); }
+.n1-deck-title { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.n1-back-details { white-space: pre-line; max-width: 680px; text-align: left; line-height: 1.6; }
+.n1-quiz { max-width: 860px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
+.n1-passage { max-height: 45vh; overflow: auto; }
+.n1-html { line-height: 1.7; }
+.n1-html p { margin: 0 0 6px; }
+.n1-prompt { font-size: 1.25em; margin: 6px 0 12px; }
+.n1-options { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.n1-explain { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--border); }
+.btn-primary .kbd { background: rgba(255, 255, 255, 0.25); color: inherit; border-color: transparent; }

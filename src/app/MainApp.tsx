@@ -6,6 +6,9 @@ import { Library } from '../pages/Library';
 import { StudyHome, StudySession } from '../pages/Study';
 import { Discovery } from '../pages/Discovery';
 import { QuizHome, QuizPlay } from '../pages/Quiz';
+import { N1Home } from '../pages/n1/N1Home';
+import { N1Cards } from '../pages/n1/N1Cards';
+import { N1Quiz } from '../pages/n1/N1Quiz';
 import { Statistics } from '../pages/Statistics';
 import { Settings } from '../pages/Settings';
 import { EVENTS, onEvent, setGlobalShortcut, showCard, toggleCard, isCardVisible } from '../platform/native';
@@ -17,6 +20,7 @@ const NAV = [
   { to: '/library', label: 'Thư viện từ vựng', icon: '📚' },
   { to: '/study', label: 'Học', icon: '🧠' },
   { to: '/quiz', label: 'Trò chơi & Quiz', icon: '🎮' },
+  { to: '/n1', label: 'Ôn N1', icon: '🗾' },
   { to: '/discovery', label: 'AI Discovery', icon: '✨' },
   { to: '/stats', label: 'Thống kê', icon: '📈' },
   { to: '/settings', label: 'Cài đặt', icon: '⚙️' },
@@ -94,6 +98,9 @@ function Shell() {
           <Route path="/study/:mode" element={<StudySession />} />
           <Route path="/quiz" element={<QuizHome />} />
           <Route path="/quiz/:game" element={<QuizPlay />} />
+          <Route path="/n1" element={<N1Home />} />
+          <Route path="/n1/cards/:deck" element={<N1Cards />} />
+          <Route path="/n1/quiz/:deck" element={<N1Quiz />} />
           <Route path="/discovery" element={<Discovery />} />
           <Route path="/stats" element={<Statistics />} />
           <Route path="/settings" element={<Settings />} />

@@ -53,7 +53,21 @@ Menu **Trò chơi & Quiz** (hoặc ô 🎮 trên Tổng quan). Chọn nguồn t�
 Kết quả quiz **không tự thay đổi lịch ôn**. Cuối ván có danh sách từ trả lời sai và nút **Đưa từ sai vào ôn lại**
 (đánh dấu "Quên" để các từ đó quay lại sớm trong Ôn tập hằng ngày). Điểm cao nhất và các ván gần đây được lưu trên máy.
 
-## 6. Thư viện
+## 6. Ôn N1 (dữ liệu của riêng bạn)
+
+Menu **Ôn N1** dùng để ôn bộ flashcard và đề trắc nghiệm N1 mà bạn có (ví dụ file `n1_data.json` do crawler của bạn tạo, hoặc file định dạng `jbv-pack`).
+
+1. Bấm **Nhập dữ liệu N1** → chọn file → xem tóm tắt (số bộ flashcard, số đề, số câu, mục bị bỏ qua như video/slide/tự luận) → **Nhập**.
+   Dữ liệu chỉ lưu trong database trên máy bạn; database được sao lưu trước khi nhập. Nhập lại file mới hơn sẽ cập nhật nội dung, không trùng, không mất tiến độ.
+2. **Ôn flashcard hôm nay**: thẻ đến hạn + thẻ mới (mặc định 30 thẻ mới/ngày, chỉnh ở cuối trang Ôn N1). Lịch FSRS riêng, không lẫn với 1.000 từ BA.
+3. **Làm đề**: chọn đề trong cây Khóa → Phần → Bài. Câu đọc hiểu có đoạn văn (ẩn/hiện được). Chọn đáp án bằng chuột hoặc `1`–`4`, xem giải thích, `Enter` sang câu tiếp. Cuối đề có điểm và nút làm lại các câu sai.
+4. **Sổ câu sai**: mọi câu mà lần trả lời gần nhất bị sai. Trả lời đúng thì câu rời khỏi sổ.
+5. **Luyện ngẫu nhiên 20 câu** trộn từ tất cả các đề. Câu nghe có link audio chỉ phát được khi có Internet.
+6. **Xóa dữ liệu N1** xóa toàn bộ dữ liệu và tiến độ N1 (1.000 từ BA không bị ảnh hưởng).
+
+Lưu ý: tài liệu khóa học có bản quyền của đơn vị cung cấp; chỉ dùng cho việc học cá nhân và không chia sẻ file dữ liệu.
+
+## 6b. Thư viện
 
 - Tìm kiếm: gõ kanji, kana (hiragana hay katakana đều được) hoặc tiếng Việt (có dấu hay không dấu).
 - Bấm một dòng để xem chi tiết: phát âm, ghi chú cá nhân, collection, yêu thích, sửa, học lại từ đầu, ẩn.

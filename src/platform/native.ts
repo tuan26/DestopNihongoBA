@@ -217,3 +217,24 @@ export async function aiGenerate(req: { provider: string; model: string; system:
   if (!isTauri()) throw new Error('AI Discovery chỉ hoạt động trong ứng dụng desktop (cần API key).');
   return inv<string>('ai_generate', { req });
 }
+
+/** Pick a JSON file and return its text (N1 deck import). */
+export async function openJsonText(): Promise<{ name: string; text: string } | null> {
+  if (isTauri()) {
+    const { open } = await import('@tauri-apps/plugin-dialog');
+    const path = await open({ multiple: false, filters: [{ name: 'JSON', extensions: ['json'] }] });
+    if (!path || Array.isArray(path)) return null;
+    const text = await inv<string>('read_text_file', { path });
+    return { name: String(path).split(/[\\/]/).pop() ?? 'data.json', text };
+  }
+  return new Promise((resolve) => {
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.accept = '.json,application/json';
+    input.onchange = async () => {
+      const f = input.files?.[0];
+      resolve(f ? { name: f.name, text: await f.text() } : null);
+    };
+    input.click();
+  });
+}
