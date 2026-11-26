@@ -4,13 +4,14 @@ import { useApp } from '../app/AppContext';
 import { DIRECTION_LABELS, QUIZ_GAMES, loadPool, type ChoiceDirection, type QuizGame, type QuizSource } from '../core/quiz/questions';
 import { bestScores, markWrongForReview, recentResults, saveQuizResult, type QuizResult } from '../core/quiz/results';
 import { CATEGORIES, CATEGORY_LABELS_VI, type VocabWithReview } from '../core/vocabulary/types';
+import { n1Courses } from '../core/n1/cards';
 import { ChoiceGame } from './quiz/ChoiceGame';
 import { MatchGame } from './quiz/MatchGame';
 import { TrueFalseGame } from './quiz/TrueFalseGame';
 import { TypingGame } from './quiz/TypingGame';
 import type { GameOutcome } from './quiz/types';
 
-const SOURCES: { id: QuizSource; label: string }[] = [
+const BASE_SOURCES: { id: QuizSource; label: string }[] = [
   { id: 'learned', label: 'Từ đã học' },
   { id: 'all', label: 'Tất cả từ' },
   { id: 'weak', label: 'Từ hay quên' },
@@ -23,10 +24,23 @@ const gameLabel = (g: string) => QUIZ_GAMES.find((x) => x.id === g)?.label ?? g;
 export function QuizHome() {
   const { db, dataVersion } = useApp();
   const nav = useNavigate();
-  const [source, setSource] = useState<QuizSource>('learned');
+  const [qs] = useSearchParams();
+  const [source, setSource] = useState<QuizSource>((qs.get('source') as QuizSource) ?? 'learned');
   const [dir, setDir] = useState<ChoiceDirection>('ja_vi');
   const [best, setBest] = useState<Record<string, { best: number; plays: number }>>({});
   const [recent, setRecent] = useState<QuizResult[]>([]);
+  const [sources, setSources] = useState(BASE_SOURCES);
+  useEffect(() => {
+    void n1Courses(db).then((cs) => {
+      if (!cs.length) return setSources(BASE_SOURCES);
+      const total = cs.reduce((a, c) => a + c.cards, 0);
+      setSources([
+        { id: 'n1', label: `🗾 Thẻ N1 – tất cả (${total})` },
+        ...cs.map((c) => ({ id: `n1course:${c.course}` as QuizSource, label: `🗾 N1 – ${c.course || 'Khác'} (${c.cards})` })),
+        ...BASE_SOURCES,
+      ]);
+    });
+  }, [db, dataVersion]);
   useEffect(() => {
     void bestScores(db).then(setBest);
     void recentResults(db, 8).then(setRecent);
@@ -43,7 +57,7 @@ export function QuizHome() {
         <label className="field">
           Lấy từ từ
           <select className="select" value={source} onChange={(e) => setSource(e.target.value as QuizSource)} data-testid="quiz-source">
-            {SOURCES.map((s) => (
+            {sources.map((s) => (
               <option key={s.id} value={s.id}>{s.label}</option>
             ))}
           </select>

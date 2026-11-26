@@ -70,6 +70,10 @@ Menu **Ôn N1** dùng để ôn bộ flashcard và đề trắc nghiệm N1 mà 
 3. **Làm đề**: chọn đề trong cây Khóa → Phần → Bài. Câu đọc hiểu có đoạn văn (ẩn/hiện được). Chọn đáp án bằng chuột hoặc `1`–`4`, xem giải thích, `Enter` sang câu tiếp. Cuối đề có điểm và nút làm lại các câu sai.
 4. **Sổ câu sai**: mọi câu mà lần trả lời gần nhất bị sai. Trả lời đúng thì câu rời khỏi sổ.
 5. **Luyện ngẫu nhiên 20 câu** trộn từ tất cả các đề. Câu nghe có link audio chỉ phát được khi có Internet.
+5b. **Floating card với thẻ N1**: trên card bấm `⋯` → chọn **🗾 Thẻ N1 của bạn** (hoặc **🔀 Trộn BA + N1**). Đánh giá trên card được ghi vào lịch FSRS của N1.
+   Card vẫn nổi khi bạn đóng cửa sổ chính (app chạy dưới khay hệ thống); bật **Khởi động cùng Windows** để card tự hiện khi mở máy.
+5c. **Trò chơi với thẻ N1**: ô **🎮 Trò chơi với thẻ N1** trong Ôn N1, hoặc trong Trò chơi & Quiz chọn nguồn **🗾 Thẻ N1** (tất cả hoặc theo khóa).
+   Từ trả lời sai có thể đưa vào lịch ôn N1.
 6. **Xóa dữ liệu N1** xóa toàn bộ dữ liệu và tiến độ N1 (1.000 từ BA không bị ảnh hưởng) và tắt tự nhập cho đến khi bạn bấm Tìm lại / Nhập.
 
 Lưu ý: tài liệu khóa học có bản quyền của đơn vị cung cấp; chỉ dùng cho việc học cá nhân và không chia sẻ file dữ liệu.

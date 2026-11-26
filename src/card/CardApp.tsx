@@ -11,6 +11,14 @@ import {
   EVENTS, applyCardBounds, hideCard, onEvent, onWindowBoundsChanged, setResizable, showMain, startDragging,
 } from '../platform/native';
 import { speakJapanese } from '../platform/tts';
+import { isN1WordId, n1CardIdOf } from '../core/n1/adapter';
+import { rateN1Card } from '../core/n1/cards';
+
+const QUICK_DECKS: { id: string; label: string }[] = [
+  { id: 'smart', label: '📚 Từ vựng BA/IT' },
+  { id: 'n1', label: '🗾 Thẻ N1 của bạn' },
+  { id: 'mixed', label: '🔀 Trộn BA + N1' },
+];
 
 const BOUNDS_KEY = 'card.bounds';
 
@@ -41,7 +49,10 @@ export function CardApp() {
     let alive = true;
     void refill().then((d) => {
       if (!alive) return;
-      setCurrent((c) => c ?? d[0] ?? null);
+      // first load keeps nothing; a deck switch jumps straight to the new deck's first card
+      setCurrent(d[0] ?? null);
+      setRevealed(false);
+      setHistory([]);
       setLoading(false);
     });
     return () => {
@@ -52,7 +63,7 @@ export function CardApp() {
 
   // keep the current word fresh when data changes in another window (favorite, edit, hide…)
   useEffect(() => {
-    if (!current) return;
+    if (!current || isN1WordId(current.id)) return;
     void getVocabulary(db, current.id).then((v) => {
       if (!v || v.is_hidden) {
         setCurrent(null);
@@ -122,7 +133,9 @@ export function CardApp() {
   const rate = useCallback(
     async (r: UserRating) => {
       if (!current) return;
-      await rateWord(db, current.id, r, 'card', new Date(), { retention: settings['study.retention'] });
+      const opts = { retention: settings['study.retention'] };
+      if (isN1WordId(current.id)) await rateN1Card(db, n1CardIdOf(current.id), r, new Date(), opts);
+      else await rateWord(db, current.id, r, 'card', new Date(), opts);
       dataChanged('card-review');
       setQueue((q) => q.filter((w) => w.id !== current.id));
       await next();
@@ -131,7 +144,7 @@ export function CardApp() {
   );
 
   const toggleFav = useCallback(async () => {
-    if (!current) return;
+    if (!current || isN1WordId(current.id)) return;
     await setFavorite(db, current.id, !current.is_favorite);
     setCurrent({ ...current, is_favorite: !current.is_favorite });
     dataChanged('favorite');
@@ -212,9 +225,11 @@ export function CardApp() {
           <div className={`drag${locked ? ' locked' : ''}`} onMouseDown={onDragStart} title={locked ? 'Card đang bị khóa vị trí' : 'Kéo để di chuyển'}>
             {locked ? '🔒' : '⋮⋮'} {current ? CATEGORY_LABELS_VI[current.category] ?? current.category : 'Japanese BA'}
           </div>
-          <button className={`icon-btn${current?.is_favorite ? ' on' : ''}`} onClick={() => void toggleFav()} title="Yêu thích (F)" data-testid="card-fav">
-            {current?.is_favorite ? '★' : '☆'}
-          </button>
+          {current && !isN1WordId(current.id) && (
+            <button className={`icon-btn${current.is_favorite ? ' on' : ''}`} onClick={() => void toggleFav()} title="Yêu thích (F)" data-testid="card-fav">
+              {current.is_favorite ? '★' : '☆'}
+            </button>
+          )}
           <button className="icon-btn" onClick={speak} title="Phát âm (P)">🔊</button>
           <button className="icon-btn" onClick={() => setMenu((m) => !m)} title="Tùy chọn" data-testid="card-menu">⋯</button>
           <button className="icon-btn" onClick={() => void hideCard()} title="Ẩn card (Esc)">✕</button>
@@ -229,6 +244,13 @@ export function CardApp() {
             </button>
           ))}
           <hr />
+          {QUICK_DECKS.map((d) => (
+            <button key={d.id} className={settings['card.deck'] === d.id ? 'active' : ''} onClick={() => void updateSettings({ 'card.deck': d.id })} data-testid={`card-deck-${d.id}`}>
+              {settings['card.deck'] === d.id ? '● ' : '○ '}
+              {d.label}
+            </button>
+          ))}
+          <hr />
           <button onClick={() => void updateSettings({ 'card.locked': !locked })}>{locked ? '🔓 Mở khóa vị trí' : '🔒 Khóa vị trí'}</button>
           {[0.6, 0.8, 0.95].map((o) => (
             <button key={o} className={Math.abs(settings['card.opacity'] - o) < 0.01 ? 'active' : ''} onClick={() => void updateSettings({ 'card.opacity': o })}>
@@ -236,7 +258,11 @@ export function CardApp() {
             </button>
           ))}
           <hr />
-          {current && <button onClick={() => void showMain(`/library/${current.id}`)}>📖 Xem chi tiết từ</button>}
+          {current && (
+            <button onClick={() => void showMain(isN1WordId(current.id) ? '/n1' : `/library/${current.id}`)}>
+              📖 {isN1WordId(current.id) ? 'Mở Ôn N1' : 'Xem chi tiết từ'}
+            </button>
+          )}
           <button onClick={() => void showMain('/study/quick5')}>⚡ Học Quick 5</button>
           <button onClick={() => void showMain('/settings')}>⚙️ Cài đặt card</button>
         </div>

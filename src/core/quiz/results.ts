@@ -2,6 +2,8 @@ import type { Database } from '../db/types';
 import { nowIso } from '../db/types';
 import { rateWord } from '../srs/reviewService';
 import type { QuizGame } from './questions';
+import { isN1WordId, n1CardIdOf } from '../n1/adapter';
+import { rateN1Card } from '../n1/cards';
 
 export interface QuizResult {
   id?: number;
@@ -60,6 +62,9 @@ export async function recentResults(db: Database, limit = 10): Promise<QuizResul
 /** Put the words answered wrongly back into the FSRS learning queue ("Again"). Only affects these words. */
 export async function markWrongForReview(db: Database, ids: number[], now = new Date(), retention?: number): Promise<number> {
   const unique = [...new Set(ids)];
-  for (const id of unique) await rateWord(db, id, 1, 'quiz', now, { retention });
+  for (const id of unique) {
+    if (isN1WordId(id)) await rateN1Card(db, n1CardIdOf(id), 1, now, { retention });
+    else await rateWord(db, id, 1, 'quiz', now, { retention });
+  }
   return unique.length;
 }

@@ -24,6 +24,8 @@ export function DeckSelect({ value, onChange }: { value: string; onChange: (v: s
   return (
     <select className="select" value={value} onChange={(e) => onChange(e.target.value)}>
       <option value="smart">Thông minh (đến hạn → từ mới)</option>
+      <option value="n1">🗾 Thẻ N1 của bạn (Ôn N1)</option>
+      <option value="mixed">🔀 Trộn BA + N1</option>
       <option value="favorites">Từ yêu thích</option>
       <option value="weak">Từ hay quên</option>
       {CATEGORIES.map((c) => (

@@ -173,6 +173,10 @@ export function N1Home() {
               <div className="mode-icon">📕</div>
               <div><h3>Sổ câu sai</h3><p>{stats.wrongNow} câu đang trả lời sai — làm lại đến khi đúng</p></div>
             </Link>
+            <Link to="/quiz?source=n1" className="card mode-tile" style={{ textDecoration: 'none', color: 'inherit' }} data-testid="n1-games">
+              <div className="mode-icon">🎮</div>
+              <div><h3>Trò chơi với thẻ N1</h3><p>Trắc nghiệm, ghép cặp, đúng/sai 60s, gõ cách đọc… bằng {stats.cards} thẻ N1</p></div>
+            </Link>
             <Link to="/n1/quiz/random" className="card mode-tile" style={{ textDecoration: 'none', color: 'inherit' }}>
               <div className="mode-icon">🎲</div>
               <div><h3>Luyện ngẫu nhiên 20 câu</h3><p>Trộn câu hỏi từ tất cả các đề</p></div>

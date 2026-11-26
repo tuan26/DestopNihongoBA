@@ -17,3 +17,6 @@
 - [x] T210 Tải n1_data.json từ repo GitHub riêng tư của người dùng (token fine-grained Contents read-only, lưu ở app config;
   ETag tránh tải lại; ghi file nguyên tử) + tự nhập. Test logic bằng mô phỏng (2 ca); kiểm tra nối dây trên app desktop
   (môi trường dev không truy cập được api.github.com nên chưa thử tải thật).
+- [x] T211 Thẻ N1 trên floating card (bộ "Thẻ N1", "Trộn BA + N1"; chọn nhanh trong menu ⋯ của card) — chấm điểm ghi vào FSRS N1
+- [x] T212 Trò chơi & Quiz với nguồn Thẻ N1 (tất cả / theo khóa), đưa từ sai vào lịch N1; lối tắt từ trang Ôn N1
+  — fix: đổi bộ từ trên card giờ chuyển ngay sang thẻ của bộ mới. Vitest 38/38, Playwright 8/8, kiểm tra card N1 trên app desktop.

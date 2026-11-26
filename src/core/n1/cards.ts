@@ -108,3 +108,23 @@ export function splitBack(back: string): { meaning: string; details: string } {
   const lines = back.split('\n');
   return { meaning: lines[0].trim(), details: lines.slice(1).join('\n').trim() };
 }
+
+/** All (or a random subset of) N1 cards, optionally limited to one course — used by games and as card filler. */
+export async function listN1Cards(db: Database, o: { course?: string | null; limit?: number; exclude?: number[] } = {}): Promise<N1Card[]> {
+  const ex = o.exclude?.length ? `AND c.id NOT IN (${o.exclude.map(() => '?').join(',')})` : '';
+  return (
+    await db.select<Row>(`${SELECT} WHERE (? IS NULL OR d.course = ?) ${ex} ORDER BY RANDOM() LIMIT ?`, [
+      o.course ?? null,
+      o.course ?? null,
+      ...(o.exclude ?? []),
+      o.limit ?? 2000,
+    ])
+  ).map(mapCard);
+}
+
+export async function n1Courses(db: Database): Promise<{ course: string; cards: number }[]> {
+  const rows = await db.select<{ course: string; n: number }>(
+    `SELECT COALESCE(d.course, '') AS course, COUNT(*) AS n FROM n1_cards c JOIN n1_decks d ON d.id = c.deck_id GROUP BY d.course ORDER BY d.course`,
+  );
+  return rows.map((r) => ({ course: r.course, cards: Number(r.n) }));
+}

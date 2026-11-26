@@ -1,12 +1,14 @@
 import type { Database } from '../db/types';
 import { listVocabulary, type VocabFilter } from '../vocabulary/repository';
-import { normalizeKey, kataToHira, hasKanji } from '../vocabulary/normalize';
+import { normalizeKey, kataToHira, hasKanji, isKana } from '../vocabulary/normalize';
+import { listN1Cards } from '../n1/cards';
+import { n1CardToWord } from '../n1/adapter';
 import { maskTarget } from '../study/modes';
 import type { VocabWithReview } from '../vocabulary/types';
 
 export type QuizGame = 'choice' | 'match' | 'truefalse' | 'typing' | 'cloze';
 export type ChoiceDirection = 'ja_vi' | 'vi_ja' | 'reading';
-export type QuizSource = 'learned' | 'all' | 'weak' | 'favorites' | `category:${string}`;
+export type QuizSource = 'learned' | 'all' | 'weak' | 'favorites' | `category:${string}` | 'n1' | `n1course:${string}`;
 
 export const QUIZ_GAMES: { id: QuizGame; label: string; icon: string; description: string }[] = [
   { id: 'choice', label: 'Trắc nghiệm', icon: '🅰️', description: '10 câu, chọn 1 trong 4 đáp án — Nhật→Việt, Việt→Nhật hoặc cách đọc' },
@@ -35,6 +37,17 @@ export function shuffle<T>(arr: T[], rnd: Rng = Math.random): T[] {
 
 /** Words available for a quiz source. "learned" falls back to all words when fewer than `min` were studied. */
 export async function loadPool(db: Database, source: QuizSource, min = 12): Promise<{ words: VocabWithReview[]; fellBack: boolean }> {
+  if (source === 'n1' || source.startsWith('n1course:')) {
+    // N1 flashcards imported by the user (Ôn N1). A course with too few cards falls back to all N1 cards.
+    const course = source === 'n1' ? null : source.slice(9);
+    let cards = await listN1Cards(db, { course, limit: 3000 });
+    let fellBack = false;
+    if (course != null && cards.length < min) {
+      cards = await listN1Cards(db, { limit: 3000 });
+      fellBack = true;
+    }
+    return { words: cards.map(n1CardToWord).filter((w) => w.vietnamese), fellBack };
+  }
   const all = await listVocabulary(db);
   let filter: VocabFilter | null = null;
   if (source === 'weak') filter = { weak: true };
@@ -179,7 +192,7 @@ export function buildMatchBoard(pool: VocabWithReview[], n = 6, rnd: Rng = Math.
 }
 
 export function buildTypingQuestions(pool: VocabWithReview[], count: number, rnd: Rng = Math.random): VocabWithReview[] {
-  return shuffle(pool.filter((w) => hasKanji(w.japanese)), rnd).slice(0, count);
+  return shuffle(pool.filter((w) => hasKanji(w.japanese) && !!w.reading && isKana(w.reading)), rnd).slice(0, count);
 }
 
 /** Accept hiragana or katakana, full/half width, ignore spaces and ・. */
