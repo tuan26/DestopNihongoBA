@@ -14,7 +14,8 @@ import { Settings } from '../pages/Settings';
 import { EVENTS, onEvent, setGlobalShortcut, showCard, toggleCard, isCardVisible } from '../platform/native';
 import { isTauri } from '../platform/env';
 import { useDiscoveryScheduler } from '../pages/discoveryScheduler';
-import { syncN1 } from '../core/n1/autoSync';
+import { syncN1, N1_GITHUB_KEY } from '../core/n1/autoSync';
+import { getKv } from '../core/settings/settings';
 import { n1FileIO } from '../platform/native';
 
 const NAV = [
@@ -47,7 +48,7 @@ function Shell() {
   useEffect(() => {
     if (!isTauri()) return;
     const t = setTimeout(() => {
-      void syncN1(db, n1FileIO(), { search: 'daily' }).then((r) => {
+      void syncN1(db, n1FileIO(() => getKv(db, N1_GITHUB_KEY, null)), { search: 'daily' }).then((r) => {
         if (r.status === 'imported') {
           toast(`Ôn N1: đã ${r.reason === 'changed' ? 'cập nhật' : 'nhập'} dữ liệu từ ${r.path}`, 'success');
           dataChanged('n1-sync');

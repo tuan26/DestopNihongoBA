@@ -11,6 +11,11 @@ export interface N1FileIO {
   modified: (path: string) => Promise<number | null>;
   read: (path: string) => Promise<string>;
   backup?: (reason: string) => Promise<unknown>;
+  /**
+   * Optional: fetch the file from the user's own (private) GitHub repo into a local copy.
+   * Returns null when not configured. `force` skips the "not modified" shortcut.
+   */
+  download?: (force: boolean) => Promise<{ path: string; changed: boolean } | null>;
 }
 
 export interface N1Source {
@@ -23,6 +28,7 @@ export const N1_SOURCE_KEY = 'n1.source';
 export const N1_SEARCHED_KEY = 'n1.searchedAt';
 /** false after the user deleted N1 data on purpose: no automatic import until they import/search again. */
 export const N1_AUTO_KEY = 'n1.autoSync';
+export const N1_GITHUB_KEY = 'n1.github';
 
 export type SyncOutcome =
   | { status: 'imported'; path: string; result: PackImportResult; reason: 'first' | 'changed' | 'forced' }
@@ -64,7 +70,20 @@ export async function syncN1(db: Database, io: N1FileIO, opts: { search?: 'alway
   const now = opts.now ?? new Date();
   if (opts.search !== 'always' && !(await getKv<boolean>(db, N1_AUTO_KEY, true))) return { status: 'skipped' };
   if (opts.search === 'always') await setKv(db, N1_AUTO_KEY, true);
+  // 1) refresh the copy from the user's GitHub repo when configured (cheap 304 when unchanged)
+  let remote: { path: string; changed: boolean } | null = null;
+  let remoteError: string | null = null;
+  if (io.download) {
+    try {
+      remote = await io.download(opts.search === 'always');
+    } catch (e) {
+      remoteError = (e as Error)?.message ?? String(e);
+    }
+  }
   const src = await getN1Source(db);
+  if (remote && (!src || src.path !== remote.path)) {
+    return importN1File(db, io, remote.path, (await io.modified(remote.path)) ?? Date.now() / 1000, 'first');
+  }
   if (src) {
     const m = await io.modified(src.path);
     if (m != null) {
@@ -82,6 +101,6 @@ export async function syncN1(db: Database, io: N1FileIO, opts: { search?: 'alway
   }
   await setKv(db, N1_SEARCHED_KEY, now.toISOString());
   const found = await io.find();
-  if (!found.length) return { status: 'not-found' };
+  if (!found.length) return remoteError ? { status: 'error', message: remoteError } : { status: 'not-found' };
   return importN1File(db, io, found[0].path, found[0].modified, 'first');
 }

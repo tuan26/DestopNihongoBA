@@ -14,3 +14,6 @@
 - Repo không chứa nội dung khóa học (fixture e2e do tự viết).
 - [x] T209 Tự tìm & tự nhập n1_data.json (Rust find_n1_data/file_modified/read_n1_file, core/n1/autoSync.ts, tests 2 ca)
   — kiểm chứng trên app desktop (Xvfb): tự nhập lúc khởi động, bỏ qua bản trong node_modules, file đổi → nhập thêm, tiến độ giữ nguyên.
+- [x] T210 Tải n1_data.json từ repo GitHub riêng tư của người dùng (token fine-grained Contents read-only, lưu ở app config;
+  ETag tránh tải lại; ghi file nguyên tử) + tự nhập. Test logic bằng mô phỏng (2 ca); kiểm tra nối dây trên app desktop
+  (môi trường dev không truy cập được api.github.com nên chưa thử tải thật).

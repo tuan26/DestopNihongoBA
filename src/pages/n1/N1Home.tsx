@@ -9,7 +9,8 @@ import { summarizePack, validatePack, type Pack, type PackSummary } from '../../
 import { listN1Decks, n1Stats, type N1DeckInfo, type N1Stats } from '../../core/n1/practice';
 import { setKv } from '../../core/settings/settings';
 import { backupDatabase, confirmDialog, n1FileIO, openJsonText } from '../../platform/native';
-import { getN1Source, importN1File, syncN1, N1_AUTO_KEY, N1_SOURCE_KEY, type N1Source } from '../../core/n1/autoSync';
+import { getN1Source, importN1File, syncN1, N1_AUTO_KEY, N1_GITHUB_KEY, N1_SOURCE_KEY, type N1Source } from '../../core/n1/autoSync';
+import { GithubSource } from './GithubSource';
 import { getKv } from '../../core/settings/settings';
 import { isTauri } from '../../platform/env';
 
@@ -39,7 +40,7 @@ export function N1Home() {
     async (search: 'always' | 'never') => {
       setSearching(true);
       setNotFound(false);
-      const r = await syncN1(db, n1FileIO(), { search });
+      const r = await syncN1(db, n1FileIO(() => getKv(db, N1_GITHUB_KEY, null)), { search });
       setSearching(false);
       if (r.status === 'imported') {
         toast(`Đã nhập ${r.result.cards.inserted} thẻ, ${r.result.questions.inserted} câu từ ${r.path}`, 'success');
@@ -130,15 +131,15 @@ export function N1Home() {
       {stats.decks === 0 && searching ? (
         <div className="card col" style={{ maxWidth: 760 }} data-testid="n1-searching">
           <h3 style={{ margin: 0 }}>🔎 Đang tìm file n1_data.json trên máy của bạn…</h3>
-          <p className="muted" style={{ margin: 0 }}>Tìm trong thư mục người dùng (Desktop, Documents, Downloads, thư mục dự án). Có thể mất vài giây.</p>
+          <p className="muted" style={{ margin: 0 }}>Tìm trong thư mục người dùng (Desktop, Documents, Downloads, thư mục dự án) và trên GitHub nếu đã cấu hình. Có thể mất vài giây.</p>
         </div>
       ) : stats.decks === 0 ? (
         <div className="card col" style={{ maxWidth: 760 }}>
           <h3 style={{ margin: 0 }}>{notFound ? 'Không tìm thấy file n1_data.json trên máy' : 'Chưa có dữ liệu N1'}</h3>
           {notFound && (
             <p style={{ margin: 0 }}>
-              App đã tìm trong thư mục người dùng nhưng không thấy. Hãy chạy crawler của bạn để tạo file, hoặc bấm <b>Nhập dữ liệu N1</b> để chọn
-              file thủ công (thường nằm ở <code>Clawer_nihongo\n1-learning-app\src\data\n1_data.json</code>).
+              App đã tìm trong máy nhưng không thấy. Cách nhanh nhất: dán GitHub token vào khung <b>☁️ Tải dữ liệu từ GitHub</b> bên dưới để app
+              tự tải file từ repo của bạn và nhập luôn. Hoặc bấm <b>Nhập dữ liệu N1</b> để chọn file thủ công.
             </p>
           )}
           {isTauri() && (
@@ -146,6 +147,7 @@ export function N1Home() {
               <button className="btn" onClick={() => void runSync('always')}>🔎 Tìm lại</button>
             </div>
           )}
+          <GithubSource open busy={searching} onSaved={() => void runSync('always')} />
           <p style={{ margin: 0 }}>
             Bấm <b>Nhập dữ liệu N1</b> và chọn file <code>n1_data.json</code> (đầu ra của crawler của bạn) hoặc một file <code>jbv-pack</code>.
             App sẽ tự lấy các bộ flashcard và đề trắc nghiệm; video/slide/bài text được bỏ qua.
@@ -214,6 +216,9 @@ export function N1Home() {
             ))}
           </div>
 
+          <div style={{ marginTop: 14 }}>
+            <GithubSource open={false} busy={searching} onSaved={() => void runSync('always')} />
+          </div>
           {source && (
             <div className="card row small" style={{ marginTop: 14 }} data-testid="n1-source">
               <span>

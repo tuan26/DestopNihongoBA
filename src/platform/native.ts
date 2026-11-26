@@ -255,12 +255,34 @@ export async function readN1File(path: string): Promise<string> {
   return inv<string>('read_n1_file', { path });
 }
 
-/** File access used by N1 auto-sync (desktop). */
-export function n1FileIO() {
+export interface N1GithubConfig {
+  repo: string;
+  path: string;
+  branch?: string;
+}
+export async function n1GithubStatus(): Promise<{ hasToken: boolean; source: string | null }> {
+  return isTauri() ? inv('n1_github_status') : { hasToken: false, source: null };
+}
+export async function setN1GithubToken(token: string | null): Promise<void> {
+  if (!isTauri()) throw new Error('Chỉ hỗ trợ trong ứng dụng desktop');
+  await inv('set_n1_github_token', { token });
+}
+export async function downloadN1FromGithub(cfg: N1GithubConfig, force: boolean): Promise<{ path: string; changed: boolean; size: number }> {
+  return inv('download_n1_from_github', { req: { repo: cfg.repo, path: cfg.path, branch: cfg.branch || null, force } });
+}
+
+/** File access used by N1 auto-sync (desktop). `getGithub` returns the saved repo config, if any. */
+export function n1FileIO(getGithub?: () => Promise<N1GithubConfig | null>) {
   return {
     find: findN1Data,
     modified: async (p: string) => fileModified(p),
     read: readN1File,
     backup: (reason: string) => backupDatabase(reason),
+    download: async (force: boolean) => {
+      if (!isTauri() || !getGithub) return null;
+      const cfg = await getGithub();
+      if (!cfg?.repo || !cfg.path || !(await n1GithubStatus()).hasToken) return null;
+      return downloadN1FromGithub(cfg, force);
+    },
   };
 }

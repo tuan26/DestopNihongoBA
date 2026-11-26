@@ -60,3 +60,33 @@ describe('N1 auto sync from the user\'s own file', () => {
     expect(await syncN1(await memoryDb(), bad, { search: 'always' })).toMatchObject({ status: 'error' });
   });
 });
+
+describe('N1 sync from the user\'s own GitHub repo', () => {
+  it('downloads when nothing is local, re-imports only when the download changed the file', async () => {
+    const db = await memoryDb();
+    const local = '/appdata/n1/n1_data.json';
+    const files: Record<string, { text: string; modified: number }> = {};
+    const io = fakeIO(files);
+    let remoteVersion = 1;
+    io.download = vi.fn(async () => {
+      const changed = !files[local] || files[local].modified !== remoteVersion;
+      files[local] = { text: crawler(3 + remoteVersion), modified: remoteVersion };
+      return { path: local, changed };
+    });
+    expect(await syncN1(db, io, { search: 'always' })).toMatchObject({ status: 'imported', path: local });
+    expect((await n1Stats(db)).cards).toBe(4);
+    expect(await syncN1(db, io)).toMatchObject({ status: 'unchanged' });
+    remoteVersion = 2;
+    expect(await syncN1(db, io)).toMatchObject({ status: 'imported', reason: 'changed' });
+    expect((await n1Stats(db)).cards).toBe(5);
+  });
+
+  it('reports the GitHub error when nothing else is available', async () => {
+    const db = await memoryDb();
+    const io = fakeIO({});
+    io.download = vi.fn(async () => {
+      throw new Error('GitHub 401: Token sai hoặc đã hết hạn');
+    });
+    expect(await syncN1(db, io, { search: 'always' })).toEqual({ status: 'error', message: 'GitHub 401: Token sai hoặc đã hết hạn' });
+  });
+});

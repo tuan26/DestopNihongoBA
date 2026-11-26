@@ -1,5 +1,6 @@
 mod ai;
 mod db;
+mod github;
 mod n1;
 mod windows;
 
@@ -57,6 +58,9 @@ pub fn run() {
             n1::find_n1_data,
             n1::file_modified,
             n1::read_n1_file,
+            github::n1_github_status,
+            github::set_n1_github_token,
+            github::download_n1_from_github,
             windows::show_card,
             windows::hide_card,
             windows::toggle_card,

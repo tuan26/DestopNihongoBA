@@ -60,6 +60,10 @@ Menu **Ôn N1** dùng để ôn bộ flashcard và đề trắc nghiệm N1 mà 
 0. **Tự động**: khi chưa có dữ liệu, app tự tìm file `n1_data.json` trong thư mục người dùng (Desktop, Documents, Downloads, thư mục dự án…)
    và nhập luôn. App nhớ đường dẫn file; mỗi lần khởi động, nếu file thay đổi (crawler chạy lại) thì app tự nhập lại phần mới, giữ nguyên tiến độ.
    Đường dẫn nguồn hiển thị ở cuối trang Ôn N1, kèm nút **Đồng bộ ngay**.
+0b. **Từ GitHub** (khi file không có trên máy): trong khung **☁️ Tải dữ liệu từ GitHub** nhập repo (vd `tuan26/Clawer_nihongo`), đường dẫn file
+   (`n1-learning-app/src/data/n1_data.json`) và một **fine-grained token** chỉ có quyền *Contents: Read-only* cho repo đó → **Lưu & tải về ngay**.
+   App tải file về thư mục dữ liệu của app rồi nhập; mỗi lần khởi động app hỏi GitHub xem file có đổi không (không đổi thì không tải lại).
+   Token chỉ lưu ở `%APPDATA%\com.nihongoba.vocab\n1-github.json`.
 1. Thủ công: bấm **Nhập dữ liệu N1** → chọn file → xem tóm tắt (số bộ flashcard, số đề, số câu, mục bị bỏ qua như video/slide/tự luận) → **Nhập**.
    Dữ liệu chỉ lưu trong database trên máy bạn; database được sao lưu trước khi nhập. Nhập lại file mới hơn sẽ cập nhật nội dung, không trùng, không mất tiến độ.
 2. **Ôn flashcard hôm nay**: thẻ đến hạn + thẻ mới (mặc định 30 thẻ mới/ngày, chỉnh ở cuối trang Ôn N1). Lịch FSRS riêng, không lẫn với 1.000 từ BA.
